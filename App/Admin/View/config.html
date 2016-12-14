@@ -1,0 +1,142 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="id" value="{{$config['id']}}" />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站名称<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="{{$config['name']}}"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站标题<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="title" value="{{$config['title']}}"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">关键词<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="keywords" value="{{$config['keywords']}}"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">主页链接名<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="home" value="{{$config['home']}}"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">版权信息<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="copyright" value="{{$config['copyright']}}"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">备案信息<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="record" value="{{$config['record']}}"></div>
+                            </div>
+                           
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站长统计<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <textarea class="col-sm-12" name='statistics'>{{:stripslashes($config['statistics'])}}</textarea>
+                                </div>   
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站点描述<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <textarea class="col-sm-12" name='description'>{{:stripslashes($config['description'])}}</textarea>
+                                </div>   
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">地址<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <textarea class="col-sm-12" name='address'>{{:stripslashes($config['address'])}}</textarea>
+                                </div>   
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">是否开启站点<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <label>
+                                        <input name="status" <php>if(empty($config['status'])){</php><php>}else{</php>checked='checked'<php>}</php> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
+                                        <span class="lbl"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">网站LOGO<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <input  class="col-sm-12" type="button" value="上传头像" onClick="GetUploadify(1,'newsimg','seller','callback1')" />   
+                                </div>
+                            </div>
+                           
+                            <div class="form-group" id="imgs" style="display:none;">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
+                                <div class="col-sm-9">
+                                <img src='{{$config[site_logo]}}' style='width:280px;' id="img" />
+                                </div>
+                            </div>
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-4 col-md-4">
+                                    <button class="btn btn-info btn-block" type="submit">
+                                        <i class="icon-ok bigger-110"></i>
+                                        确认
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+<script>
+    $(function () {
+        $('input[type="file"]').ace_file_input({
+            no_file: 'No File ...',
+            btn_choose: 'Choose',
+            btn_change: 'Change',
+            droppable: false,
+            onchange: null,
+            thumbnail: false //| true | large
+                    //whitelist:'gif|png|jpg|jpeg'
+                    //blacklist:'exe|php'
+                    //onchange:''
+                    //
+        });
+    });
+
+</script>
+<script>
+    var img = document.getElementById('img');
+    function check(obj){
+        $('#imgs').css('display','block');
+         // console.dir(obj.files);
+        img.src = window.URL.createObjectURL(obj.files[0]);
+    }
+
+     function callback1(img_str){
+        $('input[name="newsimg"]').val(img_str);
+        $('#newsimg').attr('src',img_str);
+    }
+</script>
+<include file="Public:footer" />

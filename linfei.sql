@@ -77,21 +77,25 @@ create table if not exists `linfei_config`(
 	`keywords` varchar(255) not null default '站点关键字' COMMENT '站点关键字',
 	`description` text COMMENT '站点描述',
 	`home` varchar(255) not null default '主页' COMMENT '主页链接名',
-	`ico` varchar(255) not null default '/Templates/Default/Public/default.ico' COMMENT '网站ico图标',
 	`logo` varchar(255) not null default '/Templates/Default/Public/default.png' COMMENT '网站LOGO',
-	`pic` varchar(255) not null default '/Templates/Default/Public/erweima.png' COMMENT '二维码',
-	`people` char(20) not null COMMENT '联系人',
-	`tel` char(20) not null default '020-85026566' COMMENT '服务电话',
-	`chuanzhen` varchar(255) COMMENT '传真',
-	`phone` char(20) not null default '13539993040' COMMENT '手机',
-	`customer` varchar(255) not null default '869688800' COMMENT '在线客服',
 	`copyright` varchar(255) not null default '版权信息' COMMENT '版权信息',
 	`record` varchar(255) not null default '备案信息' COMMENT '备案信息',
 	`address` varchar(255) not null default '广州市白云区金沙洲沙凤商业大厦8楼' COMMENT '联系地址',
-	`email` varchar(255) not null default 'vzhoufei@qq.com' COMMENT '邮箱',
 	`statistics` varchar(255) COMMENT '站长统计',
+	`status` tinyint(1) COMMENT '站点状态 1开启  0关闭',
 	`time` int unsigned not null COMMENT '添加时间'
 )engine=innodb default charset=utf8;
+
+
+--客服表
+create table if not exists `linfei_service`(
+	`id` int unsigned not null auto_increment primary key,
+	`key` unsigned char(30) not null COMMENT '客服标识',
+	`name` char(50) not null COMMENT '中文说明',
+	`val` varchar(1000) not null COMMENT '客服号'
+)engine=innodb default charset=utf8;
+
+
 
 
 

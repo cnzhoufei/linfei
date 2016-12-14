@@ -54,9 +54,9 @@
 
 			<div class="navbar-container" id="navbar-container">
 				<div class="navbar-header pull-left">
-					<a href="{:U('admin/index')}" class="navbar-brand">
+					<a href="<?php echo U('Index/index');?>" class="navbar-brand">
 						<small>
-							<i class="icon-leaf"></i>
+							<i class=""><img src="/App/Admin/View/style/images/LINFEI.gif" style="height:25px;" alt=""></i>
 							林飞CMS管理系统
 						</small>
 					</a><!-- /.brand -->
@@ -121,334 +121,28 @@
 	</script>
 
 	<ul class="nav nav-list">
-
-		<li>
+<?php if(is_array($adminmenu)): foreach($adminmenu as $key=>$v): ?><li>
 			<a href="#" class="dropdown-toggle">
-				<i class="icon-desktop"></i>
-				<span class="menu-text"> 商品管理 </span>
+				<i class="<?php echo ($v["icon"]); ?>"></i>
+				<span class="menu-text"> <?php echo ($v["name"]); ?> </span>
 
 				<b class="arrow icon-angle-down"></b>
 			</a>
 
 			<ul class="submenu">
-				<li>
-					<a href="{:U('admin/goodslist')}">
-						<i class="icon-double-angle-right"></i> 商品列表
+		<?php if(is_array($v['child'])): foreach($v['child'] as $key=>$vo): ?><li>
+					<a href='<?php echo U("$vo[c]/$vo[f]");?>' >
+						<i class="icon-double-angle-right"></i> <?php echo ($vo["name"]); ?>
 					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/addgoods')}">
-						<i class="icon-double-angle-right"></i> 添加商品
-					</a>
-				</li>
-				
-				<li>
-					<a href="{:U('admin/commentlist')}">
-						<i class="icon-double-angle-right"></i> 商品评论
-					</a>
-				</li>
+				</li><?php endforeach; endif; ?>
 			</ul>
-		</li>
-
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-group"></i>
-				<span class="menu-text"> 用户管理 </span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/userlist')}">
-						<i class="icon-double-angle-right"></i> 用户列表
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/adduser')}">
-						<i class="icon-double-angle-right"></i> 添加用户
-					</a>
-				</li>
-			</ul>
-		</li>
-
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-cogs"></i>
-				<span class="menu-text"> 系统设置 </span>
-				<b class="arrow icon-angle-down"></b>
-			</a>
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/settingperson')}">
-						<i class="icon-double-angle-right"></i> 个人信息
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/settingsite')}">
-						<i class="icon-double-angle-right"></i> 网站信息
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/settingseo')}">
-						<i class="icon-double-angle-right"></i> SEO设置
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/settingurl')}">
-						<i class="icon-double-angle-right"></i> URL模式
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/settingscore')}">
-						<i class="icon-double-angle-right"></i> 积分设置
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/settingqq')}">
-						<i class="icon-double-angle-right"></i> QQ登录设置
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/settingmail')}">
-						<i class="icon-double-angle-right"></i> 邮箱设置
-					</a>
-				</li>
-				
-				<li>
-					<a href="{:U('admin/settingucenter')}">
-						<i class="icon-double-angle-right"></i> UCENTER设置
-					</a>
-				</li>
-				
-				<li>
-					<a href="{:U('admin/settingregfield')}">
-						<i class="icon-double-angle-right"></i> 注册字段设置
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/clearcache')}">
-						<i class="icon-double-angle-right"></i> 清除缓存
-					</a>
-				</li>
-				
-				<li>
-					<a href="{:U('admin/sitemap')}">
-						<i class="icon-double-angle-right"></i> 更新sitemap
-					</a>
-				</li>
-			</ul>
-		</li>
-
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-tags"></i>
-				<span class="menu-text"> 分类管理 </span>
-				<b class="arrow icon-angle-down"></b>
-			</a>
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/sortlist')}">
-						<i class="icon-double-angle-right"></i> 分类列表
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/addsort')}">
-						<i class="icon-double-angle-right"></i> 添加分类
-					</a>
-				</li>
-			</ul>
-		</li>
-
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-book"></i>
-				<span class="menu-text"> 内容管理 </span>
-				<b class="arrow icon-angle-down"></b>
-			</a>
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/articlelist')}">
-						<i class="icon-double-angle-right"></i> 文章列表
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/addarticle')}">
-						<i class="icon-double-angle-right"></i> 添加文章
-					</a>
-				</li>
-
-			</ul>
-		</li>
-
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-cloud-download"></i>
-				<span class="menu-text"> 采集管理 </span>
-				<b class="arrow icon-angle-down"></b>
-			</a>
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/caijigoods')}">
-						<i class="icon-double-angle-right"></i> 商品采集
-					</a>
-				</li>
-
-				<li class="">
-					<a href="{:U('admin/jiukuaijiu')}">
-						<i class="icon-double-angle-right"></i> 九块九采集
-					</a>
-				</li>
-				
-			</ul>
-		</li>
-
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-bullhorn"></i>
-				<span class="menu-text"> 广告管理 </span>
-				<b class="arrow icon-angle-down"></b>
-			</a>
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/addad')}">
-						<i class="icon-double-angle-right"></i> 添加广告
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/adlist')}">
-						<i class="icon-double-angle-right"></i> 广告列表
-					</a>
-				</li>
-			</ul>
-		</li>
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-coffee"></i>
-				<span class="menu-text"> 积分商城 </span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/jfgoodslist')}">
-						<i class="icon-double-angle-right"></i> 商品列表
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/addjfgoods')}">
-						<i class="icon-double-angle-right"></i> 添加商品
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/jfloglist')}">
-						<i class="icon-double-angle-right"></i> 兑换信息
-					</a>
-				</li>
-			</ul>
-		</li>
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-laptop"></i>
-				<span class="menu-text"> 商家报名 </span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/topicgoodslist')}">
-						<i class="icon-double-angle-right"></i> 审核列表
-					</a>
-				</li>
-			</ul>
-		</li>
-
-		<li class="">
-			<a href="#" class="dropdown-toggle">
-				<i class="icon-tasks"></i>
-				<span class="menu-text"> 活动专场 </span>
-
-				<b class="arrow icon-angle-down"></b>
-			</a>
-
-			<ul class="submenu">
-				<li class="">
-					<a href="{:U('admin/topiclist')}">
-						<i class="icon-double-angle-right"></i> 专场列表
-					</a>
-				</li>
-
-				<li>
-					<a href="{:U('admin/addtopic')}">
-						<i class="icon-double-angle-right"></i> 添加专场
-					</a>
-				</li>
-			</ul>
-		</li>
-        <li class="">
-            <a href="#" class="dropdown-toggle">
-                <i class="icon-tasks"></i>
-                <span class="menu-text"> 抽奖管理 </span>
-
-                <b class="arrow icon-angle-down"></b>
-            </a>
-
-            <ul class="submenu">
-                <li class="">
-                    <a href="{:U('admin/choujiang')}">
-                        <i class="icon-double-angle-right"></i>
-                        抽奖列表
-                    </a>
-                </li>
-                <li>
-                    <a href="{:U('admin/addchoujiang')}">
-                        <i class="icon-double-angle-right"></i>
-                        添加抽奖活动
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="{:U('admin/cjgoods')}">
-                        <i class="icon-double-angle-right"></i>
-                        奖品列表
-                    </a>
-                </li>
-                
-                <li>
-                    <a href="{:U('admin/addjfgoods',array('p'=>'cj'))}">
-                        <i class="icon-double-angle-right"></i>
-                        奖品添加
-                    </a>
-                </li>
-                
-            </ul>
-        </li>
+		</li><?php endforeach; endif; ?>
 	</ul>
 	<script type="text/javascript">
-		<?php if($my['uid']>1){ ?>
-		        $('.submenu li').hide();
-		        <?php } ?>
-		        <?php $myqx = unserialize($my['qx']); foreach($myqx as $val){ ?>
-		            $('a[href^="'+'{:U("$mod/$val")}'+'"]').parent().show();
-		            $('a[href^="'+'{:U("crawl/$val")}'+'"]').parent().show();
-		        <?php } ?>
-		        var obj = $('a[href^="'+'{:U("$mod/$act")}'+'"]');
+		
+					
+				$('a[href^="'+'<?php echo ($url); ?>'+'"]').parent().show();
+		        var obj = $('a[href^="'+'<?php echo ($url); ?>'+'"]');
 		        var o1 = obj.parent();
 		        var o2 = obj.parent().parent().parent();
 		        o2.addClass('active').addClass('open');
@@ -475,12 +169,12 @@
                             </h1>
                         </div>
                         <div class="profile-user-info profile-user-info-striped">
-                            <?php if(is_array($serverInfo)): $i = 0; $__LIST__ = $serverInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="profile-info-row">
+                            <?php if(is_array($serverInfo)): foreach($serverInfo as $key=>$data): ?><div class="profile-info-row">
                                     <div class="profile-info-name"> <?php echo ($data["name"]); ?> </div>
                                     <div class="profile-info-value">
                                         <span class="editable editable-click" id="username"><?php echo ($data["v"]); ?></span>
                                     </div>
-                                </div><?php endforeach; endif; else: echo "" ;endif; ?>
+                                </div><?php endforeach; endif; ?>
                         </div>
                         <br>
                         <div class="page-header">
@@ -537,9 +231,9 @@
 <script src="/App/Admin/View/style/js/ace.min.js"></script>
 
 <!-- inline scripts related to this page -->
-<script type="text/javascript" src="/public/js/jquery.form.js"></script>
-<script src="/public/date/js/lhgcalendar.min.js" type="text/javascript"></script>
-<link href="/public/date/css/lhgcalendar.css" rel="stylesheet" type="text/css">
+<!-- <script type="text/javascript" src="/public/js/jquery.form.js"></script> -->
+<!-- <script src="/public/date/js/lhgcalendar.min.js" type="text/javascript"></script> -->
+<!-- <link href="/public/date/css/lhgcalendar.css" rel="stylesheet" type="text/css"> -->
 <script>
 	var submit = true;
 	$(function() {

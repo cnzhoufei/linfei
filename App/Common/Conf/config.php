@@ -14,7 +14,7 @@ return array(
    'DB_PREFIX'              =>      'linfei_',    		          // 数据库表前缀
    'URL_MODEL'              =>      2,          		          //重写模式
    'SHOW_PAGE_TRACE'        =>      true,       		          //开启页面trace
-   'URL_HTML_SUFFIX'        =>      'html',      		          //设置伪静态
+   'URL_HTML_SUFFIX'        =>      'php',      		          //设置伪静态
    'TMPL_L_DELIM'    		    =>      '{{',
    'TMPL_R_DELIM'    		    =>      '}}',
 

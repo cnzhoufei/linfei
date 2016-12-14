@@ -20,12 +20,12 @@ body{ background: #fff; font-family: '微软雅黑'; color: #333; font-size: 16p
 </style>
 </head>
 <body>
-<div class="system-message">
+<div class="system-message" style="width:300px;margin:0 auto;margin-top: 10%;">
 <?php if(isset($message)) {?>
-<h1>:)</h1>
+<h1><img src="/ThinkPHP/Tpl/xiao.jpg" alt="" width="200"/></h1>
 <p class="success"><?php echo($message); ?></p>
 <?php }else{?>
-<h1>:(</h1>
+<h1><img src="/ThinkPHP/Tpl/ku.jpg" alt="" width="200"/></h1>
 <p class="error"><?php echo($error); ?></p>
 <?php }?>
 <p class="detail"></p>

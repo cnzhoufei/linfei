@@ -20,13 +20,13 @@ class IndexController extends CommonController
     		array('name'=>'数据库版本','v'=>$mysql[0]['version']),
     		array('name'=>'服务器软件','v'=>$_SERVER['SERVER_SOFTWARE']),
     		array('name'=>'最大上传许可','v'=>@ini_get('file_uploads') ? ini_get('upload_max_filesize') :'unknown'),
-    		array('name'=>'服务器域名/IP','v'=>$_SERVER['HTTP_HOST']),
+    		array('name'=>'服务器域名/IP','v'=>$_SERVER['HTTP_HOST'].'('.$_SERVER['SERVER_ADDR'].')'),
     		array('name'=>'最大占用内存','v'=>ini_get('memory_limit')),
     		array('name'=>'最大执行时间','v'=>@ini_get("max_execution_time").'s'),
     		array('name'=>'安全模式','v'=>(boolean) ini_get('safe_mode') ? 'YES' : 'NO'),
     		array('name'=>'Zlib支持','v'=>function_exists('gzclose') ? 'YES' : 'NO'),
     		array('name'=>'Curl支持','v'=>function_exists('curl_init') ? 'YES' : 'NO'),
-    		array('name'=>'GD 版本','v'=>$sys_info['gdinfo']),
+    		array('name'=>'GD 版本','v'=>$sys_info['gdinfo'])
     		));
         $this->display('/index');
     }
