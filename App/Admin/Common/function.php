@@ -7,14 +7,14 @@ function adminmenu()
 		array('name'=>'系统设置','icon'=>'icon-cogs','child'=>
 				array(
 					array('name'=>'网站信息','c'=>'Config','f'=>'index'),
-					array('name'=>'SEO设置','c'=>'','f'=>''),
+					array('name'=>'自定义信息','c'=>'Config','f'=>'custom'),
 					array('name'=>'URL模式','c'=>'','f'=>''),
-					array('name'=>'积分设置','c'=>'','f'=>''),
-					array('name'=>'邮箱设置','c'=>'','f'=>''),
-					array('name'=>'QQ登录设置','c'=>'','f'=>''),
-					array('name'=>'UCENTER设置','c'=>'','f'=>''),
-					array('name'=>'注册字段设置','c'=>'','f'=>''),
-					array('name'=>'清除缓存','c'=>'','f'=>''),
+					// array('name'=>'积分设置','c'=>'','f'=>''),
+					array('name'=>'邮箱设置','c'=>'Config','f'=>'email'),
+					// array('name'=>'QQ登录设置','c'=>'','f'=>''),
+					// array('name'=>'UCENTER设置','c'=>'','f'=>''),
+					// array('name'=>'注册字段设置','c'=>'','f'=>''),
+					// array('name'=>'清除缓存','c'=>'','f'=>''),
 				),
 			),
 			array('name'=>'商品管理','icon'=>'icon-desktop','child'=>

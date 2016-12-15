@@ -15,8 +15,8 @@
 			<a href="javascript:Close();" title="关闭" class="Close"></a>
 		</div>
 		<div class="Cont">
-			<p class="Note">最多上传<strong>1</strong>个附件,单文件最大<strong>4M</strong>,类型<strong>jpg,png,gif,jpeg</strong></p>
-                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+			<p class="Note">最多上传<strong><?php echo ($num); ?></strong>个附件,单文件最大<strong>4M</strong>,类型<strong>jpg,png,gif,jpeg</strong></p>
+                        <form class="form-horizontal" role="form" action="<?php echo U('Uploads/uploads');?>?num=<?php echo ($num); ?>&name=<?php echo ($name); ?>" method="post" enctype="multipart/form-data">
 
 			<div class="flashWrap">
 				<input name="uploadify[]" id="uploadify" type="file" multiple="true" onchange="check(this)" />
@@ -125,8 +125,7 @@ $("#SaveBtn").click(function(){
 	$(window.parent.document).find("iframe.uploadframe").css('z-index','-1');
 	// $(window.parent.document).find("iframe.uploadframe")
 	// $(fileQueue)
-	$(window.parent.document).find("#imgs_").html($('#fileQueue').html());
-	alert("<?php S('file'.session('adminuser.id')) ?>");
+	$(window.parent.document).find("#<?php echo ($id); ?>").html($('#fileQueue').html());
 });
 </script>
 </body>

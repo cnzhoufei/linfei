@@ -44,8 +44,7 @@
 		<script src="/App/Admin/View/style/js/html5shiv.js"></script>
 		<script src="/App/Admin/View/style/js/respond.min.js"></script>
 		<![endif]-->
-<script src="/Public/uploadify/global.js" type="text/javascript"></script> 
-		
+
 	</head>
 
 	<body>
@@ -67,7 +66,7 @@
 					<ul class="nav ace-nav">
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="/App/Admin/View/style/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="<?php echo session('adminuser.icon');?>" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>欢迎光临,</small>
 									<?php echo session('adminuser.name');?>
@@ -104,6 +103,9 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
+<script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
+<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript">//异步上传图片</script> 
+		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
         try {
@@ -190,6 +192,7 @@
                         <!-- PAGE CONTENT BEGINS -->                        
                         <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="<?php echo ($config['id']); ?>" />
+                         <input type="hidden" name="logo" value="<?php echo ($config[logo]); ?>" />
                             <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站名称<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="<?php echo ($config['name']); ?>"></div>
@@ -250,14 +253,14 @@
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">网站LOGO<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9">
-                                <input  class="col-sm-12" type="button" value="上传头像" onClick="GetUploadify(1,'newsimg','seller','callback1')" />   
+                                <input  class="col-sm-12" type="button" value="上传LOGO" onClick="GetUploadify(1,'logo','imgs')" />   
                                 </div>
                             </div>
                            
-                            <div class="form-group" id="imgs" style="display:none;">
+                            <div class="form-group" id="imgs">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
                                 <div class="col-sm-9">
-                                <img src='<?php echo ($config[site_logo]); ?>' style='width:280px;' id="img" />
+                                <img src='<?php echo ($config[logo]); ?>' style='width:280px;' id="img" />
                                 </div>
                             </div>
 
@@ -280,36 +283,7 @@
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
 </div><!-- /.main-container -->
-<script>
-    $(function () {
-        $('input[type="file"]').ace_file_input({
-            no_file: 'No File ...',
-            btn_choose: 'Choose',
-            btn_change: 'Change',
-            droppable: false,
-            onchange: null,
-            thumbnail: false //| true | large
-                    //whitelist:'gif|png|jpg|jpeg'
-                    //blacklist:'exe|php'
-                    //onchange:''
-                    //
-        });
-    });
 
-</script>
-<script>
-    var img = document.getElementById('img');
-    function check(obj){
-        $('#imgs').css('display','block');
-         // console.dir(obj.files);
-        img.src = window.URL.createObjectURL(obj.files[0]);
-    }
-
-     function callback1(img_str){
-        $('input[name="newsimg"]').val(img_str);
-        $('#newsimg').attr('src',img_str);
-    }
-</script>
 <!-- basic scripts -->
 
 <!--[if !IE]> -->

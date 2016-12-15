@@ -103,14 +103,17 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
-<script src="/Public/uploadify/global.js" type="text/javascript"></script> 
+<script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
+<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript">//异步上传图片</script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
         try {
             ace.settings.check('main-container', 'fixed')
-        } catch (e) {}
+        } catch (e) {
+        }
     </script>
+
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
@@ -159,38 +162,83 @@
 	</div>
 </div>
         <div class="main-content">
+            <div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('breadcrumbs', 'fixed')
+        } catch (e) {
+        }
+    </script>
+
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i><a href="<?php echo U('Index/index');?>">主页</a>
+        </li>
+        <li><?php echo ($controller); ?></li>
+        <li class="active">详情</li>
+    </ul><!-- .breadcrumb -->
+</div>
+<style type="text/css">
+    .breadcrumb .active i{display:none;}
+</style>
+<script type="text/javascript">
+    var m1 = o2.find('.menu-text').html();
+    var m2 = o1.find('a').html();        
+    $("#breadcrumbs .breadcrumb li:eq(1)").html(m1);
+    $("#breadcrumbs .breadcrumb li:eq(2)").html(m2);
+</script>
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- PAGE CONTENT BEGINS -->
-                        <div class="page-header">
-                            <h1>
-                                服务器信息
-                                <small>
-                                    <i class="icon-double-angle-right"></i>
-                                </small>
-                            </h1>
-                        </div>
-                        <div class="profile-user-info profile-user-info-striped">
-                            <?php if(is_array($serverInfo)): foreach($serverInfo as $key=>$data): ?><div class="profile-info-row">
-                                    <div class="profile-info-name"> <?php echo ($data["name"]); ?> </div>
-                                    <div class="profile-info-value">
-                                        <span class="editable editable-click" id="username"><?php echo ($data["v"]); ?></span>
-                                    </div>
-                                </div><?php endforeach; endif; ?>
-                        </div>
-                        <br>
-                        <div class="page-header">
-                            <h1>
-                                开发团队
-                                <small>
-                                    <i class="icon-double-angle-right"></i>
-                                </small>
-                            </h1>
-                        </div>
-                        <div class="col-sm-12">
-                            <h4>介绍</h4>
-                        </div>
+                        <!-- PAGE CONTENT BEGINS -->                        
+                        <form class="form-horizontal" role="form" action="<?php echo U('Config/email');?>" method="post" enctype="multipart/form-data">
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">smtp服务器的名称<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input placeholder="smtp.163.com" class="col-sm-12" type="text" name="MAIL_HOST" value="<?php echo ($emailconfig['MAIL_HOST']); ?>"></div>
+                            </div>                                                       
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">邮箱名称<span style="color:#f00;">*</span></label>	
+                                <div class="col-sm-9"><input placeholder="vzhoufei@163.com" class="col-sm-12" type="text" name="MAIL_USERNAME" value="<?php echo ($emailconfig['MAIL_USERNAME']); ?>"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">发件人邮箱<span style="color:#f00;">*</span></label>	
+                                <div class="col-sm-9"><input class="col-sm-12" placeholder="vzhoufei@163.com" type="text" name="MAIL_FROM" value="<?php echo ($emailconfig['MAIL_FROM']); ?>"></div>
+                            </div>
+                             <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">发件人昵称<span style="color:#f00;">*</span></label>  
+                                <div class="col-sm-9"><input class="col-sm-12" placeholder="林飞CMS" type="text" name="MAIL_FROMNAME" value="<?php echo ($emailconfig['MAIL_FROMNAME']); ?>"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right">邮箱登录密码<span style="color:#f00;">*</span></label>	
+                                <div class="col-sm-9"><input class="col-sm-12" type="password" name="MAIL_PASSWORD" value="<?php echo ($emailconfig['MAIL_PASSWORD']); ?>"></div>
+                            </div>      
+                             <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">是否开启调试模式<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <label>
+                                        <input name="MAIL_DEBUG"
+                                        <?php if(!$emailconfig['MAIL_DEBUG']){ ?>
+                                        <?php }else{ ?>
+                                        checked='checked'<?php } ?> 
+                                        class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
+                                        <span class="lbl"></span>
+                                    </label>
+                                </div>
+                            </div>                                                  
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-4 col-md-4">
+                                    <button class="btn btn-info btn-block" type="submit">
+                                        <i class="icon-ok bigger-110"></i>
+                                        确认
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->

@@ -8,9 +8,9 @@
  * @path  string 指定上传保存文件夹,默认存在Public/upload/temp/目录
  * @callback string  回调函数(单张图片返回保存路径字符串，多张则为路径数组 )
  */
-function GetUploadify(num,elementid,path,callback)
+function GetUploadify(num,name,id)
 {	   	
-	var upurl ="/Admin/Uploads/uploads.php"
+	var upurl ="/Admin/Uploads/uploads.php?num=" + num + '&name=' + name + '&id=' + id;
 	var iframe_str='<iframe frameborder="0" ';
 	iframe_str=iframe_str+'id=uploadify ';   		
 	iframe_str=iframe_str+' src='+upurl;

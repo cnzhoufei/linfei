@@ -66,7 +66,7 @@
 					<ul class="nav ace-nav">
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="/App/Admin/View/style/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="<?php echo session('adminuser.icon');?>" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>欢迎光临,</small>
 									<?php echo session('adminuser.name');?>
@@ -103,6 +103,7 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
+<script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
@@ -111,7 +112,6 @@
         } catch (e) {
         }
     </script>
-<script src="/Public/uploadify/global.js" type="text/javascript"></script> 
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
@@ -190,37 +190,37 @@
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
                             <form class="form-horizontal" role="form" action="" method="post">
+                            <input type="hidden" name="id" value="<?php echo ($user['id']); ?>">
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 会员名称 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                            <input type="text" name="uname" <?php echo ($user?'readonly=""':''); ?> value="<?php echo ($user['uname']); ?>" class="col-sm-12" />
+                                            <input type="text" name="name"  value="<?php echo ($user['name']); ?>" class="col-sm-12" <?php if($user['name'] == 'admin')echo "readonly='readonly'"; ?> />
                                         </div>
                                 </div>
-                                
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 账号密码 <span style="color:#f00;">*</span></label>
-                                        <div class="col-sm-9">
-                                                <input type="text" name="password" value="" class="col-sm-12" />
-                                        </div>
-                                </div>
-                                
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> EMAIL <span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 邮箱 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
                                                 <input type="text" name="email" value="<?php echo ($user['email']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
-                                
-                               
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 手机号 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                                <input type="text" name="tel" value="<?php echo ($user['tel']); ?>" class="col-sm-12" />
+                                        </div>
+                                </div>
                                 <div class="form-group">
                                 <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">头像<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9">
-                                <input  class="col-sm-12" type="button" value="上传头像" onClick="GetUploadify(1,'newsimg','seller','callback1')" />    
+                                <input  class="col-sm-12" type="button" value="上传头像" onClick="GetUploadify(1,'icon','imgs')" />    
                                 </div>
-                            </div>
-                            <div id="imgs_"></div>
-                           
-                                
+                                </div>
+                                <div class="form-group">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1"><span style="color:#f00;"></span></label>
+                                <div class="col-sm-9" id="imgs">
+                               <img src="<?php echo ($user['icon']); ?>" alt="">
+                                </div>
+                                </div>
                                 <div class="clearfix form-actions">
                                     <div class="col-md-offset-4 col-md-4">
                                         <button class="btn btn-info btn-block" type="submit">
@@ -236,7 +236,6 @@
             </div><!-- /.page-content -->
         </div><!-- /.main-content -->
     </div><!-- /.main-container-inner -->  
-
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
@@ -249,20 +248,7 @@
     }    
 });
     </script>
-    
- <script type="text/javascript">
-                                    function callback1(img_str){
-                                        $('input[name="newsimg"]').val(img_str);
-                                        $('#newsimg').attr('src',img_str);
-                                    }
-                                    </script>
-
-
-</div><!-- /.main-container -->
-
-
-
-
+  
 
 <!-- basic scripts -->
 

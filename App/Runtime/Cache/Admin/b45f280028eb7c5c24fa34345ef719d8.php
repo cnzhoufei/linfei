@@ -103,14 +103,16 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
-<script src="/Public/uploadify/global.js" type="text/javascript"></script> 
+<script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
         try {
-            ace.settings.check('main-container', 'fixed')
-        } catch (e) {}
+        ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
     </script>
+
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
@@ -159,48 +161,101 @@
 	</div>
 </div>
         <div class="main-content">
+            <div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('breadcrumbs', 'fixed')
+        } catch (e) {
+        }
+    </script>
+
+    <ul class="breadcrumb">
+        <li>
+            <i class="icon-home home-icon"></i><a href="<?php echo U('Index/index');?>">主页</a>
+        </li>
+        <li><?php echo ($controller); ?></li>
+        <li class="active">详情</li>
+    </ul><!-- .breadcrumb -->
+</div>
+<style type="text/css">
+    .breadcrumb .active i{display:none;}
+</style>
+<script type="text/javascript">
+    var m1 = o2.find('.menu-text').html();
+    var m2 = o1.find('a').html();        
+    $("#breadcrumbs .breadcrumb li:eq(1)").html(m1);
+    $("#breadcrumbs .breadcrumb li:eq(2)").html(m2);
+</script>
             <div class="page-content">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <!-- PAGE CONTENT BEGINS -->
-                        <div class="page-header">
-                            <h1>
-                                服务器信息
-                                <small>
-                                    <i class="icon-double-angle-right"></i>
-                                </small>
-                            </h1>
-                        </div>
-                        <div class="profile-user-info profile-user-info-striped">
-                            <?php if(is_array($serverInfo)): foreach($serverInfo as $key=>$data): ?><div class="profile-info-row">
-                                    <div class="profile-info-name"> <?php echo ($data["name"]); ?> </div>
-                                    <div class="profile-info-value">
-                                        <span class="editable editable-click" id="username"><?php echo ($data["v"]); ?></span>
+                    <div class="col-sm-12">
+                        <div class="tabbable">
+                            <div class="tab-content">
+                                <div id="home" class="tab-pane in active">
+                                    
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered table-hover">
+                                            <thead>
+                                                <tr class="color428bca">
+                                                    <th>UID</th>
+                                                    <th>邮箱</th>
+                                                    <th>手机</th>
+                                                    <th>注册时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            <?php if($users){ ?>
+                                            <?php if(is_array($users)): $i = 0; $__LIST__ = $users;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="">
+                                                    <td><?php echo ($data['id']); ?></td>
+                                                    <td><?php echo ($data['email']); ?></td>
+                                                    <td><?php echo ($data['tel']); ?></td>
+                                                    <td><?php echo date('Y-m-d',$data['time']);?></td>
+                                                    <td>
+                                                        <a href="<?php echo U('User/editor');?>?uid=<?php echo ($data['id']); ?>">编辑</a>
+                                                        |
+                                                <?php if($data['name']!='admin'){ ?>
+                                                <a onclick="return ajHref(this);" href="<?php echo U('admin/userlist',array('op'=>'level' ,'uid'=>$data['uid']));?>">管理员</a>
+                                                |
+                                                <?php } ?>
+                                                <a onclick="if(confirm('确定删除')){return ajHref(this);};return false;" href="<?php echo U('admin/userList',array('op'=>'del','uid'=>$data['uid']));?>">删除</a>
+                                                </td>
+                                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </tbody>
+                                        </table>
+                                        <?php if($page){ ?>
+                                        <div class="row">                                                
+                                            <div class="col-sm-10 ">
+                                                <ul class='pagination pull-right'><?php echo ($page); ?></ul>
+                                            </div> 
+                                        </div>
+                                        <?php } ?>  
+                                        <?php }else{ ?>
+                                        <tr><td colspan="6" class="empty"><span class="empty"><i>没有找到数据.</i></span></td></tr>
+                                        </tbody>
+                                        </table>
+
+                                        <?php } ?>
                                     </div>
-                                </div><?php endforeach; endif; ?>
+                                </div>
+                            </div>
                         </div>
-                        <br>
-                        <div class="page-header">
-                            <h1>
-                                开发团队
-                                <small>
-                                    <i class="icon-double-angle-right"></i>
-                                </small>
-                            </h1>
-                        </div>
-                        <div class="col-sm-12">
-                            <h4>介绍</h4>
-                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
-            </div><!-- /.page-content -->
+            </div>
         </div><!-- /.main-content -->
     </div><!-- /.main-container-inner -->
+
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
-</div><!-- /.main-container -->
+</div>
 <!-- basic scripts -->
 
 <!--[if !IE]> -->

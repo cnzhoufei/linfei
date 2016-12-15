@@ -19,6 +19,7 @@
                         <!-- PAGE CONTENT BEGINS -->                        
                         <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="{{$config['id']}}" />
+                         <input type="hidden" name="logo" value="{{$config[logo]}}" />
                             <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站名称<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="{{$config['name']}}"></div>
@@ -79,14 +80,14 @@
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">网站LOGO<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9">
-                                <input  class="col-sm-12" type="button" value="上传头像" onClick="GetUploadify(1,'newsimg','seller','callback1')" />   
+                                <input  class="col-sm-12" type="button" value="上传LOGO" onClick="GetUploadify(1,'logo','imgs')" />   
                                 </div>
                             </div>
                            
-                            <div class="form-group" id="imgs" style="display:none;">
+                            <div class="form-group" id="imgs">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
                                 <div class="col-sm-9">
-                                <img src='{{$config[site_logo]}}' style='width:280px;' id="img" />
+                                <img src='{{$config[logo]}}' style='width:280px;' id="img" />
                                 </div>
                             </div>
 
@@ -109,34 +110,5 @@
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
 </div><!-- /.main-container -->
-<script>
-    $(function () {
-        $('input[type="file"]').ace_file_input({
-            no_file: 'No File ...',
-            btn_choose: 'Choose',
-            btn_change: 'Change',
-            droppable: false,
-            onchange: null,
-            thumbnail: false //| true | large
-                    //whitelist:'gif|png|jpg|jpeg'
-                    //blacklist:'exe|php'
-                    //onchange:''
-                    //
-        });
-    });
 
-</script>
-<script>
-    var img = document.getElementById('img');
-    function check(obj){
-        $('#imgs').css('display','block');
-         // console.dir(obj.files);
-        img.src = window.URL.createObjectURL(obj.files[0]);
-    }
-
-     function callback1(img_str){
-        $('input[name="newsimg"]').val(img_str);
-        $('#newsimg').attr('src',img_str);
-    }
-</script>
 <include file="Public:footer" />

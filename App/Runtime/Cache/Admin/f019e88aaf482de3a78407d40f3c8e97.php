@@ -66,7 +66,7 @@
 					<ul class="nav ace-nav">
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="/App/Admin/View/style/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="<?php echo session('adminuser.icon');?>" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>欢迎光临,</small>
 									<?php echo session('adminuser.name');?>
@@ -103,6 +103,8 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
+<script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
+<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript">//异步上传图片</script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
@@ -252,7 +254,7 @@
                                                     <td><?php echo ($data['tel']); ?></td>
                                                     <td><?php echo date('Y-m-d',$data['time']);?></td>
                                                     <td>
-                                                        <a href="<?php echo U('User/editor',array('uid'=>$data['id']));?>">编辑</a>
+                                                        <a href="<?php echo U('User/editor');?>?uid=<?php echo ($data['id']); ?>">编辑</a>
                                                         |
                                                 <?php if($data['name']!='admin'){ ?>
                                                 <a onclick="return ajHref(this);" href="<?php echo U('admin/userlist',array('op'=>'level' ,'uid'=>$data['uid']));?>">管理员</a>

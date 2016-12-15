@@ -23,7 +23,7 @@ class LoginController extends Controller
              if($uname = $mode->where(array('name'=>$post['name']))->find()){
                  $pwd = md5(md5($post['passwd']).$uname['pwdstr']);
                 // dump($pwd);exit;
-                 $res = $mode->where(array('name'=>$post['name'],'pwd'=>$pwd))->field('name,logintime,time,loginip,tel,email')->find();
+                 $res = $mode->where(array('name'=>$post['name'],'pwd'=>$pwd))->field('name,logintime,time,loginip,tel,email,icon,id')->find();
 
                  if($res){
                     session('adminuser',$res);
