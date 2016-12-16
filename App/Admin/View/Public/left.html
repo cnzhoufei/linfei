@@ -19,7 +19,7 @@
 			<ul class="submenu">
 		<foreach name="v['child']" item="vo">
 				<li>
-					<a href='{{:U("$vo[c]/$vo[f]")}}' >
+					<a href='{{:U("$vo[c]/$vo[f]")}}{{$vo.p}}' >
 						<i class="icon-double-angle-right"></i> {{$vo.name}}
 					</a>
 				</li>

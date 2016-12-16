@@ -10,11 +10,17 @@ function adminmenu()
 					array('name'=>'自定义信息','c'=>'Config','f'=>'custom'),
 					array('name'=>'URL模式','c'=>'','f'=>''),
 					// array('name'=>'积分设置','c'=>'','f'=>''),
-					array('name'=>'邮箱设置','c'=>'Config','f'=>'email'),
+					array('name'=>'邮件设置','c'=>'Config','f'=>'email'),
 					// array('name'=>'QQ登录设置','c'=>'','f'=>''),
 					// array('name'=>'UCENTER设置','c'=>'','f'=>''),
 					// array('name'=>'注册字段设置','c'=>'','f'=>''),
 					// array('name'=>'清除缓存','c'=>'','f'=>''),
+				),
+			),
+			array('name'=>'分类管理','icon'=>'icon-tags','child'=>
+				array(
+					array('name'=>'分类列表','c'=>'Classify','f'=>'index','p'=>'?type=1'),
+					array('name'=>'添加分类','c'=>'Classify','f'=>'addclassifylist'),
 				),
 			),
 			array('name'=>'商品管理','icon'=>'icon-desktop','child'=>
@@ -32,12 +38,7 @@ function adminmenu()
 				),
 			),
 			
-			array('name'=>'分类管理','icon'=>'icon-tags','child'=>
-				array(
-					array('name'=>'分类列表','c'=>'','f'=>''),
-					array('name'=>'添加分类','c'=>'','f'=>''),
-				),
-			),
+			
 			array('name'=>'内容管理','icon'=>'icon-book','child'=>
 				array(
 					array('name'=>'文章列表','c'=>'','f'=>''),
@@ -56,12 +57,12 @@ function adminmenu()
 					array('name'=>'添加专场','c'=>'','f'=>''),
 				),
 			),
-			// array('name'=>'广告管理','icon'=>'icon-bullhorn','child'=>
-			// 	array(
-			// 		array('name'=>'广告列表','c'=>'','f'=>''),
-			// 		array('name'=>'添加广告','c'=>'','f'=>''),
-			// 	),
-			// ),
+			array('name'=>'模板管理','icon'=>'icon-adjust','child'=>
+				array(
+					array('name'=>'PC模板','c'=>'Templates','f'=>'pc'),
+					array('name'=>'手机模板','c'=>'Templates','f'=>'mobile'),
+				),
+			),
 		);
 }
 

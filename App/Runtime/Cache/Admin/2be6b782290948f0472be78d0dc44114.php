@@ -113,6 +113,7 @@
         } catch (e) {
         }
     </script>
+
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
@@ -160,7 +161,7 @@
 		<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
 	</div>
 </div>
-        <div class="main-content">
+        <div class="main-content">            
             <div class="breadcrumbs" id="breadcrumbs">
     <script type="text/javascript">
         try {
@@ -189,90 +190,130 @@
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- PAGE CONTENT BEGINS -->                        
-                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
-                        <input type="hidden" name="id" value="<?php echo ($config['id']); ?>" />
-                         <input type="hidden" name="logo" value="<?php echo ($config[logo]); ?>" />
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站名称<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="<?php echo ($config['name']); ?>"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站标题<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="title" value="<?php echo ($config['title']); ?>"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">关键词<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="keywords" value="<?php echo ($config['keywords']); ?>"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">主页链接名<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="home" value="<?php echo ($config['home']); ?>"></div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">版权信息<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="copyright" value="<?php echo ($config['copyright']); ?>"></div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">备案信息<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="record" value="<?php echo ($config['record']); ?>"></div>
-                            </div>
-                           
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站长统计<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <textarea class="col-sm-12" name='statistics'><?php echo stripslashes($config['statistics']);?></textarea>
-                                </div>   
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站点描述<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <textarea class="col-sm-12" name='description'><?php echo stripslashes($config['description']);?></textarea>
-                                </div>   
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">地址<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <textarea class="col-sm-12" name='address'><?php echo stripslashes($config['address']);?></textarea>
-                                </div>   
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">是否开启站点<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <label>
-                                        <input name="status" <?php if(empty($config['status'])){ }else{ ?>checked='checked'<?php } ?> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
-                                        <span class="lbl"></span>
-                                    </label>
+                        <!-- PAGE CONTENT BEGINS -->
+                            <form class="form-horizontal" role="form" action="<?php echo U('admin/addsort');?>" method="post">
+                                <?php if(!$sort_id && !$p_id){ ?>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">类型<span style="color:#f00;">*</span></label>
+                                    <div class="col-sm-9">
+                                    <select  class="col-sm-12" name="type" onchange="changesort($(this).val())">
+                                        <option value="1">商品分类</option>
+                                        <option value="2">文章分类</option>
+                                    </select>
+                                    </div>
+                                    <script type='text/javascript'>
+                                        $("select[name='type'] option[value='<?php echo $sort[type] ?>']").attr('selected','selected');
+                                    </script>
                                 </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">网站LOGO<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                <input  class="col-sm-12" type="button" value="上传LOGO" onClick="GetUploadify(1,'logo','imgs')" />   
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="p_id">所属分类<span style="color:#f00;">*</span></label>
+                                    <div class="col-sm-9 sortbox" type='1'>
+                                    <select  class="col-sm-12" name="p_id" id='p_id'>
+                                        <option value="0">根分类</option>
+                                        {$goodsSort}
+                                    </select>
+                                    </div>
+                                    <div class="col-sm-9 sortbox" type='2' style="display:none">
+                                    <select  class="col-sm-12" name="p_id" disabled="disabled" id='p_id'>
+                                        <option value="0">根分类</option>
+                                        {$artSort}
+                                    </select>                                                                        
+                                    </div>
+                                    <script type='text/javascript'>
+                                        $("select[name='type'] option[value='<?php echo $sort[type] ?>']").attr('selected','selected');
+                                    </script>
                                 </div>
-                            </div>
-                           
-                            <div class="form-group" id="imgs">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
-                                <div class="col-sm-9">
-                                <img src='<?php echo ($config[logo]); ?>' style='width:280px;' id="img" />
+                                <?php } ?>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类名称 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                                <input type="text" name="sort_name" value="<?php echo ($sort['sort_name']); ?>" class="col-sm-12" />
+                                        </div>
                                 </div>
-                            </div>
+                                
+                                <?php if(!$sort['sort_alias']){ ?>
+								<div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="p_id">分类别名<span style="color:#f00;">*</span></label>
+                                    <div class="col-sm-9 sortbox" type='1'>
+                                    <select  class="col-sm-12" name="alias_type">
+                                        <option value="0">不用别名</option>
+                                        <option value="1">使用拼音</option>
+                                        <option value="2">自定义</option>
+                                    </select>                                                                        
+                                    </div>
+                                    <script type='text/javascript'>
+                                        $("select[name='alias_type']").change(function(){
+                                        	if($(this).val()=='2'){
+                                        		$("#diyalias").show();
+                                        	}else{
+                                        		$("#diyalias").hide();
+                                        	}
+                                        });
+                                    </script>
+                                </div>
+                                <?php }else{ ?>
+                                <input type="hidden" name="alias_type" value="2">
+                                <?php } ?>
+                                
+                                <div class="form-group" id="diyalias" <?php if(!$sort['sort_alias']){echo 'style="display:none;"';} ?> >
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 自定义别名 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                                <input type="text" placeholder="必须使用英文或数字，不能超过20个字符" name="sort_alias" value="<?php echo ($sort['sort_alias']); ?>" class="col-sm-12" />
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类排序 <span style="color:#f00;">*</span></label>
 
-                            <div class="clearfix form-actions">
-                                <div class="col-md-offset-4 col-md-4">
-                                    <button class="btn btn-info btn-block" type="submit">
-                                        <i class="icon-ok bigger-110"></i>
-                                        确认
-                                    </button>
+                                        <div class="col-sm-9">
+                                                <input type="text" name="order" value="<?php echo intval($sort['order']);?>" class="col-sm-12" />
+                                        </div>
                                 </div>
-                            </div>
-                        </form>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> title <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <input type="text" name="title" value="<?php echo ($sort['title']); ?>" class="col-sm-12" />
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> keywords <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <input type="text" name="keywords" value="<?php echo ($sort['keywords']); ?>" class="col-sm-12" />
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> description <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <input type="text" name="description" value="<?php echo ($sort['description']); ?>" class="col-sm-12" />
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 开启/关闭<span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                        <label>
+                                            <input name="state" class="ace ace-switch ace-switch-7" type="checkbox" <?php if($sort && empty($sort['state'])){ }else{ ?>checked='checked'<?php } ?> value='1'>
+                                            <span class="lbl"></span>
+                                        </label>
+                                        </div>
+                                </div>
+                                
+                                <div class="clearfix form-actions">
+                                    <div class="col-md-offset-4 col-md-4">
+                                        <button class="btn btn-info btn-block" type="submit">
+                                            <i class="icon-ok bigger-110"></i>
+                                            确认
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>                        
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -283,7 +324,6 @@
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
 </div><!-- /.main-container -->
-
 <!-- basic scripts -->
 
 <!--[if !IE]> -->

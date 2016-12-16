@@ -114,7 +114,7 @@ class ConfigController extends CommonController
 	{
 
 		if(IS_POST){
-			if(!is_writeable("./App/Common/conf/emailconfig.php")){$this->error('/App/Common/conf/emailconfig.php不可写，请修改权限！');}
+			if(!is_writeable("./App/Admin/conf/emailconfig.php")){$this->error('/App/Admin/conf/emailconfig.php不可写，请修改权限！');}
 			$mail_debug = I('post.MAIL_DEBUG',0);
 			$str = "<?php 
 return array(
@@ -131,7 +131,7 @@ return array(
 	);";
 
 
-   		$res = file_put_contents("./App/Common/conf/emailconfig.phpp",$str);
+   		$res = file_put_contents("./App/Admin/conf/emailconfig.php",$str);
    		if($res){
    			$this->success("配置成功");
    		}else{
@@ -140,7 +140,7 @@ return array(
 
 		}else{
 
-			$emailconfig = include "/App/Common/conf/emailconfig.php";
+			$emailconfig = include "/App/Admin/conf/emailconfig.php";
 			$this->assign('emailconfig',$emailconfig);
 			$this->display('/email');
 		}

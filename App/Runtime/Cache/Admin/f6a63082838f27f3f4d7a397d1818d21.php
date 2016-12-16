@@ -113,6 +113,7 @@
         } catch (e) {
         }
     </script>
+
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
@@ -188,102 +189,109 @@
 </script>
             <div class="page-content">
                 <div class="row">
+                    <div class="col-sm-12">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li <?php echo $_GET['type']==1?'class="active"':'' ?>>
+                                    <a data-toggle="tab" href="javascript:;" onclick="location.href='<?php echo U('Classify/index');?>?type=1'">
+                                        商品分类
+                                    </a>
+                                </li>
+
+                                <li <?php echo $_GET['type']==2?'class="active"':'' ?>>
+                                    <a data-toggle="tab" href="javascript:;" onclick="location.href='<?php echo U('Classify/index');?>?type=2'">
+                                        文章分类
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="home" class="tab-pane in active">
+                                    <form action="{:U('admin/sortList',array('op'=>'order'))}" method="post">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover">
+                                                <thead>
+                                                    <tr class="color428bca">
+                                                        <th width="50">排序</th>
+                                                        <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th>                                                                        
+                                                        <th class="center">状态</th>     
+                                                        <th class="center">顶部导航</th>
+                                                        <th class="center">底部导航</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                <?php if($sortList){ ?>
+                                                <?php if(is_array($sortList)): $i = 0; $__LIST__ = $sortList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="">
+                                                        <td><input type="text" name="order_{$data['sort_id']}" value="{$data['order']}" style="width:30px;padding:0 5px;margin:0"/></td>
+                                                        <td><a href="{:U('admin/getsubsort',array('sort_id'=>$data['sort_id']))}">{$data['sort_name']}<?php if(in_array($data['sort_id'],$pidarr)){ ?><span class="red"> (有子类)</span><?php } ?></a></td>
+                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'state','sort_id'=>$data['sort_id']))}">{$data['state']==1?'<font color="green">开启</font>':'<font color="red">关闭</font>'}</a></td>
+                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'nav','sort_id'=>$data['sort_id']))}">{$data['nav']==1?'<font color="green">Y</font>':'<font color="red">N</font>'}</a></td>
+                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'fnav','sort_id'=>$data['sort_id']))}">{$data['fnav']==1?'<font color="green">Y</font>':'<font color="red">N</font>'}</a></td>
+                                                        <td>
+                                                            <a href="{:U('admin/addsort',array('sort_id'=>$data['sort_id']))}">编辑</a>
+                                                            |
+                                                            <a onclick="if(confirm('该分类下的商品将全部删除，确定删除')){return ajHref(this);};return false;" href="{:U('admin/sortList',array('op'=>'del','sort_id'=>$data['sort_id']))}" title="删除">删除</a>
+                                                        </td>
+
+                                                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                </tbody>
+                                            </table>
+                                            <div class="row">
+                                                <div class='col-sm-4'>
+                                                    <button class=" btn  btn-success" type="submit" name="btSave" value="更新">
+                                                        更新排序
+                                                    </button>
+                                                    
+                                                    <button class=" btn  btn-purple" type="button" onclick="if(!confirm('确定批量生成别名？')){return false;};showmsg('正在创建别名，请稍后');$.get('index.php?m=admin&a=sortlist&op=alias',function(data){            
+if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return false;" name="btSave" value="生成拼音别名">全部生成别名
+                                                    </button>
+                                                    
+                                                    <button class=" btn  btn-warning" type="button" onclick="if(!confirm('会删除当前分类和商品，确定执行？')){return false;};showmsg('正在执行请稍候');$.get('index.php?m=admin&a=sortlist&op=inisort',function(data){            
+if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return false;" name="btSave" value="初始化分类">初始化分类
+                                                    </button>
+                                                </div>
+                                                <?php if($page){ ?>
+                                                <div class="col-sm-10 ">
+                                                    <ul class='pagination pull-right'>{$page}</ul>
+                                                </div> 
+                                            </div>
+
+
+                                            <?php } ?>  
+
+                                            <?php }else{ ?>
+                                            <tr><td colspan="6" class="empty"><span class="empty"><i>没有找到数据.</i></span></td></tr>
+                                            </tbody>
+                                            </table>
+<div class="row">
+                                                <div class='col-sm-4'>
+                                                    <button class=" btn  btn-warning" type="button" onclick="if(!confirm('会删除当前分类和商品，确定执行？')){return false;};showmsg('正在执行请稍候');$.get('index.php?m=admin&a=sortlist&op=inisort',function(data){            
+if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return false;" name="btSave" value="初始化分类">初始化分类
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <?php } ?>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
-                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
-                        <input type="hidden" name="id" value="<?php echo ($config['id']); ?>" />
-                         <input type="hidden" name="logo" value="<?php echo ($config[logo]); ?>" />
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站名称<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="<?php echo ($config['name']); ?>"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站标题<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="title" value="<?php echo ($config['title']); ?>"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">关键词<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="keywords" value="<?php echo ($config['keywords']); ?>"></div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">主页链接名<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="home" value="<?php echo ($config['home']); ?>"></div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">版权信息<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="copyright" value="<?php echo ($config['copyright']); ?>"></div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">备案信息<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="record" value="<?php echo ($config['record']); ?>"></div>
-                            </div>
-                           
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站长统计<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <textarea class="col-sm-12" name='statistics'><?php echo stripslashes($config['statistics']);?></textarea>
-                                </div>   
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">站点描述<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <textarea class="col-sm-12" name='description'><?php echo stripslashes($config['description']);?></textarea>
-                                </div>   
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">地址<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <textarea class="col-sm-12" name='address'><?php echo stripslashes($config['address']);?></textarea>
-                                </div>   
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">是否开启站点<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                    <label>
-                                        <input name="status" <?php if(empty($config['status'])){ }else{ ?>checked='checked'<?php } ?> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
-                                        <span class="lbl"></span>
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">网站LOGO<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                <input  class="col-sm-12" type="button" value="上传LOGO" onClick="GetUploadify(1,'logo','imgs')" />   
-                                </div>
-                            </div>
-                           
-                            <div class="form-group" id="imgs">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
-                                <div class="col-sm-9">
-                                <img src='<?php echo ($config[logo]); ?>' style='width:280px;' id="img" />
-                                </div>
-                            </div>
 
-                            <div class="clearfix form-actions">
-                                <div class="col-md-offset-4 col-md-4">
-                                    <button class="btn btn-info btn-block" type="submit">
-                                        <i class="icon-ok bigger-110"></i>
-                                        确认
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
-            </div><!-- /.page-content -->
+            </div>
         </div><!-- /.main-content -->
     </div><!-- /.main-container-inner -->
+
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
-</div><!-- /.main-container -->
-
+</div>
 <!-- basic scripts -->
 
 <!--[if !IE]> -->

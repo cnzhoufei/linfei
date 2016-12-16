@@ -1,0 +1,35 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+<style>
+.template li{width:30%;float:left;list-style: none;margin-right: 3%;border:5px solid #EBEBEB;margin-top: 10px;border-radius:5px;}
+.template li h1{width:50%;float:left;text-align:center;}
+.template li button{width:60px;height: 35px;margin:0 auto;margin-bottom:10px;margin-left:10%;border-radius:5px;}
+.template li button a{text-decoration:none;color:#000;}
+</style>
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">            
+            <include file="Public:nav" />
+            <div class="page-content">
+					
+			<ul class="template">
+			<foreach name="templates" item="v" key="k">
+					<li>
+							<img src="/Templates/pc/{{$k}}/{{$v.img}}" style="width:100%;" />
+							<h1>{{$v.name}}</h1>
+							<h1>{{$v.remark}}</h1>
+							<button <if condition="$tpl eq $k">style='background:#00A65A;border:2px solid #00A65A;'</if>><a href="{{:U('Templates/changeTemplate')}}?tpl={{$k}}">启用</a></button>
+					</li>
+			</foreach>
+			</ul>
+            </div>
+<include file="Public:footer" />

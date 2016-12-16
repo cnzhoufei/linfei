@@ -137,7 +137,7 @@
 
 			<ul class="submenu">
 		<?php if(is_array($v['child'])): foreach($v['child'] as $key=>$vo): ?><li>
-					<a href='<?php echo U("$vo[c]/$vo[f]");?>' >
+					<a href='<?php echo U("$vo[c]/$vo[f]"); echo ($vo["p"]); ?>' >
 						<i class="icon-double-angle-right"></i> <?php echo ($vo["name"]); ?>
 					</a>
 				</li><?php endforeach; endif; ?>

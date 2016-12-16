@@ -164,3 +164,72 @@ SQL: DELETE FROM `linfei_custom` WHERE `id` = 4 [ RunTime:0.0378s ]
 [ 2016-12-15T21:08:39+08:00 ] 127.0.0.1 /Admin/Config/email.php
 ERR: 模板不存在:./App/Admin/View//email.html
 
+[ 2016-12-15T22:30:12+08:00 ] 127.0.0.1 /Admin/Classify/index.php
+ERR: 模板不存在:./App/Admin/View//classifylist.html
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/bootstrap.min.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-rtl.min.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/font-awesome.min.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-extra.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/css.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-skins.min.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C(
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace.min.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-rtl.min.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/jquery-2.0.3.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-extra.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/css.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-skins.min.css
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/bootstrap.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/typeahead-bs2.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-elements.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/jquery-2.0.3.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/bootstrap.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/typeahead-bs2.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-elements.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2016-12-15T22:31:15+08:00 ] 127.0.0.1 /Admin/Classify/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace.min.js
+ERR: 非法操作:{:APP_PATH}Tpl
+

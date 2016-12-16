@@ -1,0 +1,30 @@
+<html>
+
+<link rel="stylesheet" href="{{:C('TPL_PATH')}}/css/style.css">
+
+
+
+
+
+
+
+
+
+<h1 class="h1">pc端</h1>
+
+
+
+<foreach name="columns" item="v">
+<?php if($v['layer'] == 1)echo '<br>';?>
+	<li style="margin-left: {{$v['layer']}}0px;"><a href="{{$v['url']}}">{{$v['layer']}}->{{$v['name']}}</a></li>
+
+
+</foreach>
+
+
+
+
+
+
+
+</html>

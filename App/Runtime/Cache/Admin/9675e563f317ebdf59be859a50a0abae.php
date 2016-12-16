@@ -103,7 +103,8 @@
 				</div><!-- /.navbar-header -->
 			</div><!-- /.container -->
 		</div>
-<script src="/Public/uploadify/global.js" type="text/javascript"></script> 
+<script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
+<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript">//异步上传图片</script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
