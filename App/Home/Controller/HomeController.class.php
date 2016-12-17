@@ -7,13 +7,13 @@ class HomeController extends Controller
 
 
 
-    	echo '首页';
+    	$this->display('/index');
     }
 
 
 
     public function chanpin()
     {
-    	echo '产品';
+    	$this->display('/chanpin');
     }
 }

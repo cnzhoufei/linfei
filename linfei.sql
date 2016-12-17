@@ -238,4 +238,8 @@ insert into linfei_admin values(1,'admin','e10adc3949ba59abbe56e057f20f883e','14
 
 
 
-	
+create table if not exists ``(
+	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+	`title` varchar(255) not null default '',
+	`pic` text,
+)engine=innodb default charset=utf8;

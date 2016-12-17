@@ -114,9 +114,9 @@
         }
     </script>
 <style>
-.template li{width:30%;min-width:272px;float:left;list-style: none;margin-right: 3%;border:5px solid #EBEBEB;margin-top: 10px;border-radius:5px;}
+.template li{width:300px;height:495px;float:left;list-style: none;margin-right:2%;margin-left:2%;border:5px solid #fff;margin-top: 10px;border-radius:5px;background-image: url(/App/Admin/View/style/images/small_phone.png);text-align:content}
 .template li h1{width:50%;float:left;text-align:center;font-size:20px;}
-.template li button{width:60px;height: 35px;margin:0 auto;margin-bottom:10px;margin-left:10%;border-radius:5px;}
+.template li button{width:35px;height:35px;border-radius:50px;margin-top:8px;margin-left:45%;border:3px solid #D5CC84;background:#fff;}
 .template li button a{text-decoration:none;color:#000;}
 </style>
     <div class="main-container-inner">
@@ -193,13 +193,11 @@
     $("#breadcrumbs .breadcrumb li:eq(2)").html(m2);
 </script>
             <div class="page-content">
-					
 			<ul class="template">
 			<?php if(is_array($templates)): foreach($templates as $k=>$v): ?><li>
-							<img src="/Templates/pc/<?php echo ($k); ?>/<?php echo ($v["img"]); ?>" style="width:100%;" />
-							<h1><?php echo ($v["name"]); ?></h1>
-							<h1><?php echo ($v["remark"]); ?></h1>
-							<button <?php if($tpl == $k): ?>style='background:#00A65A;border:2px solid #00A65A;'<?php endif; ?>><a href="<?php echo U('Templates/configpc');?>?tpl=<?php echo ($k); ?>">启用</a></button>
+							<img src="/Templates/mobile/<?php echo ($k); ?>/<?php echo ($v["img"]); ?>" style="width:262px;height: 398px;margin-top:34px;margin-left:15px;" />
+							<button <?php if($tpl == $k): ?>style='background:#00A65A;border:2px solid #00A65A;'<?php endif; ?>>
+                            <a href="<?php echo U('Templates/configmobile');?>?tpl=<?php echo ($k); ?>">GO</a></button>
 					</li><?php endforeach; endif; ?>
 			</ul>
             </div>
