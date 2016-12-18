@@ -104,7 +104,7 @@
 			</div><!-- /.container -->
 		</div>
 <script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
-<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript">//异步上传图片</script> 
+<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript"></script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
@@ -203,17 +203,24 @@
                                         文章分类
                                     </a>
                                 </li>
+                                <li <?php echo $_GET['type']==3?'class="active"':'' ?>>
+                                    <a data-toggle="tab" href="javascript:;" onclick="location.href='<?php echo U('Classify/index');?>?type=3'">
+                                        封面
+                                    </a>
+                                </li>
                             </ul>
 
                             <div class="tab-content">
                                 <div id="home" class="tab-pane in active">
-                                    <form action="{:U('admin/sortList',array('op'=>'order'))}" method="post">
                                         <div class="table-responsive">
                                             <table class="table table-striped table-bordered table-hover">
                                                 <thead>
                                                     <tr class="color428bca">
                                                         <th width="50">排序</th>
-                                                        <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th>                                                                        
+                                                        <th>分类ID</th>
+                                                        <th>分类层级</th>
+                                                        <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th> 
+                                                         <th>手机分类名</th>                                                                      
                                                         <th class="center">状态</th>     
                                                         <th class="center">顶部导航</th>
                                                         <th class="center">底部导航</th>
@@ -221,17 +228,47 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                <?php if($sortList){ ?>
-                                                <?php if(is_array($sortList)): $i = 0; $__LIST__ = $sortList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="">
-                                                        <td><input type="text" name="order_{$data['sort_id']}" value="{$data['order']}" style="width:30px;padding:0 5px;margin:0"/></td>
-                                                        <td><a href="{:U('admin/getsubsort',array('sort_id'=>$data['sort_id']))}">{$data['sort_name']}<?php if(in_array($data['sort_id'],$pidarr)){ ?><span class="red"> (有子类)</span><?php } ?></a></td>
-                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'state','sort_id'=>$data['sort_id']))}">{$data['state']==1?'<font color="green">开启</font>':'<font color="red">关闭</font>'}</a></td>
-                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'nav','sort_id'=>$data['sort_id']))}">{$data['nav']==1?'<font color="green">Y</font>':'<font color="red">N</font>'}</a></td>
-                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'fnav','sort_id'=>$data['sort_id']))}">{$data['fnav']==1?'<font color="green">Y</font>':'<font color="red">N</font>'}</a></td>
+                                                <?php if($classify){ ?>
+                                                <?php if(is_array($classify)): $i = 0; $__LIST__ = $classify;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="" id="delete_<?php echo ($data['id']); ?>">
                                                         <td>
-                                                            <a href="{:U('admin/addsort',array('sort_id'=>$data['sort_id']))}">编辑</a>
+                                                        <input type="text" value="<?php echo ($data['sorting']); ?>" style="width:50px;height:30px;padding:0 5px;margin:0" onchange="sorting('<?php echo U('classify/ajaxsorting');?>',this,'<?php echo ($data['id']); ?>')" /></td>
+                                                        <td class="center"><?php echo ($data['id']); ?></td>
+                                                        <td class="center"><?php echo ($data['layer']); ?></td>
+                                                        <td>
+                                                        <a href="<?php echo U('Classify/index');?>?type=<?php echo ($_GET['type']); ?>&pid=<?php echo ($data['id']); ?>&layer=<?php echo ($data['layer']+1); ?>"><?php echo ($data['name']); if($data['pclass']){ ?>
+                                                        <span class="red"> (有<?php echo ($data['pclass']); ?>子类)</span><?php } ?></a></td>
+
+                                                        <td class="center"><?php echo ($data['m_name']); ?></td>
+
+                                                        <td class="center">
+                                                        <button type="button" value="<?php echo ($data['status']); ?>" onclick="status('<?php echo U('Classify/ajaxstatus');?>','<?php echo ($data['id']); ?>', 'status', this)"
+                                                        style=" background:#fff;border-radius:50px;
+                                                        <?php echo ($data['status'])?'color:#478B47':'color:#f00'; ?>">
+                                                        <?php echo ($data['status'])?'开启':'关闭'; ?>
+                                                        </button>
+                                                        </td>
+
+                                                        <td class="center">
+                                                        <button type="button" value="<?php echo ($data['top']); ?>" onclick="status('<?php echo U('Classify/ajaxstatus');?>','<?php echo ($data['id']); ?>', 'top', this)"
+                                                        style=" background:#fff;border-radius:50px;
+                                                        <?php echo ($data['top'])?'color:#478B47':'color:#f00'; ?>">
+                                                        <?php echo ($data['top'])?'开启':'关闭'; ?>
+                                                        </button>
+                                                        </td>
+
+                                                        <td class="center">
+                                                        <button type="button" value="<?php echo ($data['bottom']); ?>" onclick="status('<?php echo U('Classify/ajaxstatus');?>','<?php echo ($data['id']); ?>', 'bottom', this)"
+                                                        style=" background:#fff;border-radius:50px;
+                                                        <?php echo ($data['bottom'])?'color:#478B47':'color:#f00'; ?>">
+                                                        <?php echo ($data['bottom'])?'开启':'关闭'; ?>
+                                                        </button>
+                                                        </td>
+
+
+                                                        <td>
+                                                            <a href="<?php echo U('Classify/addclassify');?>?classid=<?php echo ($data['id']); ?>">编辑</a>
                                                             |
-                                                            <a onclick="if(confirm('该分类下的商品将全部删除，确定删除')){return ajHref(this);};return false;" href="{:U('admin/sortList',array('op'=>'del','sort_id'=>$data['sort_id']))}" title="删除">删除</a>
+                                                            <a href="ajaxscript:;" onclick="mydelete('<?php echo ($data['id']); ?>','<?php echo U('classify/ajaxdelete');?>','delete_<?php echo ($data['id']); ?>')" title="删除">删除</a>
                                                         </td>
 
                                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -239,7 +276,7 @@
                                             </table>
                                             <div class="row">
                                                 <div class='col-sm-4'>
-                                                    <button class=" btn  btn-success" type="submit" name="btSave" value="更新">
+                                                    <button class=" btn  btn-success" type="button" name="btSave" value="更新" onclick="window.location.href=''">
                                                         更新排序
                                                     </button>
                                                     
@@ -253,7 +290,7 @@ if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return fa
                                                 </div>
                                                 <?php if($page){ ?>
                                                 <div class="col-sm-10 ">
-                                                    <ul class='pagination pull-right'>{$page}</ul>
+                                                    <ul class='pagination pull-right'><?php echo ($page); ?></ul>
                                                 </div> 
                                             </div>
 
@@ -273,7 +310,6 @@ if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return fa
                                             </div>
                                             <?php } ?>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>

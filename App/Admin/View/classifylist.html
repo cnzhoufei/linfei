@@ -30,17 +30,24 @@
                                         文章分类
                                     </a>
                                 </li>
+                                <li <php>echo $_GET['type']==3?'class="active"':''</php>>
+                                    <a data-toggle="tab" href="javascript:;" onclick="location.href='{{:U('Classify/index')}}?type=3'">
+                                        封面
+                                    </a>
+                                </li>
                             </ul>
 
                             <div class="tab-content">
                                 <div id="home" class="tab-pane in active">
-                                    <form action="{:U('admin/sortList',array('op'=>'order'))}" method="post">
                                         <div class="table-responsive">
                                             <table class="table table-striped table-bordered table-hover">
                                                 <thead>
                                                     <tr class="color428bca">
                                                         <th width="50">排序</th>
-                                                        <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th>                                                                        
+                                                        <th>分类ID</th>
+                                                        <th>分类层级</th>
+                                                        <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th> 
+                                                         <th>手机分类名</th>                                                                      
                                                         <th class="center">状态</th>     
                                                         <th class="center">顶部导航</th>
                                                         <th class="center">底部导航</th>
@@ -48,18 +55,48 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                <php>if($sortList){</php>
-                                                <volist name="sortList" id="data">
-                                                    <tr class="pointer even" title="">
-                                                        <td><input type="text" name="order_{$data['sort_id']}" value="{$data['order']}" style="width:30px;padding:0 5px;margin:0"/></td>
-                                                        <td><a href="{:U('admin/getsubsort',array('sort_id'=>$data['sort_id']))}">{$data['sort_name']}<php>if(in_array($data['sort_id'],$pidarr)){</php><span class="red"> (有子类)</span><php>}</php></a></td>
-                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'state','sort_id'=>$data['sort_id']))}">{$data['state']==1?'<font color="green">开启</font>':'<font color="red">关闭</font>'}</a></td>
-                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'nav','sort_id'=>$data['sort_id']))}">{$data['nav']==1?'<font color="green">Y</font>':'<font color="red">N</font>'}</a></td>
-                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/sortList',array('op'=>'fnav','sort_id'=>$data['sort_id']))}">{$data['fnav']==1?'<font color="green">Y</font>':'<font color="red">N</font>'}</a></td>
+                                                <php>if($classify){</php>
+                                                <volist name="classify" id="data">
+                                                    <tr class="pointer even" title="" id="delete_{{$data['id']}}">
                                                         <td>
-                                                            <a href="{:U('admin/addsort',array('sort_id'=>$data['sort_id']))}">编辑</a>
+                                                        <input type="text" value="{{$data['sorting']}}" style="width:50px;height:30px;padding:0 5px;margin:0" onchange="sorting('{{:U('classify/ajaxsorting')}}',this,'{{$data['id']}}')" /></td>
+                                                        <td class="center">{{$data['id']}}</td>
+                                                        <td class="center">{{$data['layer']}}</td>
+                                                        <td>
+                                                        <a href="{{:U('Classify/index')}}?type={{$_GET['type']}}&pid={{$data['id']}}&layer={{$data['layer']+1}}">{{$data['name']}}<php>if($data['pclass']){</php>
+                                                        <span class="red"> (有{{$data['pclass']}}子类)</span><php>}</php></a></td>
+
+                                                        <td class="center">{{$data['m_name']}}</td>
+
+                                                        <td class="center">
+                                                        <button type="button" value="{{$data['status']}}" onclick="status('{{:U('Classify/ajaxstatus')}}','{{$data['id']}}', 'status', this)"
+                                                        style=" background:#fff;border-radius:50px;
+                                                        <php>echo ($data['status'])?'color:#478B47':'color:#f00';</php>">
+                                                        <php>echo ($data['status'])?'开启':'关闭';</php>
+                                                        </button>
+                                                        </td>
+
+                                                        <td class="center">
+                                                        <button type="button" value="{{$data['top']}}" onclick="status('{{:U('Classify/ajaxstatus')}}','{{$data['id']}}', 'top', this)"
+                                                        style=" background:#fff;border-radius:50px;
+                                                        <php>echo ($data['top'])?'color:#478B47':'color:#f00';</php>">
+                                                        <php>echo ($data['top'])?'开启':'关闭';</php>
+                                                        </button>
+                                                        </td>
+
+                                                        <td class="center">
+                                                        <button type="button" value="{{$data['bottom']}}" onclick="status('{{:U('Classify/ajaxstatus')}}','{{$data['id']}}', 'bottom', this)"
+                                                        style=" background:#fff;border-radius:50px;
+                                                        <php>echo ($data['bottom'])?'color:#478B47':'color:#f00';</php>">
+                                                        <php>echo ($data['bottom'])?'开启':'关闭';</php>
+                                                        </button>
+                                                        </td>
+
+
+                                                        <td>
+                                                            <a href="{{:U('Classify/addclassify')}}?classid={{$data['id']}}">编辑</a>
                                                             |
-                                                            <a onclick="if(confirm('该分类下的商品将全部删除，确定删除')){return ajHref(this);};return false;" href="{:U('admin/sortList',array('op'=>'del','sort_id'=>$data['sort_id']))}" title="删除">删除</a>
+                                                            <a href="ajaxscript:;" onclick="mydelete('{{$data['id']}}','{{:U('classify/ajaxdelete')}}','delete_{{$data['id']}}')" title="删除">删除</a>
                                                         </td>
 
                                                     </tr>
@@ -68,7 +105,7 @@
                                             </table>
                                             <div class="row">
                                                 <div class='col-sm-4'>
-                                                    <button class=" btn  btn-success" type="submit" name="btSave" value="更新">
+                                                    <button class=" btn  btn-success" type="button" name="btSave" value="更新" onclick="window.location.href=''">
                                                         更新排序
                                                     </button>
                                                     
@@ -82,7 +119,7 @@ if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return fa
                                                 </div>
                                                 <php>if($page){</php>
                                                 <div class="col-sm-10 ">
-                                                    <ul class='pagination pull-right'>{$page}</ul>
+                                                    <ul class='pagination pull-right'>{{$page}}</ul>
                                                 </div> 
                                             </div>
 
@@ -102,7 +139,6 @@ if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return fa
                                             </div>
                                             <php>}</php>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>

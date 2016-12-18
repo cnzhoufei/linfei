@@ -20,7 +20,7 @@ function adminmenu()
 			array('name'=>'分类管理','icon'=>'icon-tags','child'=>
 				array(
 					array('name'=>'分类列表','c'=>'Classify','f'=>'index','p'=>'?type=1'),
-					array('name'=>'添加分类','c'=>'Classify','f'=>'addclassifylist'),
+					array('name'=>'添加分类','c'=>'Classify','f'=>'addclassify'),
 				),
 			),
 			array('name'=>'商品管理','icon'=>'icon-desktop','child'=>

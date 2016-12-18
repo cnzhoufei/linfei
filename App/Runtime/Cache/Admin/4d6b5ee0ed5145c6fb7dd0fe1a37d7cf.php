@@ -104,7 +104,7 @@
 			</div><!-- /.container -->
 		</div>
 <script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
-<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript">//异步上传图片</script> 
+<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript"></script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
@@ -113,11 +113,12 @@
         } catch (e) {
         }
     </script>
-
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
         </a>
+<?php echo ($ueditorinit); ?>
+
         <div class="sidebar" id="sidebar">
 	<script type="text/javascript">
 		try {
@@ -191,11 +192,12 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->
-                            <form class="form-horizontal" role="form" action="<?php echo U('admin/addsort');?>" method="post">
+                            <form class="form-horizontal" role="form" action="" method="post">
+                            <input type="hidden" name="id" value="<?php echo ($classify['id']); ?>" />
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">类型<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
-                                    <select  class="col-sm-12" name="type" onchange="changesort($(this).val())">
+                                    <select  class="col-sm-12" name="type" onchange="getclass('<?php echo U('classify/ajaxclass');?>',$(this).val(),'types')">
                                         <option value="product">商品分类</option>
                                         <option value="news">文章分类</option>
                                         <option value="cover">封面</option>
@@ -206,49 +208,23 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">父分类<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
-                                    <select  class="col-sm-12" name="type" onchange="changesort($(this).val())">
-                                        <option value="product">商品分类</option>
-                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option value="{$vv.id}">{$vv.name}</option><?php endforeach; endif; ?>
+                                    <select  class="col-sm-12" name="pid" id="types" onchange="changesort($(this).val())">
+                                        <option value="0">顶级分类</option>
+                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
                                     </select>
                                     </div>
                                 </div>
-                               
                                 
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类名称 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                                <input type="text" name="sort_name" value="<?php echo ($sort['sort_name']); ?>" class="col-sm-12" />
+                                                <input type="text" name="name" value="<?php echo ($classify['name']); ?>" class="col-sm-12" id="content" />
                                         </div>
                                 </div>
-                                
-                                <?php if(!$sort['sort_alias']){ ?>
-								<div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="p_id">分类别名<span style="color:#f00;">*</span></label>
-                                    <div class="col-sm-9 sortbox" type='1'>
-                                    <select  class="col-sm-12" name="alias_type">
-                                        <option value="0">不用别名</option>
-                                        <option value="1">使用拼音</option>
-                                        <option value="2">自定义</option>
-                                    </select>                                                                        
-                                    </div>
-                                    <script type='text/javascript'>
-                                        $("select[name='alias_type']").change(function(){
-                                        	if($(this).val()=='2'){
-                                        		$("#diyalias").show();
-                                        	}else{
-                                        		$("#diyalias").hide();
-                                        	}
-                                        });
-                                    </script>
-                                </div>
-                                <?php }else{ ?>
-                                <input type="hidden" name="alias_type" value="2">
-                                <?php } ?>
-                                
-                                <div class="form-group" id="diyalias" <?php if(!$sort['sort_alias']){echo 'style="display:none;"';} ?> >
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 自定义别名 <span style="color:#f00;">*</span></label>
+                                 <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 手机分类名称 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                                <input type="text" placeholder="必须使用英文或数字，不能超过20个字符" name="sort_alias" value="<?php echo ($sort['sort_alias']); ?>" class="col-sm-12" />
+                                                <input type="text" name="m_name" value="<?php echo ($classify['m_name']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
                                 
@@ -256,44 +232,80 @@
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类排序 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <input type="text" name="order" value="<?php echo intval($sort['order']);?>" class="col-sm-12" />
+                                                <input type="text" name="sorting" value="<?php echo ($classify['sorting']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
                                 
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> title <span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类标题 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <input type="text" name="title" value="<?php echo ($sort['title']); ?>" class="col-sm-12" />
+                                                <input type="text" name="title" value="<?php echo ($classify['title']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
                                 
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> keywords <span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类关键词 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <input type="text" name="keywords" value="<?php echo ($sort['keywords']); ?>" class="col-sm-12" />
+                                                <input type="text" name="keywords" value="<?php echo ($classify['keywords']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
                                 
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> description <span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类描述 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <input type="text" name="description" value="<?php echo ($sort['description']); ?>" class="col-sm-12" />
+                                                <input type="text" name="description" value="<?php echo ($classify['description']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
-                                
+                                <?php if($$classify['id']){ ?>
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 开启/关闭<span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 前端url命名 <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <input type="text" name="url_name" value="<?php echo ($classify['url_name']); ?>" style="width:200px;" class="col-sm-12" id="show" />
+                                                &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="pinyin()" >拼音</button>
+                                        </div>
+                                </div>
+                                <?php } ?>
+
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类 开启/关闭<span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
                                         <label>
-                                            <input name="state" class="ace ace-switch ace-switch-7" type="checkbox" <?php if($sort && empty($sort['state'])){ }else{ ?>checked='checked'<?php } ?> value='1'>
+                                            <input name="status" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$classify['status']){ }else{ ?>checked='checked'<?php } ?> value='1'>
                                             <span class="lbl"></span>
                                         </label>
                                         </div>
                                 </div>
-                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 顶部导航 开启/关闭<span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                        <label>
+                                            <input name="top" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$classify['top']){ }else{ ?>checked='checked'<?php } ?> value='1'>
+                                            <span class="lbl"></span>
+                                        </label>
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 底部导航 开启/关闭<span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                        <label>
+                                            <input name="bottom" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$classify['bottom']){ }else{ ?>checked='checked'<?php } ?> value='1'>
+                                            <span class="lbl"></span>
+                                        </label>
+                                        </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类类容 <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <script id="class" type="text" name="text" style="width:1248px;height:500px;"><?php echo ($classify['text']); ?></script>
+                                        </div>
+                                </div>
                                 <div class="clearfix form-actions">
                                     <div class="col-md-offset-4 col-md-4">
                                         <button class="btn btn-info btn-block" type="submit">
@@ -416,3 +428,29 @@
 </body>
 
 </html>
+<script src="/Public/js/jquery-1.7.2.min"></script>
+<script src="/Public/pinyin/jQuery.Hz2Py-min.js">//转换中文为拼音</script>
+<script>
+
+//转换中文为拼音
+function pinyin()
+{
+        var str = $('#content').toPinyin();//转换成拼音
+        str = str.toLocaleLowerCase();//转换成小写
+        $('#show').val(Trim(str,'g'));//去除空格
+}
+
+
+  //去除字符中间空格
+  function Trim(str,is_global)
+        {
+            var result;
+            result = str.replace(/(^\s+)|(\s+$)/g,"");
+            if(is_global.toLowerCase()=="g")
+            {
+                result = result.replace(/\s/g,"");
+             }
+            return result;
+}
+
+</script>
