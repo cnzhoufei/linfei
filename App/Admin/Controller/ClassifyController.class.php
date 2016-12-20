@@ -64,9 +64,13 @@ class ClassifyController extends CommonController
         }else{
 
             $id = I('classid');
-            $classifys = $classify_m->where('layer != 3')->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
+            if($id && !is_numeric($id)){$this->error('非法操作！！！！！');}
             if($id){
                 $classify = $classify_m->where('id ='.$id)->find();
+                $classifys = $classify_m->where("layer != 3 and type = '".$classify['type']."'")->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
+            }else{
+
+                $classifys = $classify_m->where("layer != 3 and type = 'product'")->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
             }
             $this->ueditor('class');
             $this->assign('cid',$cid);
@@ -159,5 +163,12 @@ class ClassifyController extends CommonController
         }else{
             $this->error('非法操作！！！！！');
         }
+    }
+
+
+
+    public function _empty()
+    {
+        $this->display('/404');
     }
 }

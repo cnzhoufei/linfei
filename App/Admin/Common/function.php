@@ -23,11 +23,11 @@ function adminmenu()
 					array('name'=>'添加分类','c'=>'Classify','f'=>'addclassify'),
 				),
 			),
-			array('name'=>'商品管理','icon'=>'icon-desktop','child'=>
+			array('name'=>'产品管理','icon'=>'icon-desktop','child'=>
 				array(
-					array('name'=>'商品列表','c'=>'Article','f'=>'index'),
-					array('name'=>'添加商品','c'=>'','f'=>''),
-					array('name'=>'商品评论','c'=>'','f'=>''),
+					array('name'=>'产品列表','c'=>'Product','f'=>'index'),
+					array('name'=>'添加产品','c'=>'Product','f'=>'addproduct'),
+					array('name'=>'产品评论','c'=>'Product','f'=>''),
 				),
 			),
 			array('name'=>'用户管理','icon'=>'icon-group','child'=>

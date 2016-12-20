@@ -104,7 +104,7 @@
 			</div><!-- /.container -->
 		</div>
 <script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
-<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript">//异步上传图片</script> 
+<script src="/App/Admin/View/style/js/my/js.js" type="text/javascript"></script> 
 		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
@@ -137,7 +137,7 @@
 
 			<ul class="submenu">
 		<?php if(is_array($v['child'])): foreach($v['child'] as $key=>$vo): ?><li>
-					<a href='<?php echo U("$vo[c]/$vo[f]");?>' >
+					<a href='<?php echo U("$vo[c]/$vo[f]"); echo ($vo["p"]); ?>' >
 						<i class="icon-double-angle-right"></i> <?php echo ($vo["name"]); ?>
 					</a>
 				</li><?php endforeach; endif; ?>

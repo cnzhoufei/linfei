@@ -220,10 +220,11 @@
                                                         <th>分类ID</th>
                                                         <th>分类层级</th>
                                                         <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th> 
-                                                         <th>手机分类名</th>                                                                      
+                                                         <th style="text-align:center;">手机分类名</th>                                                                      
                                                         <th class="center">状态</th>     
                                                         <th class="center">顶部导航</th>
                                                         <th class="center">底部导航</th>
+                                                        <th class="center">手机端导航</th>
                                                         <th>操作</th>
                                                     </tr>
                                                 </thead>
@@ -263,6 +264,13 @@
                                                         <?php echo ($data['bottom'])?'开启':'关闭'; ?>
                                                         </button>
                                                         </td>
+                                                        <td class="center">
+                                                        <button type="button" value="<?php echo ($data['m_is_show']); ?>" onclick="status('<?php echo U('Classify/ajaxstatus');?>','<?php echo ($data['id']); ?>', 'm_is_show', this)"
+                                                        style=" background:#fff;border-radius:50px;
+                                                        <?php echo ($data['m_is_show'])?'color:#478B47':'color:#f00'; ?>">
+                                                        <?php echo ($data['m_is_show'])?'开启':'关闭'; ?>
+                                                        </button>
+                                                        </td>
 
 
                                                         <td>
@@ -279,14 +287,7 @@
                                                     <button class=" btn  btn-success" type="button" name="btSave" value="更新" onclick="window.location.href=''">
                                                         更新排序
                                                     </button>
-                                                    
-                                                    <button class=" btn  btn-purple" type="button" onclick="if(!confirm('确定批量生成别名？')){return false;};showmsg('正在创建别名，请稍后');$.get('index.php?m=admin&a=sortlist&op=alias',function(data){            
-if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return false;" name="btSave" value="生成拼音别名">全部生成别名
-                                                    </button>
-                                                    
-                                                    <button class=" btn  btn-warning" type="button" onclick="if(!confirm('会删除当前分类和商品，确定执行？')){return false;};showmsg('正在执行请稍候');$.get('index.php?m=admin&a=sortlist&op=inisort',function(data){            
-if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return false;" name="btSave" value="初始化分类">初始化分类
-                                                    </button>
+                                              
                                                 </div>
                                                 <?php if($page){ ?>
                                                 <div class="col-sm-10 ">
@@ -302,11 +303,7 @@ if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return fa
                                             </tbody>
                                             </table>
 <div class="row">
-                                                <div class='col-sm-4'>
-                                                    <button class=" btn  btn-warning" type="button" onclick="if(!confirm('会删除当前分类和商品，确定执行？')){return false;};showmsg('正在执行请稍候');$.get('index.php?m=admin&a=sortlist&op=inisort',function(data){            
-if(data.state==1) window.location.reload();showmsg(data.msg);},'json');return false;" name="btSave" value="初始化分类">初始化分类
-                                                    </button>
-                                                </div>
+                                               
                                             </div>
                                             <?php } ?>
                                         </div>

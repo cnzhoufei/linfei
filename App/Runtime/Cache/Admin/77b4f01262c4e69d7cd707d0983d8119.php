@@ -109,15 +109,15 @@
 <div class="main-container" id="main-container">
     <script type="text/javascript">
         try {
-        ace.settings.check('main-container', 'fixed')
+            ace.settings.check('main-container', 'fixed')
         } catch (e) {
         }
     </script>
-
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
         </a>
+<?php echo ($ueditorinit); ?>
         <div class="sidebar" id="sidebar">
 	<script type="text/javascript">
 		try {
@@ -189,81 +189,93 @@
 </script>
             <div class="page-content">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <div class="tabbable">
-                            <div class="tab-content">
-                                <div id="home" class="tab-pane in active">
-                                <div class="row">
-                                        <div class="col-xs-12">
-                                                <div class="row">
-                                                    <div class='col-sm-2' style="float:right;">                                        
-                                                        <button type="submit" class="btn btn-purple btn-sm" onclick="window.location.href='<?php echo U('Config/reditorcustom');?>'" >
-                                                            添加
-                                                            <i class=" icon-on-right bigger-110"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="space-6"></div>
-                                        </div>
-                                    </div>
-                                    <div class="table-responsive">
-                                        <table class="table table-striped table-bordered table-hover">
-                                            <thead>
-                                                <tr class="color428bca">
-                                                    <th>ID{id}</th>
-                                                    <th>KEY{key}</th>
-                                                    <th>中文名称{name}</th>
-                                                    <th>值{name}</th>
-                                                    <th>添加时间{time}</th>
-                                                    <th>操作</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            <?php if($custom){ ?>
-                                            <?php if(is_array($custom)): $i = 0; $__LIST__ = $custom;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="" id="custom_<?php echo ($data['id']); ?>">
-                                                    <td><?php echo ($data['id']); ?></td>
-                                                    <td><?php echo ($data['key']); ?></td>
-                                                    <td><?php echo ($data['name']); ?></td>
-                                                    <td><?php echo ($data['val']); ?></td>
-                                                    <td><?php echo date('Y-m-d',$data['time']);?></td>
-                                                    <td>
-                                                    <a href="<?php echo U('Config/reditorcustom');?>?customid=<?php echo ($data['id']); ?>">编辑</a>|
-                                                    <a onclick="mydelete('<?php echo ($data[id]); ?>', '<?php echo U('Config/deletecustom');?>', 'custom_<?php echo ($data[id]); ?>')" href="javascript:;">删除</a>
-                                                </td>
-                                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </tbody>
-                                        </table>
-                                        <?php if($page){ ?>
-                                        <div class="row">                                                
-                                            <div class="col-sm-10 ">
-                                                <ul class='pagination pull-right'><?php echo ($page); ?></ul>
-                                            </div> 
-                                        </div>
-                                        <?php } ?>  
-                                        <?php }else{ ?>
-                                        <tr><td colspan="6" class="empty"><span class="empty"><i>没有找到数据.</i></span></td></tr>
-                                        </tbody>
-                                        </table>
-                                        <?php } ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
+                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="id" value="<?php echo ($config['id']); ?>" />
+                         <input type="hidden" name="logo" value="<?php echo ($config[logo]); ?>" />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">产品名<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="<?php echo ($config['name']); ?>"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站标题<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="title" value="<?php echo ($config['title']); ?>"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">关键词<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="keywords" value="<?php echo ($config['keywords']); ?>"></div>
+                            </div>
+                             <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">描述<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <textarea class="col-sm-12" name='description'><?php echo stripslashes($config['description']);?></textarea>
+                                </div>   
+                            </div>
+                            
+                           
+                           <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">分类<span style="color:#f00;">*</span></label>
+                                    <div class="col-sm-9">
+                                    <select  class="col-sm-12" name="cid" id="types" onchange="changesort($(this).val())">
+                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option  <?php if($classify['pid'] == $vv['id'])echo 'selected'; ?> value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
+                                    </select>
+                                    </div>
+                                </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">是否开启站点<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <label>
+                                        <input name="status" <?php if(empty($config['status'])){ }else{ ?>checked='checked'<?php } ?> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
+                                        <span class="lbl"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">缩略图<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <input  class="col-sm-12" type="button" value="上传缩略图" onClick="GetUploadify(1,'img','imgs')" />   
+                                </div>
+                            </div>
+                           <style>#img img{width:300px;}</style>
+                            <div class="form-group" id="imgs">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
+                                <div class="col-sm-9">
+                                <img src='<?php echo ($config[img]); ?>' style='width:280px;' id="img" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类类容 <span style="color:#f00;">*</span></label>
 
+                                        <div class="col-sm-9">
+                                                <script id="product" type="text" name="text" style="width:1248px;height:500px;"><?php echo ($classify['text']); ?></script>
+                                        </div>
+                            </div>
+
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-4 col-md-4">
+                                    <button class="btn btn-info btn-block" type="submit">
+                                        <i class="icon-ok bigger-110"></i>
+                                        确认
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
-            </div>
+            </div><!-- /.page-content -->
         </div><!-- /.main-content -->
     </div><!-- /.main-container-inner -->
-
     <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
-</div>
+</div><!-- /.main-container -->
+
 <!-- basic scripts -->
 
 <!--[if !IE]> -->

@@ -14,7 +14,7 @@ class ClassifyModel extends Model
 		$post['status'] = ($post['status'])?$post['status']:0;
 		$post['top'] = ($post['top'])?$post['top']:0;
 		$post['bottom'] = ($post['bottom'])?$post['bottom']:0;
-		$post['sorting'] = ($post['sorting'])?$post['sorting']:0;
+		$post['sorting'] = is_numeric($post['sorting'])?$post['sorting']:0;
 		$path = $this->table(C('DB_PREFIX').'classify')->where(array('id'=>$post['pid']))->field('path,layer')->find();
 		$path['path'] = ($path)?$path['path']:0;
 		$path['layer'] = ($path)?$path['layer']:0;

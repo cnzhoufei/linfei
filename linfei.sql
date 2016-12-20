@@ -2,7 +2,7 @@
 create database if not exists `linfei`;
 
 --栏目表
-create table if not exists `linfei_column`(
+create table if not exists `linfei_classify`(
 	`id` int unsigned not null auto_increment primary key COMMENT '栏目id',
 	`name` varchar(255) not null COMMENT'栏目名称',
 	`m_name` varchar(255) not null COMMENT'手机栏目名称',
@@ -11,10 +11,12 @@ create table if not exists `linfei_column`(
 	`description` text not null COMMENT '栏目描述',
 	`pid` char(20) not null COMMENT '栏目父id',
 	`type` char(20) not null default 'product' COMMENT '栏目类型 默认为产品类型 共两种类型 产品和资讯news 封面cover',
-	`url` varchar(100) not null default ' ' COMMENT	'栏目连接',
-	`url_name` char(30) not null default ' ' COMMENT	'栏目url命名 拼音',
+	`external` varchar(100) not null default '' COMMENT	'外部链接',
+	`url` varchar(100) not null default '' COMMENT	'栏目连接',
+	`url_name` char(30) not null default '' COMMENT	'栏目url命名 拼音',
 	`path` varchar(255) not null COMMENT '栏目路径',
 	`status` tinyint(1) not null default 1 COMMENT '栏目状态 1在前端显示 0不显示',
+	`m_is_show` tinyint(1) not null default 1 COMMENT '手机端导航是否显示 1在前端显示 0不显示',
 	`top` tinyint(1) not null default 1 COMMENT '顶部导航 1在前端显示 0不显示',
 	`bottom` tinyint(1) not null default 1 COMMENT '底部导航 1在前端显示 0不显示',
 	`text` text COMMENT '栏目内容',
@@ -24,48 +26,59 @@ create table if not exists `linfei_column`(
 )engine=innodb default charset=utf8;
 
 
---模型表
-create table if not exists `linfei_model`(
-	`id` int unsigned not null auto_increment primary key COMMENT '模型id',
-	`text` text 
 
+
+
+ create table if not exists `linfei_product`(
+   `id` int unsigned not null auto_increment primary key COMMENT '产品id',
+   `name` varchar(255) not null default '' COMMENT '产品名称',
+   `title` varchar(255) not null default ''  COMMENT '产品标题',
+   `keywords` varchar(255) not null default '' COMMENT '关键字',
+   `description` text not null default '' COMMENT '产品描述',
+   `cid` int unsigned not null COMMENT '所属栏目',
+   `img` text not null default '' COMMENT '产品缩略图',
+   `clicks` int unsigned not null default 0 COMMENT '点击数',
+   `status` tinyint(1) not null default 0 COMMENT '产品状态 0在前端显示 1不显示',
+   `text` text not null default '' COMMENT '产品内容',
+   `time` int not null COMMENT '添加时间'
+   )engine=innodb default charset=utf8;
+
+
+   `field` text COMMENT '用户自定义字段 储存的是窜行化数组',
+
+
+
+
+--产品图片表
+create table if not exists `linfei_custom`(
+`id` int unsigned not null auto_increment primary key,
+`gid` int not null COMMENT '产品id',
+`img` varchar(255) not null default '' COMMENT '产品图片'
 )engine=innodb default charset=utf8;
 
---文章表
-  create table if not exists `linfei_article`(
-   `id` int unsigned not null auto_increment primary key COMMENT '文章id',
-   `userid` int unsigned not null COMMENT '用户id',
-   `title` varchar(255) not null COMMENT '文章标题',
-   `keywords` varchar(255) not null default '关键字',
-   `description` text not null COMMENT '文章描述',
-   `cid` int unsigned not null COMMENT '所属栏目',
-   `pic` text not null COMMENT '文章缩略图',
-   `publisher` char(50) not null default '未知发布者' COMMENT '发布者',
-   `clicks` int unsigned not null default 0 COMMENT '点击数',
-   `status` tinyint(1) not null default 0 COMMENT '文章状态 0在前端显示 1不显示',
-   `text` text not null COMMENT '文章内容',
-   `field` text COMMENT '用户自定义字段 储存的是窜行化数组',
-   `recommended` tinyint(1) default 0 COMMENT '推荐  0未推荐 1推荐',
-   `time` int not null COMMENT '添加时间'
-   )engine=innodb default charset=utf8;
- alter table linfei_article add article_recommended tinyint(1) default 0 COMMENT '推荐  0未推荐 1推荐';
 
- create table if not exists `linfei_products`(
-   `id` int unsigned not null auto_increment primary key COMMENT '文章id',
-   `userid` int unsigned not null COMMENT '用户id',
-   `title` varchar(255) not null COMMENT '文章标题',
-   `keywords` varchar(255) not null default '关键字',
-   `description` text not null COMMENT '文章描述',
-   `cid` int unsigned not null COMMENT '所属栏目',
-   `pic` text not null COMMENT '文章缩略图',
-   `publisher` char(50) not null default '未知发布者' COMMENT '发布者',
-   `clicks` int unsigned not null default 0 COMMENT '点击数',
-   `status` tinyint(1) not null default 0 COMMENT '文章状态 0在前端显示 1不显示',
-   `text` text not null COMMENT '文章内容',
-   `field` text COMMENT '用户自定义字段 储存的是窜行化数组',
-   `recommended` tinyint(1) default 0 COMMENT '推荐  0未推荐 1推荐',
-   `time` int not null COMMENT '添加时间'
-   )engine=innodb default charset=utf8;
+--文章产品属性表
+create table if not exists `linfei_custom`(
+`id` int unsigned not null auto_increment primary key,
+`aid` int not null,
+`recommended` tinyint(1) default 0 COMMENT '推荐  0未推荐 1推荐',
+`Commend` tinyint(1) default 0 COMMENT '特荐  0未推荐 1推荐',
+`headlines` tinyint(1) default 0 COMMENT '头条  0未推荐 1推荐',
+`news` tinyint(1) default 0 COMMENT '新品  0未推荐 1推荐',
+`selling` tinyint(1) default 0 COMMENT '热卖  0未推荐 1推荐'
+)engine=innodb default charset=utf8;
+
+
+
+	头条[h]
+	推荐[c]
+	幻灯[f]
+	特荐[a]
+	滚动[s]
+	加粗[b]
+	图片[p]
+	跳转[j]
+
 
 
 
@@ -238,8 +251,17 @@ insert into linfei_admin values(1,'admin','e10adc3949ba59abbe56e057f20f883e','14
 
 
 
-create table if not exists ``(
+create table if not exists `yd_photo`(
 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`title` varchar(255) not null default '',
-	`pic` text,
+	`store_id` int not null COMMENT '商户id',
+	`title` varchar(255) not null default '' COMMENT '相册标题',
+	`status` tinyint(1) not null default 0 COMMENT '是否显示 1是 0否',
+	`home` tinyint(1) not null default 0 COMMENT '是否在首页展示 1是 0否',
+	`time` int  
+)engine=innodb default charset=utf8;
+
+create table if not exists `yd_photoimg`(
+	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+	`photoid` int not null COMMENT'相册id',
+	`img` varchar(255) COMMENT '相册图片'
 )engine=innodb default charset=utf8;

@@ -25,9 +25,9 @@
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">类型<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
                                     <select  class="col-sm-12" name="type" onchange="getclass('{{:U('classify/ajaxclass')}}',$(this).val(),'types')">
-                                        <option value="product">商品分类</option>
-                                        <option value="news">文章分类</option>
-                                        <option value="cover">封面</option>
+                                        <option <php>if($classify['type'] == 'product')echo 'selected';</php> value="product">商品分类</option>
+                                        <option <php>if($classify['type'] == 'news')echo 'selected';</php> value="news">文章分类</option>
+                                        <option <php>if($classify['type'] == 'cover')echo 'selected';</php> value="cover">封面</option>
                                     </select>
                                     </div>
                                 </div>
@@ -38,12 +38,17 @@
                                     <select  class="col-sm-12" name="pid" id="types" onchange="changesort($(this).val())">
                                         <option value="0">顶级分类</option>
                                         <foreach name="classifys" item="vv">
-                                            <option value="{{$vv.id}}">{{$vv.name}}</option>
+                                            <option  <php>if($classify['pid'] == $vv['id'])echo 'selected';</php> value="{{$vv.id}}">{{$vv.name}}</option>
                                         </foreach>
                                     </select>
                                     </div>
                                 </div>
-                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 外部链接 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                                <input type="text" name="external" value="{{$classify['external']}}" class="col-sm-12" placeholder="填写外部链接后 将直接跳转到该链接 格式：http://www.linfei.cc" />
+                                        </div>
+                                </div>
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类名称 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">

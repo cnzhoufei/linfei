@@ -198,9 +198,9 @@
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">类型<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
                                     <select  class="col-sm-12" name="type" onchange="getclass('<?php echo U('classify/ajaxclass');?>',$(this).val(),'types')">
-                                        <option value="product">商品分类</option>
-                                        <option value="news">文章分类</option>
-                                        <option value="cover">封面</option>
+                                        <option <?php if($classify['type'] == 'product')echo 'selected'; ?> value="product">商品分类</option>
+                                        <option <?php if($classify['type'] == 'news')echo 'selected'; ?> value="news">文章分类</option>
+                                        <option <?php if($classify['type'] == 'cover')echo 'selected'; ?> value="cover">封面</option>
                                     </select>
                                     </div>
                                 </div>
@@ -210,11 +210,16 @@
                                     <div class="col-sm-9">
                                     <select  class="col-sm-12" name="pid" id="types" onchange="changesort($(this).val())">
                                         <option value="0">顶级分类</option>
-                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
+                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option  <?php if($classify['pid'] == $vv['id'])echo 'selected'; ?> value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
                                     </select>
                                     </div>
                                 </div>
-                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 外部链接 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                                <input type="text" name="external" value="<?php echo ($classify['external']); ?>" class="col-sm-12" placeholder="填写外部链接后 将直接跳转到该链接 格式：http://www.linfei.cc" />
+                                        </div>
+                                </div>
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类名称 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
