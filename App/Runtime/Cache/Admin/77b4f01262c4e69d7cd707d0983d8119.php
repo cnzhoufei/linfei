@@ -192,26 +192,26 @@
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
                         <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
-                        <input type="hidden" name="id" value="<?php echo ($config['id']); ?>" />
-                         <input type="hidden" name="logo" value="<?php echo ($config[logo]); ?>" />
+                        <input type="hidden" name="id" value="<?php echo ($product['id']); ?>" />
+                         <input type="hidden" name="logo" value="<?php echo ($product['img']); ?>" />
                             <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">产品名<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="<?php echo ($config['name']); ?>"></div>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="<?php echo ($product['name']); ?>"></div>
                             </div>
                             
                             <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">网站标题<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="title" value="<?php echo ($config['title']); ?>"></div>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="title" value="<?php echo ($product['title']); ?>"></div>
                             </div>
                             
                             <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">关键词<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="keywords" value="<?php echo ($config['keywords']); ?>"></div>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="keywords" value="<?php echo ($product['keywords']); ?>"></div>
                             </div>
                              <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">描述<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9">
-                                    <textarea class="col-sm-12" name='description'><?php echo stripslashes($config['description']);?></textarea>
+                                    <textarea class="col-sm-12" name='description'><?php echo stripslashes($product['description']);?></textarea>
                                 </div>   
                             </div>
                             
@@ -229,7 +229,7 @@
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">是否开启站点<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9">
                                     <label>
-                                        <input name="status" <?php if(empty($config['status'])){ }else{ ?>checked='checked'<?php } ?> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
+                                        <input name="status" <?php if(empty($product['status'])){ }else{ ?>checked='checked'<?php } ?> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
                                         <span class="lbl"></span>
                                     </label>
                                 </div>
@@ -241,13 +241,28 @@
                                 <input  class="col-sm-12" type="button" value="上传缩略图" onClick="GetUploadify(1,'img','imgs')" />   
                                 </div>
                             </div>
-                           <style>#img img{width:300px;}</style>
+                           <style>#imgs img{width:300px;}</style>
                             <div class="form-group" id="imgs">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
                                 <div class="col-sm-9">
-                                <img src='<?php echo ($config[img]); ?>' style='width:280px;' id="img" />
+                                <img src='<?php echo ($product[img]); ?>' style='width:280px;' id="img" />
                                 </div>
                             </div>
+
+                             <div class="form-group">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">产品相册图<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <input  class="col-sm-12" type="button" value="上传产品相册图" onClick="GetUploadify(5,'productimg','productimg')" />   
+                                </div>
+                            </div>
+                           <style>#productimg img{width:300px;}</style>
+                            <div class="form-group" id="productimg">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
+                                <div class="col-sm-9">
+                                <img src='<?php echo ($product[img]); ?>' style='width:280px;' id="productimg" />
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类类容 <span style="color:#f00;">*</span></label>
 

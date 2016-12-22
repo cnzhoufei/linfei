@@ -227,11 +227,12 @@
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr class="color428bca">
-                                            <th width="50">排序</th>
+                                            <!-- <th width="50">排序</th> -->
                                             <th width="100" style="text-align:center">图片</th>
-                                            <th>商品名称</th>
-                                            <th>商品类型</th>
-                                            <th>折扣价(元)</th>
+                                            <th style="width:16%;">产品名称</th>
+                                            <th style="width:16%;">产品标题</th>
+                                            <th>所属分类</th>
+                                            <th>浏览量</th>
                                             <th>原价格(元)</th>
                                             <th>添加人</th>
                                             <th>状态</th>
@@ -242,25 +243,34 @@
                                     <tbody>
                                     <?php if($product){ ?>
                                     <?php if(is_array($product)): $i = 0; $__LIST__ = $product;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="">
-                                            <td data_id="{$data['goods_id']}" style=""><input type="text" name="order_{$data['goods_id']}" value="{$data['order']}" style="width:30px;padding:0 5px;margin:0"/></td>
-                                            <td><a href="{$data['pic_url']}" target='_blank'><img src="{$data['pic_url']}" style="width:100px"></a></td>
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'>{$data['title']}</a></td>
-                                            <td>{$data['goods_type']}</td>
-                                            <td>{$data['discount_price']}</td>
-                                            <td>{$data['price']}</td>
-                                            <td>{$data['add_uname']}</td>
-                                            <td><a id="" onclick="return ajHref(this);" href="{:U('admin/goodslist',array('op'=>'state','goods_id'=>$data['goods_id']))}" title="">{$data['state']?'<font color="green">上架</font>':'<font color="red">下架</font>'}</a></td>
-                                            <td>{:date('Y-m-d H:i:s',$data['ctime'])}</td>
+                                           <!--  <td style="">
+                                            <input type="text" name="order_<?php echo ($data['goods_id']); ?>" value="<?php echo ($data['order']); ?>" style="width:30px;padding:0 5px;margin:0"/>
+                                            </td> -->
+
+                                            <td><a href="<?php echo ($data['pic_url']); ?>" target='_blank'>
+                                            <img src="<?php echo ($data['img']); ?>" style="width:100px"></a></td>
+
+                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo ($data['name']); ?></a></td>
+
+                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo ($data['title']); ?></a></td>
+
+                                            <td><?php echo ($class[$data['cid']]); ?></td>
+                                            <td><?php echo ($data['clicks']); ?></td>
+                                            <td><?php echo ($data['price']); ?></td>
+                                            <td><?php echo ($data['add_uname']); ?></td>
+                                            <td><a  title=""><?php echo ($data['status']?'<font color="green">上架</font>':'<font color="red">下架</font>'); ?></a></td>
+                                            <td><?php echo date('Y-m-d H:i:s',$data['time']);?></td>
                                             <td> 
                                                 <a target="_blank" href='http://pub.alimama.com/myunion.htm?spm=a2320.7388781.a214tr8.d006.IyDOZN#!/promo/self/items?q={:urlencode($data[item_url])}'>查看</a>
                                                 |
-                                                <a id="" href="{:U('admin/addgoods',array('goods_id'=>$data['goods_id']))}" title="">编辑</a>
+                                                <a id="" href="<?php echo U('product/addproduct');?>?id=<?php echo ($data['id']); ?>" title="">编辑</a>
                                                 |
-                                                <a id="" onclick="if(confirm('确定删除')){return ajHref(this);};return false;" href="{:U('admin/goodsList',array('op'=>'del','goods_id'=>$data['goods_id']))}" title="删除">删除</a>
+                                                <a id="" onclick="if(confirm('确定删除')){return ajHref(this);};return false;" href="<?php echo U('admin/goodsList',array('op'=>'del','goods_id'=>$data['goods_id']));?>" title="删除">删除</a>
                                             </td>
                                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                     </tbody>
                                 </table>
+                                <style>button{min-width:80px;}</style>
                                 <div class="row">
                                     <div class='col-sm-6'>
                                         <div class="row">
@@ -282,7 +292,7 @@
                                             <?php  ?>
                                             <select class="col-sm-2" id="topic" name="topic">
 			                                    <option value="">选择专场分类</option>
-			                                    <?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><option value="{$data['sort_id']}">{$data['topic_name']}----{$data['sort_name']}</option><?php endforeach; endif; else: echo "" ;endif; ?>
+			                                    <?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><option value="<?php echo ($data['sort_id']); ?>">{$data['topic_name']}----{$data['sort_name']}</option><?php endforeach; endif; else: echo "" ;endif; ?>
 			                                </select>
 			                                
 			                                <button onclick="pullTopic()" class="col-sm-2 btn  btn-warning" type="button">添加到专场分类</button>
@@ -291,7 +301,7 @@
                                                                         
                                     <?php if($page){ ?>
                                     <div class="col-sm-6 ">
-                                        <ul class='pagination pull-right'>{$page}</ul>
+                                        <ul class='pagination pull-right'><?php echo ($page); ?></ul>
                                     </div> 
                                 </div>
 
@@ -319,100 +329,6 @@
     <style>
         .orange{background:orange;}
     </style>
-<script type="text/javascript">
-function pullTopic(){
-	if(confirm('确定添加到专场')){
-        var ids = '';
-        $('tbody tr').each(function(){
-            var data_id = $(this).find('td:first[style!=""]').attr('data_id')
-            if(data_id!=undefined){
-                ids +=data_id+':';
-            }
-        })
-        if(!submit) return false;
-        showmsg('正在提交');
-        submit = false;        
-        $.get("index.php?m=admin&a=goodslist&op=pulltopic&tid="+$("#topic").val()+"&goods_id="+ids,function(data){
-            submit = true;
-            if(data.state==1) window.location.reload();
-            showmsg(data.msg);
-        },'json');
-        return false;
-    }
-}
-function state(state){
-    if(confirm(state==1?'确定批量上架':'确定批量下架')){
-        var ids = '';
-        $('tbody tr').each(function(){
-            var data_id = $(this).find('td:first[style!=""]').attr('data_id')
-            if(data_id!=undefined){
-                ids +=data_id+':';
-            }
-        })
-        if(!submit) return false;
-        showmsg('正在提交');
-        submit = false;
-        $.get("index.php?m=admin&a=goodslist&op=state&state="+state+"&goods_id="+ids,function(data){
-            submit = true;
-            if(data.state==1) window.location.reload();
-            showmsg(data.msg);
-        },'json');
-        return false;
-    }
-}
-function deletes(){
-    if(confirm('确定删除')){
-        var ids = '';
-        $('tbody tr').each(function(){
-            var data_id = $(this).find('td:first[style!=""]').attr('data_id')
-            if(data_id!=undefined){
-                ids +=data_id+':';
-            }
-        })
-        if(!submit) return false;
-        showmsg('正在提交');
-        submit = false;
-        $.get("index.php?m=admin&a=goodslist&op=del&goods_id="+ids,function(data){
-            submit = true;
-            if(data.state==1) window.location.reload();//setTimeout(function(){window.location.reload();},500);
-            showmsg(data.msg);
-        },'json');
-        return false;
-    }    
-}
-	var quanxuan = 'background:orange';
-    $(function(){    	
-    	$("#quanxuan").click(function(){
-    		$('tbody tr td').attr('style',quanxuan);
-			quanxuan = quanxuan == ''?'background:orange':'';
-    	});
-        $("tbody tr").click(function(){
-            var obj = $(this);
-            if(obj.find('td:first').attr('style')==''){
-                obj.find('td').attr('style','background:orange');
-            }else{
-                obj.find('td').attr('style','');
-            }
-        });
-    });
-    (function(win,doc){
-        var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
-        if (!win.alimamatk_show) {
-            s.charset = "utf8";
-            s.async = true;
-            s.src = "http://a.alimama.cn/tkapi.js";
-            h.insertBefore(s, h.firstChild);
-        };
-        var o = {
-            pid: "mm_43412205_9948295_33168978",/*推广单元ID，用于区分不同的推广渠道*/
-            appkey: "23189880",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/
-            unid: "",/*自定义统计字段*/
-            type: "click" /* click 组件的入口标志 （使用click组件必设）*/
-        };
-        win.alimamatk_onload = win.alimamatk_onload || [];
-        win.alimamatk_onload.push(o);
-    })(window,document);
-</script>
 </div>
 <!-- basic scripts -->
 
