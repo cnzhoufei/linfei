@@ -190,7 +190,7 @@
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- PAGE CONTENT BEGINS -->                        
+                        <!-- PAGE CONTENT BEGINS -->        
                         <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="<?php echo ($product['id']); ?>" />
                          <input type="hidden" name="logo" value="<?php echo ($product['img']); ?>" />
@@ -238,36 +238,30 @@
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">缩略图<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9">
-                                <input  class="col-sm-12" type="button" value="上传缩略图" onClick="GetUploadify(1,'img','imgs')" />   
-                                </div>
-                            </div>
-                           <style>#imgs img{width:300px;}</style>
-                            <div class="form-group" id="imgs">
-                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
-                                <div class="col-sm-9">
-                                <img src='<?php echo ($product[img]); ?>' style='width:280px;' id="img" />
+                                <input  class="col-sm-12" style="width:100px;" type="button" value="上传缩略图" onClick="GetUploadify(1,'img','imgs')" />   
+                                <input  class="col-sm-12" style="width:150px;" type="button" value="上传产品相册图" onClick="GetUploadify(5,'productimg','productimg')" />   
                                 </div>
                             </div>
 
-                             <div class="form-group">
-                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">产品相册图<span style="color:#f00;">*</span></label>
-                                <div class="col-sm-9">
-                                <input  class="col-sm-12" type="button" value="上传产品相册图" onClick="GetUploadify(5,'productimg','productimg')" />   
-                                </div>
-                            </div>
-                           <style>#productimg img{width:300px;}</style>
-                            <div class="form-group" id="productimg">
+                           <style>#productimg img,#imgss img{width:100px;height: 100px;}</style>
+                            <div class="form-group" id="imgss">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
                                 <div class="col-sm-9">
-                                <img src='<?php echo ($product[img]); ?>' style='width:280px;' id="productimg" />
+                                <span id="imgs"><img src='<?php echo ($product[img]); ?>' id="img" /></span>
+                                <span id="productimg">
+                                <?php if(is_array($productimg)): foreach($productimg as $key=>$vvv): ?><span id="delete_<?php echo ($vvv['id']); ?>" style="cursor:pointer;" onclick="mydelete('<?php echo ($vvv['id']); ?>','<?php echo U('product/deleteimg');?>','delete_<?php echo ($vvv['id']); ?>')">
+                                    <img src="<?php echo ($vvv["img"]); ?>" />
+                                   删除</span><?php endforeach; endif; ?>
+                                </span>
                                 </div>
                             </div>
 
+                         
                             <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类类容 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <script id="product" type="text" name="text" style="width:1248px;height:500px;"><?php echo ($classify['text']); ?></script>
+                                                <script id="product" type="text" name="text" style="width:100%;height:500px;"><?php echo (htmlspecialchars_decode($product['text'])); ?></script>
                                         </div>
                             </div>
 

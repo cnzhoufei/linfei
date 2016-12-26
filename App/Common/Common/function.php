@@ -104,3 +104,47 @@ function _Array_Combine($_Arr1, $_Arr2)
 for($i=0; $i<count($_Arr1); $i++) $_Res[$_Arr1[$i]] = $_Arr2[$i];
 return $_Res;
 }
+
+
+/**
+ *   实现中文字串截取无乱码的方法
+ */
+function getsubstr($string, $start, $length) 
+{
+      if(mb_strlen($string,'utf-8')>$length){
+          $str = mb_substr($string, $start, $length,'utf-8');
+          return $str.'...';
+      }else{
+          return $string;
+      }
+}
+
+/**
+ * 产品缩略图
+ */
+function productimg($id,$width,$height)
+{
+	if(!$id || !is_numeric($id)){return '';}
+	$path = '/Uploads/product/'.$id;
+	$thumb_name ="/{$id}_{$width}_{$height}";
+  
+    if(file_exists('.'.$path.$thumb_name.'.jpg'))  return $path.$thumb_name.'.jpg'; 
+    if(file_exists('.'.$path.$thumb_name.'.jpeg')) return $path.$thumb_name.'.jpeg'; 
+    if(file_exists('.'.$path.$thumb_name.'.gif'))  return $path.$thumb_name.'.gif'; 
+    if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
+
+	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
+
+	$productimg = M('product')->where(array('id'=>$id))->field('img')->find();
+	$image = new \Think\Image(); 
+	$image->open('.'.$productimg['img']);
+	$type = $image->type(); 
+	$image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
+
+	// $image->open('.'.$path.$thumb_name.'.'.$type)->water('./logo.png')->save('.'.$path.$thumb_name.'.'.$type);//文字水印
+
+	$image->open('.'.$path.$thumb_name.'.'.$type)->text('LinFei','./simsunb.ttf',20,'#000',9)->save('.'.$path.$thumb_name.'.'.$type); //文字水印
+
+	return $path.$thumb_name.'.'.$type;
+
+}

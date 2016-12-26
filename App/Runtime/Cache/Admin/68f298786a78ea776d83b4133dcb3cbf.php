@@ -237,6 +237,7 @@
                                             <th>添加人</th>
                                             <th>状态</th>
                                             <th>添加时间</th>
+                                            <th>更新时间</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
@@ -248,20 +249,25 @@
                                             </td> -->
 
                                             <td><a href="<?php echo ($data['pic_url']); ?>" target='_blank'>
-                                            <img src="<?php echo ($data['img']); ?>" style="width:100px"></a></td>
+                                            <img src="<?php echo productimg($data['id'],100,75);?>"></a></td>
 
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo ($data['name']); ?></a></td>
+                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo getsubstr($data['name'],0,60);?></a></td>
 
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo ($data['title']); ?></a></td>
+                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo getsubstr($data['title'],0,60);?></a></td>
 
                                             <td><?php echo ($class[$data['cid']]); ?></td>
                                             <td><?php echo ($data['clicks']); ?></td>
                                             <td><?php echo ($data['price']); ?></td>
                                             <td><?php echo ($data['add_uname']); ?></td>
-                                            <td><a  title=""><?php echo ($data['status']?'<font color="green">上架</font>':'<font color="red">下架</font>'); ?></a></td>
+                                            <td><a  title="">
+                                            <?php if(($data['status'])): ?><img src="/App/Admin/View/style/images/yes.png">
+                                            <?php else: ?>
+                                            <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
+                                           </a></td>
                                             <td><?php echo date('Y-m-d H:i:s',$data['time']);?></td>
+                                            <td><?php echo date('Y-m-d H:i:s',$data['newtime']);?></td>
                                             <td> 
-                                                <a target="_blank" href='http://pub.alimama.com/myunion.htm?spm=a2320.7388781.a214tr8.d006.IyDOZN#!/promo/self/items?q={:urlencode($data[item_url])}'>查看</a>
+                                                <a target="_blank" href=''>查看</a>
                                                 |
                                                 <a id="" href="<?php echo U('product/addproduct');?>?id=<?php echo ($data['id']); ?>" title="">编辑</a>
                                                 |

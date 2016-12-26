@@ -40,6 +40,7 @@ create table if not exists `linfei_classify`(
    `clicks` int unsigned not null default 0 COMMENT '点击数',
    `status` tinyint(1) not null default 0 COMMENT '产品状态 0在前端显示 1不显示',
    `text` text not null default '' COMMENT '产品内容',
+   `newtime` int not null default 0 COMMENT '更新时间',
    `time` int not null COMMENT '添加时间'
    )engine=innodb default charset=utf8;
 

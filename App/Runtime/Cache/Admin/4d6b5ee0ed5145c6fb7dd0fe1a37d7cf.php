@@ -264,7 +264,7 @@
                                                 <input type="text" name="description" value="<?php echo ($classify['description']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
-                                <?php if($$classify['id']){ ?>
+                                <?php if(!$classify['id']){ ?>
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 前端url命名 <span style="color:#f00;">*</span></label>
 

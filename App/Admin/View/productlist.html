@@ -64,6 +64,7 @@
                                             <th>添加人</th>
                                             <th>状态</th>
                                             <th>添加时间</th>
+                                            <th>更新时间</th>
                                             <th>操作</th>
                                         </tr>
                                     </thead>
@@ -76,20 +77,27 @@
                                             </td> -->
 
                                             <td><a href="{{$data['pic_url']}}" target='_blank'>
-                                            <img src="{{$data['img']}}" style="width:100px"></a></td>
+                                            <img src="{{:productimg($data['id'],100,75)}}"></a></td>
 
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'>{{$data['name']}}</a></td>
+                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'>{{:getsubstr($data['name'],0,60)}}</a></td>
 
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'>{{$data['title']}}</a></td>
+                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'>{{:getsubstr($data['title'],0,60)}}</a></td>
 
                                             <td>{{$class[$data['cid']]}}</td>
                                             <td>{{$data['clicks']}}</td>
                                             <td>{{$data['price']}}</td>
                                             <td>{{$data['add_uname']}}</td>
-                                            <td><a  title="">{{$data['status']?'<font color="green">上架</font>':'<font color="red">下架</font>'}}</a></td>
+                                            <td><a  title="">
+                                            <if condition="($data['status'])">
+                                            <img src="ADMINSTYLE/images/yes.png">
+                                            <else />
+                                            <img src="ADMINSTYLE/images/cancel.png">
+                                            </if>
+                                           </a></td>
                                             <td>{{:date('Y-m-d H:i:s',$data['time'])}}</td>
+                                            <td>{{:date('Y-m-d H:i:s',$data['newtime'])}}</td>
                                             <td> 
-                                                <a target="_blank" href='http://pub.alimama.com/myunion.htm?spm=a2320.7388781.a214tr8.d006.IyDOZN#!/promo/self/items?q={:urlencode($data[item_url])}'>查看</a>
+                                                <a target="_blank" href=''>查看</a>
                                                 |
                                                 <a id="" href="{{:U('product/addproduct')}}?id={{$data['id']}}" title="">编辑</a>
                                                 |
