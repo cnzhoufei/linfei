@@ -146,8 +146,43 @@ return array(
 		}
 	}
 
+	/**
+	 * 水印管理
+	 */
+	public function watermark()
+	{
 
+		$watermark_m = M('watermark');
+		if(IS_POST){
+			$_POST['status1'] = ($_POST['status1'])?$_POST['status1']:0;
+			$_POST['status2'] = ($_POST['status2'])?$_POST['status2']:0;
+			if(S('tupin')){$_POST['tupin'] = S('tupin');}
+			$data = $watermark_m->create(null,1);//根据表单提交的POST数据创建数据对象
+			if (!$data){$this->error($watermark_m->getError());}
+			unset($data['id']);
+			if($_POST['id']){
+				$res = $watermark_m->where(array('id'=>$_POST['id']))->save($data);
+				if(S('tupin')){
+					$tupin = $watermark_m->where(array('id'=>$id))->find();
+					@unlink('.'.$tupin['tupin']);
+				}
+			}else{
+				$res = $watermark_m->add($data);
+			}
+			S('tupin',null);
+			if($res){
+				$this->success('提交成功');
+			}else{
+				$this->error('提交失败！请重新提交！');
+			}
+		}else{
 
+			$watermark = $watermark_m->find();
+			$this->assign('watermark',$watermark);
+			$this->display('/watermark');
+		}
+
+	}
 
 
 

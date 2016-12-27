@@ -56,6 +56,19 @@ function status(url,id,field,obj)
 		}
 	})
 }
+//改变状态2
+function status2(url,id,field,obj)
+{
+	$.post(url ,{'field':field ,'status':$(obj).attr('v') ,'id':id}, function(res){
+		if(res['res']){
+			if(res['status']){var pic = "<img src='/App/Admin/View/style/images/yes.png'>";}else{var pic = "<img src='/App/Admin/View/style/images/cancel.png'>";}
+			$(obj).attr('v',res['status']);
+			$(obj).html(pic);
+		}else{
+			alert('操作失败！');
+		}
+	})
+}
 
 
 //排序

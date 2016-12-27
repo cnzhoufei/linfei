@@ -46,7 +46,7 @@
                         </form>
                     </div>          
 
-
+                    <style type="text/css">th,td{text-align:center;} td{height:80px;}</style>
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
                         <form action="{:U('admin/goodsList',array('op'=>'order'))}" method="post">                            
@@ -54,14 +54,15 @@
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr class="color428bca">
-                                            <!-- <th width="50">排序</th> -->
-                                            <th width="100" style="text-align:center">图片</th>
+                                            <th width="50">排序</th>
+                                            <th width="100">图片</th>
                                             <th style="width:16%;">产品名称</th>
                                             <th style="width:16%;">产品标题</th>
                                             <th>所属分类</th>
                                             <th>浏览量</th>
-                                            <th>原价格(元)</th>
-                                            <th>添加人</th>
+                                            <th>推荐</th>
+                                            <th>新品</th>
+                                            <th>热卖</th>
                                             <th>状态</th>
                                             <th>添加时间</th>
                                             <th>更新时间</th>
@@ -72,29 +73,47 @@
                                     <php>if($product){</php>
                                     <volist name="product" id="data">
                                         <tr class="pointer even" title="">
-                                           <!--  <td style="">
-                                            <input type="text" name="order_{{$data['goods_id']}}" value="{{$data['order']}}" style="width:30px;padding:0 5px;margin:0"/>
-                                            </td> -->
-
-                                            <td><a href="{{$data['pic_url']}}" target='_blank'>
-                                            <img src="{{:productimg($data['id'],100,75)}}"></a></td>
-
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'>{{:getsubstr($data['name'],0,60)}}</a></td>
-
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'>{{:getsubstr($data['title'],0,60)}}</a></td>
-
+                                            <td>
+                                            <input type="text" name="order_{{$data['sorting']}}" value="{{$data['sorting']}}" style="width:30px;padding:0 5px;margin:0;border:none;"/>
+                                            </td>
+                                            <td><img src="{{:productimg($data['id'],100,75)}}"></td>
+                                            <td>{{:getsubstr($data['name'],0,60)}}</td>
+                                            <td>{{:getsubstr($data['title'],0,60)}}</td>
                                             <td>{{$class[$data['cid']]}}</td>
                                             <td>{{$data['clicks']}}</td>
-                                            <td>{{$data['price']}}</td>
-                                            <td>{{$data['add_uname']}}</td>
-                                            <td><a  title="">
+                                           <td>
+                                            <a style="display:inline-block;padding-top:50%;"  v="{{$data['recommended']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'recommended', this)">
+                                            <if condition="($data['recommended'])">
+                                            <img src="ADMINSTYLE/images/yes.png">
+                                            <else />
+                                            <img src="ADMINSTYLE/images/cancel.png">
+                                            </if>
+                                           </a></td>
+                                           <td>
+                                            <a  v="{{$data['new']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'new', this)">
+                                            <if condition="($data['new'])">
+                                            <img src="ADMINSTYLE/images/yes.png">
+                                            <else />
+                                            <img src="ADMINSTYLE/images/cancel.png">
+                                            </if>
+                                           </a></td>
+                                           <td>
+                                            <a  v="{{$data['selling']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'selling', this)">
+                                            <if condition="($data['selling'])">
+                                            <img src="ADMINSTYLE/images/yes.png">
+                                            <else />
+                                            <img src="ADMINSTYLE/images/cancel.png">
+                                            </if>
+                                           </a></td>
+                                            <td>
+                                            <a  v="{{$data['status']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'status', this)">
                                             <if condition="($data['status'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
                                             <img src="ADMINSTYLE/images/cancel.png">
                                             </if>
                                            </a></td>
-                                            <td>{{:date('Y-m-d H:i:s',$data['time'])}}</td>
+                                            <td>{{:date('Y-m-d H:i:s',$data['time'])}}</td >
                                             <td>{{:date('Y-m-d H:i:s',$data['newtime'])}}</td>
                                             <td> 
                                                 <a target="_blank" href=''>查看</a>
@@ -127,14 +146,14 @@
                                             下架
                                             </button>
                                             <php></php>
-                                            <select class="col-sm-2" id="topic" name="topic">
+                                            <!-- <select class="col-sm-2" id="topic" name="topic">
 			                                    <option value="">选择专场分类</option>
 			                                    <volist name='topic' id='data'>
 			                                    <option value="{{$data['sort_id']}}">{$data['topic_name']}----{$data['sort_name']}</option>
 			                                    </volist>
 			                                </select>
 			                                
-			                                <button onclick="pullTopic()" class="col-sm-2 btn  btn-warning" type="button">添加到专场分类</button>
+			                                <button onclick="pullTopic()" class="col-sm-2 btn  btn-warning" type="button">添加到专场分类</button> -->
                                         </div>
                                     </div>
                                                                         
@@ -143,10 +162,7 @@
                                         <ul class='pagination pull-right'>{{$page}}</ul>
                                     </div> 
                                 </div>
-
-
                                 <php>}</php>  
-
                                 <php>}else{</php>
                                 <tr><td colspan="8" class="empty"><span class="empty"><i>没有找到数据.</i></span></td></tr>
                                 </tbody>

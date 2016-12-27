@@ -141,9 +141,17 @@ function productimg($id,$width,$height)
 	$type = $image->type(); 
 	$image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
 
-	// $image->open('.'.$path.$thumb_name.'.'.$type)->water('./logo.png')->save('.'.$path.$thumb_name.'.'.$type);//文字水印
+	//添加水印
+	$watermark = M('watermark')->find();
+	if($watermark['status1']){
+		
+		if($watermark['type']){
+		$image->open('.'.$path.$thumb_name.'.'.$type)->water('.'.$watermark['tupin'],$watermark['location'],$watermark['transparent'])->save('.'.$path.$thumb_name.'.'.$type);//图片水印
+		}else{
+		$image->open('.'.$path.$thumb_name.'.'.$type)->text($watermark['wenzi'],'./msyhbd.ttc',20,'#000',$watermark['location'])->save('.'.$path.$thumb_name.'.'.$type); //文字水印
+		}
 
-	$image->open('.'.$path.$thumb_name.'.'.$type)->text('LinFei','./simsunb.ttf',20,'#000',9)->save('.'.$path.$thumb_name.'.'.$type); //文字水印
+	}
 
 	return $path.$thumb_name.'.'.$type;
 

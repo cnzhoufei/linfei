@@ -11,6 +11,7 @@ function adminmenu()
 					array('name'=>'URL模式','c'=>'','f'=>''),
 					// array('name'=>'积分设置','c'=>'','f'=>''),
 					array('name'=>'邮件设置','c'=>'Config','f'=>'email'),
+					array('name'=>'水印设置','c'=>'Config','f'=>'watermark'),
 					// array('name'=>'QQ登录设置','c'=>'','f'=>''),
 					// array('name'=>'UCENTER设置','c'=>'','f'=>''),
 					// array('name'=>'注册字段设置','c'=>'','f'=>''),

@@ -1,0 +1,128 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="id" value="{{$watermark['id']}}" />
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">开启产品水印<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <label>
+                                        <input name="status1" <php>if(empty($watermark['status1'])){</php><php>}else{</php>checked='checked'<php>}</php> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
+                                        <span class="lbl"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">开启文章水印<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                    <label>
+                                        <input name="status2" <php>if(empty($watermark['status2'])){</php><php>}else{</php>checked='checked'<php>}</php> class="ace ace-switch ace-switch-7" type="checkbox" value='1'>
+                                        <span class="lbl"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            
+                            <div class="form-group">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">水印类型<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                               <input type="radio" name="type" value="0" onclick="wenzis();" checked /> 文字水印  
+                               <input type="radio" name="type" value="1" onclick="tupin();" <php>if($watermark['type'])echo 'checked';</php>>图片水印
+                                </div>
+                            </div>
+                             <div class="form-group wenzi" <php>if($watermark['type'])echo 'style="display:none;"';</php> >
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">水印文字<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="wenzi" value="{{$watermark['wenzi']}}"></div>
+                            </div>
+                            
+                            <div class="form-group tupin" <php>if(!$watermark['type'])echo 'style="display:none;"';</php>>
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">水印图片<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <input  class="col-sm-12" type="button" style="width:75px;" value="上传" onClick="GetUploadify(1,'tupin','imgs')" />   
+                                </div>
+                            </div>
+                             <!-- <div class="form-group tupin" <php>if(!$watermark['type'])echo 'style="display:none;"';</php>>
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">水印图片宽<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="width" value="{{$watermark.width}}" onkeyup="value=value.replace(/[^1234567890-]+/g,'')"></div>
+                            </div>
+                             <div class="form-group tupin" <php>if(!$watermark['type'])echo 'style="display:none;"';</php>>
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">水印图片高<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="height" value="{{$watermark.width}}" onkeyup="value=value.replace(/[^1234567890-]+/g,'')"></div>
+                            </div> -->
+                            <div class="form-group tupin" <php>if(!$watermark['type'])echo 'style="display:none;"';</php>>
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">透明度<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="transparent" value="{{$watermark.transparent}}" onkeyup="value=value.replace(/[^1234567890-]+/g,'')" style="width:30%;">0代表完全透明，100代表不透明</div>
+                            </div>
+                            <div class="form-group tupin" <php>if(!$watermark['type'])echo 'style="display:none;"';</php>>
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
+                                <div class="col-sm-9" id="imgs">
+                                <img src='{{$watermark[tupin]}}' id="img" />
+                                </div>
+                            </div>
+<style type="text/css">.location li{width:100px;float:left;list-style:none;}</style>
+                            <div class="form-group location">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">水印位置<span style="color:#f00;">*</span></label>
+<ul>                            <div class="col-sm-9">
+<li><input type="radio" name="location" value="1" <php>if($watermark['location'] == 1)echo 'checked';</php> />左上角水印</li> 
+<li><input type="radio" name="location" value="2" <php>if($watermark['location'] == 2)echo 'checked';</php> />上居中水印</li>
+<li><input type="radio" name="location" value="3" <php>if($watermark['location'] == 3)echo 'checked';</php> />右上角水印</li>
+<li><input type="radio" name="location" value="4" <php>if($watermark['location'] == 4)echo 'checked';</php> />左居中水印</li>
+<li><input type="radio" name="location" value="5" <php>if($watermark['location'] == 5)echo 'checked';</php> />居中水印  </li>   
+<li><input type="radio" name="location" value="6" <php>if($watermark['location'] == 6)echo 'checked';</php> />右居中水印</li>
+<li><input type="radio" name="location" value="7" <php>if($watermark['location'] == 7)echo 'checked';</php> />左下角水印</li>
+<li><input type="radio" name="location" value="8" <php>if($watermark['location'] == 8)echo 'checked';</php> />下居中水印</li>
+<li><input type="radio" name="location" value="9" <php>if($watermark['location'] == 9)echo 'checked';</php> />右下角水印</li>
+</ul>
+</div>
+                                </div>
+                            </div>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-4 col-md-4">
+                                    <button class="btn btn-info btn-block" type="submit">
+                                        <i class="icon-ok bigger-110"></i>
+                                        确认
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+<include file="Public:footer" />
+<script type="text/javascript">
+function wenzis()
+{
+    $('.wenzi').css('display','block');
+    $('.tupin').css('display','none');
+}
+function tupin()
+{
+    $('.wenzi').css('display','none');
+    $('.tupin').css('display','block');
+}
+
+
+</script>

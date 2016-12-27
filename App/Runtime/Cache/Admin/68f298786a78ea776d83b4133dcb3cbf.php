@@ -219,7 +219,7 @@
                         </form>
                     </div>          
 
-
+                    <style type="text/css">th,td{text-align:center;} td{height:80px;}</style>
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
                         <form action="{:U('admin/goodsList',array('op'=>'order'))}" method="post">                            
@@ -227,14 +227,15 @@
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr class="color428bca">
-                                            <!-- <th width="50">排序</th> -->
-                                            <th width="100" style="text-align:center">图片</th>
+                                            <th width="50">排序</th>
+                                            <th width="100">图片</th>
                                             <th style="width:16%;">产品名称</th>
                                             <th style="width:16%;">产品标题</th>
                                             <th>所属分类</th>
                                             <th>浏览量</th>
-                                            <th>原价格(元)</th>
-                                            <th>添加人</th>
+                                            <th>推荐</th>
+                                            <th>新品</th>
+                                            <th>热卖</th>
                                             <th>状态</th>
                                             <th>添加时间</th>
                                             <th>更新时间</th>
@@ -244,27 +245,39 @@
                                     <tbody>
                                     <?php if($product){ ?>
                                     <?php if(is_array($product)): $i = 0; $__LIST__ = $product;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="">
-                                           <!--  <td style="">
-                                            <input type="text" name="order_<?php echo ($data['goods_id']); ?>" value="<?php echo ($data['order']); ?>" style="width:30px;padding:0 5px;margin:0"/>
-                                            </td> -->
-
-                                            <td><a href="<?php echo ($data['pic_url']); ?>" target='_blank'>
-                                            <img src="<?php echo productimg($data['id'],100,75);?>"></a></td>
-
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo getsubstr($data['name'],0,60);?></a></td>
-
-                                            <td><a href="{:U('goods/detail',array('id'=>$data['goods_id']))}" target='_blank'><?php echo getsubstr($data['title'],0,60);?></a></td>
-
+                                            <td>
+                                            <input type="text" name="order_<?php echo ($data['sorting']); ?>" value="<?php echo ($data['sorting']); ?>" style="width:30px;padding:0 5px;margin:0;border:none;"/>
+                                            </td>
+                                            <td><img src="<?php echo productimg($data['id'],100,75);?>"></td>
+                                            <td><?php echo getsubstr($data['name'],0,60);?></td>
+                                            <td><?php echo getsubstr($data['title'],0,60);?></td>
                                             <td><?php echo ($class[$data['cid']]); ?></td>
                                             <td><?php echo ($data['clicks']); ?></td>
-                                            <td><?php echo ($data['price']); ?></td>
-                                            <td><?php echo ($data['add_uname']); ?></td>
-                                            <td><a  title="">
+                                           <td>
+                                            <a style="display:inline-block;padding-top:50%;"  v="<?php echo ($data['recommended']); ?>" href="javascript:;" onclick="status2('<?php echo U('Product/status');?>', '<?php echo ($data[id]); ?>', 'recommended', this)">
+                                            <?php if(($data['recommended'])): ?><img src="/App/Admin/View/style/images/yes.png">
+                                            <?php else: ?>
+                                            <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
+                                           </a></td>
+                                           <td>
+                                            <a  v="<?php echo ($data['new']); ?>" href="javascript:;" onclick="status2('<?php echo U('Product/status');?>', '<?php echo ($data[id]); ?>', 'new', this)">
+                                            <?php if(($data['new'])): ?><img src="/App/Admin/View/style/images/yes.png">
+                                            <?php else: ?>
+                                            <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
+                                           </a></td>
+                                           <td>
+                                            <a  v="<?php echo ($data['selling']); ?>" href="javascript:;" onclick="status2('<?php echo U('Product/status');?>', '<?php echo ($data[id]); ?>', 'selling', this)">
+                                            <?php if(($data['selling'])): ?><img src="/App/Admin/View/style/images/yes.png">
+                                            <?php else: ?>
+                                            <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
+                                           </a></td>
+                                            <td>
+                                            <a  v="<?php echo ($data['status']); ?>" href="javascript:;" onclick="status2('<?php echo U('Product/status');?>', '<?php echo ($data[id]); ?>', 'status', this)">
                                             <?php if(($data['status'])): ?><img src="/App/Admin/View/style/images/yes.png">
                                             <?php else: ?>
                                             <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
                                            </a></td>
-                                            <td><?php echo date('Y-m-d H:i:s',$data['time']);?></td>
+                                            <td><?php echo date('Y-m-d H:i:s',$data['time']);?></td >
                                             <td><?php echo date('Y-m-d H:i:s',$data['newtime']);?></td>
                                             <td> 
                                                 <a target="_blank" href=''>查看</a>
@@ -296,12 +309,12 @@
                                             下架
                                             </button>
                                             <?php  ?>
-                                            <select class="col-sm-2" id="topic" name="topic">
+                                            <!-- <select class="col-sm-2" id="topic" name="topic">
 			                                    <option value="">选择专场分类</option>
 			                                    <?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><option value="<?php echo ($data['sort_id']); ?>">{$data['topic_name']}----{$data['sort_name']}</option><?php endforeach; endif; else: echo "" ;endif; ?>
 			                                </select>
 			                                
-			                                <button onclick="pullTopic()" class="col-sm-2 btn  btn-warning" type="button">添加到专场分类</button>
+			                                <button onclick="pullTopic()" class="col-sm-2 btn  btn-warning" type="button">添加到专场分类</button> -->
                                         </div>
                                     </div>
                                                                         
@@ -310,10 +323,7 @@
                                         <ul class='pagination pull-right'><?php echo ($page); ?></ul>
                                     </div> 
                                 </div>
-
-
                                 <?php } ?>  
-
                                 <?php }else{ ?>
                                 <tr><td colspan="8" class="empty"><span class="empty"><i>没有找到数据.</i></span></td></tr>
                                 </tbody>

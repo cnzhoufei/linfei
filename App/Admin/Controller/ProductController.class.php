@@ -2,23 +2,22 @@
 namespace Admin\Controller;
 use Think\Controller;
 
-class ProductController extends CommonController {
-	public function index() {
-
+class ProductController extends CommonController 
+{
+	public function index(){
 		$product_m = M('product');
 		$class = M('classify')->where(array('type' => 'product'))->getField('id,name', true);
 		$this->assign('class', $class);
 		$product = $product_m->select();
-
 		$this->assign('product', $product);
 		$this->display('/productlist');
 	}
 
-	public function addproduct() {
-
+	public function addproduct() 
+	{
 		$product_m = M('product');
 		$id = I('id', 0);
-		if (!is_numeric($id) || $id == 0) {$this->error('非法操作！！！');}
+		if (!is_numeric($id)) {$this->error('非法操作！！！');}
 		if (IS_POST) {
 			if(S('img')){
 				$_POST['img'] = S('img');//缩略图
@@ -34,7 +33,7 @@ class ProductController extends CommonController {
 				unset($data['id']);
 				$img = $product_m->where(array('id'=>$id))->field('img')->find();//缩略图
 				$res = $product_m->where(array('id'=>$id))->save($data);
-				if($res){
+				if($res && S('img')){
 					@unlink('.'.$img['img']);
 				}
 			}else{
@@ -43,7 +42,7 @@ class ProductController extends CommonController {
 				$res = $product_m->add($data);
 				
 			}
-
+			S('img',null);
 			if (S('productimg')) {
 				if($id){$productid = $id;}else{$productid = $res;}
 				
@@ -96,6 +95,25 @@ class ProductController extends CommonController {
 				}
 
 			}
+		}
+	}
+
+
+
+	/**
+	 * 产品状态
+	 */
+	public function status()
+	{
+		if(IS_AJAX){
+			$id = (int)I('id',0);
+			$data[ I('field') ] = $status = (I('status'))?0:1;
+			$productimg_m = M('product');
+			$res['res'] = $productimg_m->where(array('id'=>$id))->save($data);
+			$res['status'] = $status;
+			$this->ajaxReturn($res);
+		}else{
+			$this->error('非法操作！！！');
 		}
 	}
 }
