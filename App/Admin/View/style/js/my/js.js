@@ -5,10 +5,10 @@ function mydelete(id,url,deletes){
 				$('#'+deletes).remove();
 			}else{
 				if(!res){
-					alert('删除失败！');
+					showmsg('删除失败！');
 					
 				}else{
-					alert(res);
+					showmsg(res);
 				}
 			}
 			
@@ -16,7 +16,7 @@ function mydelete(id,url,deletes){
 		
 	}else{
 
-		alert('放弃也是一种收获');
+		showmsg('放弃也是一种收获');
 	}
 
 }
@@ -52,7 +52,7 @@ function status(url,id,field,obj)
 			$(obj).html(res['msg']);
 			$(obj).css('color',color);
 		}else{
-			alert('操作失败！');
+			showmsg('操作失败！');
 		}
 	})
 }
@@ -64,8 +64,10 @@ function status2(url,id,field,obj)
 			if(res['status']){var pic = "<img src='/App/Admin/View/style/images/yes.png'>";}else{var pic = "<img src='/App/Admin/View/style/images/cancel.png'>";}
 			$(obj).attr('v',res['status']);
 			$(obj).html(pic);
+			window.location.reload();
+			showmsg('操作成功');
 		}else{
-			alert('操作失败！');
+			showmsg('操作失败！');
 		}
 	})
 }
@@ -79,7 +81,20 @@ function sorting(url,obj,id){
 		if(res){
 
 		}else{
-			alert('操作失败！');
+			showmsg('操作失败！');
 		}
 	})
 }
+
+
+
+
+function nav(url,v){
+
+	$.post(url,{'v':v} ,function(res){
+		// alert(res)
+	})
+	
+}
+
+

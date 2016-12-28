@@ -118,7 +118,7 @@
             <span class="menu-text"></span>
         </a>
 <?php echo ($ueditorinit); ?>
-        <div class="sidebar" id="sidebar">
+        <div class="<?php echo ($navstyle['style1'][ $navnum ]); ?>" id="sidebar">
 	<script type="text/javascript">
 		try {
 		            ace.settings.check('sidebar', 'fixed')
@@ -158,7 +158,7 @@
 		        var m2 = o1.find('a').html();
 	</script>
 	<div class="sidebar-collapse" id="sidebar-collapse">
-		<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+		<i class="<?php echo ($navstyle['style2'][ $navnum ]); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
 	</div>
 </div>
         <div class="main-content">
@@ -220,7 +220,7 @@
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">分类<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
                                     <select  class="col-sm-12" name="cid" id="types" onchange="changesort($(this).val())">
-                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option  <?php if($classify['pid'] == $vv['id'])echo 'selected'; ?> value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
+                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option  <?php if($product['cid'] == $vv['id'])echo 'selected'; ?> value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
                                     </select>
                                     </div>
                                 </div>

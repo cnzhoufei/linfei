@@ -45,15 +45,16 @@ class ClassifyController extends CommonController
         if(IS_POST){
         if(!$_POST['name']){$this->error('分类名称不能为空！');}
         if(!$_POST['m_name']){$_POST['m_name'] = $_POST['name'];}
-        if(!$_POST['url_name']){$_POST['url_name'] = pinyin($_POST['name'],1);}
            $datas = $classify_m->datas($_POST);
            $data = $classify_m->create($datas,1);//根据表单提交的POST数据创建数据对象
            if(!$data){$erroer = $classify_m->getError(); $this->error($erroer);}
 
            if($_POST['id']){
-            $res = $classify_m->save($data);
+                unset($data['url_name']);
+                $res = $classify_m->save($data);
            }else{
-           $res = $classify_m->add($data);
+                if(!$_POST['url_name']){$data['url_name'] = pinyin($_POST['name'],1);}
+                $res = $classify_m->add($data);
            }
            if($res){
                 $this->success('操作成功',U('classify/index').'?type=1');

@@ -184,18 +184,22 @@ return array(
 
 	}
 
+	/**
+	 * 菜单样式
+	 */
+	public function navstyle()
+	{
+		if(IS_AJAX){
+			$data['navstyle'] = (I('v'))?0:1;
+			$config = M('config');
+			$id = $config->field('id')->find();
+			$res = $config->where(array('id'=>$id['id']))->save($data);
+			$this->ajaxReturn($res);
+		}else{
+			$this->error('非法操作！');	
+		}	
 
-
-
-
-
-
-
-
-
-
-
-
+	}
 
 
 

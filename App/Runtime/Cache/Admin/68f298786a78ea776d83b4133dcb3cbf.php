@@ -118,7 +118,7 @@
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
         </a>
-        <div class="sidebar" id="sidebar">
+        <div class="<?php echo ($navstyle['style1'][ $navnum ]); ?>" id="sidebar">
 	<script type="text/javascript">
 		try {
 		            ace.settings.check('sidebar', 'fixed')
@@ -158,7 +158,7 @@
 		        var m2 = o1.find('a').html();
 	</script>
 	<div class="sidebar-collapse" id="sidebar-collapse">
-		<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+		<i class="<?php echo ($navstyle['style2'][ $navnum ]); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
 	</div>
 </div>
         <div class="main-content">
@@ -190,22 +190,19 @@
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <form action="index.php" method="get" >
+                        <form action="<?php echo U('product/search');?>" method="get" >
                             <div class="row">
                                     <div class='col-sm-2'>
-                                        <select class="form-control" name='sort_id'>
+                                        <select class="form-control" name='class'>
                                             <option value="0">全部栏目</option>
-                                            {$goodsSort}
+                                            <?php if(is_array($class)): foreach($class as $c_kk=>$c_vv): ?><option <?php if($classid == $c_kk) echo 'selected';?> value="<?php echo ($c_kk); ?>"><?php echo ($c_vv); ?></option><?php endforeach; endif; ?>
                                         </select>
-                                        <script>
-                                            $("select[name='sort_id'] option[value='{$sort_id}']").attr('selected', 'selected');
-                                        </script>
                                     </div>
                                     <div class='col-sm-2'>
-                                        <input class="form-control" placeholder=商品标题 type="text" name='title' value='{$title}'  />
+                                        <input class="form-control" placeholder=产品标题 type="text" name='title' value='<?php echo ($title); ?>'  />
                                     </div>
                                     <div class='col-sm-2'>
-                                        <input class="form-control" placeholder=添加人 type="text" name='add_uname' value='{$add_uname}'  />
+                                        <input class="form-control" placeholder=产品名称 type="text" name='name' value='<?php echo ($name); ?>'  />
                                     </div>
                                     <div class='col-sm-2'>                                        
                                             <button type="submit" class="btn btn-purple btn-sm">
@@ -213,21 +210,21 @@
                                                 <i class="icon-search icon-on-right bigger-110"></i>
                                             </button>
                                     </div>
-                                            
+                                  
                             </div>
                             <div class="space-6"></div>
                         </form>
                     </div>          
 
-                    <style type="text/css">th,td{text-align:center;} td{height:80px;}</style>
+                    <style type="text/css">th,td{text-align:center;} .td{text-align:left;}</style>
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
-                        <form action="{:U('admin/goodsList',array('op'=>'order'))}" method="post">                            
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr class="color428bca">
                                             <th width="50">排序</th>
+                                            <th width="50">ID</th>
                                             <th width="100">图片</th>
                                             <th style="width:16%;">产品名称</th>
                                             <th style="width:16%;">产品标题</th>
@@ -236,7 +233,7 @@
                                             <th>推荐</th>
                                             <th>新品</th>
                                             <th>热卖</th>
-                                            <th>状态</th>
+                                            <th>上下架</th>
                                             <th>添加时间</th>
                                             <th>更新时间</th>
                                             <th>操作</th>
@@ -244,17 +241,18 @@
                                     </thead>
                                     <tbody>
                                     <?php if($product){ ?>
-                                    <?php if(is_array($product)): $i = 0; $__LIST__ = $product;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="">
+                                    <?php if(is_array($product)): $i = 0; $__LIST__ = $product;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" id="<?php echo ($data['id']); ?>" x='0' onclick="choose(this)">
                                             <td>
-                                            <input type="text" name="order_<?php echo ($data['sorting']); ?>" value="<?php echo ($data['sorting']); ?>" style="width:30px;padding:0 5px;margin:0;border:none;"/>
+                                            <input type="text" value="<?php echo ($data['sorting']); ?>" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('<?php echo U('Product/ajaxsorting');?>',this,'<?php echo ($data['id']); ?>')" />
                                             </td>
+                                            <td><?php echo ($data['id']); ?></td>
                                             <td><img src="<?php echo productimg($data['id'],100,75);?>"></td>
-                                            <td><?php echo getsubstr($data['name'],0,60);?></td>
-                                            <td><?php echo getsubstr($data['title'],0,60);?></td>
+                                            <td class="td"><?php echo getsubstr($data['name'],0,60);?></td>
+                                            <td class="td"><?php echo getsubstr($data['title'],0,60);?></td>
                                             <td><?php echo ($class[$data['cid']]); ?></td>
                                             <td><?php echo ($data['clicks']); ?></td>
                                            <td>
-                                            <a style="display:inline-block;padding-top:50%;"  v="<?php echo ($data['recommended']); ?>" href="javascript:;" onclick="status2('<?php echo U('Product/status');?>', '<?php echo ($data[id]); ?>', 'recommended', this)">
+                                            <a  v="<?php echo ($data['recommended']); ?>" href="javascript:;" onclick="status2('<?php echo U('Product/status');?>', '<?php echo ($data[id]); ?>', 'recommended', this)">
                                             <?php if(($data['recommended'])): ?><img src="/App/Admin/View/style/images/yes.png">
                                             <?php else: ?>
                                             <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
@@ -280,11 +278,11 @@
                                             <td><?php echo date('Y-m-d H:i:s',$data['time']);?></td >
                                             <td><?php echo date('Y-m-d H:i:s',$data['newtime']);?></td>
                                             <td> 
-                                                <a target="_blank" href=''>查看</a>
+                                                <a target="_blank" href="http://<?php echo ($_SERVER['HTTP_HOST']); echo U('/Article/info');?>">查看</a>
                                                 |
-                                                <a id="" href="<?php echo U('product/addproduct');?>?id=<?php echo ($data['id']); ?>" title="">编辑</a>
+                                                <a id="" href="<?php echo U('Product/addproduct');?>?id=<?php echo ($data['id']); ?>" title="">编辑</a>
                                                 |
-                                                <a id="" onclick="if(confirm('确定删除')){return ajHref(this);};return false;" href="<?php echo U('admin/goodsList',array('op'=>'del','goods_id'=>$data['goods_id']));?>" title="删除">删除</a>
+                                                <a id="" onclick="mydelete('<?php echo ($data['id']); ?>','<?php echo U('Product/del');?>','<?php echo ($data['id']); ?>')" href="ajaxSrcipt:;" title="删除">删除</a> | 
                                             </td>
                                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                     </tbody>
@@ -293,34 +291,35 @@
                                 <div class="row">
                                     <div class='col-sm-6'>
                                         <div class="row">
-                                            <button class="col-sm-1 btn  btn-success" type="submit" name="btSave" value="更新">                                            
+                                            <button class="col-sm-1 btn  btn-success" type="button"  value="更新" onclick="window.location.reload();">                                            
                                             排序
                                             </button>
-                                            <button id="quanxuan" class="col-sm-1 btn  btn-warning" type="button" value="全选">
+                                            <button id="quanxuan" class="col-sm-1 btn  btn-primary" type="button" value="全选">
                                             全选
+                                            </button>
+                                            <button id="fanxuan" class="col-sm-1 btn  btn-warning" type="button" value="反选">
+                                            反选
+                                            </button>
+                                            <button id="quxiao" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
+                                            取消
                                             </button>
                                             <button onclick="deletes()" class="col-sm-1 btn  btn-danger" type="button" value="删除">
                                             删除
                                             </button>
-                                            <button onclick="state(1)" class="col-sm-1 btn  btn-purple" type="button" value="删除">
+                                            <button onclick="states(1)" class="col-sm-1 btn  btn-purple" type="button" value="上架">
                                             上架
                                             </button>
-                                            <button onclick="state(0)" class="col-sm-1 btn  btn-inverse" type="button" value="删除">
+                                            <button onclick="states(0)" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
                                             下架
                                             </button>
                                             <?php  ?>
-                                            <!-- <select class="col-sm-2" id="topic" name="topic">
-			                                    <option value="">选择专场分类</option>
-			                                    <?php if(is_array($topic)): $i = 0; $__LIST__ = $topic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><option value="<?php echo ($data['sort_id']); ?>">{$data['topic_name']}----{$data['sort_name']}</option><?php endforeach; endif; else: echo "" ;endif; ?>
-			                                </select>
-			                                
-			                                <button onclick="pullTopic()" class="col-sm-2 btn  btn-warning" type="button">添加到专场分类</button> -->
+                                           
                                         </div>
                                     </div>
-                                                                        
+                                      <style type="text/css">.pagination div a,.pagination div span{display:inline-block;list-style:none;min-width:30px;border:3px solid #438EB9;text-align:center;margin-left:2px;}</style>                                  
                                     <?php if($page){ ?>
                                     <div class="col-sm-6 ">
-                                        <ul class='pagination pull-right'><?php echo ($page); ?></ul>
+                                        <div class='pagination pull-right pagination-large'><?php echo ($page); ?></div>
                                     </div> 
                                 </div>
                                 <?php } ?>  
@@ -331,7 +330,6 @@
 
                                 <?php } ?>
                             </div>
-                        </form>
                         <!-- PAGE CONTENT ENDS -->
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -449,3 +447,99 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+
+//选择
+function choose(obj)
+{
+    var x = ($(obj).attr('x') == '1')?'0':'1';
+    if(x == '1'){var back = 'background:orange';}else{var back = '';}
+    $(obj).find('td').attr('style',back);
+    $(obj).attr('x',x);
+}
+
+//全选
+$('#quanxuan').click(function(){
+
+    $('tbody tr td').attr('style','background:orange');
+    $('tbody tr').attr('x','1');
+})
+
+//反选
+$('#fanxuan').click(function(){
+    var tr = $('tbody tr');
+    tr.each(function(){
+        var x = ($(this).attr('x') == '1')?'0':'1';
+        if(x == '1'){var back = 'background:orange';}else{var back = '';}
+        $(this).find('td').attr('style',back);
+        $(this).attr('x',x);
+    })
+
+})
+
+
+//取消
+$('#quxiao').click(function(){
+
+    $('tbody tr td').attr('style','background:');
+    $('tbody tr').attr('x','0');
+})
+
+
+function states(v){
+    var tr = $('tbody tr');
+    var arr = new Array();
+    tr.each(function(i){
+        if($(this).attr('x') == '1'){
+            arr[i] = $(this).attr('id');
+        }
+    })
+
+    $.post("<?php echo U('Product/states');?>",{'v':v, 'arr':arr} ,function(res){
+
+        if(res){
+            showmsg('操作成功');
+            window.location.reload();
+        }else{
+            showmsg('操作失败！');
+            window.location.reload();
+        }
+    })
+
+    
+}
+
+//批量删除
+function deletes(v){
+ if(confirm('你确定删除吗？')){
+    var tr = $('tbody tr');
+    var arr = new Array();
+    tr.each(function(i){
+        if($(this).attr('x') == '1'){
+            arr[i] = $(this).attr('id');
+        }
+    })
+
+    $.post("<?php echo U('Product/deletes');?>",{'v':v, 'arr':arr} ,function(res){
+
+        if(res){
+            tr.each(function(i){
+            if($(this).attr('x') == '1'){
+                $(this).remove();
+            }
+            })
+            showmsg('操作成功');
+        }else{
+            showmsg('操作失败！');
+            window.location.reload();
+        }
+    })
+
+    
+}
+}
+</script>
+
+
+<!-- 18   -->

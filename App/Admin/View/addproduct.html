@@ -48,7 +48,7 @@
                                     <div class="col-sm-9">
                                     <select  class="col-sm-12" name="cid" id="types" onchange="changesort($(this).val())">
                                         <foreach name="classifys" item="vv">
-                                            <option  <php>if($classify['pid'] == $vv['id'])echo 'selected';</php> value="{{$vv.id}}">{{$vv.name}}</option>
+                                            <option  <php>if($product['cid'] == $vv['id'])echo 'selected';</php> value="{{$vv.id}}">{{$vv.name}}</option>
                                         </foreach>
                                     </select>
                                     </div>

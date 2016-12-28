@@ -8,6 +8,8 @@ class CommonController extends Controller
     	if(!session('adminuser')){$this->redirect('Login/login');}
     	$this->assign('adminmenu',adminmenu());
     	$this->assign('url',$_SERVER['REDIRECT_URL']);
+        $this->assign('navstyle',navstyle());
+        $this->navsnum();
 
     }
 
@@ -29,6 +31,10 @@ class CommonController extends Controller
 
     }
 
+    public function navsnum()
+    {
+        $this->assign('navnum',M('config')->getField('navstyle'));
+    }
 
 
     

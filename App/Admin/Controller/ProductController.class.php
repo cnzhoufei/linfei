@@ -4,11 +4,17 @@ use Think\Controller;
 
 class ProductController extends CommonController 
 {
-	public function index(){
-		$product_m = M('product');
+	public function index()
+	{
 		$class = M('classify')->where(array('type' => 'product'))->getField('id,name', true);
 		$this->assign('class', $class);
-		$product = $product_m->select();
+		$product_m = M('product');
+
+		$count = $product_m->count();
+		$Page       = new \Think\Page($count,6);
+		$show       = $Page->show();
+		$product = $product_m->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$this->assign('page',$show);
 		$this->assign('product', $product);
 		$this->display('/productlist');
 	}
@@ -17,7 +23,6 @@ class ProductController extends CommonController
 	{
 		$product_m = M('product');
 		$id = I('id', 0);
-		if (!is_numeric($id)) {$this->error('非法操作！！！');}
 		if (IS_POST) {
 			if(S('img')){
 				$_POST['img'] = S('img');//缩略图
@@ -61,7 +66,7 @@ class ProductController extends CommonController
 			}
 
 		} else {
-
+			if (!is_numeric($id)){$this->error('非法操作！！！');}
 			$product = M('product')->where(array('id' => $id))->find();
 			$this->assign('product', $product);
 			$class = M('Classify');
@@ -116,4 +121,126 @@ class ProductController extends CommonController
 			$this->error('非法操作！！！');
 		}
 	}
+
+
+	//上下架
+	public function states()
+	{
+		if(IS_AJAX){
+			$data['status'] = I('v',0);
+			$arr =  I('arr');
+			$i = 0;
+			foreach($arr as $k=>$v){
+				if($v && is_numeric($v)){
+					if($i > 0){
+						$sql .= ' or id = '.$v;
+
+					}else{
+						$sql .= 'id = '.$v;
+					}
+					$i++;
+				}
+			}
+			$res = M('product')->where($sql)->save($data);
+			$this->ajaxReturn($res);
+		}else{
+
+			$this->error('非法操作！！！');
+		}
+	}
+
+
+
+	/**
+     * 排序
+     */
+    public function ajaxsorting()
+    {
+        if(IS_AJAX){
+            $id = I('id',0);
+            $val['sorting'] = I('val',0);
+            $classify_m = M('product');
+            $res = $classify_m->where(array('id'=>$id))->save($val);
+            $this->ajaxReturn($res);
+
+        }else{
+
+            $this->error('非法操作！！！！！');
+        }
+    }
+
+
+    // 删除
+    public function del()
+    {
+    	if(IS_AJAX){
+    		$id = (int)I('id',0);
+    		$product = M('product')->where(array('id'=>$id))->delete();
+    		$this->ajaxReturn($product);
+    	}else{
+    		$this->error('非法操作！！！！！');
+    	}
+
+    }
+
+    /**
+     * 批量删除
+     */
+    public function deletes()
+    {
+    	if(IS_AJAX){
+
+    		foreach(I('arr') as $v){
+    			if($v){
+    				$strid .= $v.',';
+    			}
+    		}
+    		$res = M('product')->delete(substr($strid,0,-1));
+    		$this->ajaxReturn($res);
+
+    	}else{
+    		$this->error('非法操作！！！！！');
+    	}
+
+    }
+
+    /**
+     * 搜索
+     */
+    public function search()
+    {
+    	$product_m = M('product');
+    	// if (!$product->autoCheckToken($_GET)){
+    	// 	$this->error('请不要重复提交！');
+    	// }
+		$class = M('classify')->where(array('type' => 'product'))->getField('id,name', true);
+		$this->assign('class', $class);
+		if(I('name')){
+    		$where['name']  = array('like', '%'.I('name').'%');
+		}
+		if(I('title')){
+    		$where['title']  = array('like','%'.I('title').'%');
+		}
+    	$where['_logic'] = 'or';
+    	if(I('class')){
+    	if(I('name') || I('title')){
+    		$map['_complex'] = $where;
+    	}
+    	$map['cid']  = array('eq',I('class'));
+    	$where = $map;
+
+    	}
+    	$count = $product_m->where($where)->count();
+		$Page       = new \Think\Page($count,6);
+		$show       = $Page->show();
+		$product = $product_m->where($where)->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+
+
+    	$this->assign('page',$show);
+    	$this->assign('product',$product);
+    	$this->assign('classid',I('class'));
+    	$this->assign('title',I('title'));
+    	$this->assign('name',I('name'));
+    	$this->display('/productlist');
+    }
 }

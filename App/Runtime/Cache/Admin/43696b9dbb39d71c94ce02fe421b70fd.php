@@ -123,7 +123,7 @@
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
         </a>
-        <div class="sidebar" id="sidebar">
+        <div class="<?php echo ($navstyle['style1'][ session('navstyle') ]); ?>" id="sidebar">
 	<script type="text/javascript">
 		try {
 		            ace.settings.check('sidebar', 'fixed')
@@ -163,7 +163,7 @@
 		        var m2 = o1.find('a').html();
 	</script>
 	<div class="sidebar-collapse" id="sidebar-collapse">
-		<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+		<i class="<?php echo ($navstyle['style2'][ session('navstyle') ]); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav()"></i>
 	</div>
 </div>
         <div class="main-content">            

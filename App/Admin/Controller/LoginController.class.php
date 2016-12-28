@@ -29,7 +29,7 @@ class LoginController extends Controller
                     session('adminuser',$res);
                     $this->redirect('Index/index');
                  }else{
-                    $this->redirect('Login/login',array('用户名或密码错误！'));
+                    $this->redirect('Login/login',array('error'=>'用户名或密码错误！'));
                  }
 
              }else{

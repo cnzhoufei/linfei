@@ -96,3 +96,14 @@ function adminmenu()
 
 // 		);
 // }
+
+/**
+ * 左边菜单缩放
+ */
+function navstyle()
+{
+	return array(
+		'style1'=>array('sidebar','sidebar menu-min'),
+		'style2'=>array('icon-double-angle-left','icon-double-angle-right'),
+		);
+}
