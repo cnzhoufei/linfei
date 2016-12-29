@@ -9,11 +9,11 @@ class ProductController extends CommonController
 		$class = M('classify')->where(array('type' => 'product'))->getField('id,name', true);
 		$this->assign('class', $class);
 		$product_m = M('product');
-
 		$count = $product_m->count();
 		$Page       = new \Think\Page($count,6);
 		$show       = $Page->show();
 		$product = $product_m->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$this->assign('count',$count);
 		$this->assign('page',$show);
 		$this->assign('product', $product);
 		$this->display('/productlist');
@@ -60,7 +60,7 @@ class ProductController extends CommonController
 			}
 
 			if ($res) {
-				$this->success('操作成功');
+				$this->success('操作成功',U('Product/index'));
 			} else {
 				$this->error('操作失败！');
 			}
@@ -134,7 +134,6 @@ class ProductController extends CommonController
 				if($v && is_numeric($v)){
 					if($i > 0){
 						$sql .= ' or id = '.$v;
-
 					}else{
 						$sql .= 'id = '.$v;
 					}
@@ -175,7 +174,20 @@ class ProductController extends CommonController
     {
     	if(IS_AJAX){
     		$id = (int)I('id',0);
-    		$product = M('product')->where(array('id'=>$id))->delete();
+    		$product_m = M('product');
+    		$product1 = $product_m->where(array('id'=>$id))->field('img,text')->find();
+    		$product = $product_m->where(array('id'=>$id))->delete();
+    		if($product){
+    			@unlink('.'.$product1['img']);
+	    		foreach(sp_getcontent_imgs(htmlspecialchars_decode($product1['text'])) as $v){
+	    			@unlink('.'.$v['src']);
+	    		}
+	    		$productimg = M('productimg')->where(array('productid'=>$id))->select();
+	    		foreach($productimg as $vv){
+	    			@unlink('.'.$vv['img']);
+	    			M('productimg')->where(array('id'=>$vv['id']))->delete();
+	    		}
+    		}
     		$this->ajaxReturn($product);
     	}else{
     		$this->error('非法操作！！！！！');
@@ -189,13 +201,27 @@ class ProductController extends CommonController
     public function deletes()
     {
     	if(IS_AJAX){
-
     		foreach(I('arr') as $v){
     			if($v){
     				$strid .= $v.',';
     			}
     		}
-    		$res = M('product')->delete(substr($strid,0,-1));
+    		$product_m = M('product');
+    		$product = $product_m->where('id in ('.substr($strid,0,-1).')')->field('img,text')->select();
+    		$res = $product_m->delete(substr($strid,0,-1));
+    		if($res){
+    			foreach($product as $v){
+    				@unlink('.'.$v['img']);
+    				foreach(sp_getcontent_imgs(htmlspecialchars_decode($v['text'])) as $vv){
+    					@unlink('.'.$vv['src']);
+    				}
+    			}
+    			$productimg = M('productimg')->where(array('productid in ('.substr($strid,0,-1).')'))->select();
+	    		foreach($productimg as $vvv){
+	    			@unlink('.'.$vvv['img']);
+	    			M('productimg')->where(array('id'=>$vvv['id']))->delete();
+	    		}
+    		}
     		$this->ajaxReturn($res);
 
     	}else{
@@ -234,8 +260,7 @@ class ProductController extends CommonController
 		$Page       = new \Think\Page($count,6);
 		$show       = $Page->show();
 		$product = $product_m->where($where)->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
-
-
+    	$this->assign('count',$count);
     	$this->assign('page',$show);
     	$this->assign('product',$product);
     	$this->assign('classid',I('class'));

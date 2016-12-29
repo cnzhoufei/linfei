@@ -76,7 +76,7 @@
                                             <input type="text" value="{{$data['sorting']}}" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('{{:U('Product/ajaxsorting')}}',this,'{{$data['id']}}')" />
                                             </td>
                                             <td>{{$data['id']}}</td>
-                                            <td><img src="{{:productimg($data['id'],100,75)}}"></td>
+                                            <td><img src="{{:productimgadmin($data['id'],100,75)}}"></td>
                                             <td class="td">{{:getsubstr($data['name'],0,60)}}</td>
                                             <td class="td">{{:getsubstr($data['title'],0,60)}}</td>
                                             <td>{{$class[$data['cid']]}}</td>
@@ -155,10 +155,10 @@
                                            
                                         </div>
                                     </div>
-                                      <style type="text/css">.pagination div a,.pagination div span{display:inline-block;list-style:none;min-width:30px;border:3px solid #438EB9;text-align:center;margin-left:2px;}</style>                                  
+                                      <style type="text/css">.pagination a,.pagination span{display:inline-block;list-style:none;min-width:30px;border:3px solid #438EB9;text-align:center;margin-left:2px;}</style>                                  
                                     <php>if($page){</php>
                                     <div class="col-sm-6 ">
-                                        <div class='pagination pull-right pagination-large'>{{$page}}</div>
+                                        <div class='pagination pull-right pagination-large'>{{$page}}<a href="">共 {{$count}} 条数据</a></div>
                                     </div> 
                                 </div>
                                 <php>}</php>  

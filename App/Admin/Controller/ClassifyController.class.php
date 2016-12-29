@@ -148,18 +148,24 @@ class ClassifyController extends CommonController
     public function ajaxdelete()
     {
         if(IS_AJAX){
-            $id = I('id',0);
+            $id = (int)I('id',0);
             $classify_m = M('classify');
-            $res = $classify_m->where(array('pid'=>$id))->find();
-            if($res){$this->ajaxReturn('有子级，不能删除！');}
+            $res1 = $classify_m->where(array('pid'=>$id))->find();
+            if($res1){$this->ajaxReturn('有子级，不能删除！');}
 
             $article = M('article')->where(array('cid'=>$id))->find();
             if($article){$this->ajaxReturn('此分类还有文章不能删除！');}
 
             $product = M('product')->where(array('cid'=>$id))->find();
             if($product){$this->ajaxReturn('此分类还有产品不能删除！');}
-            
+
+            $class = $classify_m->where(array('id'=>$id))->field('text')->find();
             $res = $classify_m->where(array('id'=>$id))->delete();
+            if($res){
+                foreach(sp_getcontent_imgs(htmlspecialchars_decode($class['text'])) as $v){
+                    @unlink('.'.$v['src']);
+                }
+            }
             $this->ajaxReturn($res);
         }else{
             $this->error('非法操作！！！！！');

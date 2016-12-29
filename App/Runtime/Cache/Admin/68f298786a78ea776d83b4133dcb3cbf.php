@@ -62,6 +62,7 @@
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
+				
 				<div class="navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
 						<li class="light-blue">
@@ -101,11 +102,17 @@
 						</li>
 					</ul><!-- /.ace-nav -->
 				</div><!-- /.navbar-header -->
+				<div class="navbar-header pull-right">
+				<a href="<?php echo U('Admin/recycling');?>" class="navbar-brand">
+						<small>
+							<i class="icon-refresh"></i> 清除缓存
+						</small>
+					</a><!-- /.brand -->
+				</div>
 			</div><!-- /.container -->
 		</div>
 <script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
 <script src="/App/Admin/View/style/js/my/js.js" type="text/javascript"></script> 
-		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
         try {
@@ -246,7 +253,7 @@
                                             <input type="text" value="<?php echo ($data['sorting']); ?>" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('<?php echo U('Product/ajaxsorting');?>',this,'<?php echo ($data['id']); ?>')" />
                                             </td>
                                             <td><?php echo ($data['id']); ?></td>
-                                            <td><img src="<?php echo productimg($data['id'],100,75);?>"></td>
+                                            <td><img src="<?php echo productimgadmin($data['id'],100,75);?>"></td>
                                             <td class="td"><?php echo getsubstr($data['name'],0,60);?></td>
                                             <td class="td"><?php echo getsubstr($data['title'],0,60);?></td>
                                             <td><?php echo ($class[$data['cid']]); ?></td>
@@ -316,10 +323,10 @@
                                            
                                         </div>
                                     </div>
-                                      <style type="text/css">.pagination div a,.pagination div span{display:inline-block;list-style:none;min-width:30px;border:3px solid #438EB9;text-align:center;margin-left:2px;}</style>                                  
+                                      <style type="text/css">.pagination a,.pagination span{display:inline-block;list-style:none;min-width:30px;border:3px solid #438EB9;text-align:center;margin-left:2px;}</style>                                  
                                     <?php if($page){ ?>
                                     <div class="col-sm-6 ">
-                                        <div class='pagination pull-right pagination-large'><?php echo ($page); ?></div>
+                                        <div class='pagination pull-right pagination-large'><?php echo ($page); ?><a href="">共 <?php echo ($count); ?> 条数据</a></div>
                                     </div> 
                                 </div>
                                 <?php } ?>  

@@ -62,6 +62,7 @@
 						</small>
 					</a><!-- /.brand -->
 				</div><!-- /.navbar-header -->
+				
 				<div class="navbar-header pull-right" role="navigation">
 					<ul class="nav ace-nav">
 						<li class="light-blue">
@@ -101,11 +102,17 @@
 						</li>
 					</ul><!-- /.ace-nav -->
 				</div><!-- /.navbar-header -->
+				<div class="navbar-header pull-right">
+				<a href="<?php echo U('Admin/recycling');?>" class="navbar-brand">
+						<small>
+							<i class="icon-refresh"></i> 清除缓存
+						</small>
+					</a><!-- /.brand -->
+				</div>
 			</div><!-- /.container -->
 		</div>
 <script src="/Public/uploadify/global.js" type="text/javascript">//异步上传图片</script> 
 <script src="/App/Admin/View/style/js/my/js.js" type="text/javascript"></script> 
-		
 <div class="main-container" id="main-container">
     <script type="text/javascript">
         try {

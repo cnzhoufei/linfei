@@ -5,7 +5,7 @@ class HomeController extends Controller
 {
     public function index(){
 
-    	$product = M('product')->select();
+    	$product = M('article')->select();
     	$this->assign('product',$product);
     	// dump($product);
 

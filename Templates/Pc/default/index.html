@@ -5,8 +5,8 @@
 </head>
 <body>
 <ul>
-<foreach name="product" item="v">
-<li><img src="{{$v[id]|productimg=500,500}}"></li>
+<foreach name="product" item="v" key="k">
+<li>{{$k}}<img src="{{$v[id]|articletimg=500,500}}"></li>
 </foreach>
 </ul>
 </body>
