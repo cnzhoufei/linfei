@@ -22,9 +22,11 @@ class AdminController extends CommonController
     {
         $product_thumb = './Uploads/thumb/product';
         $article_thumb = './Uploads/thumb/article';
-        if(is_writeable($product_thumb) && is_writeable($article_thumb)){
+        $AppRuntimeCache = './App/Runtime/Cache';
+        if(is_writeable($product_thumb) && is_writeable($article_thumb) && is_writeable($AppRuntimeCache)){
             delFile($product_thumb);
             delFile($article_thumb);
+            delFile($AppRuntimeCache);
         }else{
             $this->success('没有目录权限，无法清除缓存');
         }

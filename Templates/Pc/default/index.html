@@ -5,9 +5,20 @@
 </head>
 <body>
 <ul>
-<foreach name="product" item="v" key="k">
-<li>{{$k}}<img src="{{$v[id]|articletimg=500,500}}"></li>
-</foreach>
+
 </ul>
+
+<div>
+
+
+    <adv name="主页第一个广告" type="1" id="1" item="v" key="k">
+
+    	<a class="{{$k}}" href="{{$v[url]}}"><img src="{{:advertisingimg($v[id],500,500)}}" /></a>
+
+    </adv>
+    
+
+
+</div>
 </body>
 </html>

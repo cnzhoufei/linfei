@@ -46,8 +46,9 @@ function adminmenu()
 			),
 			array('name'=>'广告管理','icon'=>'icon-bullhorn','child'=>
 				array(
-					array('name'=>'广告列表','c'=>'','f'=>''),
-					array('name'=>'添加广告','c'=>'','f'=>''),
+					array('name'=>'广告位列表','c'=>'Advertising','f'=>'index'),
+					array('name'=>'广告列表','c'=>'Advertising','f'=>'adv'),
+					array('name'=>'添加广告','c'=>'Advertising','f'=>'addadvertising'),
 				),
 			),
 			array('name'=>'活动专场','icon'=>'icon-tasks','child'=>

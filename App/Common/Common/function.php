@@ -187,6 +187,31 @@ function articletimg($id,$width,$height)
 
 
 
+/**
+ * 广告缩略图
+ */
+function advertisingimg($id,$width,$height)
+{
+    if(!$id || !is_numeric($id)){return '';}
+    $path = '/Uploads/thumb/advertising/'.$id;
+    $thumb_name ="/{$id}_{$width}_{$height}";
+  
+    if(file_exists('.'.$path.$thumb_name.'.jpg'))  return $path.$thumb_name.'.jpg'; 
+    if(file_exists('.'.$path.$thumb_name.'.jpeg')) return $path.$thumb_name.'.jpeg'; 
+    if(file_exists('.'.$path.$thumb_name.'.gif'))  return $path.$thumb_name.'.gif'; 
+    if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
+    if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
+    $productimg = M('adv')->where(array('id'=>$id))->field('img')->find();
+    if(!file_exists('.'.$productimg['img'])){$productimg['img'] = '/Public/images/linfei.png';}
+    $image = new \Think\Image(); 
+    $image->open('.'.$productimg['img']);
+    $type = $image->type(); 
+    $image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
+    return $path.$thumb_name.'.'.$type;
+}
+
+
+
 
 	 /*
 	  * 邮件发送函数
