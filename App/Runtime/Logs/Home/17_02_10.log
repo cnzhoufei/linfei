@@ -1,0 +1,57 @@
+[ 2017-02-10T09:03:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-10T09:03:51+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+
+[ 2017-02-10T11:09:09+08:00 ] 127.0.0.1 /Public/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-02-10T11:09:09+08:00 ] 127.0.0.1 /Public/foundation-datepicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-02-10T11:09:09+08:00 ] 127.0.0.1 /Public/locales/foundation-datepicker.zh-CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-02-10T11:09:09+08:00 ] 127.0.0.1 /Public/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-02-10T11:09:09+08:00 ] 127.0.0.1 /Public/foundation-datepicker.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-02-10T11:09:09+08:00 ] 127.0.0.1 /Public/locales/foundation-datepicker.zh-CN.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-02-10T11:09:29+08:00 ] 127.0.0.1 /Public/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+ERR: 无法加载控制器:Public
+
+[ 2017-02-10T12:23:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+

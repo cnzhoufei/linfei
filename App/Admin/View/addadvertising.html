@@ -25,23 +25,22 @@
                                         <div class="col-sm-9">
                                                 <input type="text" readonly='readonly' value="{{$ad['name']}}" class="col-sm-12" />
                                         </div>
-                                </div>                        
+                                </div> 
+                                <php>if($ad['type'] == 2){</php>                       
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 标题 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                                <input type="text" name="title" value="{{$ad['title']}}" class="col-sm-12" />
+                                                <input type="text" name="title" value="{{$advs['title']}}" class="col-sm-12" />
                                         </div>
                                 </div>
-                                
-                               
-                                
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 排序 <span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 链接 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                            <input type="text" name="sorting" value="{{$ad['sorting']}}" class="col-sm-12" />
+                                            <input type="text" name="url" placeholder="" value="{{$advs['url']}}" class="col-sm-12" />
                                         </div>
-                                </div>
-                                
+                            </div>
+                               
+                                <php>}</php>
                                
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 开启/关闭<span style="color:#f00;">*</span></label>
@@ -65,7 +64,7 @@
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1"></label>
                                 <div class="col-sm-9">
                                 <span id="imgs">
-                                <foreach name="productimg" item="vvv">
+                                <foreach name="advs" item="vvv">
                                  <span id="delete_{{$vvv['id']}}" style="cursor:pointer;" onclick="mydelete('{{$vvv['id']}}','{{:U('product/deleteimg')}}','delete_{{$vvv['id']}}')">
                                     <img src="{{$vvv.img}}" />
                                    删除</span>
@@ -76,13 +75,13 @@
                             <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 链接 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                            <input type="text" name="url" placeholder="添加几个图片就添加几个链接 用逗号隔开 列:http://wwww.linfei.com,http://www.linfei.cc" value="{{$ad['url']}}" class="col-sm-12" />
+                                            <input type="text" name="url" placeholder="添加几个图片就添加几个链接 用逗号隔开 列:http://wwww.linfei.com,http://www.linfei.cc" value="<foreach name='advs' item='vvv2'>{{$vvv2['url']}},</foreach>" class="col-sm-12" />
                                         </div>
                             </div>
                             <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 图片alt <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                            <input type="text" name="alt" placeholder="添加几个图片就添加几个alt 用逗号隔开 列:图片说明1,图片说明2,图片说明3" value="{{$ad['url']}}" class="col-sm-12" />
+                                            <input type="text" name="alt" placeholder="添加几个图片就添加几个alt 用逗号隔开 列:图片说明1,图片说明2,图片说明3" value="<foreach name='advs' item='vvv3'>{{$vvv3['title']}},</foreach>" class="col-sm-12" />
                                         </div>
                             </div>
                            <php>}else{</php>
@@ -90,7 +89,7 @@
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 类容 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <script id="guanggao" type="text" name="text" style="width:100%;height:500px;">{{$ad['text']|htmlspecialchars_decode}}</script>
+                                                <script id="guanggao" type="text" name="text" style="width:100%;height:500px;">{{$advs['text']|htmlspecialchars_decode}}</script>
                                         </div>
                             </div>
                             <php>}</php>  

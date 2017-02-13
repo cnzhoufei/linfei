@@ -1,0 +1,265 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                   <!--  <div class="col-xs-12">
+                        <form action="{{:U('product/search')}}" method="get" >
+                            <div class="row">
+                                    <div class='col-sm-2'>
+                                        <select class="form-control" name='class'>
+                                            <option value="0">全部栏目</option>
+                                            <foreach name="class" item="c_vv" key="c_kk">
+                                                <option <?php if($classid == $c_kk) echo 'selected';?> value="{{$c_kk}}">{{$c_vv}}</option>
+                                            </foreach>
+                                        </select>
+                                    </div>
+                                    <div class='col-sm-2'>
+                                        <input class="form-control" placeholder=产品标题 type="text" name='title' value='{{$title}}'  />
+                                    </div>
+                                    <div class='col-sm-2'>
+                                        <input class="form-control" placeholder=产品名称 type="text" name='name' value='{{$name}}'  />
+                                    </div>
+                                    <div class='col-sm-2'>                                        
+                                            <button type="submit" class="btn btn-purple btn-sm">
+                                                搜索
+                                                <i class="icon-search icon-on-right bigger-110"></i>
+                                            </button>
+                                    </div>
+                                  
+                            </div>
+                            <div class="space-6"></div>
+                        </form>
+                    </div>           -->
+
+                    <style type="text/css">th,td{text-align:center;} .td{text-align:left;}</style>
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr class="color428bca">
+                                            <th width="50">排序</th>
+                                            <th width="50">ID</th>
+                                            <th width="100">图片</th>
+                                            <th width="100">广告位ID(PID)</th>
+                                            <th style="width:16%;">广告标题</th>
+                                            <th>浏览量</th>
+                                            <th>是否新窗口打开</th>
+                                            <th>广告状态</th>
+                                            <th>开始时间</th>
+                                            <th>结束时间</th>
+                                            <th>添加时间</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <php>if($adv){</php>
+                                    <volist name="adv" id="data">
+                                        <tr class="pointer even" id="{{$data['id']}}" x='0' onclick="choose(this)">
+                                            <td>
+                                            <input type="text" value="{{$data['sorting']}}" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('{{:U('Advertising/ajaxsorting')}}',this,'{{$data['id']}}')" />
+                                            </td>
+                                            <td>{{$data['id']}}</td>
+                                            <td><img src="{{:advimgadmin($data['id'],100,75)}}"></td>
+                                            <td>{{$data['pid']}}</td>
+                                            <td class="td">{{:getsubstr($data['title'],0,60)}}</td>
+                                            <td>{{$data['clicks']}}</td>
+                                           <td>
+                                            <a  v="{{$data['blank']}}" href="javascript:;" onclick="status2('{{:U('Advertising/status')}}', '{{$data[id]}}', 'blank', this)">
+                                            <if condition="($data['blank'])">
+                                            <img src="ADMINSTYLE/images/yes.png">
+                                            <else />
+                                            <img src="ADMINSTYLE/images/cancel.png">
+                                            </if>
+                                           </a></td>
+                                          
+                                           
+                                            <td>
+                                            <a  v="{{$data['status']}}" href="javascript:;" onclick="status2('{{:U('Advertising/status')}}', '{{$data[id]}}', 'status', this)">
+                                            <if condition="($data['status'])">
+                                            <img src="ADMINSTYLE/images/yes.png">
+                                            <else />
+                                            <img src="ADMINSTYLE/images/cancel.png">
+                                            </if>
+                                           </a></td>
+                                            <td>{{:date('Y-m-d H:i:s',$data['starttime'])}}</td >
+                                            <td>{{:date('Y-m-d H:i:s',$data['endtime'])}}</td>
+                                            <td>{{:date('Y-m-d H:i:s',$data['addtime'])}}</td>
+                                            <td> 
+                                                <a target="_blank" href="http://{{$_SERVER['HTTP_HOST']}}{{:U('/Article/info')}}">查看</a>
+                                                |
+                                                <a id="" href="{{:U('Advertising/addadvertising')}}?id={{$data['id']}}" title="">编辑</a>
+                                                |
+                                                <a id="" onclick="mydelete('{{$data['id']}}','{{:U('Advertising/del')}}','{{$data['id']}}')" href="ajaxSrcipt:;" title="删除">删除</a> | 
+                                            </td>
+                                        </tr>
+                                    </volist>
+                                    </tbody>
+                                </table>
+                                <style>button{min-width:80px;}</style>
+                                <div class="row">
+                                    <div class='col-sm-6'>
+                                        <div class="row">
+                                            <button class="col-sm-1 btn  btn-success" type="button"  value="更新" onclick="window.location.reload();">                                            
+                                            排序
+                                            </button>
+                                            <button id="quanxuan" class="col-sm-1 btn  btn-primary" type="button" value="全选">
+                                            全选
+                                            </button>
+                                            <button id="fanxuan" class="col-sm-1 btn  btn-warning" type="button" value="反选">
+                                            反选
+                                            </button>
+                                            <button id="quxiao" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
+                                            取消
+                                            </button>
+                                            <button onclick="deletes()" class="col-sm-1 btn  btn-danger" type="button" value="删除">
+                                            删除
+                                            </button>
+                                            <button onclick="states(1)" class="col-sm-1 btn  btn-purple" type="button" value="上架">
+                                            上架
+                                            </button>
+                                            <button onclick="states(0)" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
+                                            下架
+                                            </button>
+                                            <php></php>
+                                           
+                                        </div>
+                                    </div>
+                                      <style type="text/css">.pagination a,.pagination span{display:inline-block;list-style:none;min-width:30px;border:3px solid #438EB9;text-align:center;margin-left:2px;}</style>                                  
+                                    <php>if($page){</php>
+                                    <div class="col-sm-6 ">
+                                        <div class='pagination pull-right pagination-large'>{{$page}}<a href="">共 {{$count}} 条数据</a></div>
+                                    </div> 
+                                </div>
+                                <php>}</php>  
+                                <php>}else{</php>
+                                <tr><td colspan="8" class="empty"><span class="empty"><i>没有找到数据.</i></span></td></tr>
+                                </tbody>
+                                </table>
+
+                                <php>}</php>
+                            </div>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div>
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+    <style>
+        .orange{background:orange;}
+    </style>
+</div>
+<include file="Public:footer" />
+
+<script type="text/javascript">
+
+//选择
+function choose(obj)
+{
+    var x = ($(obj).attr('x') == '1')?'0':'1';
+    if(x == '1'){var back = 'background:orange';}else{var back = '';}
+    $(obj).find('td').attr('style',back);
+    $(obj).attr('x',x);
+}
+
+//全选
+$('#quanxuan').click(function(){
+
+    $('tbody tr td').attr('style','background:orange');
+    $('tbody tr').attr('x','1');
+})
+
+//反选
+$('#fanxuan').click(function(){
+    var tr = $('tbody tr');
+    tr.each(function(){
+        var x = ($(this).attr('x') == '1')?'0':'1';
+        if(x == '1'){var back = 'background:orange';}else{var back = '';}
+        $(this).find('td').attr('style',back);
+        $(this).attr('x',x);
+    })
+
+})
+
+
+//取消
+$('#quxiao').click(function(){
+
+    $('tbody tr td').attr('style','background:');
+    $('tbody tr').attr('x','0');
+})
+
+
+function states(v){
+    var tr = $('tbody tr');
+    var arr = new Array();
+    tr.each(function(i){
+        if($(this).attr('x') == '1'){
+            arr[i] = $(this).attr('id');
+        }
+    })
+
+    $.post("{{:U('Advertising/states')}}",{'v':v, 'arr':arr} ,function(res){
+
+        if(res){
+            showmsg('操作成功');
+            window.location.reload();
+        }else{
+            showmsg('操作失败！');
+            window.location.reload();
+        }
+    })
+
+    
+}
+
+//批量删除
+function deletes(v){
+ if(confirm('你确定删除吗？')){
+    var tr = $('tbody tr');
+    var arr = new Array();
+    tr.each(function(i){
+        if($(this).attr('x') == '1'){
+            arr[i] = $(this).attr('id');
+        }
+    })
+
+    $.post("{{:U('Advertising/deletes')}}",{'v':v, 'arr':arr} ,function(res){
+
+        if(res){
+            tr.each(function(i){
+            if($(this).attr('x') == '1'){
+                $(this).remove();
+            }
+            })
+            showmsg('操作成功');
+        }else{
+            showmsg('操作失败！');
+            window.location.reload();
+        }
+    })
+
+    
+}
+}
+</script>
+
+<!-- 18   -->

@@ -25,8 +25,8 @@
 			<foreach name="templates" item="v" key="k">
 					<li>
 							<img src="/Templates/pc/{{$k}}/{{$v.img}}" style="width:100%;" />
-							<h1>{{$v.name}}</h1>
-							<h1>{{$v.remark}}</h1>
+							<h1>{{$v.name}}({{$k}})</h1>
+							<a href="http://{{$v.remark}}" target="_blank"><h1>{{$v.remark}}</h1></a>
 							<button <if condition="$tpl eq $k">style='background:#00A65A;border:2px solid #00A65A;'</if>><a href="{{:U('Templates/configpc')}}?tpl={{$k}}">启用</a></button>
 					</li>
 			</foreach>

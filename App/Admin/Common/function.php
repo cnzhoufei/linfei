@@ -124,7 +124,7 @@ function productimgadmin($id,$width,$height)
     if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
 	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
 	$productimg = M('product')->where(array('id'=>$id))->field('img')->find();
-	if(!file_exists('.'.$productimg['img'])){$productimg['img'] = '/Public/images/linfei.png';}
+	if(!file_exists('.'.$productimg['img']) || !$productimg['img']){$productimg['img'] = '/Public/images/linfei.png';}
 	$image = new \Think\Image();
 	$image->open('.'.$productimg['img']);
 	$type = $image->type(); 
@@ -147,9 +147,32 @@ function articleimgadmin($id,$width,$height)
     if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
 	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
 	$productimg = M('article')->where(array('id'=>$id))->field('img')->find();
-	if(!file_exists('.'.$productimg['img'])){$productimg['img'] = '/Public/images/linfei.png';}
+	if(!file_exists('.'.$productimg['img']) || !$productimg['img']){$productimg['img'] = '/Public/images/linfei.png';}
 	$image = new \Think\Image();
 	$image->open('.'.$productimg['img']);
+	$type = $image->type(); 
+	$image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
+	return $path.$thumb_name.'.'.$type;
+}
+
+
+/**
+ * 广告缩略图
+ */
+function advimgadmin($id,$width,$height)
+{
+	if(!$id || !is_numeric($id)){return '';}
+	$path = '/Uploads/thumb/adv/'.$id;
+	$thumb_name ="/{$id}_{$width}_{$height}_admin";
+    if(file_exists('.'.$path.$thumb_name.'.jpg'))  return $path.$thumb_name.'.jpg'; 
+    if(file_exists('.'.$path.$thumb_name.'.jpeg')) return $path.$thumb_name.'.jpeg'; 
+    if(file_exists('.'.$path.$thumb_name.'.gif'))  return $path.$thumb_name.'.gif'; 
+    if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
+	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
+	$advimg = M('adv')->where(array('id'=>$id))->field('img')->find();
+	if(!file_exists('.'.$advimg['img']) || !$advimg['img']){$advimg['img'] = '/Public/images/linfei.png';}
+	$image = new \Think\Image();
+	$image->open('.'.$advimg['img']);
 	$type = $image->type(); 
 	$image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
 	return $path.$thumb_name.'.'.$type;

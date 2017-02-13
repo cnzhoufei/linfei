@@ -196,7 +196,7 @@
 </script>
             <div class="page-content">
                 <div class="row">
-                    <div class="col-xs-12">
+                    <!-- <div class="col-xs-12">
                         <form action="index.php" method="get" >                    
                             <div class="row">
                                 <div class='col-sm-2'>
@@ -221,7 +221,7 @@
                             </div>
                             <div class="space-6"></div>
                         </form>
-                    </div>
+                    </div> -->
                     <style type="text/css">td,th{text-align:center;}</style>
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->                        
@@ -235,8 +235,7 @@
                                                         <th>广告名称</th>
                                                         <th>广告位宽</th>
                                                         <th>广告位高</th>
-                                                        <th class="center">状态</th>
-                                                        <th class="center">新标签打开</th>
+                                                        <th class="center">添加时间</th>
                                                         <th>操作</th>
                                                     </tr>
                                                 </thead>
@@ -248,8 +247,8 @@
                                                         <td><?php echo ($data['name']); ?></td>
                                                         <td><?php echo ($data['width']); ?></td>
                                                         <td><?php echo ($data['height']); ?></td>
-                                                        <td class="center"><?php echo ($data['status']); ?></td>
-                                                        <td class="center"><a onclick="return ajHref(this);" href="{:U('admin/adList',array('op'=>'blank','aid'=>$data['aid']))}">{$data['blank']==1?'<font color="green">Y</font>':'<font color="red">N</font>'}</a></td>
+                                                        <td class="center"><?php echo date('Y-m-d H:i:s',$data['addtime']);?></td>
+                                                        
                                                         <td>
                                                             <a href="<?php echo U('Advertising/addadvertising');?>?id=<?php echo ($data['id']); ?>">编辑</a>
                                                             |

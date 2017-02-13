@@ -132,7 +132,14 @@ create table if not exists `linfei_adv`(
 `img` varchar(255) not null default '' COMMENT '轮播图片',
 `url` varchar(255) not null default '' COMMENT '广告链接',
 `text` text not null default '' COMMENT '广告文本',
-`sorting` char(20) not null default '0' COMMENT '排序'
+`sorting` char(20) not null default '0' COMMENT '排序',
+`clicks` int not null default 0 COMMENT '浏览量',
+`blank` tinyint(1) not null default 1 COMMENT '是否新窗口打开(1是 0否)',
+`status` tinyint(1) not null default 1 COMMENT '是否开启广告(1是 0否)',
+`other` varchar(255) COMMENT '其他',
+`starttime` int not null default 0 COMMENT '起始时间',
+`endtime` int not null default 0 COMMENT '结束时间',
+`addtime` int COMMENT '添加时间'
 )engine=innodb default charset=utf8;
 
 --广告位表
@@ -141,11 +148,7 @@ create table if not exists `linfei_advlocation`(
 `name` varchar(255) not null default '' COMMENT '广告位名称',
 `width` char(10) not null default '0px' COMMENT '广告宽',
 `height` char(10) not null default '0px' COMMENT '广告高',
-`status` tinyint(1) not null default 0 COMMENT '状态',
-`is_open` tinyint(1) not null default 0 COMMENT '是否新窗口打开 0否 1是',
 `type` tinyint(1) not null default 1 COMMENT '广告类型 1图片 2文本',
-`starttime` int not null default 0 COMMENT '起始时间',
-`endtime` int not null default 0 COMMENT '结束时间',
 `addtime` int not null default 0 COMMENT '添加时间'
 )engine=innodb default charset=utf8;
 

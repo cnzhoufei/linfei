@@ -1,0 +1,224 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+{{$ueditorinit}}
+        <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">            
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+                            <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="{{$ad['id']}}" />
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">广告位置<span style="color:#f00;">*</span></label>
+                                    <div class="col-sm-9">
+                                    <?php $type = array(1=>'图片',2=>'文本');?>
+                                    <select  class="col-sm-12" name="pid" onchange="types(this);">
+                                            <option value="0">请选择广告位</option>
+                                        <volist name='advlocation' id='data'>
+                                        	<option value="{{$data['id']}}{{$data['type']}}" <?php if($ad['pid'] == $data['id']){echo 'selected';}?>>{{$data['name']}}({{$type[$data[type]]}})</option>
+
+                                        </volist>
+                                    </select>                                                                        
+                                    </div>
+                                    <script type='text/javascript'>
+                                        $("select[name='code'] option[value='<php>echo $ad[code]</php>']").attr('selected','selected');
+                                    </script>
+                                </div>                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 标题 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                                <input type="text" name="title" value="{{$ad['title']}}" class="col-sm-12" />
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 链接 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="url" placeholder="例如：http://www.linfei.cc" value="{{$ad['url']}}" class="col-sm-12" />
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 排序 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="sorting" value="{{:intval($ad['sorting'])}}" class="col-sm-12" />
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 其他 <span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="other" placeholder="例如：说明" value="{{$ad['other']}}" class="col-sm-12" />
+                                        </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 开始日期</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="starttime" id="starttime" style="width:150px;" value="<if condition="($ad[starttime])">{{:date('Y-m-d H:i:s',$ad[starttime])}}</if>" />
+                                            <label> 终止日期</label>
+                                            <input type="text" name="endtime" id="endtime" style="width:150px;" value="<if condition="($ad[endtime])">{{:date('Y-m-d H:i:s',$ad[endtime])}}</if>" />
+                                            <label>《不填写表示永不过期》当前时间:{{:date('Y-m-d H:i:s',time())}}</label>
+                                            
+                                        </div>
+                                        
+                                </div>
+
+                             
+                                
+
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 开启/关闭<span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                        <label>
+                                            <input name="status" class="ace ace-switch ace-switch-7" type="checkbox" <php>if(!$ad['status']){</php><php>}else{</php>checked='checked'<php>}</php> value='1'>
+                                            <span class="lbl"></span>
+                                        </label>
+                                        </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 新标签打开<span style="color:#f00;">*</span></label>
+                                        <div class="col-sm-9">
+                                        <label>
+                                            <input name="blank" class="ace ace-switch ace-switch-7" type="checkbox" <php>if(!$ad['blank']){</php><php>}else{</php>checked='checked'<php>}</php> value='1'>
+                                            <span class="lbl"></span>
+                                        </label>
+                                        </div>
+                                </div>
+
+
+
+                            <style>#imgs img{width:50%;}</style>
+                             
+                            <div class="form-group" style="<?php if($ad['type'] != 1){echo 'display:none;';}?>" id="tupin">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">广告图片<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <input  class="col-sm-12" type="button" value="上传图片" onClick="GetUploadify(1,'ggimg','imgs')" style="width:150px;" />   
+                                </div>
+                            </div>
+                            <div class="form-group" style="<?php if($ad['type'] != 1){echo 'display:none;';}?>">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1"><span style="color:#f00;"></span></label>
+                                <div class="col-sm-9">
+                                </div>
+                                <span id="imgs"><img src="{{$ad['img']}}"></span>
+                            </div>
+                            
+
+                                
+                            
+                            <div class="form-group" style="<?php if($ad['type'] != 2){echo 'display:none;';}?>" id='wenben'>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 类容 <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <script id="guanggao" type="text" name="text" style="width:100%;height:500px;">{{$ad['text']|htmlspecialchars_decode}}</script>
+                                        </div>
+                            </div>
+
+                                
+                                <div class="clearfix form-actions">
+                                    <div class="col-md-offset-4 col-md-4">
+                                        <button class="btn btn-info btn-block" type="submit">
+                                            <i class="icon-ok bigger-110"></i>
+                                            确认
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>                        
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+<script>
+    $(function () {
+        $('input[type="file"]').ace_file_input({
+            no_file: 'No File ...',
+            btn_choose: 'Choose',
+            btn_change: 'Change',
+            droppable: false,
+            onchange: null,
+            thumbnail: false //| true | large
+                    //whitelist:'gif|png|jpg|jpeg'
+                    //blacklist:'exe|php'
+                    //onchange:''
+                    //
+        });
+    });
+
+    function types(obj){
+        var str = $(obj).val();
+        var v = str.substr(-1,1);
+        if(v == 1){
+            $('#wenben').css('display','none');
+            $('#tupin').css('display','');
+        }else if(v == 2){
+            $('#wenben').css('display','');
+            $('#tupin').css('display','none');
+        }else{
+            $('#tupin').css('display','none');
+            $('#wenben').css('display','none');
+        }
+    }
+
+
+</script>
+    <script src="__PUBLIC__/date/jquery-1.11.3.min.js"></script>
+    <script src="__PUBLIC__/date/foundation-datepicker.js"></script>
+    <script src="__PUBLIC__/date/locales/foundation-datepicker.zh-CN.js"></script>   
+<script type="text/javascript">
+$('#starttime').fdatepicker({
+    format: 'yyyy-mm-dd hh:ii',
+    pickTime: true
+});
+$('#endtime').fdatepicker({
+    format: 'yyyy-mm-dd hh:ii',
+    pickTime: true
+});
+
+var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        var checkin = $('#dpd1').fdatepicker({
+            onRender: function (date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            }
+        }).on('changeDate', function (ev) {
+            if (ev.date.valueOf() > checkout.date.valueOf()) {
+                var newDate = new Date(ev.date)
+                newDate.setDate(newDate.getDate() + 1);
+                checkout.update(newDate);
+            }
+            checkin.hide();
+            $('#dpd2')[0].focus();
+        }).data('datepicker');
+        var checkout = $('#dpd2').fdatepicker({
+            onRender: function (date) {
+                return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+            }
+        }).on('changeDate', function (ev) {
+            checkout.hide();
+        }).data('datepicker');
+
+</script>
+
+<include file="Public:footer" />
