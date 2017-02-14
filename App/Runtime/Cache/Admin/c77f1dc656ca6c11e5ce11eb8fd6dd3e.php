@@ -248,15 +248,15 @@
                                     <?php if($adv){ ?>
                                     <?php if(is_array($adv)): $i = 0; $__LIST__ = $adv;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" id="<?php echo ($data['id']); ?>" x='0' onclick="choose(this)">
                                             <td>
-                                            <input type="text" value="<?php echo ($data['sorting']); ?>" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('<?php echo U('Advertising/ajaxsorting');?>',this,'<?php echo ($data['id']); ?>')" />
+                                            <input type="text" value="<?php echo ($data['sorting']); ?>" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('adv',this,'<?php echo ($data['id']); ?>')" />
                                             </td>
                                             <td><?php echo ($data['id']); ?></td>
-                                            <td><img src="<?php echo advimgadmin($data['id'],100,75);?>"></td>
+                                            <td><img src="<?php echo adminimg($data['id'],100,75,'adv');?>"></td>
                                             <td><?php echo ($data['pid']); ?></td>
                                             <td class="td"><?php echo getsubstr($data['title'],0,60);?></td>
                                             <td><?php echo ($data['clicks']); ?></td>
                                            <td>
-                                            <a  v="<?php echo ($data['blank']); ?>" href="javascript:;" onclick="status2('<?php echo U('Advertising/status');?>', '<?php echo ($data[id]); ?>', 'blank', this)">
+                                            <a  v="<?php echo ($data['blank']); ?>" href="javascript:;" onclick="status2('adv', '<?php echo ($data[id]); ?>', 'blank', this)">
                                             <?php if(($data['blank'])): ?><img src="/App/Admin/View/style/images/yes.png">
                                             <?php else: ?>
                                             <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
@@ -264,7 +264,7 @@
                                           
                                            
                                             <td>
-                                            <a  v="<?php echo ($data['status']); ?>" href="javascript:;" onclick="status2('<?php echo U('Advertising/status');?>', '<?php echo ($data[id]); ?>', 'status', this)">
+                                            <a  v="<?php echo ($data['status']); ?>" href="javascript:;" onclick="status2('adv', '<?php echo ($data[id]); ?>', 'status', this)">
                                             <?php if(($data['status'])): ?><img src="/App/Admin/View/style/images/yes.png">
                                             <?php else: ?>
                                             <img src="/App/Admin/View/style/images/cancel.png"><?php endif; ?>
@@ -273,11 +273,11 @@
                                             <td><?php echo date('Y-m-d H:i:s',$data['endtime']);?></td>
                                             <td><?php echo date('Y-m-d H:i:s',$data['addtime']);?></td>
                                             <td> 
-                                                <a target="_blank" href="http://<?php echo ($_SERVER['HTTP_HOST']); echo U('/Article/info');?>">查看</a>
+                                                <a target="_blank" href="#">查看</a>
                                                 |
                                                 <a id="" href="<?php echo U('Advertising/addadvertising');?>?id=<?php echo ($data['id']); ?>" title="">编辑</a>
                                                 |
-                                                <a id="" onclick="mydelete('<?php echo ($data['id']); ?>','<?php echo U('Advertising/del');?>','<?php echo ($data['id']); ?>')" href="ajaxSrcipt:;" title="删除">删除</a> | 
+                                                <a id="" onclick="mydelete('<?php echo ($data['id']); ?>','adv','img,text','<?php echo ($data['id']); ?>')" href="ajaxSrcipt:;" title="删除">删除</a> | 
                                             </td>
                                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                     </tbody>
@@ -289,24 +289,31 @@
                                             <button class="col-sm-1 btn  btn-success" type="button"  value="更新" onclick="window.location.reload();">                                            
                                             排序
                                             </button>
-                                            <button id="quanxuan" class="col-sm-1 btn  btn-primary" type="button" value="全选">
+                                            <button onclick="quanxuan();" class="col-sm-1 btn  btn-primary" type="button" value="全选">
                                             全选
                                             </button>
-                                            <button id="fanxuan" class="col-sm-1 btn  btn-warning" type="button" value="反选">
+                                            <button onclick="fanxuan();" class="col-sm-1 btn  btn-warning" type="button" value="反选">
                                             反选
                                             </button>
-                                            <button id="quxiao" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
+                                            <button onclick="quxiao();" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
                                             取消
                                             </button>
-                                            <button onclick="deletes()" class="col-sm-1 btn  btn-danger" type="button" value="删除">
+                                            <button onclick="deletes('adv','img')" class="col-sm-1 btn  btn-danger" type="button" value="删除">
                                             删除
                                             </button>
-                                            <button onclick="states(1)" class="col-sm-1 btn  btn-purple" type="button" value="上架">
+                                            <button onclick="states(1,'adv','status')" class="col-sm-1 btn  btn-purple" type="button" value="上架">
                                             上架
                                             </button>
-                                            <button onclick="states(0)" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
+                                            <button onclick="states(0,'adv','status')" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
                                             下架
                                             </button>
+                                            <button onclick="states(1,'adv','blank')" class="col-sm-1 btn  btn-purple" type="button" value="新窗口打开">
+                                            新窗口
+                                            </button>
+                                            <button onclick="states(0,'adv','blank')" class="col-sm-1 btn  btn-inverse" type="button" value="本窗口打开">
+                                            本窗口
+                                            </button>
+                                            
                                             <?php  ?>
                                            
                                         </div>
@@ -442,98 +449,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-
-//选择
-function choose(obj)
-{
-    var x = ($(obj).attr('x') == '1')?'0':'1';
-    if(x == '1'){var back = 'background:orange';}else{var back = '';}
-    $(obj).find('td').attr('style',back);
-    $(obj).attr('x',x);
-}
-
-//全选
-$('#quanxuan').click(function(){
-
-    $('tbody tr td').attr('style','background:orange');
-    $('tbody tr').attr('x','1');
-})
-
-//反选
-$('#fanxuan').click(function(){
-    var tr = $('tbody tr');
-    tr.each(function(){
-        var x = ($(this).attr('x') == '1')?'0':'1';
-        if(x == '1'){var back = 'background:orange';}else{var back = '';}
-        $(this).find('td').attr('style',back);
-        $(this).attr('x',x);
-    })
-
-})
-
-
-//取消
-$('#quxiao').click(function(){
-
-    $('tbody tr td').attr('style','background:');
-    $('tbody tr').attr('x','0');
-})
-
-
-function states(v){
-    var tr = $('tbody tr');
-    var arr = new Array();
-    tr.each(function(i){
-        if($(this).attr('x') == '1'){
-            arr[i] = $(this).attr('id');
-        }
-    })
-
-    $.post("<?php echo U('Advertising/states');?>",{'v':v, 'arr':arr} ,function(res){
-
-        if(res){
-            showmsg('操作成功');
-            window.location.reload();
-        }else{
-            showmsg('操作失败！');
-            window.location.reload();
-        }
-    })
-
-    
-}
-
-//批量删除
-function deletes(v){
- if(confirm('你确定删除吗？')){
-    var tr = $('tbody tr');
-    var arr = new Array();
-    tr.each(function(i){
-        if($(this).attr('x') == '1'){
-            arr[i] = $(this).attr('id');
-        }
-    })
-
-    $.post("<?php echo U('Advertising/deletes');?>",{'v':v, 'arr':arr} ,function(res){
-
-        if(res){
-            tr.each(function(i){
-            if($(this).attr('x') == '1'){
-                $(this).remove();
-            }
-            })
-            showmsg('操作成功');
-        }else{
-            showmsg('操作失败！');
-            window.location.reload();
-        }
-    })
-
-    
-}
-}
-</script>
-
-<!-- 18   -->

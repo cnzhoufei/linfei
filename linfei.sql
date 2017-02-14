@@ -12,7 +12,7 @@ create table if not exists `linfei_classify`(
 	`pid` char(20) not null COMMENT '栏目父id',
 	`type` char(20) not null default 'product' COMMENT '栏目类型 默认为产品类型 共两种类型 产品和资讯news 封面cover',
 	`external` varchar(100) not null default '' COMMENT	'外部链接',
-	`url` varchar(100) not null default '' COMMENT	'栏目连接',
+	`url` varchar(100) not null default '' COMMENT	'栏目链接',
 	`url_name` char(30) not null default '' COMMENT	'栏目url命名 拼音',
 	`path` varchar(255) not null COMMENT '栏目路径',
 	`status` tinyint(1) not null default 1 COMMENT '栏目状态 1在前端显示 0不显示',
@@ -165,31 +165,32 @@ create table if not exists `linfei_advlocation`(
 
 
 --单页面表
-create table if not exists `linfei_single`(
-	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`userid` int unsigned not null COMMENT '用户id',
-	`title` varchar(255) not null UNIQUE COMMENT '标题',
-	`keywords` varchar(255) not null COMMENT '关键字',
-	`description` text COMMENT '描述',
-	`text` text COMMENT '主体内容',
-	`pic` varchar(255) 	COMMENT '缩略图',
-	`status` tinyint(1) not null default 0 COMMENT '文章状态 0在前端显示 1不显示',
-	`publisher` char(50) default '未知发布者' COMMENT '发布者',
-	`num` int not null default 0 COMMENT '点击量',
-	`time` int unsigned not null COMMENT '添加时间'
-)engine=innodb default charset=utf8;
+-- create table if not exists `linfei_single`(
+-- 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+-- 	`userid` int unsigned not null COMMENT '用户id',
+-- 	`title` varchar(255) not null UNIQUE COMMENT '标题',
+-- 	`keywords` varchar(255) not null COMMENT '关键字',
+-- 	`description` text COMMENT '描述',
+-- 	`text` text COMMENT '主体内容',
+-- 	`pic` varchar(255) 	COMMENT '缩略图',
+-- 	`status` tinyint(1) not null default 0 COMMENT '文章状态 0在前端显示 1不显示',
+-- 	`publisher` char(50) default '未知发布者' COMMENT '发布者',
+-- 	`num` int not null default 0 COMMENT '点击量',
+-- 	`time` int unsigned not null COMMENT '添加时间'
+-- )engine=innodb default charset=utf8;
 
 
 
 
 --轮播图
-create table if not exists `linfei_carousel`(
+create table if not exists `linfei_pic`(
 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`userid` int unsigned not null COMMENT '用户id',
 	`name` varchar(255) not null COMMENT '轮播图名',
   	`url` varchar(255) not null COMMENT '链接地址',
-  	`pic` varchar(255) not null COMMENT '图片',
-  	`status` tinyint(1) default '0' COMMENT '状态 0显示 1不显示',
+  	`img` varchar(255) not null COMMENT '图片',
+	`sorting` char(20) not null default '0' COMMENT '排序',
+	`blank` tinyint(1) not null default 1 COMMENT '是否新窗口打开(1是 0否)',
+  	`status` tinyint(1) default '0' COMMENT '状态(1显示 0不显示)',
  	`remarks` varchar(255) default null COMMENT '备注',
   	`addtime` int unsigned default null COMMENT '添加时间'
 )engine=innodb default charset=utf8;
@@ -199,11 +200,13 @@ create table if not exists `linfei_carousel`(
 --友情链接
 create table if not exists `linfei_friendship`(
 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`name` varchar(255) NOT NULL COMMENT '连接名',
-  	`url` varchar(255) NOT NULL COMMENT '连接地址',
-  	`logo` varchar(255) DEFAULT NULL COMMENT '链接图片',
+	`name` varchar(255) NOT NULL COMMENT '链接名',
+  	`url` varchar(255) NOT NULL COMMENT '链接地址',
+  	`img` varchar(255) DEFAULT NULL COMMENT '链接图片',
   	`email` varchar(255) DEFAULT NULL COMMENT '站长邮箱',
-  	`status` tinyint(1) DEFAULT '0' COMMENT '连接状态 0显示 1不显示',
+	`sorting` char(20) not null default '0' COMMENT '排序',
+  	`status` tinyint(1) DEFAULT '0' COMMENT '链接状态 0显示 1不显示',
+	`blank` tinyint(1) not null default 1 COMMENT '是否新窗口打开(1是 0否)',
   	`remarks` varchar(255) DEFAULT NULL COMMENT '备注',
   	`addtime` int unsigned default null COMMENT '添加时间'
 )engine=innodb default charset=utf8;
@@ -226,13 +229,13 @@ create table if not exists `linfei_message`(
 
 
 --模板分类表
-create table if not exists `template_type`(
-	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`name` varchar(255) COMMENT '模板分类名称',
-	`pid` int COMMENT '模板父id',
-	`path` varchar(255) default 0 COMMENT '路径',
-  	`addtime` int unsigned default null COMMENT '添加时间'
-)engine=innodb default charset=utf8;
+-- create table if not exists `template_type`(
+-- 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+-- 	`name` varchar(255) COMMENT '模板分类名称',
+-- 	`pid` int COMMENT '模板父id',
+-- 	`path` varchar(255) default 0 COMMENT '路径',
+--   	`addtime` int unsigned default null COMMENT '添加时间'
+-- )engine=innodb default charset=utf8;
 
 
 insert into tpl_type values(1,'服装、饰品、个人护理',0,123123123);
@@ -240,34 +243,34 @@ insert into tpl_type values(1,'服装、饰品、个人护理',0,123123123);
 
 
 --海报图片表
-create table if not exists `linfei_posters`(
-	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`userid` int unsigned not null COMMENT '用户id',
-	`type` varchar(20) COMMENT '页面标识',
-	`name` varchar(255) COMMENT '名称',
-	`url` varchar(255) COMMENT '链接',
-	`pic` varchar(255) COMMENT '图片',
-  	`status` tinyint(1) DEFAULT '0' COMMENT '状态 0显示 1不显示',
-  	`addtime` int unsigned default null COMMENT '添加时间'
-)engine=innodb default charset=utf8;
+-- create table if not exists `linfei_posters`(
+-- 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+-- 	`userid` int unsigned not null COMMENT '用户id',
+-- 	`type` varchar(20) COMMENT '页面标识',
+-- 	`name` varchar(255) COMMENT '名称',
+-- 	`url` varchar(255) COMMENT '链接',
+-- 	`pic` varchar(255) COMMENT '图片',
+--   	`status` tinyint(1) DEFAULT '0' COMMENT '状态 0显示 1不显示',
+--   	`addtime` int unsigned default null COMMENT '添加时间'
+-- )engine=innodb default charset=utf8;
 
 demo_linfei_0008
 demo_shop_0001
 
 
 --模板表
-create table if not exists `templates` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `path` varchar(255) NOT NULL DEFAULT '/Templates/Default/' COMMENT '模板路径',
-  `name` varchar(255) NOT NULL COMMENT '模板名称',
-  `type` tinyint(4) NOT NULL COMMENT '模板类型',
-  `thumb` varchar(255) NOT NULL COMMENT '模板缩略图',
-  `url` varchar(255) DEFAULT NULL,
-  `dir` varchar(100) DEFAULT NULL,
-  -- `width` char(10) NOT NULL DEFAULT '200' COMMENT '缩略图宽',
-  -- `height` char(10) NOT NULL DEFAULT '100' COMMENT '缩略图高',
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+-- create table if not exists `templates` (
+--   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+--   `path` varchar(255) NOT NULL DEFAULT '/Templates/Default/' COMMENT '模板路径',
+--   `name` varchar(255) NOT NULL COMMENT '模板名称',
+--   `type` tinyint(4) NOT NULL COMMENT '模板类型',
+--   `thumb` varchar(255) NOT NULL COMMENT '模板缩略图',
+--   `url` varchar(255) DEFAULT NULL,
+--   `dir` varchar(100) DEFAULT NULL,
+--   -- `width` char(10) NOT NULL DEFAULT '200' COMMENT '缩略图宽',
+--   -- `height` char(10) NOT NULL DEFAULT '100' COMMENT '缩略图高',
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 
 alter table templates add width char(10) NOT NULL DEFAULT '200' COMMENT '缩略图宽' after dir;

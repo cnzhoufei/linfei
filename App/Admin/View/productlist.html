@@ -73,16 +73,16 @@
                                     <volist name="product" id="data">
                                         <tr class="pointer even" id="{{$data['id']}}" x='0' onclick="choose(this)">
                                             <td>
-                                            <input type="text" value="{{$data['sorting']}}" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('{{:U('Product/ajaxsorting')}}',this,'{{$data['id']}}')" />
+                                            <input type="text" value="{{$data['sorting']}}" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('product',this,'{{$data['id']}}')" />
                                             </td>
                                             <td>{{$data['id']}}</td>
-                                            <td><img src="{{:productimgadmin($data['id'],100,75)}}"></td>
+                                            <td><img src="{{:adminimg($data['id'],100,75,'product')}}"></td>
                                             <td class="td">{{:getsubstr($data['name'],0,60)}}</td>
                                             <td class="td">{{:getsubstr($data['title'],0,60)}}</td>
                                             <td>{{$class[$data['cid']]}}</td>
                                             <td>{{$data['clicks']}}</td>
                                            <td>
-                                            <a  v="{{$data['recommended']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'recommended', this)">
+                                            <a  v="{{$data['recommended']}}" href="javascript:;" onclick="status2('product', '{{$data[id]}}', 'recommended', this)">
                                             <if condition="($data['recommended'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -90,7 +90,7 @@
                                             </if>
                                            </a></td>
                                            <td>
-                                            <a  v="{{$data['new']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'new', this)">
+                                            <a  v="{{$data['new']}}" href="javascript:;" onclick="status2('product', '{{$data[id]}}', 'new', this)">
                                             <if condition="($data['new'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -98,7 +98,7 @@
                                             </if>
                                            </a></td>
                                            <td>
-                                            <a  v="{{$data['selling']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'selling', this)">
+                                            <a  v="{{$data['selling']}}" href="javascript:;" onclick="status2('product', '{{$data[id]}}', 'selling', this)">
                                             <if condition="($data['selling'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -106,7 +106,7 @@
                                             </if>
                                            </a></td>
                                             <td>
-                                            <a  v="{{$data['status']}}" href="javascript:;" onclick="status2('{{:U('Product/status')}}', '{{$data[id]}}', 'status', this)">
+                                            <a  v="{{$data['status']}}" href="javascript:;" onclick="status2('product', '{{$data[id]}}', 'status', this)">
                                             <if condition="($data['status'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -133,23 +133,42 @@
                                             <button class="col-sm-1 btn  btn-success" type="button"  value="更新" onclick="window.location.reload();">                                            
                                             排序
                                             </button>
-                                            <button id="quanxuan" class="col-sm-1 btn  btn-primary" type="button" value="全选">
+                                            <button onclick="quanxuan();" class="col-sm-1 btn  btn-primary" type="button" value="全选">
                                             全选
                                             </button>
-                                            <button id="fanxuan" class="col-sm-1 btn  btn-warning" type="button" value="反选">
+                                            <button onclick="fanxuan();" class="col-sm-1 btn  btn-warning" type="button" value="反选">
                                             反选
                                             </button>
-                                            <button id="quxiao" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
+                                            <button onclick="quxiao();" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
                                             取消
                                             </button>
-                                            <button onclick="deletes()" class="col-sm-1 btn  btn-danger" type="button" value="删除">
-                                            删除
-                                            </button>
-                                            <button onclick="states(1)" class="col-sm-1 btn  btn-purple" type="button" value="上架">
+                                            <button onclick="states(1,'product','status')" class="col-sm-1 btn  btn-purple" type="button" value="上架">
                                             上架
                                             </button>
-                                            <button onclick="states(0)" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
+                                            <button onclick="states(0,'product','status')" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
                                             下架
+                                            </button>
+                                            <button onclick="states(1,'product','recommended')" class="col-sm-1 btn  btn-purple" type="button" value="推荐">
+                                            推荐
+                                            </button>
+                                            <button onclick="states(0,'product','recommended')" class="col-sm-1 btn  btn-inverse" type="button" value="取消推荐">
+                                            取消推荐
+                                            </button>
+                                            <button onclick="states(1,'product','new')" class="col-sm-1 btn  btn-purple" type="button" value="新品">
+                                            新品
+                                            </button>
+                                            <button onclick="states(0,'product','new')" class="col-sm-1 btn  btn-inverse" type="button" value="取消新品">
+                                            取消新品
+                                            </button>
+                                            <button onclick="states(1,'product','selling')" class="col-sm-1 btn  btn-purple" type="button" value="热卖">
+                                            热卖
+                                            </button>
+                                            <button onclick="states(0,'product','selling')" class="col-sm-1 btn  btn-inverse" type="button" value="取消热卖">
+                                            取消热卖
+                                            </button>
+
+                                            <button onclick="deletes()" class="col-sm-1 btn  btn-danger" type="button" value="删除">
+                                            删除
                                             </button>
                                             <php></php>
                                            
@@ -187,65 +206,6 @@
 
 <script type="text/javascript">
 
-//选择
-function choose(obj)
-{
-    var x = ($(obj).attr('x') == '1')?'0':'1';
-    if(x == '1'){var back = 'background:orange';}else{var back = '';}
-    $(obj).find('td').attr('style',back);
-    $(obj).attr('x',x);
-}
-
-//全选
-$('#quanxuan').click(function(){
-
-    $('tbody tr td').attr('style','background:orange');
-    $('tbody tr').attr('x','1');
-})
-
-//反选
-$('#fanxuan').click(function(){
-    var tr = $('tbody tr');
-    tr.each(function(){
-        var x = ($(this).attr('x') == '1')?'0':'1';
-        if(x == '1'){var back = 'background:orange';}else{var back = '';}
-        $(this).find('td').attr('style',back);
-        $(this).attr('x',x);
-    })
-
-})
-
-
-//取消
-$('#quxiao').click(function(){
-
-    $('tbody tr td').attr('style','background:');
-    $('tbody tr').attr('x','0');
-})
-
-
-function states(v){
-    var tr = $('tbody tr');
-    var arr = new Array();
-    tr.each(function(i){
-        if($(this).attr('x') == '1'){
-            arr[i] = $(this).attr('id');
-        }
-    })
-
-    $.post("{{:U('Product/states')}}",{'v':v, 'arr':arr} ,function(res){
-
-        if(res){
-            showmsg('操作成功');
-            window.location.reload();
-        }else{
-            showmsg('操作失败！');
-            window.location.reload();
-        }
-    })
-
-    
-}
 
 //批量删除
 function deletes(v){

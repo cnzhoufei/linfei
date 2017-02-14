@@ -43,6 +43,7 @@ class Cx extends TagLib {
         );
 
 
+
     /**
      * 广告
      *<adv name="主页第一个广告" type="img" id="1"></adv>
@@ -56,7 +57,6 @@ class Cx extends TagLib {
         $advlocation = $advlocation_m->where(array('id'=>$id))->find();//查询广告位
         if($advlocation){
 
-            if($advlocation['type'] == 1){
            $str = <<<zhoufei
                 <?php \$Model = new \Think\Model(); 
                \$sql = "select * from linfei_adv where pid = $id";
@@ -69,15 +69,13 @@ zhoufei;
 
 
             return $str;
-            }else{
-                $content = htmlspecialchars_decode($advlocation['text']);
-                return "<?php echo '$content';?>";
-            }
+           
 
         }else{
             $data['type'] = $tag['type'];
-            $data['title'] = $name; 
             $data['name'] = $name; 
+            $data['width'] = $tag['width'];
+            $data['height'] = $tag['height'];
             $data['id'] = $id; 
             $advlocation_m->add($data);
         }
@@ -85,49 +83,6 @@ zhoufei;
     }
 
 
-
-
-   /* public function _adv($tag,$content){
-        $name = $tag['name'];//广告名称
-        $id = $tag['id'];//广告id
-        $val = $tag['item'];
-        $key =   !empty($tag['key'])?$tag['key']:'key';
-        $advlocation_m = M('advlocation');
-        $advlocation = $advlocation_m->where(array('id'=>$id))->find();//查询广告位
-        if($advlocation){
-            if($advlocation['type'] == 1){
-                $pic = explode(',', $advlocation['pic']);
-                $url = explode(',', $advlocation['url']);
-                $title = explode(',', $advlocation['title']);
-                $alt = explode(',', $advlocation['alt']);
-                $str = "<?php echo ".'"';
-                foreach($pic as $k=>$v){
-
-                   $str .= "<a href= '{$url[$k]}' titel='{$alt[$k]}'> <img src='{$v}' class='img{$k}' alt='{$alt[$k]}' /></a>"; 
-                }   
-                $str .= '"'."?>";
-                return $str;
-            }else{
-                $content = htmlspecialchars_decode($advlocation['text']);
-                return "<?php echo '$content';?>";
-            }
-
-        }else{
-            switch ($tag['type']) {
-                case 'img':
-                    $type = 1;
-                default:
-                    $type = 2;
-                    break;
-            }
-            $data['title'] = $name; 
-            $data['name'] = $name; 
-            $data['id'] = $id; 
-            $data['type'] = $type;
-            $advlocation_m->add($data);
-        }
-
-    }*/
 
 
     /**

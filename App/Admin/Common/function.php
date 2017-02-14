@@ -51,6 +51,18 @@ function adminmenu()
 					array('name'=>'添加广告','c'=>'Advertising','f'=>'addadvertising'),
 				),
 			),
+			array('name'=>'轮播图管理','icon'=>'icon-picture','child'=>
+				array(
+					array('name'=>'轮播图列表','c'=>'Pic','f'=>'index'),
+					array('name'=>'添加轮播图','c'=>'Pic','f'=>'addpic'),
+				),
+			),
+			array('name'=>'友链管理','icon'=>'icon-link','child'=>
+				array(
+					array('name'=>'友链列表','c'=>'Friendship','f'=>'index'),
+					array('name'=>'添加友链','c'=>'Friendship','f'=>'addfriendship'),
+				),
+			),
 			array('name'=>'活动专场','icon'=>'icon-tasks','child'=>
 				array(
 					array('name'=>'专场列表','c'=>'','f'=>''),
@@ -111,19 +123,19 @@ function navstyle()
 
 
 /**
- * 产品缩略图
+ * 缩略图
  */
-function productimgadmin($id,$width,$height)
+function adminimg($id,$width,$height,$table)
 {
 	if(!$id || !is_numeric($id)){return '';}
-	$path = '/Uploads/thumb/product/'.$id;
+	$path = "/Uploads/thumb/admin/{$table}/".$id;
 	$thumb_name ="/{$id}_{$width}_{$height}_admin";
     if(file_exists('.'.$path.$thumb_name.'.jpg'))  return $path.$thumb_name.'.jpg'; 
     if(file_exists('.'.$path.$thumb_name.'.jpeg')) return $path.$thumb_name.'.jpeg'; 
     if(file_exists('.'.$path.$thumb_name.'.gif'))  return $path.$thumb_name.'.gif'; 
     if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
 	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
-	$productimg = M('product')->where(array('id'=>$id))->field('img')->find();
+	$productimg = M("$table")->where(array('id'=>$id))->field('img')->find();
 	if(!file_exists('.'.$productimg['img']) || !$productimg['img']){$productimg['img'] = '/Public/images/linfei.png';}
 	$image = new \Think\Image();
 	$image->open('.'.$productimg['img']);
@@ -133,50 +145,6 @@ function productimgadmin($id,$width,$height)
 }
 
 
-/**
- * 文章缩略图
- */
-function articleimgadmin($id,$width,$height)
-{
-	if(!$id || !is_numeric($id)){return '';}
-	$path = '/Uploads/thumb/article/'.$id;
-	$thumb_name ="/{$id}_{$width}_{$height}_admin";
-    if(file_exists('.'.$path.$thumb_name.'.jpg'))  return $path.$thumb_name.'.jpg'; 
-    if(file_exists('.'.$path.$thumb_name.'.jpeg')) return $path.$thumb_name.'.jpeg'; 
-    if(file_exists('.'.$path.$thumb_name.'.gif'))  return $path.$thumb_name.'.gif'; 
-    if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
-	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
-	$productimg = M('article')->where(array('id'=>$id))->field('img')->find();
-	if(!file_exists('.'.$productimg['img']) || !$productimg['img']){$productimg['img'] = '/Public/images/linfei.png';}
-	$image = new \Think\Image();
-	$image->open('.'.$productimg['img']);
-	$type = $image->type(); 
-	$image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
-	return $path.$thumb_name.'.'.$type;
-}
-
-
-/**
- * 广告缩略图
- */
-function advimgadmin($id,$width,$height)
-{
-	if(!$id || !is_numeric($id)){return '';}
-	$path = '/Uploads/thumb/adv/'.$id;
-	$thumb_name ="/{$id}_{$width}_{$height}_admin";
-    if(file_exists('.'.$path.$thumb_name.'.jpg'))  return $path.$thumb_name.'.jpg'; 
-    if(file_exists('.'.$path.$thumb_name.'.jpeg')) return $path.$thumb_name.'.jpeg'; 
-    if(file_exists('.'.$path.$thumb_name.'.gif'))  return $path.$thumb_name.'.gif'; 
-    if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
-	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
-	$advimg = M('adv')->where(array('id'=>$id))->field('img')->find();
-	if(!file_exists('.'.$advimg['img']) || !$advimg['img']){$advimg['img'] = '/Public/images/linfei.png';}
-	$image = new \Think\Image();
-	$image->open('.'.$advimg['img']);
-	$type = $image->type(); 
-	$image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
-	return $path.$thumb_name.'.'.$type;
-}
 
 
 

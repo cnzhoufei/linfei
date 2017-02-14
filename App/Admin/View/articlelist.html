@@ -73,16 +73,16 @@
                                     <volist name="article" id="data">
                                         <tr class="pointer even" id="{{$data['id']}}" x='0' onclick="choose(this)">
                                             <td>
-                                            <input type="text" value="{{$data['sorting']}}" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('{{:U('Article/ajaxsorting')}}',this,'{{$data['id']}}')" />
+                                            <input type="text" value="{{$data['sorting']}}" style="width:50px;padding:0 5px;margin:0;border:none;" onchange="sorting('article',this,'{{$data['id']}}')" />
                                             </td>
                                             <td>{{$data['id']}}</td>
-                                            <td><img src="{{:articleimgadmin($data['id'],100,75)}}"></td>
+                                            <td><img src="{{:adminimg($data['id'],100,75,'article')}}"></td>
                                             <td class="td">{{:getsubstr($data['name'],0,60)}}</td>
                                             <td class="td">{{:getsubstr($data['title'],0,60)}}</td>
                                             <td>{{$class[$data['cid']]}}</td>
                                             <td>{{$data['clicks']}}</td>
                                            <td>
-                                            <a  v="{{$data['recommended']}}" href="javascript:;" onclick="status2('{{:U('article/status')}}', '{{$data[id]}}', 'recommended', this)">
+                                            <a  v="{{$data['recommended']}}" href="javascript:;" onclick="status2('article', '{{$data[id]}}', 'recommended', this)">
                                             <if condition="($data['recommended'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -90,7 +90,7 @@
                                             </if>
                                            </a></td>
                                            <td>
-                                            <a  v="{{$data['recommendeds']}}" href="javascript:;" onclick="status2('{{:U('article/status')}}', '{{$data[id]}}', 'recommendeds', this)">
+                                            <a  v="{{$data['recommendeds']}}" href="javascript:;" onclick="status2('article', '{{$data[id]}}', 'recommendeds', this)">
                                             <if condition="($data['recommendeds'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -98,7 +98,7 @@
                                             </if>
                                            </a></td>
                                            <td>
-                                            <a  v="{{$data['headlines']}}" href="javascript:;" onclick="status2('{{:U('article/status')}}', '{{$data[id]}}', 'headlines', this)">
+                                            <a  v="{{$data['headlines']}}" href="javascript:;" onclick="status2('article', '{{$data[id]}}', 'headlines', this)">
                                             <if condition="($data['headlines'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -106,7 +106,7 @@
                                             </if>
                                            </a></td>
                                             <td>
-                                            <a  v="{{$data['status']}}" href="javascript:;" onclick="status2('{{:U('article/status')}}', '{{$data[id]}}', 'status', this)">
+                                            <a  v="{{$data['status']}}" href="javascript:;" onclick="status2('article', '{{$data[id]}}', 'status', this)">
                                             <if condition="($data['status'])">
                                             <img src="ADMINSTYLE/images/yes.png">
                                             <else />
@@ -120,7 +120,7 @@
                                                 |
                                                 <a id="" href="{{:U('article/addarticle')}}?id={{$data['id']}}" title="">编辑</a>
                                                 |
-                                                <a id="" onclick="mydelete('{{$data['id']}}','{{:U('Article/del')}}','{{$data['id']}}')" href="ajaxSrcipt:;" title="删除">删除</a> | 
+                                                <a id="" onclick="mydelete('{{$data['id']}}','article','img,text','{{$data['id']}}')" href="ajaxSrcipt:;" title="删除">删除</a> | 
                                             </td>
                                         </tr>
                                     </volist>
@@ -133,24 +133,45 @@
                                             <button class="col-sm-1 btn  btn-success" type="button"  value="更新" onclick="window.location.reload();">                                            
                                             排序
                                             </button>
-                                            <button id="quanxuan" class="col-sm-1 btn  btn-primary" type="button" value="全选">
+                                            <button onclick="quanxuan();" class="col-sm-1 btn  btn-primary" type="button" value="全选">
                                             全选
                                             </button>
-                                            <button id="fanxuan" class="col-sm-1 btn  btn-warning" type="button" value="反选">
+                                            <button onclick="fanxuan();" class="col-sm-1 btn  btn-warning" type="button" value="反选">
                                             反选
                                             </button>
-                                            <button id="quxiao" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
+                                            <button onclick="quxiao();" class="col-sm-1 btn  btn-inverse" type="button" value="取消">
                                             取消
                                             </button>
-                                            <button onclick="deletes()" class="col-sm-1 btn  btn-danger" type="button" value="删除">
-                                            删除
-                                            </button>
-                                            <button onclick="states(1)" class="col-sm-1 btn  btn-purple" type="button" value="上架">
+                                            
+                                            <button onclick="states(1,'article','status')" class="col-sm-1 btn  btn-purple" type="button" value="上架">
                                             上架
                                             </button>
-                                            <button onclick="states(0)" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
+                                            <button onclick="states(0,'article','status')" class="col-sm-1 btn  btn-inverse" type="button" value="下架">
                                             下架
                                             </button>
+                                            <button onclick="states(1,'article','recommended')" class="col-sm-1 btn  btn-purple" type="button" value="推荐">
+                                            推荐
+                                            </button>
+                                            <button onclick="states(0,'article','recommended')" class="col-sm-1 btn  btn-inverse" type="button" value="取消推荐">
+                                            取消推荐
+                                            </button>
+                                            <button onclick="states(1,'article','recommendeds')" class="col-sm-1 btn  btn-purple" type="button" value="特荐">
+                                            特荐
+                                            </button>
+                                            <button onclick="states(0,'article','recommendeds')" class="col-sm-1 btn  btn-inverse" type="button" value="取消特荐">
+                                            取消特荐
+                                            </button>
+                                             <button onclick="states(1,'article','headlines')" class="col-sm-1 btn  btn-purple" type="button" value="头条">
+                                            头条
+                                            </button>
+                                            <button onclick="states(0,'article','headlines')" class="col-sm-1 btn  btn-inverse" type="button" value="取消头条">
+                                            取消头条
+                                            </button>
+
+                                            <button onclick="deletes('article','img,text')" class="col-sm-1 btn  btn-danger" type="button" value="删除">
+                                            删除
+                                            </button>
+
                                             <php></php>
                                            
                                         </div>
@@ -184,99 +205,3 @@
     </style>
 </div>
 <include file="Public:footer" />
-
-<script type="text/javascript">
-
-//选择
-function choose(obj)
-{
-    var x = ($(obj).attr('x') == '1')?'0':'1';
-    if(x == '1'){var back = 'background:orange';}else{var back = '';}
-    $(obj).find('td').attr('style',back);
-    $(obj).attr('x',x);
-}
-
-//全选
-$('#quanxuan').click(function(){
-
-    $('tbody tr td').attr('style','background:orange');
-    $('tbody tr').attr('x','1');
-})
-
-//反选
-$('#fanxuan').click(function(){
-    var tr = $('tbody tr');
-    tr.each(function(){
-        var x = ($(this).attr('x') == '1')?'0':'1';
-        if(x == '1'){var back = 'background:orange';}else{var back = '';}
-        $(this).find('td').attr('style',back);
-        $(this).attr('x',x);
-    })
-
-})
-
-
-//取消
-$('#quxiao').click(function(){
-
-    $('tbody tr td').attr('style','background:');
-    $('tbody tr').attr('x','0');
-})
-
-
-function states(v){
-    var tr = $('tbody tr');
-    var arr = new Array();
-    tr.each(function(i){
-        if($(this).attr('x') == '1'){
-            arr[i] = $(this).attr('id');
-        }
-    })
-
-    $.post("{{:U('Article/states')}}",{'v':v, 'arr':arr} ,function(res){
-
-        if(res){
-            showmsg('操作成功');
-            window.location.reload();
-        }else{
-            showmsg('操作失败！');
-            window.location.reload();
-        }
-    })
-
-    
-}
-
-//批量删除
-function deletes(v){
- if(confirm('你确定删除吗？')){
-    var tr = $('tbody tr');
-    var arr = new Array();
-    tr.each(function(i){
-        if($(this).attr('x') == '1'){
-            arr[i] = $(this).attr('id');
-        }
-    })
-
-    $.post("{{:U('Article/deletes')}}",{'v':v, 'arr':arr} ,function(res){
-
-        if(res){
-            tr.each(function(i){
-            if($(this).attr('x') == '1'){
-                $(this).remove();
-            }
-            })
-            showmsg('操作成功');
-        }else{
-            showmsg('操作失败！');
-            window.location.reload();
-        }
-    })
-
-    
-}
-}
-</script>
-
-
-<!-- 18   -->

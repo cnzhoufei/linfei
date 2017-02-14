@@ -236,7 +236,7 @@
                                                         <th>广告位宽</th>
                                                         <th>广告位高</th>
                                                         <th class="center">添加时间</th>
-                                                        <th>操作</th>
+                                                        <!-- <th>操作</th> -->
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -249,16 +249,16 @@
                                                         <td><?php echo ($data['height']); ?></td>
                                                         <td class="center"><?php echo date('Y-m-d H:i:s',$data['addtime']);?></td>
                                                         
-                                                        <td>
+                                                     <!--    <td>
                                                             <a href="<?php echo U('Advertising/addadvertising');?>?id=<?php echo ($data['id']); ?>">编辑</a>
                                                             |
                                                             <a onclick="if(confirm('确定删除')){return ajHref(this);};return false;" href="{:U('admin/adList',array('op'=>'del','aid'=>$data['aid']))}" title="删除">删除</a>
-                                                        </td>
+                                                        </td> -->
 
                                                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                                 </tbody>
                                             </table>
-                                            <div class="row">
+                                            <!-- <div class="row">
                                                 <div class='col-sm-2'>
                                                     <button class=" btn  btn-success" type="submit" name="btSave" value="更新">
                                                         <i class="icon-refresh bigger-120"></i>
@@ -269,7 +269,7 @@
                                                 <div class="col-sm-10 ">
                                                     <ul class='pagination pull-right'>{$page}</ul>
                                                 </div> 
-                                            </div>
+                                            </div> -->
 
 
                                             <?php } ?>  

@@ -105,23 +105,6 @@ class ProductController extends CommonController
 
 
 
-	/**
-	 * 产品状态
-	 */
-	public function status()
-	{
-		if(IS_AJAX){
-			$id = (int)I('id',0);
-			$data[ I('field') ] = $status = (I('status'))?0:1;
-			$productimg_m = M('product');
-			$res['res'] = $productimg_m->where(array('id'=>$id))->save($data);
-			$res['status'] = $status;
-			$this->ajaxReturn($res);
-		}else{
-			$this->error('非法操作！！！');
-		}
-	}
-
 
 	//上下架
 	public function states()
@@ -148,25 +131,6 @@ class ProductController extends CommonController
 		}
 	}
 
-
-
-	/**
-     * 排序
-     */
-    public function ajaxsorting()
-    {
-        if(IS_AJAX){
-            $id = I('id',0);
-            $val['sorting'] = I('val',0);
-            $classify_m = M('product');
-            $res = $classify_m->where(array('id'=>$id))->save($val);
-            $this->ajaxReturn($res);
-
-        }else{
-
-            $this->error('非法操作！！！！！');
-        }
-    }
 
 
     // 删除
