@@ -39,8 +39,78 @@ class Cx extends TagLib {
         'assign'    =>  array('attr'=>'name,value','close'=>0),
         'define'    =>  array('attr'=>'name,value','close'=>0),
         'for'       =>  array('attr'=>'start,end,name,comparison,step', 'level'=>3),
-        'adv'       =>  array('attr'=>'name,type,key,item,id', 'level'=>3),
+        'adv'       =>  array('attr'=>'name,type,key,item,id', 'level'=>3),//广告标签
+        'product'   =>  array('attr'=>'key,item,id,limit', 'level'=>3),//获取指定栏目下的产品
+        'article'   =>  array('attr'=>'key,item,id,limit', 'level'=>3),//获取指定栏目下的文章
+        'column'    =>  array('attr'=>'item,id','level'=>1),//获取指定栏目数据
         );
+
+
+    /**
+     * 获取指定栏目下的产品
+     */
+    public function _product($tag,$content){
+
+        $db_prefix = C('DB_PREFIX');
+        $key  =  !empty($tag['key']) ? $tag['key'] : 'key';// 返回的变量key
+        $item  =  !empty($tag['item']) ? $tag['item'] : 'item';// 返回的变量item 
+        $str = <<<zhoufei
+                    <?php \$Model = new \Think\Model(); 
+                    \$sql = "select * from {$db_prefix}product where cid in({$tag['id']}) AND status = 1 limit {$tag['limit']}";
+                    \$product = \$Model->query(\$sql);
+                    foreach(\$product as \${$key}=>\${$item}):?>
+zhoufei;
+                    $str .= $this->tpl->parse($content);
+                    $str .= '<?php endforeach;?>';
+                    return $str;
+
+    }
+
+
+
+    /**
+     * 获取指定栏目下的文章
+     */
+    public function _article($tag,$content){
+
+        $db_prefix = C('DB_PREFIX');
+        $key  =  !empty($tag['key']) ? $tag['key'] : 'key';// 返回的变量key
+        $item  =  !empty($tag['item']) ? $tag['item'] : 'item';// 返回的变量item 
+        $str = <<<zhoufei
+                    <?php \$Model = new \Think\Model(); 
+                    \$sql = "select * from {$db_prefix}article where cid in({$tag['id']}) AND status = 1 limit {$tag['limit']}";
+                    \$article = \$Model->query(\$sql);
+                    foreach(\$article as \${$key}=>\${$item}):?>
+zhoufei;
+                    $str .= $this->tpl->parse($content);
+                    $str .= '<?php endforeach;?>';
+                    return $str;
+
+    }
+
+
+    /**
+     * 获取指定栏目数据
+     */
+    public function _column($tag,$content)
+    {
+
+        $db_prefix = C('DB_PREFIX');
+        $item  =  !empty($tag['item']) ? $tag['item'] : 'item';// 返回的变量item 
+        $str = <<<zhoufei
+                    <?php \$Model = new \Think\Model(); 
+                    \$sql = "select * from {$db_prefix}classify where id = {$tag['id']} AND status = 1";
+                    \$column = \$Model->query(\$sql);
+                    foreach(\$column as \${$item}):?>
+zhoufei;
+                    $str .= $this->tpl->parse($content);
+                    $str .= '<?php endforeach;?>';
+                    return $str;
+
+    }
+
+
+
 
 
 
@@ -56,10 +126,10 @@ class Cx extends TagLib {
         $advlocation_m = M('advlocation');
         $advlocation = $advlocation_m->where(array('id'=>$id))->find();//查询广告位
         if($advlocation){
-
+            $db_prefix = C('DB_PREFIX');
            $str = <<<zhoufei
                 <?php \$Model = new \Think\Model(); 
-               \$sql = "select * from linfei_adv where pid = $id";
+               \$sql = "select * from {$db_prefix}adv where pid = $id";
                \$adv = \$Model->query(\$sql);
                foreach(\$adv as \$$key=>\$$val):?>
 zhoufei;

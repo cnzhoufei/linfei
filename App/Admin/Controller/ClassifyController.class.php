@@ -18,17 +18,34 @@ class ClassifyController extends CommonController
             case '2':
                $type = 'news';
                 break;
+                case '3':
+               $type = 'cover';
+                break;
             
             default:
-                $type = 'cover';
+                $type = '';
                 break;
         }
         $pid = I('pid',0);
         $layer = I('layer',1);
         $classify_m = D('classify');
-        $classify = $classify_m->where(array('type'=>$type,'pid'=>$pid,'layer'=>$layer))->order('sorting')->select();
+        if(!$type){
+
+            $classify = $classify_m->order('sorting')->select();
+        }else{
+            $classify = $classify_m->where(array('type'=>$type,'pid'=>$pid,'layer'=>$layer))->order('sorting')->select();
+            
+            // dump($classify);exit;
+        }
         foreach($classify as &$v){
-            $v['pclass'] = $classify_m->where(array('pid'=>$v['id']))->count();
+            $v['pclass'] = $classify_m->where(array('pid'=>$v['id']))->count();//查询是否有字类
+            if($v['type'] == 'product'){$model = M('product');}elseif($v['type'] == 'news'){$model = M('article');}
+            if($v['type'] != 'cover'){
+            $v['product'] = $model->where(array('cid'=>$v['id']))->count();//查询分类下的文章
+                
+            }
+                
+           
         }
         $this->assign('classify',$classify);
     	$this->display('/classifylist');
@@ -45,6 +62,7 @@ class ClassifyController extends CommonController
         if(IS_POST){
         if(!$_POST['name']){$this->error('分类名称不能为空！');}
         if(!$_POST['m_name']){$_POST['m_name'] = $_POST['name'];}
+        
            $datas = $classify_m->datas($_POST);
            $data = $classify_m->create($datas,1);//根据表单提交的POST数据创建数据对象
            if(!$data){$erroer = $classify_m->getError(); $this->error($erroer);}
@@ -140,6 +158,7 @@ class ClassifyController extends CommonController
             $this->error('非法操作！！！！！');
         }
     }
+
 
 
     /**

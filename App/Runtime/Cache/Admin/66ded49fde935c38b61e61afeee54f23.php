@@ -287,7 +287,7 @@
                                             <td> 
                                                 <a target="_blank" href="http://<?php echo ($_SERVER['HTTP_HOST']); echo U('/Article/info');?>">查看</a>
                                                 |
-                                                <a id="" href="<?php echo U('article/addarticle');?>?id=<?php echo ($data['id']); ?>" title="">编辑</a>
+                                                <a id="" href="<?php echo U('article/addarticle');?>?id=<?php echo ($data['id']); ?>&p=<?php echo ($_GET['p']); ?>" title="">编辑</a>
                                                 |
                                                 <a id="" onclick="mydelete('<?php echo ($data['id']); ?>','article','img,text','<?php echo ($data['id']); ?>')" href="ajaxSrcipt:;" title="删除">删除</a> | 
                                             </td>

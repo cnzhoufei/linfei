@@ -108,6 +108,9 @@ return $_Res;
 
 /**
  *   实现中文字串截取无乱码的方法
+ * $string 要截取的字符串
+ * $start 从哪个开始截取 0
+ * $lenght 截取的长度
  */
 function getsubstr($string, $start, $length) 
 {

@@ -19,6 +19,11 @@
                     <div class="col-sm-12">
                         <div class="tabbable">
                             <ul class="nav nav-tabs" id="myTab">
+                            <li <php>echo !($_GET['type'])?'class="active"':''</php>>
+                                    <a data-toggle="tab" href="javascript:;" onclick="location.href='{{:U('Classify/index')}}'">
+                                        全部分类
+                                    </a>
+                                </li>
                                 <li <php>echo $_GET['type']==1?'class="active"':''</php>>
                                     <a data-toggle="tab" href="javascript:;" onclick="location.href='{{:U('Classify/index')}}?type=1'">
                                         商品分类
@@ -36,7 +41,7 @@
                                     </a>
                                 </li>
                             </ul>
-
+                            <?php $arr = array('product'=>1,'news'=>2,'cover'=>3);?>
                             <div class="tab-content">
                                 <div id="home" class="tab-pane in active">
                                         <div class="table-responsive">
@@ -47,8 +52,6 @@
                                                         <th>分类ID</th>
                                                         <th>分类层级</th>
                                                         <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th> 
-                                                         <th style="text-align:center;">手机分类名</th>                                                                      
-                                                        <th class="center">状态</th>     
                                                         <th class="center">顶部导航</th>
                                                         <th class="center">底部导航</th>
                                                         <th class="center">手机端导航</th>
@@ -60,15 +63,20 @@
                                                 <volist name="classify" id="data">
                                                     <tr class="pointer even" title="" id="delete_{{$data['id']}}">
                                                         <td>
-                                                        <input type="text" value="{{$data['sorting']}}" style="width:50px;height:30px;padding:0 5px;margin:0" onchange="sorting('{{:U('classify/ajaxsorting')}}',this,'{{$data['id']}}')" /></td>
+                                                        <input type="text" value="{{$data['sorting']}}" style="width:50px;height:30px;padding:0 5px;margin:0" onchange="sorting('classify',this,{{$data['id']}})" /></td>
                                                         <td class="center">{{$data['id']}}</td>
                                                         <td class="center">{{$data['layer']}}</td>
                                                         <td>
-                                                        <a href="{{:U('Classify/index')}}?type={{$_GET['type']}}&pid={{$data['id']}}&layer={{$data['layer']+1}}">{{$data['name']}}<php>if($data['pclass']){</php>
-                                                        <span class="red"> (有{{$data['pclass']}}子类)</span><php>}</php></a></td>
+                                                        {{$data['name']}}
+                                                        <a href="{{:U('Classify/index')}}?type={{$arr[ $data['type' ]]}}&pid={{$data['id']}}&layer={{$data['layer']+1}}">
+                                                        <php>if($data['pclass']){</php>
+                                                        <span class="red"> (有{{$data['pclass']}}子类)</span><php>}</php></a>
+                                                        <php>if($data['product']){</php>
+                                                            <a href="/Admin/product/search.php?class={{$data['id']}}">[有 {{$data['product']}} 条产品]</a>
+                                                        <php>}</php>
 
+                                                        </td>
                                                         <td class="center">{{$data['m_name']}}</td>
-
                                                         <td class="center">
                                                         <button type="button" value="{{$data['status']}}" onclick="status('{{:U('Classify/ajaxstatus')}}','{{$data['id']}}', 'status', this)"
                                                         style=" background:#fff;border-radius:50px;
@@ -104,10 +112,11 @@
                                                         <td>
                                                             <a href="{{:U('Classify/addclassify')}}?classid={{$data['id']}}">编辑</a>
                                                             |
-                                                            <a href="ajaxscript:;" onclick="mydelete('{{$data['id']}}','{{:U('classify/ajaxdelete')}}','delete_{{$data['id']}}')" title="删除">删除</a>
+                                                            <a href="ajaxscript:;" onclick="mydel('{{$data['id']}}','{{:U('classify/ajaxdelete')}}','delete_{{$data['id']}}')" title="删除">删除</a>
                                                         </td>
 
                                                     </tr>
+
                                                 </volist>
                                                 </tbody>
                                             </table>
@@ -155,3 +164,29 @@
     </a>
 </div>
 <include file="Public:footer" />
+<script type="text/javascript">
+
+function mydel(id,url,deletes){
+    if(confirm('你确定删除吗？')){
+        $.post(url, {'id':id}, function(res){
+            if(res==1){
+                $('#'+deletes).remove();
+            }else{
+                if(!res){
+                    showmsg('删除失败！');
+                    
+                }else{
+                    showmsg(res);
+                }
+            }
+            
+        })
+        
+    }else{
+        // showmsg('放弃也是一种收获');
+    }
+
+}
+
+
+</script>

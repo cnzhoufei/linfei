@@ -1,0 +1,134 @@
+[ 2017-02-16T17:52:38+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-16T17:52:38+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-02-16T17:52:38+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-16T17:52:55+08:00 ] 127.0.0.1 /Admin/Login/code.php?0.6518607365767592
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-16T17:52:59+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-16T17:52:59+08:00 ] 127.0.0.1 /Admin/Login/login/error/%E7%94%A8%E6%88%B7%E5%90%8D%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+
+[ 2017-02-16T17:52:59+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-16T17:53:10+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-16T17:53:10+08:00 ] 127.0.0.1 /Admin/Index/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+
+[ 2017-02-16T17:53:23+08:00 ] 127.0.0.1 /Admin/Classify/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-02-16T17:53:25+08:00 ] 127.0.0.1 /Admin/Classify/index.php?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+
+[ 2017-02-16T17:53:26+08:00 ] 127.0.0.1 /Admin/Classify/index.php?type=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-16T17:53:27+08:00 ] 127.0.0.1 /Admin/Classify/index.php?type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-16T17:53:28+08:00 ] 127.0.0.1 /Admin/Classify/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-02-16T17:53:31+08:00 ] 127.0.0.1 /Admin/Classify/index.php?type=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-16T17:53:32+08:00 ] 127.0.0.1 /Admin/Classify/index.php?type=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-16T17:53:32+08:00 ] 127.0.0.1 /Admin/Classify/index.php?type=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-02-16T17:53:34+08:00 ] 127.0.0.1 /Admin/Classify/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-02-16T17:53:38+08:00 ] 127.0.0.1 /Admin/product/search.php?class=24
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-16T17:53:40+08:00 ] 127.0.0.1 /Admin/Product/search/class/24.php?p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-16T17:53:45+08:00 ] 127.0.0.1 /Admin/Admin/status.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `linfei_config` [ RunTime:0.0011s ]
+SQL: SELECT `navstyle` FROM `linfei_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `linfei_product` [ RunTime:0.0011s ]
+SQL: UPDATE `linfei_product` SET `recommended`='0' WHERE `id` = 21 [ RunTime:0.0468s ]
+
+[ 2017-02-16T17:53:45+08:00 ] 127.0.0.1 /Admin/Product/search/class/24.php?p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+
+[ 2017-02-16T17:53:46+08:00 ] 127.0.0.1 /Admin/Admin/status.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `linfei_config` [ RunTime:0.0012s ]
+SQL: SELECT `navstyle` FROM `linfei_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `linfei_product` [ RunTime:0.0012s ]
+SQL: UPDATE `linfei_product` SET `recommended`='1' WHERE `id` = 21 [ RunTime:0.0490s ]
+
+[ 2017-02-16T17:53:46+08:00 ] 127.0.0.1 /Admin/Product/search/class/24.php?p=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+

@@ -202,6 +202,27 @@ return array(
 	}
 
 
+	public function settingurl()
+	{	
+		$model = M('config');
+		if(IS_POST){
+			$data = $model->create($_POST,1);//根据表单提交的POST数据创建数据对象
+			if (!$data){$this->error($model->getError());}
+			$res = $model->save($data);
+			if($res){
+   				$this->success("操作成功");
+			}else{
+				$this->error('操作失败！');
+			}
+
+		}else{
+			$url = $model->field('id,url')->find();
+			$this->assign('url',$url);
+			$this->display('/settingurl');
+		}
+	}
+
+
 
 
 	public function _empty()

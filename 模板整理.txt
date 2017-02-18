@@ -1,0 +1,14 @@
+
+	调取指定栏目下的产品 id='栏目id 可以多个用逗号隔开(1或多个1,2,3)' item="用于取值的变量" limit="调取多少条(5或1,5)" key='自增key'
+ 	  <product id="24" item="vvv" number="5" key="key">
+			<div class="pic"><a href="#" target="_blank">
+      		<img src="{{:homeimg($vvv['id'],470,592,'product')}}" alt="{{$vvv['title']}}"></a>
+			           <div class="pic-cn"><a href="#" target="_blank">{{:getsubstr($vvv['title'],0,25)}}</a></div>
+			</div>
+      </product>
+
+
+      获取指定栏目数据
+  <column item="v" id='26'>
+  {{$v['name']}}<a href="{{$v['url_name']}}" target="_blank">更多 ></a>
+  </column>

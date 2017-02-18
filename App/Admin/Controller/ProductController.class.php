@@ -60,7 +60,10 @@ class ProductController extends CommonController
 			}
 
 			if ($res) {
-				$this->success('操作成功',U('Product/index'));
+				$p = $_GET['p']?'?p='.$_GET['p']:'';
+
+				dump($_SERVER);exit;
+				$this->success('操作成功',U('Product/index').$p);
 			} else {
 				$this->error('操作失败！');
 			}

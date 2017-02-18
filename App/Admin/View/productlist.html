@@ -118,7 +118,7 @@
                                             <td> 
                                                 <a target="_blank" href="http://{{$_SERVER['HTTP_HOST']}}{{:U('/Article/info')}}">查看</a>
                                                 |
-                                                <a id="" href="{{:U('Product/addproduct')}}?id={{$data['id']}}" title="">编辑</a>
+                                                <a id="" href="{{:U('Product/addproduct')}}?id={{$data['id']}}&p={{$Think.get.p}}" title="">编辑</a>
                                                 |
                                                 <a id="" onclick="mydelete('{{$data['id']}}','{{:U('Product/del')}}','{{$data['id']}}')" href="ajaxSrcipt:;" title="删除">删除</a> | 
                                             </td>

@@ -8,7 +8,7 @@ function adminmenu()
 				array(
 					array('name'=>'网站信息','c'=>'Config','f'=>'index'),
 					array('name'=>'自定义信息','c'=>'Config','f'=>'custom'),
-					array('name'=>'URL模式','c'=>'','f'=>''),
+					array('name'=>'URL模式','c'=>'Config','f'=>'settingurl'),
 					// array('name'=>'积分设置','c'=>'','f'=>''),
 					array('name'=>'邮件设置','c'=>'Config','f'=>'email'),
 					array('name'=>'水印设置','c'=>'Config','f'=>'watermark'),
@@ -20,7 +20,7 @@ function adminmenu()
 			),
 			array('name'=>'分类管理','icon'=>'icon-tags','child'=>
 				array(
-					array('name'=>'分类列表','c'=>'Classify','f'=>'index','p'=>'?type=1'),
+					array('name'=>'分类列表','c'=>'Classify','f'=>'index','p'=>''),
 					array('name'=>'添加分类','c'=>'Classify','f'=>'addclassify'),
 				),
 			),

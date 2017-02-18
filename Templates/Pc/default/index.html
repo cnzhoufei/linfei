@@ -13,7 +13,7 @@
 
     <adv name="主页第一个广告" type="1" id="1" item="v" key="k" width="100px" height="100px;">
 
-    	<a class="{{$k}}" href="{{$v[url]}}" <?php if($v['blank']){echo 'target="_blank"';}?>><img src="{{:advimg($v[id],500,500)}}" alt="{{$v['title']}}" /></a>
+    	<a class="{{$k}}" href="{{$v[url]}}" <?php if($v['blank']){echo 'target="_blank"';}?>><img src="{{:homeimg($v[id],500,500,'adv')}}" alt="{{$v['title']}}" /></a>
 
     </adv>
 

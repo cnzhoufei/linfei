@@ -1,8 +1,5 @@
 <?php
 return array(
-			'TMPL_PARSE_STRING'  =>array(
-					'STYLE'     => '/App/Admin/View/style', // 增加新的image  css js  访问路径 
-			   ),
 
 
  'LOAD_EXT_CONFIG' => 'tplconfig',  // 引入模板配置

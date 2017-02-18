@@ -50,7 +50,8 @@ class ArticleController extends CommonController
 			S('img',null);
 			
 			if ($res) {
-				$this->success('操作成功',U('article/index'));
+				$p = $_GET['p']?'?p='.$_GET['p']:'';
+				$this->success('操作成功',U('article/index').$p);
 			} else {
 				$this->error('操作失败！');
 			}
