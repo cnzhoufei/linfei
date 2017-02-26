@@ -181,3 +181,33 @@ function delFile($dir,$file_type='') {
 		if(file_exists($dir)) unlink($dir);
 	}
 }
+
+
+ function showdir($path){
+             $dh = opendir($path);//打开目录
+             $i = 0;
+             while(($d = readdir($dh)) != false)
+             {
+                 //逐个文件读取，添加!=false条件，是为避免有文件或目录的名称为0
+                 if($d=='.' || $d == '..'){//判断是否为.或..，默认都会有
+
+                 continue;
+                 }
+                 if(is_dir($path.'/'.$d)){//如果为目录
+                 	$data[$i]['icon'] = 'icon-folder-close';
+
+                 }else{
+                 	$data[$i]['icon'] = 'icon-list-alt';
+
+                 	$data[$i]['size'] = sprintf("%.2f",(filesize($path.'/'.$d) / 1024)).'KB';
+                 	$data[$i]['gb'] = 'onclick="'."gb('".$d."');".'";';
+                 }
+                 	$data[$i]['path'] = $path.'/'.$d;
+                 	$data[$i]['name'] = $d;
+                 	$data[$i]['time'] = date('Y-m-d H:i:s',filemtime($path.'/'.$d));
+                 	$i++;
+                 //如果为文件就删除
+             }
+
+             return $data;
+    }

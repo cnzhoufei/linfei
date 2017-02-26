@@ -199,14 +199,14 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <!-- PAGE CONTENT BEGINS -->
-                            <form class="form-horizontal" role="form" action="" method="post">
+                            <form  name="form" class="form-horizontal" role="form" action="" method="post">
                             <input type="hidden" name="id" value="<?php echo ($classify['id']); ?>" />
                                 <div class="form-group">
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">类型<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
                                     <select  class="col-sm-12" name="type" onchange="getclass('<?php echo U('classify/ajaxclass');?>',$(this).val(),'types')">
                                         <option <?php if($classify['type'] == 'product')echo 'selected'; ?> value="product">商品分类</option>
-                                        <option <?php if($classify['type'] == 'news')echo 'selected'; ?> value="news">文章分类</option>
+                                        <option <?php if($classify['type'] == 'article')echo 'selected'; ?> value="article">文章分类</option>
                                         <option <?php if($classify['type'] == 'cover')echo 'selected'; ?> value="cover">封面</option>
                                     </select>
                                     </div>
@@ -281,6 +281,24 @@
                                         </div>
                                 </div>
                                 <?php } ?>
+
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 列表模板名称 <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <input type="text" name="tpl" id="tpl" value="<?php echo ($classify['tpl']); ?>.html" style="width:200px;" class="col-sm-12"/>
+                                                &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="SelectTemplets('tpl')" >浏览</button>
+                                        </div>
+                                </div>
+
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 文章模板名称 <span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <input type="text" name="tpl2" id="tpl2" value="<?php echo ($classify['tpl2']); ?>.html" style="width:200px;" class="col-sm-12"/>
+                                                &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="SelectTemplets('tpl2')" >浏览</button>
+                                        </div>
+                                </div>
 
                                 <div class="form-group">
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类 开启/关闭<span style="color:#f00;">*</span></label>
@@ -464,5 +482,15 @@ function pinyin()
              }
             return result;
 }
+
+
+function SelectTemplets(tpl)
+{
+    // 
+   var posLeft = 200;
+   var posTop = 300;
+   window.open("<?php echo U('SelectTemplets');?>?path=./Templates/Pc&tplname="+tpl, "poptempWin", "scrollbars=yes,resizable=yes,statebar=no,width=600,height=400,left="+posLeft+", top="+posTop);
+}
+
 
 </script>

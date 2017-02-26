@@ -241,6 +241,16 @@
                                     </label>
                                 </div>
                             </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">自定义名称<span style="color:#f00;"></span></label>
+                                <div class="col-sm-9">
+                                    <label>
+                                        <input name="custom"  type="text" />
+                                        <span class="lbl"></span>
+                                    </label>
+                                </div>
+                            </div>
                             
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">缩略图<span style="color:#f00;">*</span></label>

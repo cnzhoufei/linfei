@@ -8,6 +8,8 @@
 <title><?php echo ($config['title']); ?></title>
 <meta name="keywords" content="<?php echo ($config['keywords']); ?>">
 <meta name="description" content="<?php echo ($config['description']); ?>">
+
+<!-- 头部 -->
 <link rel="stylesheet" href="<?php echo ($style); ?>/Css/public.css">
 <link rel="stylesheet" href="<?php echo ($style); ?>/Css/result.css">
 <script type="text/javascript" src="<?php echo ($style); ?>/js/scroll_image.js"></script>
@@ -32,12 +34,15 @@
     </div>
     <div class="nav" onclick="showhidediv('nav');"   id="nav">
       <ul>
-        <li><a href="/Home/index.html" title="<?php echo ($config['name']); ?>"><?php echo ($config['home']); ?></a></li>
-       <?php if(is_array($classtop)): foreach($classtop as $key=>$v): ?><li><a href="<?php echo ($v['url']); echo ($v['url_name']); ?>.html" target="_blank" rel="nofollow" title="<?php echo ($v['name']); ?>"><?php echo ($v['name']); ?></a></li><?php endforeach; endif; ?>
+      <!-- 栏目分类 -->
+        <li><a href="<?php echo U('Home/index');?>" title="<?php echo ($config['name']); ?>"><?php echo ($config['home']); ?></a></li>
+       <?php if(is_array($classtop)): foreach($classtop as $key=>$v): ?><li><a href="<?php echo U($v['url_name']);?>" target="_blank" rel="nofollow" title="<?php echo ($v['name']); ?>"><?php echo ($v['name']); ?></a></li><?php endforeach; endif; ?>
       </ul>
     </div>
   </div>
-</div><div class="clear"></div>
+</div>
+
+<div class="clear"></div>
 <!--轮播图 -->
 <div class="headB" style="width:100%;height:30px;background:url(<?php echo ($style); ?>/images/bk.png)repeat-x;""></div>
  <div id="wrapper">
@@ -65,7 +70,7 @@
 	<div class="rollBoxc" id="scrollCont1">
 	
     <div id="conmm">
-      <?php if(is_array($recommended)): foreach($recommended as $key=>$r_v): ?><div class="anli"><a href="#" target="_blank" title="<?php echo ($r_v['title']); ?>">
+      <?php if(is_array($recommended)): foreach($recommended as $key=>$r_v): ?><div class="anli"><a href="<?php echo ($r_v['url']); ?>" target="_blank" title="<?php echo ($r_v['title']); ?>">
                   <img src="<?php echo homeimg($r_v['id'],327,418,'product');?>" alt="<?php echo ($r_v['title']); ?>"><div class="index_title"><?php echo getsubstr($r_v['title'],0,55);?></div></a></div><?php endforeach; endif; ?>
     </div>  
  </div>					
@@ -83,10 +88,9 @@
 <div class="rollBox-scene" id="scrollCont2">
 		<div class="scrollCont-2">
 						<!--box begin-->
-
-                          <?php $Model = new \Think\Model(); $sql = "select * from linfei_product where cid in(24,25) AND status = 1 limit 1,5"; $product = $Model->query($sql); foreach($product as $key=>$vvv):?><div class="pic"><a href="#" target="_blank">
+                          <?php $Model = new \Think\Model(); $sql = "select * from linfei_product where cid in(24,25) AND status = 1 limit 1,5"; $product = $Model->query($sql); foreach($product as $key=>$vvv):?><div class="pic"><a href="<?php echo ($vvv['url']); ?>" target="_blank">
       <img src="<?php echo homeimg($vvv['id'],470,592,'product');?>" alt="<?php echo ($vvv['title']); ?>"></a>
-			           <div class="pic-cn"><a href="#" target="_blank"><?php echo getsubstr($vvv['title'],0,25);?></a></div>
+			           <div class="pic-cn"><a href="<?php echo ($vvv['url']); ?>" target="_blank"><?php echo getsubstr($vvv['title'],0,25);?></a></div>
 			</div><?php endforeach;?>
 				</div>
 </div>
@@ -99,7 +103,7 @@
   <a href="<?php echo ($c_v['ulr_name']); ?>" target="_blank">更多 ></a><?php endforeach;?>
   </div>
     <ul class="news_list">
-                        <?php $Model = new \Think\Model(); $sql = "select * from linfei_product where cid in(25) AND status = 1 limit 5"; $product = $Model->query($sql); foreach($product as $key=>$v):?><li><span class="point"></span><a href="#" target="_blank"><?php echo getsubstr($v['title'],0,25);?></a><i><?php echo date('Y-m-d',$v['time']);?></i></li><?php endforeach;?>  
+                        <?php $Model = new \Think\Model(); $sql = "select * from linfei_product where cid in(25) AND status = 1 limit 5"; $product = $Model->query($sql); foreach($product as $key=>$v):?><li><span class="point"></span><a href="<?php echo ($v['url']); ?>" target="_blank"><?php echo getsubstr($v['title'],0,25);?></a><i><?php echo date('Y-m-d',$v['time']);?></i></li><?php endforeach;?>  
       </ul>
   </div>
 <div class="index_news">
@@ -107,7 +111,7 @@
                       <?php $Model = new \Think\Model(); $sql = "select * from linfei_classify where id = 26 AND status = 1"; $column = $Model->query($sql); foreach($column as $v): echo ($v['name']); ?><a href="<?php echo ($v['url_name']); ?>" target="_blank">更多 ></a><?php endforeach;?>
   </div>
     <ul class="news_list">
-                        <?php $Model = new \Think\Model(); $sql = "select * from linfei_article where cid in(26) AND status = 1 limit 5"; $article = $Model->query($sql); foreach($article as $key=>$v):?><li><span class="point"></span><a href="#" target="_blank"><?php echo getsubstr($v['title'],0,25);?></a><i><?php echo date('Y-m-d',$v['time']);?></i></li><?php endforeach;?>
+                        <?php $Model = new \Think\Model(); $sql = "select * from linfei_article where cid in(26) AND status = 1 limit 5"; $article = $Model->query($sql); foreach($article as $key=>$v):?><li><span class="point"></span><a href="<?php echo ($v['url']); ?>" target="_blank"><?php echo getsubstr($v['title'],0,25);?></a><i><?php echo date('Y-m-d',$v['time']);?></i></li><?php endforeach;?>
       </ul>
   </div>
 </div>

@@ -8,40 +8,9 @@
 <title>{{$config['title']}}</title>
 <meta name="keywords" content="{{$config['keywords']}}">
 <meta name="description" content="{{$config['description']}}">
-<link rel="stylesheet" href="{{$style}}/Css/public.css">
-<link rel="stylesheet" href="{{$style}}/Css/result.css">
-<script type="text/javascript" src="{{$style}}/js/scroll_image.js"></script>
-<script type="text/javascript" src="{{$style}}/js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="{{$style}}/js/jquery.banner.revolution.min.js"></script>
-<script type="text/javascript" src="{{$style}}/js/banner.js"></script>
-<link rel="stylesheet" type="text/css" href="{{$style}}/css/lbt.css">
-</head>
-<body>
-<a name="returnTop"></a>
-<div id="header" class="header">
-  <div class="head_top">
-    <div class="body_item"> <span class="fl">{{$custom['tel']}}</span> </div>
-  </div>
-  <div class="header-cr">
-    <div class="header_l" id="header_l" onClick="return showhidediv('nav')">
-      <div class="logo" style="background-image:url({{$config['logo']}});"></div>
-      <div class="company">
-        <dd>{{$config['name']}}</dd>
-      </div>
-      <div class="en">{{$config['company']}}</div>
-    </div>
-    <div class="nav" onclick="showhidediv('nav');"   id="nav">
-      <ul>
-        <li><a href="/Home/index.html" title="{{$config['name']}}">{{$config['home']}}</a></li>
-       <foreach name="classtop" item="v">
-        <li><a href="{{$v['url']}}{{$v['url_name']}}.html" target="_blank" rel="nofollow" title="{{$v['name']}}">{{$v['name']}}</a></li>
-        </foreach>
-      </ul>
-    </div>
-  </div>
-</div><div class="clear"></div>
-<!--轮播图 -->
-<div class="headB" style="width:100%;height:30px;background:url({{$style}}/images/bk.png)repeat-x;""></div>
+
+<!-- 头部 -->
+<include file="./header"/>
  <div id="wrapper">
         <div class="fullwidthbanner-container">
           <div class="fullwidthbanner">
@@ -70,7 +39,7 @@
 	
     <div id="conmm">
       <foreach name="recommended" item="r_v">
-  								<div class="anli"><a href="#" target="_blank" title="{{$r_v['title']}}">
+  								<div class="anli"><a href="{{$r_v['url']}}" target="_blank" title="{{$r_v['title']}}">
                   <img src="{{:homeimg($r_v['id'],327,418,'product')}}" alt="{{$r_v['title']}}"><div class="index_title">{{:getsubstr($r_v['title'],0,55)}}</div></a></div>
       </foreach>
     </div>  
@@ -89,11 +58,10 @@
 <div class="rollBox-scene" id="scrollCont2">
 		<div class="scrollCont-2">
 						<!--box begin-->
-
       <product id="24,25" item="vvv" limit="1,5" key="key">
-			<div class="pic"><a href="#" target="_blank">
+			<div class="pic"><a href="{{$vvv['url']}}" target="_blank">
       <img src="{{:homeimg($vvv['id'],470,592,'product')}}" alt="{{$vvv['title']}}"></a>
-			           <div class="pic-cn"><a href="#" target="_blank">{{:getsubstr($vvv['title'],0,25)}}</a></div>
+			           <div class="pic-cn"><a href="{{$vvv['url']}}" target="_blank">{{:getsubstr($vvv['title'],0,25)}}</a></div>
 			</div>
       </product>
 				</div>
@@ -110,7 +78,7 @@
   </div>
     <ul class="news_list">
     <product item="v" id="25" limit="5">
-        <li><span class="point"></span><a href="#" target="_blank">{{:getsubstr($v['title'],0,25)}}</a><i>{{:date('Y-m-d',$v['time'])}}</i></li>
+        <li><span class="point"></span><a href="{{$v['url']}}" target="_blank">{{:getsubstr($v['title'],0,25)}}</a><i>{{:date('Y-m-d',$v['time'])}}</i></li>
     </product>  
       </ul>
   </div>
@@ -122,7 +90,7 @@
   </div>
     <ul class="news_list">
     <article item="v" id="26" limit="5">
-        <li><span class="point"></span><a href="#" target="_blank">{{:getsubstr($v['title'],0,25)}}</a><i>{{:date('Y-m-d',$v['time'])}}</i></li>
+        <li><span class="point"></span><a href="{{$v['url']}}" target="_blank">{{:getsubstr($v['title'],0,25)}}</a><i>{{:date('Y-m-d',$v['time'])}}</i></li>
        
     </article>
       </ul>

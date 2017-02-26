@@ -221,7 +221,7 @@
                                     </a>
                                 </li>
                             </ul>
-                            <?php $arr = array('product'=>1,'news'=>2,'cover'=>3);?>
+                            <?php $arr = array('product'=>1,'article'=>2,'cover'=>3);?>
                             <div class="tab-content">
                                 <div id="home" class="tab-pane in active">
                                         <div class="table-responsive">
@@ -232,6 +232,8 @@
                                                         <th>分类ID</th>
                                                         <th>分类层级</th>
                                                         <th>分类名称 <span class="blue">(点击名称可查看其子分类）</span></th> 
+                                                        <th class="center">手机分类名称</th> 
+                                                        <th class="center">分类状态</th> 
                                                         <th class="center">顶部导航</th>
                                                         <th class="center">底部导航</th>
                                                         <th class="center">手机端导航</th>
@@ -251,7 +253,7 @@
                                                         <?php if($data['pclass']){ ?>
                                                         <span class="red"> (有<?php echo ($data['pclass']); ?>子类)</span><?php } ?></a>
                                                         <?php if($data['product']){ ?>
-                                                            <a href="/Admin/product/search.php?class=<?php echo ($data['id']); ?>">[有 <?php echo ($data['product']); ?> 条产品]</a>
+                                                            <a href="/Admin/<?php echo ($data['type']); ?>/search.php?class=<?php echo ($data['id']); ?>">[有 <?php echo ($data['product']); ?> 条产品]</a>
                                                         <?php } ?>
 
                                                         </td>

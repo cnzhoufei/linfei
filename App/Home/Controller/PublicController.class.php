@@ -12,6 +12,14 @@ class PublicController extends Controller
         $this->custom();
         $this->config();
 
+        $this->pic();
+        $this->recommended();
+        $this->news();
+        $this->selling();
+        $this->recommendeda();
+        $this->recommendeds();
+        $this->headlines();
+
    }
 
 
@@ -73,4 +81,83 @@ class PublicController extends Controller
         }
        $this->assign('classtop',$class);
    }
+
+
+
+
+
+    /**
+     *轮播图
+     */
+    private function pic()
+    {
+        $pic_m = M('pic');
+        $pic = $pic_m->where(array('status'=>1))->select();
+        $this->assign('pic',$pic);
+    }
+
+
+    /**
+     * 推荐产品
+     */
+    private function recommended()
+    {
+        $product = M('product')->where(array('recommended'=>1,'status'=>1))->select();
+        $this->assign('recommended',$product);
+    }
+
+
+    /**
+     * 新品
+     */
+    private function news()
+    {
+        $product = M('product')->where(array('new'=>1,'status'=>1))->select();
+        $this->assign('new',$product);
+    }
+
+
+
+    /**
+     * 热卖
+     */
+    private function selling()
+    {
+        $product = M('product')->where(array('selling'=>1,'status'=>1))->select();
+        $this->assign('selling',$product);
+    }
+
+
+    /**
+     * 推荐
+     */
+    private function recommendeda()
+    {
+        $article = M('article')->where(array('recommended'=>1,'status'=>1))->select();
+        $this->assign('recommendeda',$article);
+
+    }
+
+
+   /**
+     * 特荐
+     */
+    private function recommendeds()
+    {
+        $article = M('article')->where(array('recommendeds'=>1,'status'=>1))->select();
+        $this->assign('recommendeds',$article);
+        
+    }
+
+
+    /**
+     * 头条
+     */
+    private function headlines()
+    {
+        $article = M('article')->where(array('headlines'=>1,'status'=>1))->select();
+        $this->assign('headlines',$article);
+        
+    }
+
 }

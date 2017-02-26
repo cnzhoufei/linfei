@@ -16,7 +16,7 @@ class ClassifyController extends CommonController
                $type = 'product';
                 break;
             case '2':
-               $type = 'news';
+               $type = 'article';
                 break;
                 case '3':
                $type = 'cover';
@@ -39,7 +39,7 @@ class ClassifyController extends CommonController
         }
         foreach($classify as &$v){
             $v['pclass'] = $classify_m->where(array('pid'=>$v['id']))->count();//查询是否有字类
-            if($v['type'] == 'product'){$model = M('product');}elseif($v['type'] == 'news'){$model = M('article');}
+            if($v['type'] == 'product'){$model = M('product');}elseif($v['type'] == 'article'){$model = M('article');}
             if($v['type'] != 'cover'){
             $v['product'] = $model->where(array('cid'=>$v['id']))->count();//查询分类下的文章
                 
@@ -57,7 +57,6 @@ class ClassifyController extends CommonController
      */
     public function addclassify()
     {
-
         $classify_m = D('classify');
         if(IS_POST){
         if(!$_POST['name']){$this->error('分类名称不能为空！');}
@@ -65,13 +64,18 @@ class ClassifyController extends CommonController
         
            $datas = $classify_m->datas($_POST);
            $data = $classify_m->create($datas,1);//根据表单提交的POST数据创建数据对象
+           // dump($data);exit;
            if(!$data){$erroer = $classify_m->getError(); $this->error($erroer);}
 
            if($_POST['id']){
                 unset($data['url_name']);
+                $data['path'] = $data['path'].$_POST['id'];
                 $res = $classify_m->save($data);
            }else{
                 if(!$_POST['url_name']){$data['url_name'] = pinyin($_POST['name'],1);}
+                $maxid = $this->query('select max(id) as max from '.C('DB_PREFIX').'classify');//查询最大id
+                $data['path'] = $data['path'].$maxid[0]['max']+1;
+                $data['url'] = '/Home/'.$data['url_name'].'.html';
                 $res = $classify_m->add($data);
            }
            if($res){
@@ -99,6 +103,26 @@ class ClassifyController extends CommonController
     	}
     }
 
+
+    public function SelectTemplets()
+    {
+        $path = I('path');
+        $tplname = I('tplname');//列表模板还是文章页模板
+        $dir = showdir($path);
+        $dirarr = explode('/', $path);
+        foreach($dirarr as $k=>$v){
+            if($k < (count($dirarr) - 1)){
+                $top .= $v.'/';
+            }
+
+        }
+        $this->assign('tplname',$tplname);
+        $this->assign('top',substr($top,0,-1));//上级目录
+        $this->assign('path',$path);//当前目录
+        $this->assign('dir',$dir);//文件目录
+        $this->display('/SelectTemplets');
+
+    }
 
 
     /**

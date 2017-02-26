@@ -18,3 +18,2243 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
 
+[ 2017-02-18T13:52:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T13:52:28+08:00 ] 127.0.0.1 /Home/gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-02-18T13:52:32+08:00 ] 127.0.0.1 /gujiangongcheng.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:17:55+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-02-18T14:18:04+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:18:27+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:18:35+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:19:00+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:19:29+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:20:46+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:20:54+08:00 ] 127.0.0.1 /Home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:20:54+08:00 ] 127.0.0.1 /home/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:21:48+08:00 ] 127.0.0.1 /Home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:21:48+08:00 ] 127.0.0.1 /home/product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 //product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Css/result.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /js/scroll_image.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /js/jquery.banner.revolution.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /css/lbt.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /js/jquery-1.7.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /js/banner.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/vb_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/vb_02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/jiakejian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/vb_05.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/vb_04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /js/gujian.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/youqian_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/youqian_3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /images/bk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/youqian_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 /Picture/youqian_4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:23:48+08:00 ] 127.0.0.1 //product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /Css/result.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /Css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /js/scroll_image.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /js/jquery-1.7.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /js/jquery.banner.revolution.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /css/lbt.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:23:51+08:00 ] 127.0.0.1 /js/banner.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/vb_05.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/jiakejian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/vb_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/vb_04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /images/bk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/vb_02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /js/gujian.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/youqian_3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/youqian_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/youqian_4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /Picture/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2017-02-18T14:23:52+08:00 ] 127.0.0.1 /product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /product/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /js/jquery.banner.revolution.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Css/result.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /css/lbt.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /js/jquery-1.7.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /js/scroll_image.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /js/banner.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/jiakejian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/vb_05.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /js/gujian.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /images/bk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/youqian_3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/youqian_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/youqian_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/youqian_4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/vb_02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /Picture/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:25:09+08:00 ] 127.0.0.1 /product/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /product/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Css/result.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /css/lbt.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /js/jquery.banner.revolution.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /js/jquery-1.7.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/jiakejian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /js/scroll_image.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_05.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/youqian_3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /js/banner.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /js/gujian.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/youqian_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/youqian_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/weixin.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/youqian_4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_05.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/jiakejian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /images/bk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/vb_02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /Picture/youqian_3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-02-18T14:26:48+08:00 ] 127.0.0.1 /product/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-02-18T14:30:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-18T14:30:22+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+
+[ 2017-02-18T14:30:22+08:00 ] 127.0.0.1 /Css/public.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+
+[ 2017-02-18T14:30:22+08:00 ] 127.0.0.1 /Css/result.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:30:22+08:00 ] 127.0.0.1 /js/jquery-1.7.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-02-18T14:30:22+08:00 ] 127.0.0.1 /js/scroll_image.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2017-02-18T14:30:22+08:00 ] 127.0.0.1 /Picture/jiakejian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+
+[ 2017-02-18T14:30:22+08:00 ] 127.0.0.1 /js/jquery.banner.revolution.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/vb_02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /css/lbt.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /js/banner.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /js/gujian.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/vb_03.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/vb_04.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/youqian_3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/youqian_2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/youqian_4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/youqian_1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/jiakejian.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/vb_02.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /images/bk.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /Picture/vb_05.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-02-18T14:30:23+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-02-18T14:33:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:34:19+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T14:38:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T14:39:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /image/dialog_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /product/index/cid/images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /image/20160229104254752.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /css/goodlist.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /image/m_pic.jpg_250x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /image/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /image/vv50x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /image/20160219033919680.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-18T14:40:39+08:00 ] 127.0.0.1 /image/aag_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /css/goodlist.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /image/dialog_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /image/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /image/vv50x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /image/m_pic.jpg_250x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /product/index/cid/images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /image/20160229104254752.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /image/20160219033919680.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-18T14:40:52+08:00 ] 127.0.0.1 /image/aag_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /css/goodlist.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/dialog_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/vv50x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160229104254752.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160219033919680.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/aag_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /css/goodlist.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/dialog_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160229104254752.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/m_pic.jpg_250x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/vv50x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/aag_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160219033919680.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /css/goodlist.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /css/index.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/dialog_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/m_pic.jpg_250x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160229104254752.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/aag_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/vv50x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160219033919680.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/dialog_arrow.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/m_pic.jpg_250x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /product/index/cid/images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/shouji.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/vv50x250.jpg_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/aag_.webp.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160219033919680.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T14:40:53+08:00 ] 127.0.0.1 /image/20160229104254752.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-02-18T14:41:21+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:41:24+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T14:41:24+08:00 ] 127.0.0.1 /product/index/cid/images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2017-02-18T14:42:04+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2017-02-18T14:42:33+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-02-18T14:43:10+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+
+[ 2017-02-18T14:43:11+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2017-02-18T14:43:11+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+
+[ 2017-02-18T14:43:11+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-18T14:43:11+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2017-02-18T14:43:12+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:44:00+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+
+[ 2017-02-18T14:44:01+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-02-18T14:44:01+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-02-18T14:44:01+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+
+[ 2017-02-18T14:44:01+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-18T14:44:01+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-02-18T14:44:02+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-18T14:44:07+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-02-18T14:44:07+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2017-02-18T14:44:08+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+
+[ 2017-02-18T14:44:08+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T14:45:08+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+
+[ 2017-02-18T14:46:02+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T14:46:05+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-02-18T14:46:50+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-02-18T14:46:51+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-18T14:46:57+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-02-18T14:46:58+08:00 ] 127.0.0.1 /product/index/cid/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T14:47:00+08:00 ] 127.0.0.1 /product/index/cid/26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-02-18T14:47:02+08:00 ] 127.0.0.1 /product/index/cid/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:47:03+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T14:47:51+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-02-18T14:47:52+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-02-18T14:47:52+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+
+[ 2017-02-18T14:47:52+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:47:52+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:47:53+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-02-18T14:47:53+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-02-18T14:48:57+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-02-18T14:48:58+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+
+[ 2017-02-18T14:48:59+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-02-18T14:48:59+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:48:59+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+
+[ 2017-02-18T14:48:59+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-02-18T14:49:00+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-02-18T14:49:00+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+
+[ 2017-02-18T14:49:01+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-02-18T14:49:01+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:49:01+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-02-18T14:49:01+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T14:49:02+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-02-18T14:49:02+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:49:02+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+
+[ 2017-02-18T14:49:02+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+
+[ 2017-02-18T14:49:02+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T14:49:02+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-02-18T14:49:03+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-02-18T14:49:03+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-02-18T14:49:23+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-02-18T14:49:25+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-02-18T14:49:53+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+
+[ 2017-02-18T14:49:57+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-02-18T14:50:22+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-02-18T14:54:30+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T14:56:18+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+
+[ 2017-02-18T14:56:19+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+
+[ 2017-02-18T14:56:20+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-02-18T14:56:20+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-02-18T14:57:59+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-02-18T14:58:42+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-02-18T14:59:12+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-02-18T14:59:13+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+
+[ 2017-02-18T14:59:13+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-18T14:59:13+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2017-02-18T14:59:13+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+
+[ 2017-02-18T14:59:13+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+
+[ 2017-02-18T14:59:14+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-18T14:59:14+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-02-18T14:59:14+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+
+[ 2017-02-18T14:59:14+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-02-18T14:59:44+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-02-18T15:00:45+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2017-02-18T15:01:01+08:00 ] 127.0.0.1 /product/index/cid/28.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-02-18T15:01:09+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+
+[ 2017-02-18T15:01:15+08:00 ] 127.0.0.1 /product/index/cid/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-02-18T15:01:39+08:00 ] 127.0.0.1 /product/index/cid/25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T15:01:41+08:00 ] 127.0.0.1 /Product/index/cid/25.php?p=2.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T15:01:47+08:00 ] 127.0.0.1 /Product/index/cid/25.php.php?p=3.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-02-18T15:01:51+08:00 ] 127.0.0.1 /Product/index/cid/25.php.php.php?p=4.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T15:01:56+08:00 ] 127.0.0.1 /Product/index/cid/25.php.php.php.php?p=5.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T15:02:38+08:00 ] 127.0.0.1 /Product/index/cid/25.php.php.php.php?p=5.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T15:02:55+08:00 ] 127.0.0.1 /Product/index/cid/25.php.php.php.php.php?p=4.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T15:03:16+08:00 ] 127.0.0.1 /Product/index/cid/25.php.php.php.php.php?p=4.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+
+[ 2017-02-18T15:05:15+08:00 ] 127.0.0.1 /Product/index/cid/25.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T15:05:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T15:05:51+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T15:06:18+08:00 ] 127.0.0.1 /Product/index/cid/24.php?p=2.
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-02-18T15:06:24+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T15:10:30+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-02-18T15:11:13+08:00 ] 127.0.0.1 /product/index/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T15:11:17+08:00 ] 127.0.0.1 /Product/index/cid/24/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-18T15:11:19+08:00 ] 127.0.0.1 /Product/index/cid/24/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-02-18T15:11:21+08:00 ] 127.0.0.1 /Product/index/cid/24/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-02-18T15:11:22+08:00 ] 127.0.0.1 /Product/index/cid/24/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-02-18T15:11:24+08:00 ] 127.0.0.1 /Product/index/cid/24/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T15:11:25+08:00 ] 127.0.0.1 /Product/index/cid/24/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-02-18T15:12:38+08:00 ] 127.0.0.1 /Product/list/cid/24/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T15:13:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T15:13:42+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-18T15:15:27+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 非法操作:list
+
+[ 2017-02-18T15:15:33+08:00 ] 127.0.0.1 /product/lists/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T15:16:11+08:00 ] 127.0.0.1 /product/lists/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-02-18T15:16:34+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-02-18T15:50:30+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T15:54:14+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T15:54:16+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T15:54:17+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+
+[ 2017-02-18T15:54:18+08:00 ] 127.0.0.1 /product/list/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T15:55:02+08:00 ] 127.0.0.1 /product/lists/cid/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T15:55:21+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T15:55:22+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-02-18T15:55:23+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T15:55:24+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T15:55:27+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T15:55:27+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T15:55:28+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+
+[ 2017-02-18T15:55:31+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-02-18T15:55:32+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T15:55:33+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T15:55:36+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T15:55:37+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-02-18T15:55:37+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-18T15:55:38+08:00 ] 127.0.0.1 /Product/lists/cid/24/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T16:01:22+08:00 ] 127.0.0.1 /Home/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T16:01:34+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-02-18T16:01:42+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-02-18T16:01:58+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:02:43+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-02-18T16:02:45+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T16:02:50+08:00 ] 127.0.0.1 /product_lists_cid_25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-02-18T16:02:55+08:00 ] 127.0.0.1 /Product_lists_cid_25_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:02:57+08:00 ] 127.0.0.1 /Product_lists_cid_25_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-02-18T16:02:59+08:00 ] 127.0.0.1 /Product_lists_cid_25_p_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-02-18T16:03:00+08:00 ] 127.0.0.1 /Product_lists_cid_25_p_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T16:03:17+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-02-18T16:03:33+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:03:34+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:03:35+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+
+[ 2017-02-18T16:03:36+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T16:03:37+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T16:03:38+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T16:03:39+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+
+[ 2017-02-18T16:03:40+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T16:04:41+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T16:04:42+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T16:04:43+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T16:04:44+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:04:44+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-02-18T16:04:45+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T16:04:46+08:00 ] 127.0.0.1 /Product_lists_cid_24_p_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T16:04:47+08:00 ] 127.0.0.1 /product_lists_cid_27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+
+[ 2017-02-18T16:04:50+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T16:04:51+08:00 ] 127.0.0.1 /product_lists_cid_25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+
+[ 2017-02-18T16:04:52+08:00 ] 127.0.0.1 /product_lists_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T16:04:54+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-02-18T16:05:00+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:06:34+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000854s ]
+
+[ 2017-02-18T16:06:46+08:00 ] 127.0.0.1 /product_lists_cid_25.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+
+[ 2017-02-18T16:06:48+08:00 ] 127.0.0.1 /product_lists_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T16:06:50+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T16:07:23+08:00 ] 127.0.0.1 /product_lists_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:11:30+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-18T16:11:56+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:12:02+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-18T16:12:11+08:00 ] 127.0.0.1 /Home_cover_cid_27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2017-02-18T16:27:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-18T16:27:36+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+
+[ 2017-02-18T16:27:57+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T16:33:33+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T16:33:44+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-02-18T16:33:55+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-02-18T16:40:52+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-02-18T16:41:10+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:41:10+08:00 ] 127.0.0.1 /images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-18T16:42:52+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T16:42:52+08:00 ] 127.0.0.1 /images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T16:44:35+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-18T16:44:35+08:00 ] 127.0.0.1 /images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+
+[ 2017-02-18T16:44:57+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T16:44:57+08:00 ] 127.0.0.1 /images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-02-18T16:44:57+08:00 ] 127.0.0.1 /images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+
+[ 2017-02-18T16:44:57+08:00 ] 127.0.0.1 /images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T16:44:58+08:00 ] 127.0.0.1 /images/slide3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+
+[ 2017-02-18T16:45:17+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T16:54:55+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-02-18T17:04:59+08:00 ] 127.0.0.1 /home/product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T17:05:07+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+ERR: Think\Controller:fech方法不存在！
+
+[ 2017-02-18T17:05:47+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T17:07:53+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:08:38+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:09:11+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:10:13+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:10:58+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:11:02+08:00 ] 127.0.0.1 /home_product2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:12:02+08:00 ] 127.0.0.1 /Home_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T17:12:18+08:00 ] 127.0.0.1 /home_product2_2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:13:17+08:00 ] 127.0.0.1 /home_product2_2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:13:24+08:00 ] 127.0.0.1 /Home_product2_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:13:28+08:00 ] 127.0.0.1 /Home_product2_p_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:13:32+08:00 ] 127.0.0.1 /Home_product2_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:16:02+08:00 ] 127.0.0.1 /Home_product2_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/product2.html
+
+[ 2017-02-18T17:17:51+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 参数错误或者未定义:cid
+
+[ 2017-02-18T17:18:06+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+ERR: Think\Controller:fecth方法不存在！
+
+[ 2017-02-18T17:18:25+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-18T17:18:42+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T17:19:45+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/hongyaxuan.com</dd>
+<dd>地址：北京市朝阳区环铁艺术城C-007</dd>
+</dl>
+</li>
+<li>
+<dl class="ico">
+<dt>关注洪雅轩</dt>
+<dd><a href="#" target="_blank" title="新浪微博" class="sina" rel="nofollow"></a></dd>
+<dd><a href="#" target="_blank" title="腾讯微博" class="qweibo" rel="nofollow"></a></dd>
+<dd><a href="#" target="_blank" title="QQ空间" class="qzone" rel="nofollow"></a></dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>洪雅轩微信公众号</dt>
+<dd><img src="/Templates/pc/gujianzhu/Picture/weixin.jpg" alt="洪雅轩微信公众号二维码" height="100" width="100"></dd>
+</dl>
+</li>
+</ul>
+<div class="clear"></div>
+
+  <div class="copyRight">
+          <div class="l" style="text-align/left">
+          Copyright 2009-2016 hongyaxuan.net All rights reserved. <br>
+          洪雅轩（北京）国际艺术设计事务所版权所有<br>
+          京ICP备14034020号 
+          <a href="#" target="_blank">XML</a> 
+          </div>
+          <div class="r" style="width/ 700px;">
+          <a href="#" class="link" target="_blank">古建修缮</a>
+          <a href="#" class="link" target="_blank">玉溪装修网</a>
+          <a href="# class="link" target="_blank">广州办公家具</a>
+          <a href="#" class="link" target="_blank">张家口装修网</a>
+          <a href="#" class="link" target="_blank">龙岗厂房出租</a>
+          <a href="#" class="link" target="_blank"> 深圳生活指南</a>
+          <a href="#" class="link" target="_blank">泗阳装修网 </a>
+          <a href="#" class="link" target="_blank">沧州装修公司</a>
+          <a href="#" class="link" target="_blank">万州区土地转让</a>
+          <a href="#" class="link" target="_blank">纯木门窗</a>
+          <a href="#" class="link" target="_blank">泰安樱花</a>
+          <a href="#" class="link" target="_blank"> 上海矿棉板</a>
+          <a href="#" class="link" target="_blank">258星座</a>
+          <a href="#" class="link" target="_blank">福州房产网  </a>
+          <a href="#" class="link" target="_blank">苏州装修公司</a>
+          </div>
+  </div>
+
+</div>
+</div>
+<!-- help-box -->
+<div class="help-box">
+  <ul>
+    <li class="qq"><a target="_blank" href="#" class="link" title="点击在线咨询"><i class="fa fa-qq"></i></a></li>
+    <li class="tel"><a href="javascript/void(0);" class="link" title="联系电话"><i class="fa fa-phone"></i></a>
+      <div class="dialog hide">
+        <div class="arrow"></div>
+        <div class="item">业务咨询/  400-030-8710</div>
+        <div class="item">业务咨询/  010-84308710</div>
+      </div>
+    </li>
+    <li class="weixin"><a href="javascript/void(0);" class="link" title="扫码关注微信"><i class="fa fa-weixin"></i></a>
+      <div class="dialog hide">
+        <div class="arrow"></div>
+        <div class="qrcode"><img src="/Templates/pc/gujianzhu/Picture/shouji.jpg" alt="微信二维码" width="150"><br>微信扫一扫 关注洪雅轩</div>
+      </div>
+    </li>
+    <li>
+      <div class="bdsharebuttonbox"> <a title="#" href="#" class="bds_tsina" data-cmd="tsina"></a> </div>
+    </li>
+    <li class="feedback"><a href="#" target="_blank" data-toggle="modal" data-target="#feedbackModal" class="link" title="装修咨询"><i class="fa fa-comment"></i></a></li>
+    <li class="back2top"><a href="#"" title="返回顶部"><i class="fa fa-comment"></i></a></li>
+  </ul>
+</div>
+<div class="message" id="gotop1">
+   <div class="message-c">
+    <span>
+	<a href="tel/4000308710" class="dh">电话咨询</a>
+	<a href="#" class="home">预约设计</a>
+	<a href="#" class="ifh">关于我们</a>
+	</span>
+   </div>
+</div>
+<!-- <script type="text/javascript" src="js/3g.js"></script> -->
+<script type="text/javascript" src="/Templates/pc/gujianzhu/js/gujian.js"></script>
+
+</body>
+</html>.html
+
+[ 2017-02-18T17:20:39+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-02-18T17:20:47+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T17:23:30+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu//.html
+
+[ 2017-02-18T17:23:42+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T17:24:26+08:00 ] 127.0.0.1 /Home_product
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-18T17:25:54+08:00 ] 127.0.0.1 /Home_product_2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-02-18T17:29:04+08:00 ] 127.0.0.1 /Home_article_cid_26.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T17:29:25+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-18T17:30:00+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T17:31:22+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-18T17:32:02+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+
+[ 2017-02-18T17:32:06+08:00 ] 127.0.0.1 /Homeroduct_cid_24_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-18T17:32:54+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-18T17:34:47+08:00 ] 127.0.0.1 /Home_product_cid_242.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+

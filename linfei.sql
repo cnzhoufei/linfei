@@ -22,6 +22,8 @@ create table if not exists `linfei_classify`(
 	`text` text COMMENT '栏目内容',
 	`sorting` char(20) NOT NULL DEFAULT '50' COMMENT '排序',
 	`layer` char(1) NOT NULL DEFAULT '0' COMMENT '标识栏目层级',
+	`tpl` char(30) NOT NULL DEFAULT 'tpl.html' COMMENT '此栏目模板',
+	`tpl2` char(30) NOT NULL DEFAULT 'article.html' COMMENT '文章模板',
 	`time` int not null COMMENT '添加时间'
 )engine=innodb default charset=utf8;
 
@@ -56,6 +58,8 @@ create table if not exists `linfei_watermark`(
    `new` tinyint(1) default 0 COMMENT '新品  0未推荐 1推荐',
    `selling` tinyint(1) default 0 COMMENT '热卖  0未推荐 1推荐',
    `sorting` char(20) not null default '0' COMMENT '排序',
+   `url` varchar(255) not null default '' COMMENT '产品链接',
+   `custom` varchar(255) not null default '' COMMENT '自定义名称',
    `time` int not null COMMENT '添加时间'
    )engine=innodb default charset=utf8;
 
@@ -76,6 +80,8 @@ create table if not exists `linfei_watermark`(
    `recommended` tinyint(1) default 0 COMMENT '推荐  0未推荐 1推荐',
    `recommendeds` tinyint(1) default 0 COMMENT '特荐  0未推荐 1推荐',
    `headlines` tinyint(1) default 0 COMMENT '头条  0未推荐 1推荐',
+   `url` varchar(255) not null default '' COMMENT '文章链接',
+   `custom` varchar(255) not null default '' COMMENT '自定义名称',
    `sorting` char(20) not null default '0' COMMENT '排序',
    )engine=innodb default charset=utf8;
 

@@ -49,12 +49,12 @@
 						<div class="login-container">
 							<div class="center">
 									<h1>
-										<i class="icon-desktop green"></i>
-										<span class="red">林飞CMS后台管理</span>
+										<img src="/App/Admin/View/style/images/LINFEI.gif" style="width:45px;">
+										<span class="red">林飞CMS管理系统</span>
 									</h1>
-                                                            <img src="http://xiaocaocms.com/tpl/simplebootx/Public/images/jp-app-90.png" />
+                                                           <!--  <img src="/App/Admin/View/style/images/LINFEI.gif" />
 									<h5 class="blue">获取升级包和更多实用工具关注小草CMS官方微信</h5>
-                                                                        <h5 class="blue">小草CMS客服QQ88482528</h5>                                                                        
+                                                                        <h5 class="blue">小草CMS客服QQ88482528</h5>   -->                                                                      
 								</div>
 
 							<div class="space-6"></div>
@@ -118,8 +118,8 @@
 											</div>
 
 											<div>
-												<a href="javascript:;" class="user-signup-link">
-													我要去注册
+												<a href="http://www.linfei.cc" class="user-signup-link">
+													林飞CMS官网
 													<i class="icon-arrow-right"></i>
 												</a>
 											</div>

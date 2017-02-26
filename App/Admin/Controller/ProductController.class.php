@@ -38,6 +38,7 @@ class ProductController extends CommonController
 				unset($data['id']);
 				$img = $product_m->where(array('id'=>$id))->field('img')->find();//缩略图
 				$res = $product_m->where(array('id'=>$id))->save($data);
+
 				if($res && S('img')){
 					@unlink('.'.$img['img']);
 				}
@@ -62,7 +63,12 @@ class ProductController extends CommonController
 			if ($res) {
 				$p = $_GET['p']?'?p='.$_GET['p']:'';
 
-				dump($_SERVER);exit;
+				if($id){$productid2 = $id;}else{$productid2 = $res;}//当前产品id
+				if($data['custom']){$name_ = $data['custom'];}else{$name_ = 'product_'.$productid2;}//当前产品名称
+				$url_name = M('classify')->where(array('id'=>$data['cid']))->getField('url_name');//查询本文章栏目url_name
+				$data3['url'] = '/Home/'.$url_name.'/'.$name_.'.html';
+				$product_m->where(array('id'=>$productid2))->save($data3);
+
 				$this->success('操作成功',U('Product/index').$p);
 			} else {
 				$this->error('操作失败！');

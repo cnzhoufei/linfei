@@ -17,10 +17,13 @@ class ClassifyModel extends Model
 		$post['bottom'] = ($post['bottom'])?$post['bottom']:0;
 		$post['sorting'] = is_numeric($post['sorting'])?$post['sorting']:0;
 		$path = $this->table(C('DB_PREFIX').'classify')->where(array('id'=>$post['pid']))->field('path,layer')->find();
-		$path['path'] = ($path)?$path['path']:0;
+		// dump($maxid);exit;
+		$post['path'] = ($path)?$path['path'].'_':'0_';
 		$path['layer'] = ($path)?$path['layer']:0;
-        $post['path'] = $path['path'].'_';
+        // $post['path'] = $path['path'];
         $post['layer'] = $path['layer'] + 1;
+        $post['tpl'] = ($post['tpl'])?str_replace('.html', '', $post['tpl']):$post['type'].'list';
+        $post['tpl2'] = ($post['tpl2'])?str_replace('.html', '', $post['tpl2']):$post['type'];
         $post['time'] = time();
 
         return $post;

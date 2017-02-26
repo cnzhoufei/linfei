@@ -6,7 +6,7 @@ class ArticleController extends CommonController
 {
 	public function index()
 	{
-		$class = M('classify')->where(array('type' => 'news'))->getField('id,name', true);
+		$class = M('classify')->where(array('type' => 'article'))->getField('id,name', true);
 		$this->assign('class', $class);
 		$article_m = M('article');
 		$count = $article_m->count();
@@ -51,6 +51,12 @@ class ArticleController extends CommonController
 			
 			if ($res) {
 				$p = $_GET['p']?'?p='.$_GET['p']:'';
+
+				if($id){$articleid2 = $id;}else{$articleid2 = $res;}//当前产品id
+				if($data['custom']){$name_ = $data['custom'];}else{$name_ = 'article_'.$articleid2;}//当前产品名称
+				$url_name = M('classify')->where(array('id'=>$data['cid']))->getField('url_name');//查询本文章栏目url_name
+				$data3['url'] = '/Home/'.$url_name.'/'.$name_.'.html';
+				$article_m->where(array('id'=>$articleid2))->save($data3);
 				$this->success('操作成功',U('article/index').$p);
 			} else {
 				$this->error('操作失败！');
@@ -61,7 +67,7 @@ class ArticleController extends CommonController
 			$article = M('article')->where(array('id' => $id))->find();
 			$this->assign('article', $article);
 			$class = M('Classify');
-			$classifys = $class->where(array('type' => 'news'))->select(); //所以分类
+			$classifys = $class->where(array('type' => 'article'))->select(); //所有分类
 			$this->assign('classifys', $classifys);
 			$this->ueditor('article');
 			$this->display('/addarticle');
@@ -81,7 +87,7 @@ class ArticleController extends CommonController
     	// if (!$article->autoCheckToken($_GET)){
     	// 	$this->error('请不要重复提交！');
     	// }
-		$class = M('classify')->where(array('type' => 'news'))->getField('id,name', true);
+		$class = M('classify')->where(array('type' => 'article'))->getField('id,name', true);
 		$this->assign('class', $class);
 		if(I('name')){
     		$where['name']  = array('like', '%'.I('name').'%');

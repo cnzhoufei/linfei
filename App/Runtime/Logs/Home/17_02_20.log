@@ -1,0 +1,679 @@
+[ 2017-02-20T19:49:32+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-20T19:49:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+ERR: 参数错误或者未定义:t
+
+[ 2017-02-20T19:56:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu//.html
+
+[ 2017-02-20T19:56:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu/Home/index.html
+
+[ 2017-02-20T19:56:55+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-20T19:57:03+08:00 ] 127.0.0.1 /Home_product_cid_24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T19:59:58+08:00 ] 127.0.0.1 /home_gujiananli_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-20T20:05:41+08:00 ] 127.0.0.1 /linfei_gujiananli_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-20T20:05:50+08:00 ] 127.0.0.1 /linfei_index_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-20T20:05:56+08:00 ] 127.0.0.1 /linfei_index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:06:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+
+[ 2017-02-20T20:07:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+
+[ 2017-02-20T20:09:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:11:24+08:00 ] 127.0.0.1 /home_gujiananli
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-02-20T20:12:54+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:13:12+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:15:05+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:15:08+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-20T20:15:20+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:16:03+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:16:53+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-20T20:17:44+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:20:19+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+
+[ 2017-02-20T20:21:56+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:22:02+08:00 ] 127.0.0.1 /Home_gujiananli2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:23:53+08:00 ] 127.0.0.1 /home_gujiananli.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:23:56+08:00 ] 127.0.0.1 /Home_gujiananli_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:24:04+08:00 ] 127.0.0.1 /Home_gujiananli_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-20T20:24:37+08:00 ] 127.0.0.1 /Home_gujiananli_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:24:41+08:00 ] 127.0.0.1 /Home_gujiananli_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:24:46+08:00 ] 127.0.0.1 /Home_gujiananli_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:24:48+08:00 ] 127.0.0.1 /Home_gujiananli_p_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:24:49+08:00 ] 127.0.0.1 /Home_gujiananli_p_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-20T20:24:50+08:00 ] 127.0.0.1 /Home_gujiananli_p_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:24:51+08:00 ] 127.0.0.1 /Home_gujiananli_p_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:24:52+08:00 ] 127.0.0.1 /Home_gujiananli_p_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-20T20:24:53+08:00 ] 127.0.0.1 /Home_gujiananli_p_9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:24:54+08:00 ] 127.0.0.1 /Home_gujiananli_p_10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-02-20T20:24:54+08:00 ] 127.0.0.1 /Home_gujiananli_p_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-02-20T20:24:55+08:00 ] 127.0.0.1 /Home_gujiananli_p_12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:24:56+08:00 ] 127.0.0.1 /Home_gujiananli_p_13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:24:56+08:00 ] 127.0.0.1 /Home_gujiananli_p_14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:24:57+08:00 ] 127.0.0.1 /Home_gujiananli_p_15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-20T20:28:42+08:00 ] 127.0.0.1 /Home_gujiananli_p_15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+
+[ 2017-02-20T20:28:43+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+
+[ 2017-02-20T20:29:18+08:00 ] 127.0.0.1 /Home_gujiananli_p_15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+
+[ 2017-02-20T20:30:58+08:00 ] 127.0.0.1 /Home_gujiananli_p_15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-20T20:30:58+08:00 ] 127.0.0.1 /%7B%7Bhomeimg($v['id'],250,250,'product')%7D%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-02-20T20:31:26+08:00 ] 127.0.0.1 /Home_gujiananli_p_15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-02-20T20:31:29+08:00 ] 127.0.0.1 /Home_gujiananli_p_15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-02-20T20:31:37+08:00 ] 127.0.0.1 /Home_gujiananli_p_14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:31:38+08:00 ] 127.0.0.1 /Home_gujiananli_p_13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:31:39+08:00 ] 127.0.0.1 /Home_gujiananli_p_12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-20T20:31:40+08:00 ] 127.0.0.1 /Home_gujiananli_p_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-20T20:31:41+08:00 ] 127.0.0.1 /Home_gujiananli_p_10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:31:42+08:00 ] 127.0.0.1 /Home_gujiananli_p_9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:31:43+08:00 ] 127.0.0.1 /Home_gujiananli_p_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-20T20:31:44+08:00 ] 127.0.0.1 /Home_gujiananli_p_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:31:45+08:00 ] 127.0.0.1 /Home_gujiananli_p_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:31:46+08:00 ] 127.0.0.1 /Home_gujiananli_p_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+
+[ 2017-02-20T20:31:46+08:00 ] 127.0.0.1 /Home_gujiananli_p_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+
+[ 2017-02-20T20:31:47+08:00 ] 127.0.0.1 /Home_gujiananli_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:31:48+08:00 ] 127.0.0.1 /Home_gujiananli_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:31:48+08:00 ] 127.0.0.1 /Home_gujiananli_p_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-02-20T20:31:52+08:00 ] 127.0.0.1 /Home_gujiananli_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2017-02-20T20:31:53+08:00 ] 127.0.0.1 /Home_gujiananli_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:32:23+08:00 ] 127.0.0.1 /Home_gujiananli_p_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+
+[ 2017-02-20T20:32:23+08:00 ] 127.0.0.1 /Home_gujiananli_p_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-20T20:33:03+08:00 ] 127.0.0.1 /Home_gujiananli_p_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:33:06+08:00 ] 127.0.0.1 /Home_gujiananli_p_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:33:07+08:00 ] 127.0.0.1 /Home_gujiananli_p_3_list_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:33:08+08:00 ] 127.0.0.1 /Home_gujiananli_p_3_list_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-20T20:33:09+08:00 ] 127.0.0.1 /Home_gujiananli_p_3_list_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:33:10+08:00 ] 127.0.0.1 /Home_gujiananli_p_3_list_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:33:10+08:00 ] 127.0.0.1 /Home_gujiananli_p_3_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:33:12+08:00 ] 127.0.0.1 /Home_gujiananli_p_3_list_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-02-20T20:33:20+08:00 ] 127.0.0.1 /Home_gujiananlilist_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:33:27+08:00 ] 127.0.0.1 /Home_gujiananli_list_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-02-20T20:33:30+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:33:31+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+
+[ 2017-02-20T20:33:31+08:00 ] 127.0.0.1 /Home_gujiananli_list_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:33:32+08:00 ] 127.0.0.1 /Home_gujiananli_list_9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:33:33+08:00 ] 127.0.0.1 /Home_gujiananli_list_10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:33:34+08:00 ] 127.0.0.1 /Home_gujiananli_list_9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+
+[ 2017-02-20T20:33:37+08:00 ] 127.0.0.1 /Home_gujiananli_list_10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:33:39+08:00 ] 127.0.0.1 /Home_gujiananli_list_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-20T20:35:17+08:00 ] 127.0.0.1 /Home_gujiananli_list_11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+
+[ 2017-02-20T20:35:20+08:00 ] 127.0.0.1 /Home_gujiananli_list_10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:35:20+08:00 ] 127.0.0.1 /Home_gujiananli_list_9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-02-20T20:35:21+08:00 ] 127.0.0.1 /Home_gujiananli_list_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+
+[ 2017-02-20T20:35:22+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:35:29+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 模板不存在:./Templates/pc/gujianzhu//productlis.html
+
+[ 2017-02-20T20:35:39+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:37:12+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-20T20:37:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+
+[ 2017-02-20T20:39:00+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:42:13+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+
+[ 2017-02-20T20:42:18+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-20T20:42:36+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:42:38+08:00 ] 127.0.0.1 /Home_gujiananli_list_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-20T20:42:39+08:00 ] 127.0.0.1 /Home_gujiananli_list_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+
+[ 2017-02-20T20:42:40+08:00 ] 127.0.0.1 /Home_gujiananli_list_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:42:41+08:00 ] 127.0.0.1 /Home_gujiananli_list_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:42:41+08:00 ] 127.0.0.1 /Home_gujiananli_list_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000159s ]
+
+[ 2017-02-20T20:42:45+08:00 ] 127.0.0.1 /Home_gujiananli_list_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-02-20T20:42:45+08:00 ] 127.0.0.1 /Home_gujiananli_list_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-20T20:42:47+08:00 ] 127.0.0.1 /Home_gujiananli_list_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-02-20T20:42:48+08:00 ] 127.0.0.1 /Home_gujiananli_list_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T20:42:49+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:42:49+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:42:50+08:00 ] 127.0.0.1 /Home_gujiananli_list_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:42:51+08:00 ] 127.0.0.1 /Home_gujiananli_list_9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-02-20T20:42:51+08:00 ] 127.0.0.1 /Home_gujiananli_list_10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-02-20T20:42:53+08:00 ] 127.0.0.1 /Home_gujiananli_list_9.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-02-20T20:42:54+08:00 ] 127.0.0.1 /Home_gujiananli_list_8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-02-20T20:42:55+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-02-20T20:42:55+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-02-20T20:49:07+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-02-20T20:53:40+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:54:46+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:54:51+08:00 ] 127.0.0.1 /Home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T20:58:47+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-02-20T20:58:53+08:00 ] 127.0.0.1 /Home_gujiananli_list_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2017-02-20T20:58:54+08:00 ] 127.0.0.1 /Home_gujiananli_list_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-02-20T20:58:54+08:00 ] 127.0.0.1 /Home_gujiananli_list_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T21:15:11+08:00 ] 127.0.0.1 /Home_gujiananli_list_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-20T21:15:14+08:00 ] 127.0.0.1 /Home_gujiananli_list_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T21:15:15+08:00 ] 127.0.0.1 /Home_gujiananli_list_1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-02-20T21:15:18+08:00 ] 127.0.0.1 /Home_gujiananli_list_2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-02-20T21:15:19+08:00 ] 127.0.0.1 /Home_gujiananli_list_3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-02-20T21:15:19+08:00 ] 127.0.0.1 /Home_gujiananli_list_4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-02-20T21:15:20+08:00 ] 127.0.0.1 /Home_gujiananli_list_5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-02-20T21:15:20+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-02-20T21:15:21+08:00 ] 127.0.0.1 /Home_gujiananli_list_7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-02-20T21:15:23+08:00 ] 127.0.0.1 /Home_gujiananli_list_6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
