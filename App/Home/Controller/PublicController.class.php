@@ -12,7 +12,6 @@ class PublicController extends Controller
         $this->custom();
         $this->config();
 
-        $this->pic();
         $this->recommended();
         $this->news();
         $this->selling();
@@ -82,19 +81,6 @@ class PublicController extends Controller
        $this->assign('classtop',$class);
    }
 
-
-
-
-
-    /**
-     *轮播图
-     */
-    private function pic()
-    {
-        $pic_m = M('pic');
-        $pic = $pic_m->where(array('status'=>1))->select();
-        $this->assign('pic',$pic);
-    }
 
 
     /**

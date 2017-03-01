@@ -3,16 +3,25 @@ namespace Home\Controller;
 use Think\Controller;
 class LinFeiController extends PublicController 
 {
-    public function index()
+    protected function home()
     {
-
-    	$product = M('article')->select();
-    	$this->assign('product',$product);
-        
-
-        $this->display('/index');
-    	// return $this->fetch('/'.$t);
+        $this->pic();
+    	return $this->fetch('/index');
     }
+
+
+
+
+    /**
+     *轮播图
+     */
+    private function pic()
+    {
+        $pic_m = M('pic');
+        $pic = $pic_m->where(array('status'=>1))->select();
+        $this->assign('pic',$pic);
+    }
+
 
 
 

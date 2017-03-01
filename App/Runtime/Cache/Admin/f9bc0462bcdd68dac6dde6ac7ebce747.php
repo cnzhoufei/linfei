@@ -120,12 +120,13 @@
         } catch (e) {
         }
     </script>
+<?php echo ($ueditorinit); ?>
+        <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+
     <div class="main-container-inner">
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
         </a>
-<?php echo ($ueditorinit); ?>
-
         <div class="<?php echo ($navstyle['style1'][ $navnum ]); ?>" id="sidebar">
 	<script type="text/javascript">
 		try {
@@ -198,142 +199,115 @@
             <div class="page-content">
                 <div class="row">
                     <div class="col-xs-12">
-                        <!-- PAGE CONTENT BEGINS -->
-                            <form  name="form" class="form-horizontal" role="form" action="" method="post">
-                            <input type="hidden" name="id" value="<?php echo ($classify['id']); ?>" />
+                        <!-- PAGE CONTENT BEGINS -->                        
+                            <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="id" value="<?php echo ($ad['id']); ?>" />
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">类型<span style="color:#f00;">*</span></label>
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">广告位置<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
-                                    <select  class="col-sm-12" name="type" onchange="getclass('<?php echo U('classify/ajaxclass');?>',$(this).val(),'types')">
-                                        <option <?php if($classify['type'] == 'product')echo 'selected'; ?> value="product">商品分类</option>
-                                        <option <?php if($classify['type'] == 'article')echo 'selected'; ?> value="article">文章分类</option>
-                                        <option <?php if($classify['type'] == 'cover')echo 'selected'; ?> value="cover">封面</option>
-                                    </select>
+                                    <?php $type = array(1=>'图片',2=>'文本');?>
+                                    <select  class="col-sm-12" name="pid" onchange="types(this);">
+                                            <option value="0">请选择广告位</option>
+                                        <?php if(is_array($advlocation)): $i = 0; $__LIST__ = $advlocation;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><option value="<?php echo ($data['id']); echo ($data['type']); ?>" <?php if($ad['pid'] == $data['id']){echo 'selected';}?>><?php echo ($data['name']); ?>(<?php echo ($type[$data[type]]); ?>)</option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    </select>                                                                        
                                     </div>
-                                </div>
-
+                                    <script type='text/javascript'>
+                                        $("select[name='code'] option[value='<?php echo $ad[code] ?>']").attr('selected','selected');
+                                    </script>
+                                </div>                                
                                 <div class="form-group">
-                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">父分类<span style="color:#f00;">*</span></label>
-                                    <div class="col-sm-9">
-                                    <select  class="col-sm-12" name="pid" id="types" onchange="changesort($(this).val())">
-                                        <option value="0">顶级分类</option>
-                                        <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option  <?php if($classify['pid'] == $vv['id'])echo 'selected'; ?> value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
-                                    </select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 外部链接 <span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 标题 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                                <input type="text" name="external" value="<?php echo ($classify['external']); ?>" class="col-sm-12" placeholder="填写外部链接后 将直接跳转到该链接 格式：http://www.linfei.cc" />
-                                        </div>
-                                </div>
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类名称 <span style="color:#f00;">*</span></label>
-                                        <div class="col-sm-9">
-                                                <input type="text" name="name" value="<?php echo ($classify['name']); ?>" class="col-sm-12" id="content" />
-                                        </div>
-                                </div>
-                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 手机分类名称 <span style="color:#f00;">*</span></label>
-                                        <div class="col-sm-9">
-                                                <input type="text" name="m_name" value="<?php echo ($classify['m_name']); ?>" class="col-sm-12" />
+                                                <input type="text" name="title" value="<?php echo ($ad['title']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
                                 
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类排序 <span style="color:#f00;">*</span></label>
-
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 链接 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                                <input type="text" name="sorting" value="<?php echo ($classify['sorting']); ?>" class="col-sm-12" />
+                                            <input type="text" name="url" placeholder="例如：http://www.linfei.cc" value="<?php echo ($ad['url']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
                                 
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类标题 <span style="color:#f00;">*</span></label>
-
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 排序 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                                <input type="text" name="title" value="<?php echo ($classify['title']); ?>" class="col-sm-12" />
+                                            <input type="text" name="sorting" value="<?php echo intval($ad['sorting']);?>" class="col-sm-12" />
                                         </div>
                                 </div>
                                 
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类关键词 <span style="color:#f00;">*</span></label>
-
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 其他 <span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
-                                                <input type="text" name="keywords" value="<?php echo ($classify['keywords']); ?>" class="col-sm-12" />
+                                            <input type="text" name="other" placeholder="例如：说明" value="<?php echo ($ad['other']); ?>" class="col-sm-12" />
                                         </div>
                                 </div>
+
+
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 开始日期</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="starttime" id="starttime" style="width:150px;" value="<?php if(($ad[starttime])): echo date('Y-m-d H:i:s',$ad[starttime]); endif; ?>" />
+                                            <label> 终止日期</label>
+                                            <input type="text" name="endtime" id="endtime" style="width:150px;" value="<?php if(($ad[endtime])): echo date('Y-m-d H:i:s',$ad[endtime]); endif; ?>" />
+                                            <label>《不填写表示永不过期》当前时间:<?php echo date('Y-m-d H:i:s',time());?></label>
+                                            
+                                        </div>
+                                        
+                                </div>
+
+                             
                                 
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类描述 <span style="color:#f00;">*</span></label>
-
-                                        <div class="col-sm-9">
-                                                <input type="text" name="description" value="<?php echo ($classify['description']); ?>" class="col-sm-12" />
-                                        </div>
-                                </div>
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 前端url命名 <span style="color:#f00;">*</span></label>
-
-                                        <div class="col-sm-9">
-                                                <input type="text" name="url_name" value="<?php echo ($classify['url_name']); ?>" style="width:200px;" class="col-sm-12" id="show" />
-                                                &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="pinyin()" >拼音</button>
-                                        </div>
-                                </div>
 
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 列表模板名称 <span style="color:#f00;">*</span></label>
-
-                                        <div class="col-sm-9">
-                                                <input type="text" name="tpl" id="tpl" value="<?php echo ($classify['tpl']); ?>.html" style="width:200px;" class="col-sm-12"/>
-                                                &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="SelectTemplets('tpl')" >浏览</button>
-                                        </div>
-                                </div>
-
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 文章模板名称 <span style="color:#f00;">*</span></label>
-
-                                        <div class="col-sm-9">
-                                                <input type="text" name="tpl2" id="tpl2" value="<?php echo ($classify['tpl2']); ?>.html" style="width:200px;" class="col-sm-12"/>
-                                                &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="SelectTemplets('tpl2')" >浏览</button>
-                                        </div>
-                                </div>
-
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类 开启/关闭<span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 开启/关闭<span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
                                         <label>
-                                            <input name="status" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$classify['status']){ }else{ ?>checked='checked'<?php } ?> value='1'>
+                                            <input name="status" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$ad['status']){ }else{ ?>checked='checked'<?php } ?> value='1'>
                                             <span class="lbl"></span>
                                         </label>
                                         </div>
                                 </div>
+                                
                                 <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 顶部导航 开启/关闭<span style="color:#f00;">*</span></label>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 新标签打开<span style="color:#f00;">*</span></label>
                                         <div class="col-sm-9">
                                         <label>
-                                            <input name="top" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$classify['top']){ }else{ ?>checked='checked'<?php } ?> value='1'>
-                                            <span class="lbl"></span>
-                                        </label>
-                                        </div>
-                                </div>
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 底部导航 开启/关闭<span style="color:#f00;">*</span></label>
-                                        <div class="col-sm-9">
-                                        <label>
-                                            <input name="bottom" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$classify['bottom']){ }else{ ?>checked='checked'<?php } ?> value='1'>
+                                            <input name="blank" class="ace ace-switch ace-switch-7" type="checkbox" <?php if(!$ad['blank']){ }else{ ?>checked='checked'<?php } ?> value='1'>
                                             <span class="lbl"></span>
                                         </label>
                                         </div>
                                 </div>
 
 
-                                <div class="form-group">
-                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 分类类容 <span style="color:#f00;">*</span></label>
+
+                            <style>#imgs img{width:50%;}</style>
+                             
+                            <div class="form-group" style="<?php if($ad['type'] != 1){echo 'display:none;';}?>" id="tupin">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1">广告图片<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <input  class="col-sm-12" type="button" value="上传图片" onClick="GetUploadify(1,'ggimg','imgs')" style="width:150px;" />   
+                                </div>
+                            </div>
+                            <div class="form-group" style="<?php if($ad['type'] != 1){echo 'display:none;';}?>">
+                                <label  class="col-sm-2 control-label no-padding-right" for="form-field-1"><span style="color:#f00;"></span></label>
+                                <div class="col-sm-9">
+                                </div>
+                                <span id="imgs"><img src="<?php echo ($ad['img']); ?>"></span>
+                            </div>
+                            
+
+                                
+                            
+                            <div class="form-group" style="<?php if($ad['type'] != 2){echo 'display:none;';}?>" id='wenben'>
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 类容 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <script id="class" type="text" name="text" style="width:100%;height:500px;"><?php echo ($classify['text']); ?></script>
+                                                <script id="guanggao" type="text" name="text" style="width:100%;height:500px;"><?php echo (htmlspecialchars_decode($ad['text'])); ?></script>
                                         </div>
-                                </div>
+                            </div>
+
+                                
                                 <div class="clearfix form-actions">
                                     <div class="col-md-offset-4 col-md-4">
                                         <button class="btn btn-info btn-block" type="submit">
@@ -353,6 +327,77 @@
         <i class="icon-double-angle-up icon-only bigger-110"></i>
     </a>
 </div><!-- /.main-container -->
+<script>
+    $(function () {
+        $('input[type="file"]').ace_file_input({
+            no_file: 'No File ...',
+            btn_choose: 'Choose',
+            btn_change: 'Change',
+            droppable: false,
+            onchange: null,
+            thumbnail: false //| true | large
+                    //whitelist:'gif|png|jpg|jpeg'
+                    //blacklist:'exe|php'
+                    //onchange:''
+                    //
+        });
+    });
+
+    function types(obj){
+        var str = $(obj).val();
+        var v = str.substr(-1,1);
+        if(v == 1){
+            $('#wenben').css('display','none');
+            $('#tupin').css('display','');
+        }else if(v == 2){
+            $('#wenben').css('display','');
+            $('#tupin').css('display','none');
+        }else{
+            $('#tupin').css('display','none');
+            $('#wenben').css('display','none');
+        }
+    }
+
+
+</script>
+    <script src="/Public/date/jquery-1.11.3.min.js"></script>
+    <script src="/Public/date/foundation-datepicker.js"></script>
+    <script src="/Public/date/locales/foundation-datepicker.zh-CN.js"></script>   
+<script type="text/javascript">
+$('#starttime').fdatepicker({
+    format: 'yyyy-mm-dd hh:ii',
+    pickTime: true
+});
+$('#endtime').fdatepicker({
+    format: 'yyyy-mm-dd hh:ii',
+    pickTime: true
+});
+
+var nowTemp = new Date();
+        var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+        var checkin = $('#dpd1').fdatepicker({
+            onRender: function (date) {
+                return date.valueOf() < now.valueOf() ? 'disabled' : '';
+            }
+        }).on('changeDate', function (ev) {
+            if (ev.date.valueOf() > checkout.date.valueOf()) {
+                var newDate = new Date(ev.date)
+                newDate.setDate(newDate.getDate() + 1);
+                checkout.update(newDate);
+            }
+            checkin.hide();
+            $('#dpd2')[0].focus();
+        }).data('datepicker');
+        var checkout = $('#dpd2').fdatepicker({
+            onRender: function (date) {
+                return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+            }
+        }).on('changeDate', function (ev) {
+            checkout.hide();
+        }).data('datepicker');
+
+</script>
+
 <!-- basic scripts -->
 
 <!--[if !IE]> -->
@@ -456,39 +501,3 @@
 </body>
 
 </html>
-<script src="/Public/js/jquery-1.7.2.min"></script>
-<script src="/Public/pinyin/jQuery.Hz2Py-min.js">//转换中文为拼音</script>
-<script>
-
-//转换中文为拼音
-function pinyin()
-{
-        var str = $('#content').toPinyin();//转换成拼音
-        str = str.toLocaleLowerCase();//转换成小写
-        $('#show').val(Trim(str,'g'));//去除空格
-}
-
-
-  //去除字符中间空格
-  function Trim(str,is_global)
-        {
-            var result;
-            result = str.replace(/(^\s+)|(\s+$)/g,"");
-            if(is_global.toLowerCase()=="g")
-            {
-                result = result.replace(/\s/g,"");
-             }
-            return result;
-}
-
-
-function SelectTemplets(tpl)
-{
-    // 
-   var posLeft = 200;
-   var posTop = 300;
-   window.open("<?php echo U('SelectTemplets');?>?path=./Templates/Pc&tplname="+tpl, "poptempWin", "scrollbars=yes,resizable=yes,statebar=no,width=600,height=400,left="+posLeft+", top="+posTop);
-}
-
-
-</script>

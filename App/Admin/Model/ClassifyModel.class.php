@@ -25,7 +25,7 @@ class ClassifyModel extends Model
         $post['tpl'] = ($post['tpl'])?str_replace('.html', '', $post['tpl']):$post['type'].'list';
         $post['tpl2'] = ($post['tpl2'])?str_replace('.html', '', $post['tpl2']):$post['type'];
         $post['time'] = time();
-
+        $post['url'] = '/Home/'.$post['url_name'].'.html';
         return $post;
 	}
 
