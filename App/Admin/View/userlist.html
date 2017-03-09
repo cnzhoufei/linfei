@@ -65,7 +65,9 @@
                                             <thead>
                                                 <tr class="color428bca">
                                                     <th>UID</th>
+                                                    <th>头像</th>
                                                     <th>会员名称</th>
+                                                    <th>所在组</th>
                                                     <th>邮箱</th>
                                                     <th>手机</th>
                                                     <th>注册时间</th>
@@ -75,21 +77,21 @@
                                             <tbody>
                                             <php>if($users){</php>
                                             <volist name="users" id="data">
-                                                <tr class="pointer even" title="">
+                                                <tr class="pointer even" title="" id="{{$data['id']}}">
                                                     <td>{{$data['id']}}</td>
+                                                    <td><img src="{{$data['icon']}}" height="30"></td>
                                                     <td>{{$data['name']}}</td>
+                                                    <td>{{$data['gname']}}</td>
                                                     <td>{{$data['email']}}</td>
                                                     <td>{{$data['tel']}}</td>
-                                                    <td>{{:date('Y-m-d',$data['time'])}}</td>
+                                                    <td>{{:date('Y-m-d',$data['addtime'])}}</td>
                                                     <td>
-                                                        <a href="{{:U('User/editor')}}?uid={{$data['id']}}">编辑</a>
+                            <php>if($data['id'] != 1 || session('adminuser.id') == 1){</php>
+                            <a href="{{:U('User/editor')}}?uid={{$data['id']}}">编辑</a>
                                                         |
-                                                <php>if($data['name']!='admin'){</php>
-                                                <a onclick="return ajHref(this);" href="{{:U('admin/userlist',array('op'=>'level' ,'uid'=>$data['uid']))}}">管理员</a>
-                                                |
-                                                <php>}</php>
-                                                <a onclick="if(confirm('确定删除')){return ajHref(this);};return false;" href="{{:U('admin/userList',array('op'=>'del','uid'=>$data['uid']))}}">删除</a>
+                            <a onclick="mydelete('{{$data['id']}}','admin','icon','{{$data['id']}}')" href="javascript:;">删除</a>
                                                 </td>
+                            <php>}</php>
                                                 </tr>
                                             </volist>
                                             </tbody>

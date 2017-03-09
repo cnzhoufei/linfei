@@ -245,7 +245,9 @@
                                             <thead>
                                                 <tr class="color428bca">
                                                     <th>UID</th>
+                                                    <th>头像</th>
                                                     <th>会员名称</th>
+                                                    <th>所在组</th>
                                                     <th>邮箱</th>
                                                     <th>手机</th>
                                                     <th>注册时间</th>
@@ -254,21 +256,21 @@
                                             </thead>
                                             <tbody>
                                             <?php if($users){ ?>
-                                            <?php if(is_array($users)): $i = 0; $__LIST__ = $users;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="">
+                                            <?php if(is_array($users)): $i = 0; $__LIST__ = $users;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr class="pointer even" title="" id="<?php echo ($data['id']); ?>">
                                                     <td><?php echo ($data['id']); ?></td>
+                                                    <td><img src="<?php echo ($data['icon']); ?>" height="30"></td>
                                                     <td><?php echo ($data['name']); ?></td>
+                                                    <td><?php echo ($data['gname']); ?></td>
                                                     <td><?php echo ($data['email']); ?></td>
                                                     <td><?php echo ($data['tel']); ?></td>
-                                                    <td><?php echo date('Y-m-d',$data['time']);?></td>
+                                                    <td><?php echo date('Y-m-d',$data['addtime']);?></td>
                                                     <td>
-                                                        <a href="<?php echo U('User/editor');?>?uid=<?php echo ($data['id']); ?>">编辑</a>
+                            <?php if($data['id'] != 1 || session('adminuser.id') == 1){ ?>
+                            <a href="<?php echo U('User/editor');?>?uid=<?php echo ($data['id']); ?>">编辑</a>
                                                         |
-                                                <?php if($data['name']!='admin'){ ?>
-                                                <a onclick="return ajHref(this);" href="<?php echo U('admin/userlist',array('op'=>'level' ,'uid'=>$data['uid']));?>">管理员</a>
-                                                |
-                                                <?php } ?>
-                                                <a onclick="if(confirm('确定删除')){return ajHref(this);};return false;" href="<?php echo U('admin/userList',array('op'=>'del','uid'=>$data['uid']));?>">删除</a>
+                            <a onclick="mydelete('<?php echo ($data['id']); ?>','admin','icon','<?php echo ($data['id']); ?>')" href="javascript:;">删除</a>
                                                 </td>
+                            <?php } ?>
                                                 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                             </tbody>
                                         </table>

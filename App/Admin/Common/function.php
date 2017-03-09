@@ -31,6 +31,12 @@ function adminmenu()
 					array('name'=>'产品评论','c'=>'Product','f'=>''),
 				),
 			),
+			array('name'=>'模型管理','icon'=>'icon-lock','child'=>
+				array(
+					array('name'=>'模型列表','c'=>'Model','f'=>'index'),
+					array('name'=>'添加模型','c'=>'Model','f'=>'addmodel'),
+				),
+			),
 			array('name'=>'内容管理','icon'=>'icon-book','child'=>
 				array(
 					array('name'=>'文章列表','c'=>'Article','f'=>'index'),
@@ -40,8 +46,9 @@ function adminmenu()
 			array('name'=>'用户管理','icon'=>'icon-group','child'=>
 				array(
 					array('name'=>'用户列表','c'=>'User','f'=>'index'),
-					array('name'=>'添加用户','c'=>'','f'=>''),
-					array('name'=>'商品评论','c'=>'','f'=>''),
+					array('name'=>'添加管理员','c'=>'User','f'=>'addadmin'),
+					// array('name'=>'添加普通用户','c'=>'User','f'=>'adduser'),
+					array('name'=>'管理组','c'=>'User','f'=>'grouplist'),
 				),
 			),
 			array('name'=>'广告管理','icon'=>'icon-bullhorn','child'=>
@@ -75,38 +82,16 @@ function adminmenu()
 					array('name'=>'手机模板','c'=>'Templates','f'=>'mobile'),
 				),
 			),
+			array('name'=>'备份管理','icon'=>'icon-wrench','child'=>
+				array(
+					array('name'=>'数据列表','c'=>'Backup','f'=>'index'),
+					array('name'=>'备份数据','c'=>'Backup','f'=>'bac'),
+					array('name'=>'还原数据','c'=>'Backup','f'=>'restore'),
+				),
+			),
 		);
 }
 
-
-// //系统设置
-// function config()
-// {
-// 	return array(
-// 		//单标签
-// 		'text'=>array(
-// 				array('type'=>'text','key'=>'网站名称','name'=>'webname','val'=>'webname'),
-// 				array('type'=>'text','key'=>'网站标题','name'=>'title','val'=>'title'),
-// 		),
-// 		//对标签
-// 		'textarea'=>array(
-// 				array('type'=>'textarea','key'=>'统计代码','name'=>'statistical','val'=>'statistical'),
-// 		),
-// 		//嵌套
-// 		'select'=>array(
-
-// 				array('type'=>'select','key'=>'统计代码','name'=>'select','val'=>array(
-// 						array('type'=>'option','name'=>'1','val'=>'1'),
-// 						array('type'=>'option','name'=>'2','val'=>'2'),
-// 						array('type'=>'option','name'=>'3','val'=>'3'),
-
-// 					)),
-// 		),
-		
-
-
-// 		);
-// }
 
 /**
  * 左边菜单缩放

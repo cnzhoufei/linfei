@@ -171,6 +171,11 @@ class AdminController extends CommonController
 
     }
 
+    //修改密码
+    public function updatepwd()
+    {
+        
+    }
 
 
 

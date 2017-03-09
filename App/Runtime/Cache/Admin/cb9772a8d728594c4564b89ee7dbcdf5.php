@@ -63,14 +63,14 @@
 								<div id="login-box" class="login-box visible widget-box no-border">
 									<div class="widget-body">
 										<div class="widget-main">
-											<h4 class="header blue lighter bigger">
+											<h4 class="header lighter bigger" style="color:#f00;">
 												<i class="icon-coffee green"></i>
-												<?php echo ((isset($_GET['error']) && ($_GET['error'] !== ""))?($_GET['error']):'请输入账号、密码'); ?>
+												<?php echo ((isset($_GET['error']) && ($_GET['error'] !== ""))?($_GET['error']):"<span class='blue'>请输入账号、密码</span>"); ?>
 											</h4>
 
 											<div class="space-6"></div>
 
-											<form action="<?php echo U('Login/login');?>" method="post">
+											<form action="<?php echo U('Login/index');?>" method="post">
 												<fieldset>
 													<label class="block clearfix">
 														<span class="block input-icon input-icon-right">

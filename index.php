@@ -20,7 +20,7 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 define('APP_DEBUG', True);
 //隐藏Home
 $arr = explode('/', $_SERVER['PHP_SELF']);
-if ((count($arr) > 2 && $arr[2] !== 'Admin' && $arr[2] !== 'admin' && $arr[2] !== 'mobile' && $arr[2] !== 'Mobile') || @!$arr[2]) {
+if ((count($arr) > 2 && $arr[2] !== 'Admin' && $arr[2] !== 'admin' && $arr[2] !== 'mobile' && $arr[2] !== 'Mobile' && $arr[2] !== 'Install' && $arr[2] !== 'install') || @!$arr[2]) {
 
 	define('BIND_MODULE', 'Home');
 }

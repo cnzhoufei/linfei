@@ -1,0 +1,51 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+<style type="text/css">
+.form-group li{list-style:none;float:left;width:250px;font-size:25px;}
+.form-group li input{width:20px;height:20px;}
+</style>
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                            <div class="form-group" style="width:60%;margin:0 auto;height:600px;">
+                                <ul>
+                                <foreach name="tables" item="v" key="kk">
+                                    <li>{{$Kk}}<input type="checkbox" name="tables[]" checked="checked" value="{{$v}}">{{$v}}</li>
+                                </foreach>    
+                                </ul>
+                            </div>                                                       
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-4 col-md-4">
+                                    <button class="btn btn-info btn-block" type="submit">
+                                        <i class="icon-ok bigger-110"></i>
+                                        确认
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+<include file="Public:footer" />

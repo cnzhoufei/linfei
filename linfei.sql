@@ -83,6 +83,7 @@ create table if not exists `linfei_watermark`(
    `url` varchar(255) not null default '' COMMENT '文章链接',
    `custom` varchar(255) not null default '' COMMENT '自定义名称',
    `sorting` char(20) not null default '0' COMMENT '排序',
+   `time` int not null COMMENT '添加时间'
    )engine=innodb default charset=utf8;
 
 
@@ -132,6 +133,9 @@ create table if not exists `linfei_custom`(
 )engine=innodb default charset=utf8;
 
 
+
+
+
 --广告表
 create table if not exists `linfei_adv`(
 `id` int unsigned not null auto_increment primary key,
@@ -161,7 +165,7 @@ create table if not exists `linfei_advlocation`(
 )engine=innodb default charset=utf8;
 
 
-
+--模型表 用户自己创建
 
 
 
@@ -309,26 +313,43 @@ create table if not exists `linfei_admin`(
 	`time` char(50) not null COMMENT '当前登录时间',
 	`loginip` char(20) default null,
 	`tel` char(20) default null,
-	`email` varchar(255) default null
+	`email` varchar(255) default null,
+	`pwdstr` char(50) NOT NULL COMMENT '加密串',
+  	`icon` varchar(255) DEFAULT NULL COMMENT '头像',
+  	`status` tinyint(1) not null default 0 COMMENT '状态',
+  	`group` tinyint(2) not null default 1,
+  	`addtime` char(50) not null COMMENT '添加时间'
 )engine=innodb default charset=utf8;
+INSERT INTO `linfei_admin` VALUES ('1', 'admin', '8e4ee84aaa3815d91f785be23e93791c', '1478240169', '1478240169', '127.0.0.1', '13539993040', 'vzhoufei@qq.com', '827ccb0eea8a706c4c34a16891f84e7b', '/Uploads/2016-12-15/5852374e150af.jpg');
 
-insert into linfei_admin values(1,'admin','e10adc3949ba59abbe56e057f20f883e','1478240169','1478240169','127.0.0.1','13539993040','vzhoufei@qq.com')
-
-
-
-
-create table if not exists `yd_photo`(
-	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`store_id` int not null COMMENT '商户id',
-	`title` varchar(255) not null default '' COMMENT '相册标题',
-	`status` tinyint(1) not null default 0 COMMENT '是否显示 1是 0否',
-	`home` tinyint(1) not null default 0 COMMENT '是否在首页展示 1是 0否',
-	`time` int  
+--管理组
+create table if not exists `linfei_group`(
+`id` int unsigned not null auto_increment primary key COMMENT 'id',
+`name` varchar(255) NOT NULL COMMENT '组名',
+`permissions` text,
+`addtime` int unsigned default null COMMENT '时间'
 )engine=innodb default charset=utf8;
+INSERT INTO `linfei_group` VALUES (1,'admin','all','');
 
-create table if not exists `yd_photoimg`(
-	`id` int unsigned not null auto_increment primary key COMMENT 'id',
-	`photoid` int not null COMMENT'相册id',
-	`img` varchar(255) COMMENT '相册图片'
-)engine=innodb default charset=utf8;
+--会员表
+
+
+
+
+
+
+-- create table if not exists `yd_photo`(
+-- 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+-- 	`store_id` int not null COMMENT '商户id',
+-- 	`title` varchar(255) not null default '' COMMENT '相册标题',
+-- 	`status` tinyint(1) not null default 0 COMMENT '是否显示 1是 0否',
+-- 	`home` tinyint(1) not null default 0 COMMENT '是否在首页展示 1是 0否',
+-- 	`time` int  
+-- )engine=innodb default charset=utf8;
+
+-- create table if not exists `yd_photoimg`(
+-- 	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+-- 	`photoid` int not null COMMENT'相册id',
+-- 	`img` varchar(255) COMMENT '相册图片'
+-- )engine=innodb default charset=utf8;
 

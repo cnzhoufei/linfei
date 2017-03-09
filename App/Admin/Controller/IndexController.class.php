@@ -5,6 +5,8 @@ class IndexController extends CommonController
 {
     public function index()
     {
+       
+
     	$mysql = M()->query("SELECT VERSION() as version");//数据库版本
     	//gd库
     	if(function_exists("gd_info")){

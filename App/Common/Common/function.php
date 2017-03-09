@@ -122,7 +122,23 @@ function getsubstr($string, $start, $length)
       }
 }
 
+//创建密码
+function createpwd($post)
+{
+    $post['pwdstr'] = md5(createluan('15'));
+    $post['pwd'] = md5(md5($post['pwd']).$post['pwdstr']);
+    return $post;
+}
 
+//验证密码
+function validationpwd($pwd,$pwdstr,$userpwd)
+{
+    if(md5(md5($userpwd).$pwdstr) == $pwd){
+        return true;
+    }else{
+        return false;
+    }
+}
 
 
 
@@ -217,4 +233,26 @@ function php_path() {
         }       
         $php_path = $real_path;       
         return $php_path;   
+    }
+
+
+
+    //读取sql
+    function showsql($path){
+             $dh = opendir($path);//打开目录
+             $i = 0;
+             while(($d = readdir($dh)) != false)
+             {
+                 if($d=='.' || $d == '..'){
+                    continue;
+                 }
+                 if(is_dir($path.'/'.$d)){//如果为目录
+                    showsql($path.'/'.$d);
+                 }
+                 if(is_file($path.'/'.$d)){
+                    $data[] = $d;
+                 }
+             }
+
+             return $data;
     }

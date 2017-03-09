@@ -1,0 +1,2617 @@
+[ 2017-03-02T14:39:32+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-03-02T14:39:32+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T14:39:32+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T14:44:57+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-03-02T14:44:57+08:00 ] 127.0.0.1 /Admin/Home/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-03-02T14:45:21+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T14:45:21+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-03-02T14:46:37+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T14:46:37+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-03-02T14:46:38+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-03-02T14:46:38+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T14:46:44+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T14:46:44+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T14:46:54+08:00 ] 127.0.0.1 /admin/admin/zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T14:46:54+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-03-02T14:47:06+08:00 ] 127.0.0.1 /admin?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T14:47:06+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T14:48:26+08:00 ] 127.0.0.1 /admin/Login/login?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T14:48:26+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+
+[ 2017-03-02T14:49:48+08:00 ] 127.0.0.1 /admin/Login/login?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T14:49:51+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T14:49:51+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-03-02T14:51:26+08:00 ] 127.0.0.1 /admin/login/index.html?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-03-02T14:51:53+08:00 ] 127.0.0.1 /admin/login/index/admin/zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T14:51:53+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+
+[ 2017-03-02T14:52:04+08:00 ] 127.0.0.1 /Admin/Login/code.html?0.5957870865967363
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-03-02T14:52:05+08:00 ] 127.0.0.1 /Admin/Login/code.html?0.407030285488055
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+
+[ 2017-03-02T14:52:38+08:00 ] 127.0.0.1 /admin/login/index/admin/zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T14:52:38+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+
+[ 2017-03-02T14:52:40+08:00 ] 127.0.0.1 /admin/login/index/admin/zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-03-02T14:52:40+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T14:52:42+08:00 ] 127.0.0.1 /Admin/Login/code.html?0.4263276464523018
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-03-02T14:53:10+08:00 ] 127.0.0.1 /admin/login/index/admin/zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T14:53:10+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T14:53:15+08:00 ] 127.0.0.1 /admin/login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T14:53:15+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-03-02T14:53:18+08:00 ] 127.0.0.1 /admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T14:53:18+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T14:53:20+08:00 ] 127.0.0.1 /Admin/Login/code.html?0.7033593440591093
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T14:53:21+08:00 ] 127.0.0.1 /Admin/Login/code.html?0.005516538840210972
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-03-02T14:53:21+08:00 ] 127.0.0.1 /Admin/Login/code.html?0.5787759685263578
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T14:53:22+08:00 ] 127.0.0.1 /Admin/Login/code.html?0.6329803236434774
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T14:53:41+08:00 ] 127.0.0.1 /admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T14:53:41+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+
+[ 2017-03-02T14:53:44+08:00 ] 127.0.0.1 /admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T14:53:44+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T14:53:54+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+
+[ 2017-03-02T14:53:56+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T14:54:14+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T14:54:16+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-03-02T14:54:34+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T14:54:34+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T14:54:34+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T14:55:03+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-03-02T14:55:03+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T14:55:05+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T14:55:05+08:00 ] 127.0.0.1 /Admin/Login/code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-03-02T14:55:12+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+
+[ 2017-03-02T14:55:12+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000138s ]
+
+[ 2017-03-02T14:57:04+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-03-02T14:57:50+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+
+[ 2017-03-02T14:57:50+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T14:58:31+08:00 ] 127.0.0.1 /admin/login/index.php?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T14:58:31+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-03-02T14:58:48+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T15:00:15+08:00 ] 127.0.0.1 /admin/login/index.php?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-03-02T15:00:15+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-03-02T15:00:28+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-03-02T15:01:08+08:00 ] 127.0.0.1 /admin/login/index.php?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T15:01:08+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-03-02T15:04:42+08:00 ] 127.0.0.1 /admin/login/index.php?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T15:04:42+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+
+[ 2017-03-02T15:04:44+08:00 ] 127.0.0.1 /admin/login/index.php?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T15:04:45+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T15:04:54+08:00 ] 127.0.0.1 /Admin/Login/login.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+
+[ 2017-03-02T15:06:06+08:00 ] 127.0.0.1 /admin/login/index.php?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T15:06:06+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T15:06:13+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T15:06:13+08:00 ] 127.0.0.1 /Admin/Login/index/error/%E9%AA%8C%E8%AF%81%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-03-02T15:08:49+08:00 ] 127.0.0.1 /admin/login/index.php?admin=zhoufei
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T15:08:49+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+
+[ 2017-03-02T15:08:57+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T15:08:57+08:00 ] 127.0.0.1 /Admin/Login/index/error/%E7%94%A8%E6%88%B7%E5%90%8D%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-03-02T15:08:57+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-03-02T15:09:03+08:00 ] 127.0.0.1 /Admin/Login/index/error/%E7%94%A8%E6%88%B7%E5%90%8D%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T15:09:03+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-03-02T15:09:11+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-03-02T15:09:11+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T15:10:10+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T15:10:10+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-03-02T15:10:12+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+
+[ 2017-03-02T15:10:12+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-03-02T15:10:22+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T15:10:22+08:00 ] 127.0.0.1 /Admin/Login/index/error/%E9%AA%8C%E8%AF%81%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-03-02T15:10:22+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+
+[ 2017-03-02T15:11:12+08:00 ] 127.0.0.1 /Admin/Login/index/error/%E9%AA%8C%E8%AF%81%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T15:11:12+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-03-02T15:11:15+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T15:11:16+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T15:11:57+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T15:11:57+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-03-02T15:12:05+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T15:12:05+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-03-02T15:12:35+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T15:12:35+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T15:12:57+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T15:12:57+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-03-02T15:14:03+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T15:14:17+08:00 ] 127.0.0.1 /Admin/Login/index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T15:14:17+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T15:14:24+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T15:14:24+08:00 ] 127.0.0.1 /Admin/Login/index/error/%E9%AA%8C%E8%AF%81%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-03-02T15:14:24+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2017-03-02T15:14:32+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T15:14:32+08:00 ] 127.0.0.1 /Admin/Login/index/error/%E7%94%A8%E6%88%B7%E5%90%8D%E6%88%96%E5%AF%86%E7%A0%81%E9%94%99%E8%AF%AF%EF%BC%81.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T15:14:33+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-03-02T15:14:42+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T15:14:42+08:00 ] 127.0.0.1 /Admin/Index/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-03-02T15:15:12+08:00 ] 127.0.0.1 /Admin/Index/%7B:U('admin/settingperson')%7D
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T15:15:16+08:00 ] 127.0.0.1 /Admin/Index/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T15:22:01+08:00 ] 127.0.0.1 /Admin/Config/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T15:22:03+08:00 ] 127.0.0.1 /Admin/Config/custom.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T15:22:04+08:00 ] 127.0.0.1 /Admin/Config/settingurl.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T15:22:08+08:00 ] 127.0.0.1 /Admin/Config/email.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T15:22:09+08:00 ] 127.0.0.1 /Admin/Config/watermark.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+
+[ 2017-03-02T15:22:12+08:00 ] 127.0.0.1 /Admin/Config/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T15:23:02+08:00 ] 127.0.0.1 /Admin/Config/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T15:23:03+08:00 ] 127.0.0.1 /Admin/Config/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T15:23:18+08:00 ] 127.0.0.1 /Admin/Advertising/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-03-02T15:23:32+08:00 ] 127.0.0.1 /Admin/Config/navstyle.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+SQL: SHOW COLUMNS FROM `linfei_config` [ RunTime:0.0007s ]
+SQL: SELECT `navstyle` FROM `linfei_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `linfei_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `linfei_config` SET `navstyle`='1' WHERE `id` = 1 [ RunTime:0.0410s ]
+
+[ 2017-03-02T15:23:33+08:00 ] 127.0.0.1 /Admin/Config/navstyle.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `linfei_config` [ RunTime:0.0006s ]
+SQL: SELECT `navstyle` FROM `linfei_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `linfei_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `linfei_config` SET `navstyle`='1' WHERE `id` = 1 [ RunTime:0.0288s ]
+
+[ 2017-03-02T15:23:34+08:00 ] 127.0.0.1 /Admin/Advertising/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T15:23:36+08:00 ] 127.0.0.1 /Admin/Config/navstyle.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+SQL: SHOW COLUMNS FROM `linfei_config` [ RunTime:0.0007s ]
+SQL: SELECT `navstyle` FROM `linfei_config` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `linfei_config` LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `linfei_config` SET `navstyle`='0' WHERE `id` = 1 [ RunTime:0.0320s ]
+
+[ 2017-03-02T15:23:37+08:00 ] 127.0.0.1 /Admin/Advertising/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+
+[ 2017-03-02T15:23:57+08:00 ] 127.0.0.1 /Admin/Advertising/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T18:11:15+08:00 ] 127.0.0.1 /Admin/Advertising/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T18:15:34+08:00 ] 127.0.0.1 /admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T18:15:37+08:00 ] 127.0.0.1 /admin/login/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+
+[ 2017-03-02T18:15:40+08:00 ] 127.0.0.1 /admin/login/Index/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+
+[ 2017-03-02T18:15:43+08:00 ] 127.0.0.1 /admin/login/Index/Index/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+
+[ 2017-03-02T18:15:46+08:00 ] 127.0.0.1 /admin/login/Index/Index/Index/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-03-02T18:15:48+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+
+[ 2017-03-02T18:15:52+08:00 ] 127.0.0.1 /admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000753s ]
+
+[ 2017-03-02T18:16:43+08:00 ] 127.0.0.1 /admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-03-02T18:16:46+08:00 ] 127.0.0.1 /admin/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000163s ]
+
+[ 2017-03-02T18:17:02+08:00 ] 127.0.0.1 /admin/login/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-03-02T18:17:06+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+
+[ 2017-03-02T18:17:18+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T18:17:24+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T18:17:25+08:00 ] 127.0.0.1 /Admin/User/index.php?level=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-03-02T18:17:26+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T18:17:28+08:00 ] 127.0.0.1 /Admin/User/editor.php?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T18:17:58+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T18:19:23+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T18:19:24+08:00 ] 127.0.0.1 /Admin/User/editor.php?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T18:19:29+08:00 ] 127.0.0.1 /Admin/Uploads/uploads.php?num=1&name=icon&id=imgs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-03-02T18:20:31+08:00 ] 127.0.0.1 /Admin/Product/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-03-02T18:20:36+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T18:20:39+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-03-02T18:21:20+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T18:22:59+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+
+[ 2017-03-02T18:27:18+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+ERR: 模板不存在:./App/Admin/View//addadmin.html
+
+[ 2017-03-02T18:28:01+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 模板不存在:./App/Admin/View//addadmin.html
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-rtl.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/font-awesome.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-skins.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-extra.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C(
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:26+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/jquery-2.0.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-rtl.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-extra.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/ace-skins.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/css/css.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/avatars/user.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-elements.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/typeahead-bs2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/jquery-2.0.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/typeahead-bs2.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace-elements.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:27+08:00 ] 127.0.0.1 /Admin/User/%7B:APP_PATH%7DTpl/%7B:C('DEFAULT_THEME')%7D/_static/admin/assets/js/ace.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+ERR: 非法操作:{:APP_PATH}Tpl
+
+[ 2017-03-02T18:28:54+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-03-02T18:29:19+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T18:30:05+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T18:30:09+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T18:30:11+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T18:30:46+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T18:30:48+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+
+[ 2017-03-02T18:31:08+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T18:33:48+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T18:34:05+08:00 ] 127.0.0.1 /Admin/Product/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T18:34:07+08:00 ] 127.0.0.1 /Admin/Product/addproduct.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000193s ]
+
+[ 2017-03-02T18:34:15+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T18:35:18+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-03-02T18:35:45+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T18:36:16+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+
+[ 2017-03-02T18:36:39+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T18:41:43+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T18:41:54+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T18:42:00+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T19:01:16+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T19:14:40+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T19:14:55+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+
+[ 2017-03-02T19:16:47+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T19:17:55+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T19:18:24+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-03-02T19:18:49+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2017-03-02T19:18:51+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-03-02T19:18:52+08:00 ] 127.0.0.1 /Admin/User/editor.php?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T19:19:56+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T19:19:58+08:00 ] 127.0.0.1 /Admin/Uploads/uploads.php?num=1&name=icon&id=imgs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T19:20:01+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T19:21:13+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+
+[ 2017-03-02T19:21:14+08:00 ] 127.0.0.1 /Admin/Uploads/uploads.php?num=1&name=icon&id=imgs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T19:21:21+08:00 ] 127.0.0.1 /Admin/Uploads/uploads.php?num=1&name=icon
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-03-02T19:22:48+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-03-02T19:23:11+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T19:23:13+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T19:24:32+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T19:24:37+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T19:24:38+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T19:30:20+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T19:30:36+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T19:30:44+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T20:09:18+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-03-02T20:09:45+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+ERR: Think\Controller:datas方法不存在！
+
+[ 2017-03-02T20:10:23+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: Think\Model:datas方法不存在！
+
+[ 2017-03-02T20:10:56+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+ERR: Think\Model:datas方法不存在！
+
+[ 2017-03-02T20:11:25+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000154s ]
+
+[ 2017-03-02T20:12:09+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T20:14:40+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-03-02T20:14:43+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T20:17:00+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T20:17:03+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2017-03-02T20:17:06+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+
+[ 2017-03-02T20:17:08+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-03-02T20:17:11+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-03-02T20:17:36+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T20:17:39+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000122s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+
+[ 2017-03-02T20:17:42+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+
+[ 2017-03-02T20:39:23+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T20:39:24+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+
+[ 2017-03-02T20:39:27+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T20:39:29+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-03-02T20:39:40+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T20:39:41+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+ERR: Think\Model:error方法不存在！
+
+[ 2017-03-02T20:43:52+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-03-02T20:43:53+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T20:43:56+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000156s ]
+
+[ 2017-03-02T20:44:30+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2017-03-02T20:44:33+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+
+[ 2017-03-02T20:47:55+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-03-02T20:48:01+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-03-02T20:48:04+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+
+[ 2017-03-02T20:48:09+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+
+[ 2017-03-02T20:48:12+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+
+[ 2017-03-02T20:48:15+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T20:48:18+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+
+[ 2017-03-02T20:48:23+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T20:48:26+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+
+[ 2017-03-02T20:48:59+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-03-02T20:49:03+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+
+[ 2017-03-02T20:49:07+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+
+[ 2017-03-02T20:49:10+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000164s ]
+
+[ 2017-03-02T20:49:12+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T20:49:15+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+
+[ 2017-03-02T20:49:18+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-03-02T20:50:10+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-03-02T20:50:14+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-03-02T20:50:14+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+
+[ 2017-03-02T20:50:20+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-03-02T20:50:24+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T21:03:19+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+
+[ 2017-03-02T21:31:58+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T21:32:00+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+
+[ 2017-03-02T21:32:03+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+
+[ 2017-03-02T21:32:23+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T21:32:26+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+
+[ 2017-03-02T21:32:37+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-03-02T21:32:40+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T21:33:55+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T21:34:00+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T21:34:04+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2017-03-02T21:34:13+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T21:34:19+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-03-02T21:34:22+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+
+[ 2017-03-02T21:35:54+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+
+[ 2017-03-02T21:36:05+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T21:36:07+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+
+[ 2017-03-02T21:36:12+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+
+[ 2017-03-02T21:36:14+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T21:36:43+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+
+[ 2017-03-02T21:37:09+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T21:37:10+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T21:37:13+08:00 ] 127.0.0.1 /Admin/admin/userList/op/del.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `linfei_config` [ RunTime:0.0009s ]
+SQL: SELECT `navstyle` FROM `linfei_config` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2017-03-02T21:37:17+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T21:37:20+08:00 ] 127.0.0.1 /Admin/admin/userList/op/del.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001756s ]
+SQL: SHOW COLUMNS FROM `linfei_config` [ RunTime:0.0007s ]
+SQL: SELECT `navstyle` FROM `linfei_config` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.001142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002677s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2017-03-02T21:37:23+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T21:37:45+08:00 ] 127.0.0.1 /Admin/User/editor.php?uid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T21:37:58+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T21:37:59+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+
+[ 2017-03-02T21:38:01+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T21:44:08+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T21:44:11+08:00 ] 127.0.0.1 /Admin/User/adduser.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 非法操作:adduser
+
+[ 2017-03-02T21:44:16+08:00 ] 127.0.0.1 /Admin/User/rouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+ERR: 非法操作:rouplist
+
+[ 2017-03-02T21:44:19+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000155s ]
+
+[ 2017-03-02T21:44:20+08:00 ] 127.0.0.1 /Admin/User/rouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+ERR: 非法操作:rouplist
+
+[ 2017-03-02T21:44:41+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T21:44:42+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T21:44:46+08:00 ] 127.0.0.1 /Admin/User/addadmin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T21:44:57+08:00 ] 127.0.0.1 /Admin/User/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T21:44:59+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T21:45:26+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+
+[ 2017-03-02T21:46:19+08:00 ] 127.0.0.1 /Admin/User/index.php?level=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T21:46:20+08:00 ] 127.0.0.1 /Admin/User/index.php?level=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T21:47:32+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+ERR: 模板不存在:./App/Admin/View//grouplist.html
+
+[ 2017-03-02T21:48:28+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+
+[ 2017-03-02T21:48:30+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2017-03-02T21:48:52+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T21:50:10+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T21:50:20+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T21:51:55+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T21:51:58+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T21:52:33+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T21:52:52+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T21:53:27+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T21:54:26+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T21:54:46+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T21:55:29+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T21:55:44+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T21:56:04+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+
+[ 2017-03-02T21:56:28+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+
+[ 2017-03-02T21:57:23+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-03-02T21:57:41+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T21:57:56+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-03-02T21:59:32+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-03-02T21:59:51+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+
+[ 2017-03-02T22:00:02+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T22:00:08+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T22:00:19+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:00:32+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-03-02T22:00:37+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+
+[ 2017-03-02T22:00:39+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T22:01:12+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:01:14+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+ERR: 模板不存在:./App/Admin/View//addgroup.html
+
+[ 2017-03-02T22:01:22+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:01:44+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-03-02T22:01:45+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+ERR: 模板不存在:./App/Admin/View//addgroup.html
+
+[ 2017-03-02T22:01:48+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-03-02T22:02:08+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-03-02T22:02:10+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:02:30+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:02:31+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T22:02:40+08:00 ] 127.0.0.1 /Admin/Classify/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T22:02:42+08:00 ] 127.0.0.1 /Admin/Classify/addclassify.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T22:02:50+08:00 ] 127.0.0.1 /Admin/Product/addproduct.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+
+[ 2017-03-02T22:03:22+08:00 ] 127.0.0.1 /Admin/Config/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T22:03:25+08:00 ] 127.0.0.1 /Admin/Config/custom.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+
+[ 2017-03-02T22:03:28+08:00 ] 127.0.0.1 /Admin/Config/reditorcustom.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T22:03:41+08:00 ] 127.0.0.1 /Admin/Config/email.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T22:03:43+08:00 ] 127.0.0.1 /Admin/Config/watermark.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-03-02T22:04:53+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+
+[ 2017-03-02T22:04:56+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T22:05:52+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:06:16+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:06:46+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:07:12+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T22:07:23+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:07:47+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:08:12+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T22:09:20+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+
+[ 2017-03-02T22:09:50+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2017-03-02T22:10:34+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-03-02T22:10:56+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+
+[ 2017-03-02T22:11:08+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:11:39+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:11:48+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:12:17+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T22:12:39+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-03-02T22:13:07+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+
+[ 2017-03-02T22:13:45+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:14:25+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:15:00+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T22:15:02+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+
+[ 2017-03-02T22:15:29+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T22:15:40+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T22:15:52+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-03-02T22:16:04+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:16:12+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T22:16:43+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-03-02T22:17:06+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T22:17:12+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T22:17:34+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2017-03-02T22:18:44+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+
+[ 2017-03-02T22:18:56+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-03-02T22:19:14+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T22:19:44+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-03-02T22:20:50+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-03-02T22:21:32+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:21:58+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-03-02T22:22:37+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+
+[ 2017-03-02T22:22:51+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:23:20+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:23:43+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T22:23:55+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:24:15+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T22:24:17+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T22:25:00+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T22:25:11+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T22:25:21+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:26:33+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+
+[ 2017-03-02T22:26:35+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:27:08+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:27:36+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+
+[ 2017-03-02T22:28:03+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:28:44+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T22:28:58+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:29:19+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T22:29:21+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+
+[ 2017-03-02T22:29:54+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000141s ]
+
+[ 2017-03-02T22:30:12+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T22:30:38+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:30:52+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:31:21+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+
+[ 2017-03-02T22:31:46+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T22:31:58+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:32:10+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+
+[ 2017-03-02T22:32:13+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:32:33+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:32:48+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T22:33:00+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+
+[ 2017-03-02T22:33:20+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:33:32+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T22:33:51+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:34:15+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:34:36+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:35:11+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T22:35:27+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:35:38+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:35:53+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+
+[ 2017-03-02T22:36:08+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-02T22:36:33+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+
+[ 2017-03-02T22:36:44+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+
+[ 2017-03-02T22:37:01+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-03-02T22:37:26+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:37:43+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:37:54+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:38:03+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T22:38:10+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:38:17+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T22:38:40+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:39:11+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:39:44+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2017-03-02T22:40:13+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+
+[ 2017-03-02T22:40:24+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:40:58+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T22:41:13+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T22:42:04+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-02T22:42:32+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-02T22:42:53+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-02T22:43:02+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-02T22:43:14+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+
+[ 2017-03-02T22:43:32+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:44:41+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000251s ]
+
+[ 2017-03-02T22:46:08+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+
+[ 2017-03-02T22:47:40+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+
+[ 2017-03-02T22:47:58+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T22:48:11+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+
+[ 2017-03-02T22:48:44+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T22:51:24+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-03-02T22:51:40+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:51:46+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-02T22:52:34+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+
+[ 2017-03-02T22:52:35+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:52:37+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T22:52:42+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+
+[ 2017-03-02T22:52:52+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:53:08+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T22:53:24+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-02T22:53:46+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+
+[ 2017-03-02T22:54:23+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+
+[ 2017-03-02T22:54:31+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:54:43+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+
+[ 2017-03-02T22:54:57+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-03-02T22:55:11+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-03-02T22:55:51+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-03-02T22:56:13+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+
+[ 2017-03-02T22:56:23+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:56:32+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+
+[ 2017-03-02T22:58:31+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-02T22:58:41+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+
+[ 2017-03-02T22:58:46+08:00 ] 127.0.0.1 /Admin/User/grouplist.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:58:48+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-02T22:58:50+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000146s ]
+
+[ 2017-03-02T22:58:54+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:58:57+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-02T22:59:00+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+
+[ 2017-03-02T22:59:01+08:00 ] 127.0.0.1 /Admin/User/addgroup.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
