@@ -1,0 +1,24 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+<div style="height:300px;margin:0 auto;margin-top:15%;background:#A9A9A9;text-align:center;color:#fff;"><h3 style="line-height:300px;">{{$msg}}</h3></div>
+
+<script type="text/javascript">
+if("{{$urls}}"){
+    window.location.href="{{$urls}}";
+}
+</script>
+
+<include file="Public:footer" />

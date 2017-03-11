@@ -39,7 +39,7 @@ class LoginController extends Controller
 		}else{
             if(session('adminuser')){$this->error('你也登陆！','/Admin/Index/index');}
             // if(I('get.admin') != 'zhoufei'){$this->error('你访问的页面不存在！','/Home/index.html');}
-			$this->display('/login');
+			$this->display();
 		}
 	}
 

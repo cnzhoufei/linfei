@@ -1,0 +1,41 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+<style type="text/css">
+.form-group li{list-style:none;float:left;width:50%;min-width:280px;font-size:25px;}
+.form-group li input{width:20px;height:20px;}
+</style>
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+                            <div class="form-group" style="width:60%;margin:0 auto;">
+                                <ul>
+                                <foreach name="back" item="v" key="kk">
+                                    <li><i style="color:#FFE68E;" class="{{$v['icon']}}"></i>&nbsp;<a href="{{:U('sqllist')}}?name={{$v['name']}}">{{$v['name']}}</a></li>
+                                </foreach>    
+                                </ul>
+                            </div>                                                       
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+<include file="Public:footer" />

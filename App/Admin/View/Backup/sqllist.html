@@ -1,0 +1,82 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+<style type="text/css">
+.form-group li{list-style:none;float:left;width:50%;font-size:15px;min-width:550px;}
+.size{width:50px;float:right;margin-right:50px;}
+.form-group li input{width:20px;height:20px;}
+</style>
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal" role="form" onsubmit="return mysubmit();" action="" method="post" enctype="multipart/form-data">
+                        <input type="hidden" name="name" value="{{$name}}" />
+                            <div class="form-group" style="width:100%;margin:0 auto;">
+                                <ul>
+                                    <li style="background:#B2B2B2;">表结构</li>
+                                    <li style="background:#B2B2B2;">&nbsp;</li>
+                                <foreach name="structure" item="v" key="kk">
+                                    <li><input type="checkbox" name="structure[{{$v['class_name']}}]" checked="checked" value="{{$v['name']}}" id="{{$v['class_name']}}" onclick="xz('{{$v[class_name]}}');">{{$v['name']}}<div class="size">{{$v['size']}}</div></li>
+                                </foreach>
+                                <php>if($kk % 2 == 0){
+                                echo '<li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li>';}else{echo '<li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li>';}</php>
+                                <li style="background:#B2B2B2;">表数据</li>
+                                <li style="background:#B2B2B2;">&nbsp;</li>
+                                <foreach name="insertinto" item="vv" key="kk">
+                                    <li><input type="checkbox" name="insertinto[]" checked="checked" value="{{$vv['name']}}" class="{{$vv['class_name']}}">{{$vv['name']}}<div class="size">{{$vv['size']}}</div></li>
+                                </foreach> 
+                                </ul>
+                            </div>                                                       
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-4 col-md-4">
+                                    <button class="btn btn-info btn-block" type="submit">
+                                        <i class="icon-ok bigger-110"></i>
+                                        还原数据
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+<include file="Public:footer" />
+
+<script type="text/javascript">
+function xz(classname)
+{
+     if($('#'+classname+'').prop('checked')) {
+            $('.'+classname+':checkbox').prop('checked', true);
+        } else {
+            $('.'+classname+':checkbox').prop('checked', false);
+        }
+}
+
+
+function mysubmit()
+{
+    if(confim('恢复前最好做一次备份，避免现有数据丢失，你确定执行吗？')){
+        return true;
+    }else{
+        return false;
+    }
+}
+</script>

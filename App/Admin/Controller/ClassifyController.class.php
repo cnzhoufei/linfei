@@ -48,7 +48,7 @@ class ClassifyController extends CommonController
            
         }
         $this->assign('classify',$classify);
-    	$this->display('/classifylist');
+    	$this->display();
     }
 
 
@@ -110,7 +110,7 @@ class ClassifyController extends CommonController
             $this->assign('cid',$cid);
             $this->assign('classifys',$classifys);
             $this->assign('classify',$classify);
-    		$this->display('/addclassify');
+    		$this->display();
     	}
     }
 
@@ -165,6 +165,9 @@ zhoufei;
     }
 
 
+    /**
+     * 选择栏目模板
+     */
     public function SelectTemplets()
     {
         $path = I('path');
@@ -181,7 +184,7 @@ zhoufei;
         $this->assign('top',substr($top,0,-1));//上级目录
         $this->assign('path',$path);//当前目录
         $this->assign('dir',$dir);//文件目录
-        $this->display('/SelectTemplets');
+        $this->display();
 
     }
 

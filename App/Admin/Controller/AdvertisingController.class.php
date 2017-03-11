@@ -16,7 +16,7 @@ class AdvertisingController extends CommonController
     	}
 
     	$this->assign('ad',$advertising);
-    	$this->display('/advlocationlist');
+    	$this->display();
     }
 
     /**
@@ -32,7 +32,7 @@ class AdvertisingController extends CommonController
         $this->assign('count',$count);
         $this->assign('page',$show);
         $this->assign('adv',$adv);
-        $this->display('/advlist');
+        $this->display();
     }
 
     /**
@@ -93,7 +93,7 @@ class AdvertisingController extends CommonController
         }
         $this->ueditor('guanggao');//创建编辑器
         $this->assign('advlocation',$advlocation);            
-    	$this->display('/addad');
+    	$this->display();
         }
     }
 

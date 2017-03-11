@@ -13,7 +13,7 @@ class UserController extends CommonController
     	}
     	$this->assign('users',$users);
     	$this->assign('level',$level);
-    	$this->display('/userlist');
+    	$this->display();
     }
 
 
@@ -58,7 +58,7 @@ class UserController extends CommonController
             $user = $user_m->where(array('id'=>$uid))->find();
             $this->assign('groups',$groups);
             $this->assign('user',$user);
-    		$this->display('/addadmin');
+    		$this->display('addadmin');
     	}
     }
 
@@ -90,7 +90,7 @@ class UserController extends CommonController
             $groups = $group->getField('id,name');
             if(session('adminuser.id') != 1){unset($groups['1']);}
             $this->assign('groups',$groups);
-            $this->display('/addadmin');
+            $this->display();
         }
     }
 
@@ -100,7 +100,7 @@ class UserController extends CommonController
         $group = M('group');
         $grouplist = $group->select();
         $this->assign('grouplist',$grouplist);
-        $this->display('/grouplist');
+        $this->display();
     }
     //添加管理组
     public function addgroup()
@@ -138,7 +138,7 @@ class UserController extends CommonController
 
             }
             $this->assign('adminmenu',adminmenu());
-            $this->display('/addgroup');
+            $this->display();
         }
     }
 

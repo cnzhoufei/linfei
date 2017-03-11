@@ -86,7 +86,6 @@ function adminmenu()
 				array(
 					array('name'=>'数据列表','c'=>'Backup','f'=>'index'),
 					array('name'=>'备份数据','c'=>'Backup','f'=>'bac'),
-					array('name'=>'还原数据','c'=>'Backup','f'=>'restore'),
 				),
 			),
 		);
@@ -191,7 +190,6 @@ function delFile($dir,$file_type='') {
                  	$data[$i]['name'] = $d;
                  	$data[$i]['time'] = date('Y-m-d H:i:s',filemtime($path.'/'.$d));
                  	$i++;
-                 //如果为文件就删除
              }
 
              return $data;

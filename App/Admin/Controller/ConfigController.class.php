@@ -38,7 +38,7 @@ class ConfigController extends CommonController
 		}else{
 			$config = M('config')->find();
 			$this->assign('config',$config);
-			$this->display('/config');
+			$this->display();
 		}
 	}
 
@@ -52,7 +52,7 @@ class ConfigController extends CommonController
 		$custom_m = M('custom');
 		$custom = $custom_m->select();
 		$this->assign('custom',$custom);
-		$this->display('/custom');
+		$this->display();
 	}
 
 
@@ -83,7 +83,7 @@ class ConfigController extends CommonController
 		}else{
 			$custom = $custom_m->where(array('id'=>$customid))->find();
 			$this->assign('custom',$custom);
-			$this->display('/reditorcustom');
+			$this->display();
 		}
 	}
 
@@ -142,7 +142,7 @@ return array(
 
 			$emailconfig = include "/App/Admin/conf/emailconfig.php";
 			$this->assign('emailconfig',$emailconfig);
-			$this->display('/email');
+			$this->display();
 		}
 	}
 
@@ -179,7 +179,7 @@ return array(
 
 			$watermark = $watermark_m->find();
 			$this->assign('watermark',$watermark);
-			$this->display('/watermark');
+			$this->display();
 		}
 
 	}
@@ -202,6 +202,9 @@ return array(
 	}
 
 
+	/**
+	 * url模式
+	 */
 	public function settingurl()
 	{	
 		$model = M('config');
@@ -218,7 +221,7 @@ return array(
 		}else{
 			$url = $model->field('id,url')->find();
 			$this->assign('url',$url);
-			$this->display('/settingurl');
+			$this->display();
 		}
 	}
 

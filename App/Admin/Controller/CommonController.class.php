@@ -10,7 +10,7 @@ class CommonController extends Controller
     	$this->assign('url',$_SERVER['REDIRECT_URL']);
         $this->assign('navstyle',navstyle());
         $this->navsnum();
-        $this->permissions();//权限
+        // $this->permissions();//权限
 
     }
 

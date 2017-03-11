@@ -1,0 +1,200 @@
+[ 2017-03-09T11:29:16+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-09T11:29:17+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-03-09T11:29:17+08:00 ] 127.0.0.1 /Admin/Login/code.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+
+[ 2017-03-09T11:29:30+08:00 ] 127.0.0.1 /Admin/Login/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-03-09T11:29:30+08:00 ] 127.0.0.1 /Admin/Index/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+
+[ 2017-03-09T11:29:37+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+
+[ 2017-03-09T11:30:37+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-09T11:35:59+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+
+[ 2017-03-09T11:36:24+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-09T11:36:33+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-09T11:37:11+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+
+[ 2017-03-09T11:37:24+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-09T11:37:45+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-09T11:38:04+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+
+[ 2017-03-09T11:40:18+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+
+[ 2017-03-09T11:41:33+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+
+[ 2017-03-09T11:42:26+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-09T11:43:17+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+
+[ 2017-03-09T11:43:43+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-09T11:47:22+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+
+[ 2017-03-09T11:48:36+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+
+[ 2017-03-09T11:49:11+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+
+[ 2017-03-09T13:52:55+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-09T13:52:57+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+
+[ 2017-03-09T20:56:12+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000145s ]
+
+[ 2017-03-09T20:56:13+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+
+[ 2017-03-09T20:56:14+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000139s ]
+
+[ 2017-03-09T21:02:58+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000203s ]
+
+[ 2017-03-09T21:03:01+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+
+[ 2017-03-09T21:03:19+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+
+[ 2017-03-09T21:03:48+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+
+[ 2017-03-09T21:04:25+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+
+[ 2017-03-09T21:05:00+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+
+[ 2017-03-09T21:05:26+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+
+[ 2017-03-09T21:08:05+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+
+[ 2017-03-09T21:08:41+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000182s ]
+
+[ 2017-03-09T21:08:58+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+
+[ 2017-03-09T21:10:13+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+
+[ 2017-03-09T21:12:07+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+
+[ 2017-03-09T21:13:43+08:00 ] 127.0.0.1 /Admin/Backup/bac.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+

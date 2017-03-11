@@ -27,6 +27,7 @@ if ((count($arr) > 2 && $arr[2] !== 'Admin' && $arr[2] !== 'admin' && $arr[2] !=
 
 // 定义应用目录
 define('APP_PATH', './App/');
+define('ADMIN_MSG',__DIR__);
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

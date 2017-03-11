@@ -4,7 +4,7 @@ use Think\Controller;
 class FriendshipController extends CommonController 
 {
 	/**
-	 * 轮播图列表
+	 * 友情链接列表
 	 */
     public function index()
     {
@@ -16,13 +16,13 @@ class FriendshipController extends CommonController
         $this->assign('count',$count);
         $this->assign('page',$show);
         $this->assign('friendship',$friendship);
-    	$this->display('/friendshiplist');
+    	$this->display();
     }
 
 
 
     /**
-     * 添加轮播图
+     * 添加友情链接
      */
     public function addfriendship()
     {
@@ -55,7 +55,7 @@ class FriendshipController extends CommonController
     	}else{
     		$friendship = $friendship_m->where(array('id'=>$id))->find();
     		$this->assign('friendship',$friendship);
-    		$this->display('/addfriendship');
+    		$this->display();
     	}
     }
 

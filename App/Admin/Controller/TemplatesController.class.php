@@ -15,7 +15,7 @@ class TemplatesController extends CommonController
         $tplconfig = include("./App/Home/Conf/tplconfig.php");     
         $this->assign('templates',$templates);
         $this->assign('tpl',$tplconfig['DEFAULT_THEME']);
-        $this->display('/pclist');
+        $this->display();
 
 
 
@@ -34,7 +34,7 @@ class TemplatesController extends CommonController
          }
         $this->assign('templates',$templates);
         $this->assign('tpl','default');
-        $this->display('/mobilelist');
+        $this->display();
    }
 
 

@@ -23,7 +23,9 @@ return array(
     'TOKEN_TYPE'            =>      'md5',                         //令牌哈希验证规则 默认为MD5
     'TOKEN_RESET'           =>      true,                          //令牌验证出错后是否重置令牌 默认为true
 
-
+    'TMPL_ACTION_ERROR'     =>  ADMIN_MSG.'/App/Admin/View/Public/dispatch_jump.tpl', // 默认错误跳转对应的模板文件
+    'TMPL_ACTION_SUCCESS'   =>  ADMIN_MSG.'/App/Admin/View/Public/dispatch_jump.tpl', // 默认成功跳转对应的模板文件
+    'TMPL_EXCEPTION_FILE'   =>  ADMIN_MSG.'/App/Admin/View/Public/think_exception.tpl',// 异常页面的模板文件
 
 
     /*配置邮件发送服务器*/

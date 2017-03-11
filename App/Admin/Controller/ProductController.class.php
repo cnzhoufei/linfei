@@ -16,7 +16,7 @@ class ProductController extends CommonController
 		$this->assign('count',$count);
 		$this->assign('page',$show);
 		$this->assign('product', $product);
-		$this->display('/productlist');
+		$this->display();
 	}
 
 	public function addproduct() 
@@ -84,7 +84,7 @@ class ProductController extends CommonController
 			$this->assign('classifys', $classifys);
 			$this->assign('productimg', $productimg);
 			$this->ueditor('product');
-			$this->display('/addproduct');
+			$this->display();
 
 		}
 
@@ -239,6 +239,6 @@ class ProductController extends CommonController
     	$this->assign('classid',I('class'));
     	$this->assign('title',I('title'));
     	$this->assign('name',I('name'));
-    	$this->display('/productlist');
+    	$this->display('index');
     }
 }

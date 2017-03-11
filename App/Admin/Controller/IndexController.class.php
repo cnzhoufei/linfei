@@ -30,12 +30,12 @@ class IndexController extends CommonController
     		array('name'=>'Curl支持','v'=>function_exists('curl_init') ? 'YES' : 'NO'),
     		array('name'=>'GD 版本','v'=>$sys_info['gdinfo'])
     		));
-        $this->display('/index');
+        $this->display();
     }
 
 
     public function _empty()
     {
-    	echo '404';
+    	$this->display('Public/404');
     }
 }

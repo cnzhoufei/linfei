@@ -16,7 +16,7 @@ class ArticleController extends CommonController
 		$this->assign('count',$count);
 		$this->assign('page',$show);
 		$this->assign('article', $article);
-		$this->display('/articlelist');
+		$this->display();
 	}
 
 	public function addarticle() 
@@ -70,7 +70,7 @@ class ArticleController extends CommonController
 			$classifys = $class->where(array('type' => 'article'))->select(); //所有分类
 			$this->assign('classifys', $classifys);
 			$this->ueditor('article');
-			$this->display('/addarticle');
+			$this->display();
 
 		}
 
@@ -114,6 +114,12 @@ class ArticleController extends CommonController
     	$this->assign('classid',I('class'));
     	$this->assign('title',I('title'));
     	$this->assign('name',I('name'));
-    	$this->display('/articlelist');
+    	$this->display('index');
+    }
+
+
+    public function _empty()
+    {
+    	$this->display('Public/404');
     }
 }

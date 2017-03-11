@@ -16,7 +16,7 @@ class PicController extends CommonController
         $this->assign('count',$count);
         $this->assign('page',$show);
         $this->assign('pic',$pic);
-    	$this->display('/piclist');
+    	$this->display();
     }
 
 
@@ -55,7 +55,7 @@ class PicController extends CommonController
     	}else{
     		$pic = $pic_m->where(array('id'=>$id))->find();
     		$this->assign('pic',$pic);
-    		$this->display('/addpic');
+    		$this->display();
     	}
     }
 

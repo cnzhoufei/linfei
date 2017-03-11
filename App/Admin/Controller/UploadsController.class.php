@@ -42,7 +42,7 @@ class UploadsController extends CommonController
         	$this->assign('id',$id);
         	$this->assign('num',$num);
         	$this->assign('name',$name);
-            $this->display('/uploads');
+            $this->display();
         }
 
     }
@@ -65,7 +65,7 @@ class UploadsController extends CommonController
 	    }else{
 
 
-            $this->display('/uploads');
+            $this->display('uploads');
         }
     }
 
