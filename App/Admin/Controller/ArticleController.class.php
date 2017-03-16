@@ -24,6 +24,7 @@ class ArticleController extends CommonController
 		$article_m = M('article');
 		$id = I('id', 0);
 		if (IS_POST) {
+
 			if(S('img')){
 				$_POST['img'] = S('img');//缩略图
 			}
@@ -57,6 +58,36 @@ class ArticleController extends CommonController
 				$url_name = M('classify')->where(array('id'=>$data['cid']))->getField('url_name');//查询本文章栏目url_name
 				$data3['url'] = '/Home/'.$url_name.'/'.$name_.'.html';
 				$article_m->where(array('id'=>$articleid2))->save($data3);
+
+				//操作模型表
+				$class = M('Classify');
+				$m = $class->where(array('id'=>$_POST['cid']))->getField('m');
+				if($m){
+
+					$model = M($m);
+					$aid = ($id)?$id:$res;
+					foreach($_POST['model'] as $k=>$v){
+						if(is_array($v)){
+							foreach($v as $v_){
+								$str_ .= $v_.',';
+							}
+								$data5[$k] = substr($str_, 0 ,-1);
+						}else{
+
+								$data5[$k] = $v;
+						}
+					}
+					if($model->where(array('aid'=>$aid))->find()){
+						$data5['aid'] = $id;
+						$model->where(array('aid'=>$aid))->save($data5);
+					}else{
+						$data5['aid'] = $res;
+						$model->add($data5);
+
+					}
+				}
+
+
 				$this->success('操作成功',U('article/index').$p);
 			} else {
 				$this->error('操作失败！');
@@ -114,8 +145,11 @@ class ArticleController extends CommonController
     	$this->assign('classid',I('class'));
     	$this->assign('title',I('title'));
     	$this->assign('name',I('name'));
+    	$this->assign('url','/Admin/Article/index.php');
     	$this->display('index');
     }
+
+
 
 
     public function _empty()

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+	 <title>{{$articlelist['title']}}</title>
+    <meta name="keywords" content="{{$articlelist['keywords']}}">
+   <meta name="description" content="{{$articlelist['description']}}" /> 
+<include file="./header" />
+  <div style="width:100%;clear:both;height:110px;"></div>
+
+
+
+<div class="splitX"></div>
+</div>
+  <!--main-->
+
+  
+<!--顶area end-->
+<div class="topbg">
+<adv name="文章列表页广告" type="1" id="112" item="v">
+<img src="{{$v['img']}}">
+</adv>
+</div>
+<div class="areaT1 mt25" style="min-height:500px;">
+    <div class="wrap pr">
+		
+<div class="navigate"><a href="index.php">首页</a> &gt; <span>成功案例</span></div>
+			
+        <!--nfocus-->
+<foreach name="article" item="v" key="k">
+<php>if(!$k){</php>
+        <div class="nfocus mt25">
+                <img src="{{:homeimg($v['id'],674,322,'article')}}" class="limg" alt="{{$v['title']}}">
+                <div class="m">
+                    <h2 class="t mt35"><a title="{{$v['title']}}"  href="{{$v['url']}}">{{:getsubstr($v['title'],0,9)}}</a></h2>
+                    <p class="ldes mt30">{{:getsubstr($v['description'],0,150)}}</p><a href="{{$v['url']}}" class="seall">更多>></a></div></div>
+        <!--nfocus end-->
+        <div class="newslist clearfix mt60">
+            <ul class="timelist"><li>按时间顺序排列</li><li><!-- 领木服务 --></li></ul>
+            <div class="newsbox" id="newsbox">
+
+<php>}else{</php>                                  <!--item-->
+                    <div class="item clearfix">
+                        <img src="{{:homeimg($v['id'],328,202,'article')}}" alt="{{$v['title']}}">
+                        <div class="m">
+                            <h4 class="t"><a href="{{$v['url']}}">{{:getsubstr($v['title'],0,22)}}</a></h4>
+                            <p class="ldes mt10">{{:getsubstr($v['description'],0,200)}}</p><a href="{{$v['url']}}" target="_blank" class="seall">更多>></a></div>
+                    </div>
+<php>}</php>
+</foreach>	
+                    <!--item end-->
+                                     <!--item-->
+    <div  style="float:right; font-size:18px;" class="paging">
+    <a class="a1">{{$count}}条</a> 
+    {{$page}}
+    </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+<include file="./footer" />

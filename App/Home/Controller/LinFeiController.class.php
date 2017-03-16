@@ -30,12 +30,21 @@ class LinFeiController extends PublicController
      */
     protected function productlist($tag)
     {
+        if(!$tag['id']){$this->_empty();}
         $product_m = M('product');
-        $count = $product_m->where(array('status'=>1,'cid'=>$tag['id']))->count();
-        $num = 5;
+        $class = M('classify');
+            $cid2 = $class->field("concat(id,',') as s")->where(array('pid'=>$tag['id'],'status'=>1))->select();//查询第二级
+            if($cid2){
+                     $cid3 = $class->field("concat(id,',') as s")->where("pid in(".substr($cid2[0]['s'],0,-1).") and status = 1")->select();//查询第二级
+            }
+            
+        $cid = $tag['id'].','.$cid2[0]['s'].$cid3[0]['s'];
+            
+        $count = $product_m->where("cid in(".substr($cid,0,-1).") and status = 1")->count();
+        $num = 1;
         $Page       = new \Think\Pages($count,$num);
         $show       = $Page->show();
-        $product = $product_m->where(array('status'=>1,'cid'=>$tag['id']))->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $product = $product_m->where("cid in(".substr($cid,0,-1).") and status = 1")->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('count',$count);
         $show = str_replace('list/', 'list_', $show);
         $this->assign('page',$show);
@@ -49,6 +58,7 @@ class LinFeiController extends PublicController
      */
     protected function product($tag)
     {
+
         $id = str_replace('product_', '', pathinfo(__SELF__)['filename']);
         if($id){
             $where['id']  = $id;
@@ -79,12 +89,20 @@ class LinFeiController extends PublicController
      */
     protected function articlelist($tag)
     {
+        if(!$tag['id']){$this->_empty();}
         $article_m = M('article');
-        $count = $article_m->where(array('status'=>1,'cid'=>$tag['id']))->count();
-        $num = 5;
+        $class = M('classify');
+            $cid2 = $class->field("concat(id,',') as s")->where(array('pid'=>$tag['id'],'status'=>1))->select();//查询第二级
+            if($cid2){
+                     $cid3 = $class->field("concat(id,',') as s")->where("pid in(".substr($cid2[0]['s'],0,-1).") and status = 1")->select();//查询第二级
+            }
+            
+        $cid = $tag['id'].','.$cid2[0]['s'].$cid3[0]['s'];
+        $count = $article_m->where("cid in(".substr($cid,0,-1).") and status = 1")->count();
+        $num = 12;
         $Page       = new \Think\Pages($count,$num);
         $show       = $Page->show();
-        $article = $article_m->where(array('status'=>1,'cid'=>$tag['id']))->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $article = $article_m->where("cid in(".substr($cid,0,-1).") and status = 1")->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('count',$count);
         $show = str_replace('list/', 'list_', $show);
         $this->assign('page',$show);

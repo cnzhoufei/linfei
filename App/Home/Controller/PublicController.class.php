@@ -7,11 +7,12 @@ class PublicController extends Controller
    {
         //样式路径
         $this->assign('style','/Templates/pc/'.C('DEFAULT_THEME'));
-        $this->class1();
-        $this->class2();
+        $this->classtop();//顶部分类
+        $this->classbottom();//底部分类
+        $this->productclass();//产品分类
+        $this->articleclass();//文章分类
         $this->custom();
         $this->config();
-
         $this->recommended();
         $this->news();
         $this->selling();
@@ -49,16 +50,57 @@ class PublicController extends Controller
 
 
    /**
-    * 分类 顶部
+    * 产品分类 
     */
-   private function class1()
+   private function productclass()
    {
         $class_m = M('classify');
-        $class = $class_m->where(array('status'=>1,array('top'=>1),'layer'=>1))->select();
+        $class = $class_m->where(array('status'=>1,'layer'=>1,'type'=>'product'))->select();
         foreach($class as &$v){
-           $v[$v['id']] = $class2 = $class_m->where(array('status'=>1,array('top'=>1),'layer'=>2,'pid'=>$v['id']))->select();
+           $v['son'] = $class2 = $class_m->where(array('status'=>1,'layer'=>2,'pid'=>$v['id'],'type'=>'product'))->select();
            foreach($class2 as $k=>&$vv){
-                $v[$v['id']][$k][$vv['id']] = $class_m->where(array('status'=>1,array('top'=>1),'layer'=>3,'pid'=>$vv['id']))->select();
+                $v['son'][$k]['grandson'] = $class_m->where(array('status'=>1,'layer'=>3,'pid'=>$vv['id'],'type'=>'product'))->select();
+           }
+        }
+
+       $this->assign('productclass',$class);
+
+
+   }
+
+   /**
+    * 文章分类 
+    */
+   private function articleclass()
+   {
+
+        $class_m = M('classify');
+        $class = $class_m->where(array('status'=>1,'layer'=>1,'type'=>'article'))->select();
+        foreach($class as &$v){
+           $v['son'] = $class2 = $class_m->where(array('status'=>1,'layer'=>2,'pid'=>$v['id'],'type'=>'article'))->select();
+           foreach($class2 as $k=>&$vv){
+                $v['son'][$k]['grandson'] = $class_m->where(array('status'=>1,'layer'=>3,'pid'=>$vv['id'],'type'=>'article'))->select();
+           }
+        }
+
+       $this->assign('articleclass',$class);
+
+
+   }
+
+
+
+   /**
+    * 分类 顶部
+    */
+   private function classtop()
+   {
+        $class_m = M('classify');
+        $class = $class_m->where(array('status'=>1,'top'=>1,'layer'=>1))->select();
+        foreach($class as &$v){
+           $v['son'] = $class2 = $class_m->where(array('status'=>1,'top'=>1,'layer'=>2,'pid'=>$v['id']))->select();
+           foreach($class2 as $k=>&$vv){
+                $v['son'][$k]['grandson'] = $class_m->where(array('status'=>1,array('top'=>1),'layer'=>3,'pid'=>$vv['id']))->select();
            }
         }
        $this->assign('classtop',$class);
@@ -68,17 +110,17 @@ class PublicController extends Controller
    /**
     * 分类 底部
     */
-   private function class2()
+   private function classbottom()
    {
         $class_m = M('classify');
-        $class = $class_m->where(array('status'=>1,array('bottom'=>1),'layer'=>1))->select();
+        $class = $class_m->where(array('status'=>1,'bottom'=>1,'layer'=>1))->select();
         foreach($class as &$v){
-           $v[$v['id']] = $class2 = $class_m->where(array('status'=>1,array('bottom'=>1),'layer'=>2,'pid'=>$v['id']))->select();
+           $v['son'] = $class2 = $class_m->where(array('status'=>1,'bottom'=>1,'layer'=>2,'pid'=>$v['id']))->select();
            foreach($class2 as $k=>&$vv){
-                $v[$v['id']][$k][$vv['id']] = $class_m->where(array('status'=>1,array('bottom'=>1),'layer'=>3,'pid'=>$vv['id']))->select();
+                $v['son'][$k]['grandson'] = $class_m->where(array('status'=>1,array('bottom'=>1),'layer'=>3,'pid'=>$vv['id']))->select();
            }
         }
-       $this->assign('classtop',$class);
+       $this->assign('classbottom',$class);
    }
 
 

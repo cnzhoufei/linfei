@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>后台管理</title>
+		<link rel="shortcut icon" href="/App/Admin/View/style/images/linfei.ico" type="image/x-icon" />
+
+		<title>林飞CMS管理系统</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,7 +80,7 @@
 
 							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 								<li>
-									<a href="{:U('admin/settingperson')}">
+									<a href="Admin/User/editor.php?uid=<?php echo session('adminuser.id');?>">
 										<i class="icon-cog"></i>
 										个人设置
 									</a>
@@ -126,7 +128,7 @@
         </a>
 <?php echo ($ueditorinit); ?>
 
-        <div class="<?php echo ($navstyle['style1'][ $navnum ]); ?>" id="sidebar">
+        <div class="<?php echo ((isset($navstyle['style1'][ $navnum ]) && ($navstyle['style1'][ $navnum ] !== ""))?($navstyle['style1'][ $navnum ]):'sidebar menu-min'); ?>" id="sidebar">
 	<script type="text/javascript">
 		try {
 		            ace.settings.check('sidebar', 'fixed')
@@ -166,7 +168,7 @@
 		        var m2 = o1.find('a').html();
 	</script>
 	<div class="sidebar-collapse" id="sidebar-collapse">
-		<i class="<?php echo ($navstyle['style2'][ $navnum ]); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
+		<i class="<?php echo ((isset($navstyle['style2'][ $navnum ]) && ($navstyle['style2'][ $navnum ] !== ""))?($navstyle['style2'][ $navnum ]):'icon-double-angle-right'); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
 	</div>
 </div>
         <div class="main-content">            
@@ -284,7 +286,7 @@
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 列表模板名称 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <input type="text" name="tpl" id="tpl" value="<?php echo ($classify['tpl']); ?>.html" style="width:200px;" class="col-sm-12"/>
+                                                <input type="text" name="tpl" id="tpl" value="<?php echo ($classify['tpl']); if($classify['tpl']){echo '.html';}?>" style="width:200px;" class="col-sm-12"/>
                                                 &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="SelectTemplets('tpl')" >浏览</button>
                                         </div>
                                 </div>
@@ -293,9 +295,18 @@
                                         <label class="col-sm-2 control-label no-padding-right" for="form-field-1"> 文章模板名称 <span style="color:#f00;">*</span></label>
 
                                         <div class="col-sm-9">
-                                                <input type="text" name="tpl2" id="tpl2" value="<?php echo ($classify['tpl2']); ?>.html" style="width:200px;" class="col-sm-12"/>
+                                                <input type="text" name="tpl2" id="tpl2" value="<?php echo ($classify['tpl2']); if($classify['tpl2']){echo '.html';}?>" style="width:200px;" class="col-sm-12"/>
                                                 &nbsp;&nbsp;<button type="button" style="height:28px;" onclick="SelectTemplets('tpl2')" >浏览</button>
                                         </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">模型<span style="color:#f00;">*</span></label>
+                                    <div class="col-sm-9">
+                                    <select  class="col-sm-12" name="m">
+                                        <option value="" >模型表</option>
+                                       <?php if(is_array($m)): foreach($m as $key=>$vv): ?><option value="<?php echo ($vv); ?>" <?php if($classify['m'] == $vv){echo 'selected="selected"';}?>><?php echo ($vv); ?></option><?php endforeach; endif; ?>
+                                    </select>
+                                    </div>
                                 </div>
 
                                 <div class="form-group">

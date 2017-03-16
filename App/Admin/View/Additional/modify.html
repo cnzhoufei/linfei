@@ -1,0 +1,111 @@
+<include file="Public:header" />
+<div class="main-container" id="main-container">
+    <script type="text/javascript">
+        try {
+            ace.settings.check('main-container', 'fixed')
+        } catch (e) {
+        }
+    </script>
+
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+            <span class="menu-text"></span>
+        </a>
+        <include file="Public:left" />
+        <div class="main-content">
+            <include file="Public:nav" />
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->                        
+                        <form class="form-horizontal" role="form" action="" method="post" enctype="multipart/form-data">
+                        <!-- <input type="hidden" name="id" value="{{$url['id']}}"> -->
+
+<a style="display:inline-block;width:100px;height:28px;background:#6FB3E0;text-align:center;line-height:28px;color:#fff;margin-left:10px;float:right;" href="javascript:myadd();"><i class="icon-plus"></i>添加字段</a>
+                         <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">附加字段表名称<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="text" name="name" value="{{:$_GET['tab']}}"></div>
+                        </div>
+                        <foreach name="data" item="v" key="k">
+                        <div class="form-group"> 
+                        <label class="col-sm-2 control-label no-padding-right">{{$k+1}}字段信息<span style="color:#f00;">*</span></label>
+                        <div class="col-sm-9">
+                        <select onchange="leixing(this,{{$k+1}});" class="col-sm-3" name="{{$k+1}}[type]">
+                        <option value="0">字段类型</option>
+                        <option value="varchar(255)" <?php if($v['type'] == 'varchar(255)'){echo 'selected';}?>>varchar</option>
+                        <option value="char(50)" <?php if($v['type'] == 'char(50)'){echo 'selected';}?>>char</option>
+                        <option value="text" <?php if($v['type'] == 'text'){echo 'selected';}?>>多行文本</option>
+                        <option value="HTML" <?php if($v['type'] == 'HTML'){echo 'selected';}?>>HTML文本</option>
+                        <option value="int" <?php if($v['type'] == 'int'){echo 'selected';}?>>整数类型</option>
+                        <option value="float" <?php if($v['type'] == 'float'){echo 'selected';}?>>小数类型</option>
+                        <option value="time" <?php if($v['type'] == 'time'){echo 'selected';}?>>时间类型</option>
+                        <option value="images" <?php if($v['type'] == 'images'){echo 'selected';}?>>图片</option>
+                        <option value="option" <?php if($v['type'] == 'option'){echo 'selected';}?>>使用option下拉框</option>
+                        <option value="radio" <?php if($v['type'] == 'radio'){echo 'selected';}?>>使用radio选项卡</option>
+                        <option value="checkbox" <?php if($v['type'] == 'checkbox'){echo 'selected';}?>>Checkbox多选框</option>
+                        </select>
+                        <input type="text" name="{{$k+1}}[field]" class="col-sm-3" style="height:30px;" value="{{$v['field']}}" placeholder="字段名称：英文或拼音">
+                        <input class="col-sm-3" type="text" name="{{$k+1}}[instructions]" style="height:30px;" placeholder="字段说明" value="{{$v['instructions']}}">
+                        
+                        <input class="col-sm-3" type="text" name="{{$k+1}}[value]" style="height:30px;<php>if(!$v['value']){echo 'display:none;';}</php>" id="s{{$k+1}}" placeholder="值：用英文逗号隔开" value="{{$v['value']}}">
+                        </div></div>
+                        </foreach>
+                            <span id="text">
+
+                            </span>
+                            <div class="clearfix form-actions">
+                                <div class="col-md-offset-4 col-md-4">
+                                    <button class="btn btn-info btn-block" type="submit">
+                                        <i class="icon-ok bigger-110"></i>
+                                        确认
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- PAGE CONTENT ENDS -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.page-content -->
+        </div><!-- /.main-content -->
+    </div><!-- /.main-container-inner -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110"></i>
+    </a>
+</div><!-- /.main-container -->
+<script>
+    $(function () {
+        $('input[type="file"]').ace_file_input({
+            no_file: 'No File ...',
+            btn_choose: 'Choose',
+            btn_change: 'Change',
+            droppable: false,
+            onchange: null,
+            thumbnail: false //| true | large
+                    //whitelist:'gif|png|jpg|jpeg'
+                    //blacklist:'exe|php'
+                    //onchange:''
+                    //
+        });
+    });
+
+</script>
+<script type="text/javascript">
+
+function myadd()
+{
+    var i = $('.form-group').length;
+    var str = '<div class="form-group"> <label class="col-sm-2 control-label no-padding-right">'+i+'字段信息<span style="color:#f00;">*</span></label><div class="col-sm-9"><select onchange="leixing(this,'+i+');" class="col-sm-3" name="'+i+'[type]"><option value="0">字段类型</option><option value="varchar(255)">varchar</option><option value="char(50)">char</option><option value="text">多行文本</option><option value="text">HTML文本</option><option value="int">整数类型</option><option value="float">小数类型</option><option value="time">时间类型</option><option value="images">图片</option><option value="option">使用option下拉框</option><option value="radio">使用radio选项卡</option><option value="checkbox">Checkbox多选框</option></select><input type="text" name="'+i+'[field]" class="col-sm-3" style="height:30px;" placeholder="字段名称：英文或拼音"><input class="col-sm-3" type="text" name="'+i+'[instructions]" style="height:30px;" placeholder="字段说明"><input class="col-sm-3" type="text" name="'+i+'[value]" style="height:30px;display:none;" id="s'+i+'" placeholder="值：用英文逗号隔开"></div></div>';
+    $('#text').append(str);
+}
+
+
+function leixing(obj,i){
+    if($(obj).val() == 'option' || $(obj).val() == 'checkbox' || $(obj).val() == 'radio'){
+        $('#s'+i).css('display','');
+    }else{
+        $('#s'+i).css('display','none');
+
+    }
+}
+</script>
+<include file="Public:footer" />

@@ -1,0 +1,37 @@
+.seall{color:#3ca79e;font-size:12px;display: inline-block;padding-top:15px}.ldes{color:#929292;font-size:14px;font-family:"宋体";line-height:25px}.nfocus{position:relative}.nfocus
+.limg{width:674px;height:322px}.nfocus
+.m{width:270px;padding-right:20px;position:absolute;right:0;top:0;border-top:2px solid #575757}.nfocus
+.t{font-size:24px}.nfocus .t
+a{color:#222}.newslist{position:relative}.timelist{position:absolute;left:0;top:0;width:85px;border-top:3px solid #575757}.timelist
+li{color:#8a8a88;text-align:left;line-height:30px;font-size:12px}.timelist li
+a{color:#8a8a88}.timelist li a:hover,.timelist li
+a.cur{text-decoration:none;color:#333}.newsbox{width:860px;float:right}.newsbox
+.item{position:relative;height:202px;margin-bottom:75px}.newsbox .item
+img{position:absolute;left:0;top:0;width:328px;height:202px}.newsbox .item
+.m{width:492px;float:right}.newsbox
+.t{font-size:18px;color:#222}.newsbox .t
+a{color:#222}.newsbox .more
+i{width:23px;height:24px;background:url(...img/v2.0/laddmore.png) 0 1px no-repeat;position:absolute;left:0;top:0;cursor:pointer;-moz-transition:0.4s linear;-webkit-transition:0.4s linear;-o-transition:0.4s linear;transition:0.4s linear}.newsbox .more:hover
+i{-moz-transform:rotate(180deg);-webkit-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}.pagin{text-align:center}.pagin
+.inner{vertical-align:middle;display:inline-block}.pagin
+a{display:inline-block;margin:0
+5px;vertical-align:top;width:30px;height:30px;line-height:30px;color:#b9b7b7;text-align:center;background:url(../img/v2.0/listpagin.png) 0 0 no-repeat;position:relative;cursor:pointer}.pagin a:hover{text-decoration:none}.pagin a.num:hover,.pagin a.prev:hover,.pagin a.next:hover{background-position:0 -62px}.pagin
+a.cur{background-position:0 -31px;color:#fff;cursor:default}.pagin
+a.prev{position:relative}.pagin a
+i{display:block;width:8px;height:8px;background:url(../img/v2.0/listpagin.png) 0 0 no-repeat;position:absolute;top:11px}.pagin a.prev
+i{background-position:-2px -98px;left:10px}.pagin a.next
+i{background-position:-16px -98px;right:10px}.pagin
+span{font-size:16px;color:#bab8b8;letter-spacing:3px}.article{position:relative}.article
+.arl{width:712px;text-align:center}.article .arl
+img{max-width:710px}.article .arl
+.t{color:#222;font-size:30px;text-align:left}.article .arl
+.info{color:#9a9a9a;font-size:12px;font-family:"宋体";text-align:left}.article .arl .info
+span{padding-right:10px}.article .mbox
+p{color:#313131;font-size:14px;line-height:28px;padding-bottom:18px;font-family:"宋体";text-align:left}.rightbar{width:195px;padding:20px
+25px;border:1px
+solid #f2f2f2;background-color:#fcfcfc;position:absolute;right:0;top:0}.rightbar
+h3{color:#222;font-size:14px}.rightbar
+li{padding-top:12px;font-size:12px;background:url(../img/v2.0/tjdian.png) 0 20px no-repeat;padding-left:10px}.rightbar li
+a{color:#333;display:block;height:18px;line-height:18px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rightbar li
+a.seall{color:#3ca79e}.rightbar li
+p{font-family:"宋体";color:#929292;line-height:20px;padding-top:5px}

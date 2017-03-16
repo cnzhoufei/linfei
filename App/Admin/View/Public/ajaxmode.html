@@ -1,0 +1,62 @@
+    <!-- 自定义字段模型 -->
+    
+                            <foreach name="m" item="vv">
+                            <php>if($vv['type'] == 'option'){</php>
+                            <div class="form-group">
+                                    <label class="col-sm-2 control-label no-padding-right" for="form-field-1">{{$vv['instructions']}}<span style="color:#f00;">*</span></label>
+                                    <div class="col-sm-9">
+                                    <select  class="col-sm-12" name="model[{{$vv['field']}}]">
+                                    <php>$array = explode(',', $vv['value']);</php>
+                                        <foreach name="array" item="vvv" key="kkk">
+                                            <option value="{{$kkk}}" <?php if($mval[ $vv['field'] ] == $kkk){echo 'selected';}?>>{{$vvv}}</option>
+                                        </foreach>
+                                    </select>
+                                    </div>
+                            </div>
+                            <php>}elseif($vv['type'] == 'radio'){</php>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">{{$vv['instructions']}}<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <php>$array = explode(',', $vv['value']);</php>
+                                <foreach name="array" item="vvv" key="kkk">
+                                <label class="radio inline">
+                                  <input type="radio" style="width:15px;height:15px;" name="model[{{$vv['field']}}]" id="optionsRadios1" value="{{$kkk}}" <?php if($mval[ $vv['field'] ] == $kkk){echo 'checked';}?>>
+                                  {{$vvv}}
+                                </label>
+                                  &nbsp;&nbsp;&nbsp;
+                                </foreach>
+                                </div>
+                            </div>
+                            <php>}elseif($vv['type'] == 'checkbox'){</php>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">{{$vv['instructions']}}<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9">
+                                <php>$array = explode(',', $vv['value']);</php>
+                                <foreach name="array" item="vvv" key="kkk">
+                                <label class="checkbox inline">
+                                  <input type="checkbox" id="inlineCheckbox1" name="model[{{$vv['field']}}][]" <?php if(preg_match("/{$kkk}/", $mval[ $vv['field'] ])){echo 'checked';}?> value="{{$kkk}}"> {{$vvv}}
+                                </label>
+                                &nbsp;&nbsp;&nbsp;
+                                </foreach>
+                            </div>
+                            </div>
+                            <php>}elseif($vv['type'] == 'HTML'){</php>
+                                <div class="form-group">
+                                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1">{{$vv['instructions']}}<span style="color:#f00;">*</span></label>
+
+                                        <div class="col-sm-9">
+                                                <script id="{{$vv['field']}}" type="text" name="model[{{$vv['field']}}]" style="width:100%;height:500px;">{{$mval[ $vv['field'] ]}}</script>
+                                        </div>
+                                        <script>var ue = UE.getEditor("{{$vv['field']}}");</script>
+                            </div>
+                            
+                            <php>}else{</php>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label no-padding-right" for="form-field-1">{{$vv['instructions']}}<span style="color:#f00;">*</span></label>
+                                <div class="col-sm-9"><input class="col-sm-12" type="{{$vv['type']}}" name="model[{{$vv['field']}}]" value="{{$mval[ $vv['field'] ]}}"></div>
+                            </div>
+
+                            <php>}</php>
+
+                            </foreach>
+                                <!-- 自定义字段模型 -->

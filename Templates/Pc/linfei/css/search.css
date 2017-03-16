@@ -1,0 +1,53 @@
+.srTitle{height:70px;background:url(../img/v1.0/fcmypic.png) center top no-repeat;margin-top:30px}.searchList{width:1050px;overflow:hidden;zoom:1;padding-bottom:50px}.v2{float:left;margin-right:5px;margin-top:5px;display:inline-block;position:relative;overflow:hidden;zoom:1}.qynav{margin-bottom:40px;overflow:hidden;zoom:1;margin-top:30px}.qynav
+a{display:block;color:#666;font-family:"Microsoft Yahei";font-size:18px;float:left;width:141px;margin-left:1px;text-align:center;border-bottom:5px solid #3EC2FC;line-height:42px;padding-bottom:10px;position:relative}.qynav
+a.cur{cursor:default}.qynav
+a.nQb{border-color:#c9c9c9;color:#c9c9c9}.qynav
+a.nLb{border-color:#a4a7d5;color:#a4a7d5}.qynav
+a.nHy{border-color:#84bfe0;color:#84bfe0}.qynav
+a.nYg{border-color:#88d8db;color:#88d8db}.qynav
+a.nQts{border-color:#e5d499;color:#e5d499}.qynav
+a.nQt{border-color:#eead9b;color:#eead9b}.qynav
+a.nCsj{border-color:#e99fcc;color:#e99fcc}.qynav a:hover{text-decoration:none}.qypic{width:859px;height:457px;margin-left:60px;margin-bottom:30px;background:url(../img/v1.0/3darea.png) 0 0 no-repeat;position:relative;margin-top:30px}.qynav a
+i{display:block;position:absolute;width:15px;height:10px;left:62px;bottom:0;display:none}.qynav a.nQb
+i{background:url(../img/v1.0/mbg1.png) -257px -126px no-repeat}.qynav a.nLb
+i{background:url(../img/v1.0/mbg1.png) -257px -143px no-repeat}.qynav a.nHy
+i{background:url(../img/v1.0/mbg1.png) -257px -163px no-repeat}.qynav a.nYg
+i{background:url(../img/v1.0/mbg1.png) -257px -182px no-repeat}.qynav a.nQts
+i{background:url(../img/v1.0/mbg1.png) -258px -200px no-repeat}.qynav a.nQt
+i{background:url(../img/v1.0/mbg1.png) -258px -219px no-repeat}.qynav a.nCsj
+i{background:url(../img/v1.0/mbg1.png) -258px -240px no-repeat}.qynav a:hover i,.qynav a.cur
+i{display:block}.qypic
+a{display:block;position:absolute;background:url(../img/v1.0/tm.png) 0 0 repeat;cursor:pointer}.qypic
+a.wz01{width:98px;height:66px;left:760px;top:375px}.qypic a.wz01
+i{background-position:0 0}.qypic
+a.wz02{width:78px;height:125px;left:260px;top:46px}.qypic a.wz02
+i{background-position:-2px -69px}.qypic
+a.wz03{width:111px;height:124px;left:725px;top:196px}.qypic a.wz03
+i{background-position:-3px -195px}.qypic
+a.wz04{width:85px;height:124px;left:512px;top:53px}.qypic a.wz04
+i{background-position:-129px -167px}.qypic
+a.wz05{width:129px;height:79px;left:465px;top:351px}.qypic a.wz05
+i{background-position:-94px -70px}.qypic
+a.wz06{width:129px;height:60px;left:40px;top:239px}.qypic a.wz06
+i{background-position:-106px -5px}.qypic
+a.wz07{width:72px;height:98px;left:193px;top:50px}.qypic a.wz07
+i{background-position:-11px -338px}.qypic
+a.wz08{width:55px;height:138px;left:300px;top:190px}.qypic a.wz08
+i{background-position:-132px -302px}.qypic
+a.wz09{width:88px;height:121px;left:411px;top:50px}.qypic a.wz09
+i{background-position:0px -460px}.qypic
+a.wz10{width:100px;height:78px;left:153px;top:348px}.qypic a.wz10
+i{background-position:-88px -443px}.qypic
+a.wz11{width:175px;height:32px;left:500px;top:20px}.qypic a.wz11
+i{background-position:-2px -588px}.qypic a
+i{background:url(../img/v1.0/pdtcurbg.png) 0 0 no-repeat;display:block;width:100%;height:100%;display:none}.qypic
+a.cur{cursor:default}.qypic a.cur
+i{display:block}.guide{position:fixed;right:30px;overflow:hidden;zoom:1;bottom:40%;height:135px}.guide
+a{display:block;width:61px;height:64px;text-align:center}.guide a:hover{text-decoration:none}.guide a
+i{position:absolute;top:3px;display:block;width:35px;height:34px;background:url(../img/v1.0/mbg1.png) 0 0 no-repeat;margin-left:15px}.guide
+b{color:#fff;display:block;padding-top:38px}.guide .g-app
+b{font-family:"Microsoft Yahei";font-size:14px}.guide .g-toTop
+b{font-family:"Arial";font-size:20px;font-weight:normal;padding-top:32px}.guide a.g-app{background-color:#f54f73}.guide a.g-toTop{background-color:#8cd0cb;display:none;margin-top:5px}.guide a.g-toTop:hover{background-color:#5aa5a0}.guide a.g-app:hover{background-color:#e74669}.guide a.g-app
+i{background-position:-253px -42px}.guide a.g-toTop
+i{background-position:-254px -90px;top:75px}.view
+a.pro_show{width:84px;height:84px;display:inline-block;text-decoration:none;background:url(../img/v1.0/product_arrow.png) 0 0 no-repeat;;text-transform:uppercase;margin-top:78px}

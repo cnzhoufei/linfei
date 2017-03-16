@@ -10,7 +10,7 @@ class CommonController extends Controller
     	$this->assign('url',$_SERVER['REDIRECT_URL']);
         $this->assign('navstyle',navstyle());
         $this->navsnum();
-        // $this->permissions();//权限
+        $this->permissions();//权限
 
     }
 
@@ -63,6 +63,38 @@ class CommonController extends Controller
         }
     }
 
+
+
+    //异步加载模型字段
+    public function ajaxmodel()
+    {
+        if(IS_AJAX){
+
+            //类容模型
+            $cid = I('cid');
+            $aid = I('aid');
+            if($cid){
+                $class = M('classify');
+                $m_ = $class->where(array('id'=>$cid))->getField('m');
+                $model = M("{$m_}s");
+                $m = $model->select();
+                $this->assign('m',$m);
+                if($aid){
+                     $model2 = M("{$m_}");
+                    $mval = $model2->where(array('aid'=>$aid))->find();
+                    $this->assign('mval',$mval);
+                }
+            }
+        }else{
+            $this->_empty();
+        }
+        if($m){
+            $this->display('Public/ajaxmode');
+            
+        }else{
+            $this->ajaxReturn(null);
+        }
+    }
 
     
 }

@@ -1,0 +1,114 @@
+<div class="header">
+  <div class="header_top" style="width:1000px;">
+      <div class="logo"><a href="http://{{:$_SERVER['HTTP_HOST']}}" title="{{$config['name']}}">
+      <img src="{{$config['logo']}}" alt="{{$config['name']}}"></a></div>
+                
+   <div class="header_r">
+      <div class="ssuo">
+    <form action="/search.asp" method="get">
+      <input value="请输入关键字..." name="keys" class="ssuoa" onclick="if(this.value=='请输入关键字...'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字...';}" type="text">
+      <input value="" class="ssuob" type="submit">
+    </form>
+        <div style="float:right;">
+                       <span><img src="{{$style}}/nav/index_08.png" alt="珠海办公家具,广东办公家具,个性办公家具,高端办公家具厂家,广州办公家具厂,广州办公家具公司&quot;">服务热线:{{$custom['tel']}}</span>
+                       </div>
+      </div>
+      <div class="clear"></div>
+      
+     <div class="xiangp_contentRX">
+ <script>
+function settab(n){
+  tli=document.getElementById('tits').getElementsByTagName("li");
+  for(i=0;i<tli.length;i++){
+    k=i+1
+    if (k==n ){
+      tli[i].className="cur";
+      document.getElementById('con_'+k).style.display=""; 
+    }else{
+      tli[i].className="";
+      document.getElementById('con_'+k).style.display="none";
+    }
+  }
+}
+function mOut(){
+  tli=document.getElementById('tits').getElementsByTagName("li");
+  for(i=0;i<tli.length;i++){
+    k=i+1
+        tli[i].className="";
+      document.getElementById('con_'+k).style.display="none";
+  }
+ }
+</script>
+      
+      <div class="nav" id="tits">
+        <ul>
+    
+             <li onmouseover="settab(1)" class=""><a href="http://{{$_SERVER['HTTP_HOST']}}">{{$config['home']}}</a></li>
+            <foreach name="classtop" item="v" key="k">
+             <li onmouseover="settab({{$k+2}})" class=""><a href="{{$v['url']}}">{{$v['name']}}</a></li>
+            </foreach>
+             <li onmouseover="settab(100)"><a href="" class="topYyBtn">免费量尺</a></li>
+
+
+             <div class="clear"></div>
+          </ul>
+          <div class="cons " id="con_1" style="display: none;"></div>
+        <foreach name="classtop" item="vv" key="kk">
+          <div class="cons " id="con_{{$kk+2}}" style="display: none;" onmouseover="settab({{$kk+2}})" onmouseout="mOut(this)">
+          
+          <div class="child_nav ">
+          
+             <div class="child_navLeft{{$kk+2}}">
+                 <h3 title="{{$vv['title']}}">{{$vv['name']}}</h3>
+                 <div class="child_navLeftB child_navLeftB{{$kk+2}}">
+                    <p>{{$vv['text']}}</p>
+                 </div>
+             </div>
+       
+             <div class="child_navRihgt_pr">
+       
+        <foreach name="vv['son']" item="vvv" key="kkk">
+                <dl>
+                    <a title="{{$vvv['title']}}" href="{{$vvv['url']}}"><dt>{{$vvv['name']}}</dt></a>
+          
+                        <foreach name="vvv['grandson']" item="vvvv">
+                        <dd><a title="{{$vvvv['title']}}" href="{{$vvvv['url']}}">&gt; {{$vvvv['name']}}</a></dd>
+                        </foreach>
+          
+                </dl>
+          </foreach>
+                   <div class="clear"></div> 
+             </div>
+             <div class="clear"></div>
+          </div>
+          </div>
+          </foreach>
+
+
+          <div class="cons " id="con_100 " style="display:none;">
+          
+          <div class="child_nav ">
+           
+             <div class="child_navLeft">
+                 <h3>免费量尺</h3>
+                 <div class="child_navLeftB">
+                   
+                 </div>
+             </div>
+       
+             <div class="child_navRihgt">
+             
+                   <div class="clear"></div> 
+             </div>
+             <div class="clear"></div>
+          </div>
+          </div>
+
+ 
+ 
+      </div>
+   </div>
+   <div class="clear" onmouseover="mOut(this)"></div>
+</div>
+  </div>
+</div>

@@ -137,7 +137,9 @@ class UserController extends CommonController
                 $this->assign('group',$group2['name']);
 
             }
-            $this->assign('adminmenu',adminmenu());
+            
+            $this->assign('url','/Admin/User/grouplist.php');
+            $this->assign('adminmenu',permissions());
             $this->display();
         }
     }

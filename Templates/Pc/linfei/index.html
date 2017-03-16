@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta charset="utf-8" /> 
+  <title>{{$config['title']}}</title> 
+  <meta name="keywords" content="{{$config['keywords']}}" /> 
+  <meta name="description" content="{{$config['description']}}" /> 
+<include file="./header" />
+  <!--顶area end--> 
+  <!--焦点图--> 
+  <div style="width:100%;clear:both;height:110px;"></div>
+  <div class="focusarea"> 
+   <div class="focusarea-inner"> 
+    <div class="rsOverflow"> 
+     <div class="rsContainer"> 
+
+
+
+<!-- 轮播图 -->
+  <foreach name="pic" item="vv" key="k">
+      <div class="rsSlide" style="<?php if($k == 0){echo 'display: block; opacity: 0.84;';}else{echo 'display: none; opacity: 0;';}?> "> 
+       <div class="rsContent"> 
+        <a href="{{$vv['url']}}" title="{{$vv['name']}}"> 
+        <img src="{{:homeimg($vv['id'],1920,452,'pic')}}" class="setpbg" /> </a> 
+       </div> 
+      </div> 
+  </foreach>
+
+
+     </div> 
+     <div class="rsNav"> 
+      <!--<div class="rsNavItem"><span></span></div>--> 
+      <div class="rsNavItem cur">
+       <span></span>
+      </div> 
+      <div class="rsNavItem">
+       <span></span>
+      </div> 
+      <div class="rsNavItem">
+       <span></span>
+      </div> 
+     </div> 
+     <!--左箭头--> 
+     <div class="rsArrow rsArrowLeft"> 
+      <div class="rsArrowIcn"></div> 
+      <div class="bg"></div> 
+     </div> 
+     <!--右箭头--> 
+     <div class="rsArrow rsArrowRight"> 
+      <div class="rsArrowIcn"></div> 
+      <div class="bg"></div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <!--焦点图 end--> 
+  <!--服务项--> 
+  <div class="areaT1"> 
+   <div class="wrap tuijianList"> 
+    <h2 class="itl01 tjcp"></h2> 
+    <div class="inner clearfix mt20"> 
+
+    <!-- 推荐产品 -->
+    <foreach name="recommended" item="re_v">
+     <a class="item" title="{{$re_v['title']}}" href="{{$re_v['url']}}"> <img src="{{:homeimg($re_v['id'],323,224,'product')}}" alt="{{$re_v['title']}}" /> 
+     <span class="tjTitle" style="line-height: 50px;"> </span> 
+     </foreach>
+    </div> 
+    <adv name="主页更多产品链接" type="2" id="2"  item="gd" >
+    <a class="moreBtn mt30" <?php if($gd['blank']){echo 'target="_blank"';}?> href="{{$gd['url']}}">更多产品</a> 
+    </adv>
+   </div> 
+  </div> 
+  <!--推荐方案--> 
+  <div class="areaT1"> 
+   <div class="planDot" id="planDot1"></div> 
+   <div class="planDot" id="planDot2"></div> 
+   <div class="wrap falist" style=" width:1100px;"> 
+    <h2 class="itl01 tjfa"></h2> 
+    <div class="inner"> 
+    
+     
+     <div class="clearfix grp2"> 
+      <div id="plan" style="width: 1000px; height: 385px;margin:0 auto"> 
+       <div class="flexslider"> 
+        <div class="flex-viewport" style="overflow: hidden; position: relative;">
+         <ul class="slides" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-3000px, 0px, 0px);">
+
+    <adv name="推荐方案" type="1" id="1" width="1000" height="350" item="vv" key="k">
+          <li class="clone" aria-hidden="true" style="width: 1000px; float: left; display: block;">
+          <a href="{{$vv['url']}}" <?php if($vv['blank']){echo 'target="_blank"';}?> title="{{$vv['title']}}"><img src="{{:homeimg($vv['id'],1000,350,'adv')}}" width="1000" draggable="false" /></a></li> 
+    </adv>
+
+
+         </ul>
+        </div>
+        <ol class="flex-control-nav flex-control-paging">
+    <adv name="推荐方案" type="1" id="1" width="1000" height="350" item="vv" key="k">
+         <!-- <li><a class="">3</a></li> -->
+         <li><a class="flex-active">{{$k+1}}</a></li>
+    </adv>
+        </ol>
+        <ul class="flex-direction-nav">
+         <li><a class="flex-prev" href="http://www.gzlingmu.com/index.php#"></a></li>
+         <li><a class="flex-next" href="http://www.gzlingmu.com/index.php#"></a></li>
+        </ul>
+       </div> 
+      </div> 
+     </div> 
+     <div class="clearfix advatage" style="padding-top: 35px; padding-left: 50px;"> 
+     
+    <adv name="环保品质,结实耐用,高性价比" type="2" id="3" item="vv_3" key="kk_3">
+      <div class="adItem"> 
+       <div class="adTitle" id="adTitle{{$kk_3+1}}">
+        {{$vv_3['title']}}
+       </div> 
+       <p>{{$vv_3['text']}}</p> 
+      </div> 
+      </adv>
+      <div class="adItem" id="adItem4"> 
+      <adv name="环保品质,结实耐用,高性价比 后的图片" type="1" id="4" item="vv_4" key="kk_4">
+       <img src="{{:homeimg($vv_4['id'],203,203,'adv')}}" alt="{{$vv_4['title']}}" /> 
+      </adv>
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+   <!--推荐方案 end--> 
+   <!--典型案例--> 
+   <div class="areaT1 mt30"> 
+    <div class="wrap anli"> 
+     <h2 class="itl01 dxal" id="dianxinTitle"></h2> 
+    </div> 
+    <ul id="sucase" class="grid-accordion" style="height: 393.125px; width: 1903px;">
+
+
+ <article classid="4" item="cv" limit="5" key="key" attr='recommended'>
+<li class="caseItem">
+    <a href="{{$cv['url']}}" <?php if($cv['blank']){echo 'target="_blank"';}?> >
+        <img src="{{:homeimg($cv['id'],720,450,'article')}}" style="width: 720px;height: 450px" alt="{{:getsubstr($cv['title'],0,30)}}">
+    </a>
+    <div class="caption">
+        <h3>{{:getsubstr($cv['title'],0,30)}}</h3>
+    
+    </div>
+</li>
+</article>
+    </ul> 
+    <div class="dxbar"> 
+     <div class="inner clearfix">
+      想参考更多的优秀案例么？
+      <column item="v" id='4'>
+      <a href="{{$v['url']}}" <?php if($v['blank']){echo 'target="_blank"';}?> class="moreBtn btn_white">更多案例</a>
+  </column>
+     </div> 
+    </div> 
+    <!--
+    <div class="wrap anli">
+        <h2 class="itl01 dxal"></h2>
+        <div class="inner clearfix">
+            <ul>
+
+            </ul>
+        </div>
+
+    </div>
+    --> 
+   </div> 
+   <!--典型案例 end--> 
+   <!--关于我们--> 
+   <div class="areaT1"> 
+    <div class="wrap ourgd"> 
+     <h3 class="fl greenlogo">
+     <adv name="更多案例下方图片" id="5" item="vv_5" type="1">
+     <img src="{{$vv_5['img']}}" alt="{{$vv_5['title']}}" />
+     </adv>
+     </h3> 
+     <adv name="更多案例下方文字" id="6" type="2" item="vv_6">
+     <div class="fdrs fr"> 
+      <h3 class="t"><strong>{{$vv_6['title']}}</strong></h3> 
+      <p class="pag">{{$vv_6['text']}}</p> 
+     </div> 
+     </adv>
+    </div> 
+   </div> 
+   <!--关于我们 end--> 
+   <!--特色服务--> 
+   <div class="areaT8 tbbor"> 
+    <div class="wrap servicelist" style="width:1100px"> 
+     <h2 class="itl01 tsfw"></h2> 
+     <div class="itmbox mt20 pb35 clearfix" style="width:1100px"> 
+
+
+<adv name="特色服务" id='7' type="1" item="vv_7">
+      <a href="{{$vv_7['url']}}" <?php if($vv_7['blank']){echo 'target="_blank"';}?>> 
+       <div class="sgctn"> 
+        <img src="{{$vv_7['img']}}" /> 
+        <h3 class="t">{{$vv_7['title']}}</h3> 
+        <p class="pag"><span style="color: rgb(162, 161, 161); font-family: 宋体; line-height: 25px; widows: auto;">{{$vv_7['other']}}</span></p> 
+       </div> </a> 
+</adv>
+
+
+      
+     </div> 
+    </div> 
+    <!--特色服务 end--> 
+    <div class="areaT1"> 
+     <div class="wrap ourClient"> 
+      <h2 class="itl01 yl"> </h2> 
+      <div class="clientInner"> 
+       <div class="slider autoplay"> 
+       <adv name="合作伙伴" id="8" type="1" item="vv_8">
+        <a href="{{$vv_8['url']}}" <?php if($vv_8['blank']){echo 'target="_blank"';}?>> 
+        <img src="{{:homeimg($vv_8['id'],148,47,'adv')}}" alt="{{$vv_8['title']}}" /> </a> 
+      </adv>
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   <include file="./footer" />

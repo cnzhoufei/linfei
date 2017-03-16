@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>后台管理</title>
+		<link rel="shortcut icon" href="/App/Admin/View/style/images/linfei.ico" type="image/x-icon" />
+
+		<title>林飞CMS管理系统</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,7 +80,7 @@
 
 							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 								<li>
-									<a href="{:U('admin/settingperson')}">
+									<a href="Admin/User/editor.php?uid=<?php echo session('adminuser.id');?>">
 										<i class="icon-cog"></i>
 										个人设置
 									</a>
@@ -125,7 +127,7 @@
             <span class="menu-text"></span>
         </a>
 <?php echo ($ueditorinit); ?>
-        <div class="<?php echo ($navstyle['style1'][ $navnum ]); ?>" id="sidebar">
+        <div class="<?php echo ((isset($navstyle['style1'][ $navnum ]) && ($navstyle['style1'][ $navnum ] !== ""))?($navstyle['style1'][ $navnum ]):'sidebar menu-min'); ?>" id="sidebar">
 	<script type="text/javascript">
 		try {
 		            ace.settings.check('sidebar', 'fixed')
@@ -165,7 +167,7 @@
 		        var m2 = o1.find('a').html();
 	</script>
 	<div class="sidebar-collapse" id="sidebar-collapse">
-		<i class="<?php echo ($navstyle['style2'][ $navnum ]); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
+		<i class="<?php echo ((isset($navstyle['style2'][ $navnum ]) && ($navstyle['style2'][ $navnum ] !== ""))?($navstyle['style2'][ $navnum ]):'icon-double-angle-right'); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
 	</div>
 </div>
         <div class="main-content">
@@ -226,12 +228,14 @@
                            <div class="form-group">
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">分类<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
-                                    <select  class="col-sm-12" name="cid" id="types" onchange="changesort($(this).val())">
+                                    <select  class="col-sm-12" name="cid" id="types" onchange="changesort($(this).val());ajaxmodel($(this).val());">
                                         <?php if(is_array($classifys)): foreach($classifys as $key=>$vv): ?><option  <?php if($article['cid'] == $vv['id'])echo 'selected'; ?> value="<?php echo ($vv["id"]); ?>"><?php echo ($vv["name"]); ?></option><?php endforeach; endif; ?>
                                     </select>
                                     </div>
                                 </div>
-                            
+                                <!-- 自定义字段模型 -->
+                                <zhoufei></zhoufei>
+                                <!-- 自定义字段模型 -->
                             <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">上架<span style="color:#f00;">*</span></label>
                                 <div class="col-sm-9">
@@ -246,7 +250,7 @@
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">自定义名称<span style="color:#f00;"></span></label>
                                 <div class="col-sm-9">
                                     <label>
-                                        <input name="custom"  type="text" />
+                                        <input name="custom"  type="text" value="<?php echo ($article['custom']); ?>" />
                                         <span class="lbl"></span>
                                     </label>
                                 </div>
@@ -399,3 +403,24 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+function ajaxmodel(cid)
+{
+    $('zhoufei').load('/Admin/Common/ajaxmodel.php', {'cid':cid} ,function(res){
+        
+    })
+}
+
+if("<?php echo ($article['cid']); ?>"){
+ $('zhoufei').load('/Admin/Common/ajaxmodel.php', {'cid':"<?php echo ($article['cid']); ?>", 'aid':"<?php echo ($article['id']); ?>"} ,function(res){})
+    
+}else{
+$('zhoufei').load('/Admin/Common/ajaxmodel.php', {'cid':"<?php echo ($classifys[0]['id']); ?>"} ,function(res){})
+    
+
+}
+        
+
+
+</script>

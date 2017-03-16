@@ -6,8 +6,7 @@ return array(
 
 
 
-   'LOAD_EXT_CONFIG' => 'emailconfig',    // 加载邮件配置文件
-   'LOAD_EXT_CONFIG' => 'dbconfig',    // 加载邮件配置文件
+   'LOAD_EXT_CONFIG' => 'dbconfig,emailconfig',    // 加载邮件配置文件
    'DEFAULT_MODULE'         =>      'Home', 
    'DEFAULT_CONTROLLER'     =>      'Index',
    'DEFAULT_ACTION'         =>      'index',                      // 默认操作名称

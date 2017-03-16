@@ -46,13 +46,17 @@
                            <div class="form-group">
                                     <label class="col-sm-2 control-label no-padding-right" for="form-field-1">分类<span style="color:#f00;">*</span></label>
                                     <div class="col-sm-9">
-                                    <select  class="col-sm-12" name="cid" id="types" onchange="changesort($(this).val())">
+                                    <select  class="col-sm-12" name="cid" id="types" onchange="changesort($(this).val());ajaxmodel($(this).val());">
                                         <foreach name="classifys" item="vv">
                                             <option  <php>if($product['cid'] == $vv['id'])echo 'selected';</php> value="{{$vv.id}}">{{$vv.name}}</option>
                                         </foreach>
                                     </select>
                                     </div>
                                 </div>
+
+                            <!-- 自定义字段模型 -->
+                                <zhoufei></zhoufei>
+                            <!-- 自定义字段模型 -->
                             
                             <div class="form-group">
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">上架<span style="color:#f00;">*</span></label>
@@ -68,7 +72,7 @@
                                 <label class="col-sm-2 control-label no-padding-right" for="form-field-1">自定义名称<span style="color:#f00;"></span></label>
                                 <div class="col-sm-9">
                                     <label>
-                                        <input name="custom"  type="text" />
+                                        <input name="custom"  type="text" value="{{$product['custom']}}" />
                                         <span class="lbl"></span>
                                     </label>
                                 </div>
@@ -127,3 +131,25 @@
 </div><!-- /.main-container -->
 
 <include file="Public:footer" />
+
+
+<script type="text/javascript">
+function ajaxmodel(cid)
+{
+    $('zhoufei').load('/Admin/Common/ajaxmodel.php', {'cid':cid} ,function(res){
+        
+    })
+}
+
+if("{{$product['cid']}}"){
+ $('zhoufei').load('/Admin/Common/ajaxmodel.php', {'cid':"{{$product['cid']}}", 'aid':"{{$product['id']}}"} ,function(res){})
+    
+}else{
+$('zhoufei').load('/Admin/Common/ajaxmodel.php', {'cid':"{{$classifys[0]['id']}}"} ,function(res){})
+    
+
+}
+        
+
+
+</script> 

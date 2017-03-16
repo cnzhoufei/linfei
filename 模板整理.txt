@@ -1,6 +1,13 @@
+{{$style}} 样式路径  {{$style}}/js/js.css
+{{$config['title']}}主页标题
+{{$config['keywords']}}主页关键词
+{{$description['keywords']}}主页描述
 
-	调取指定栏目下的产品 id='栏目id 可以多个用逗号隔开(1或多个1,2,3)' item="用于取值的变量" limit="调取多少条(5或1,5)" key='自增key'
- 	  <product id="24" item="vvv" number="5" key="key">
+{{$custom['tel']}} 自定义信息调取
+
+
+	调取指定栏目下的产品 classid='栏目id 可以多个用逗号隔开(1或多个1,2,3)' item="用于取值的变量" limit="调取多少条(5或1,5)" key='自增key' attr="recommended(推荐)new(新品)selling(热卖)"
+ 	  <product classid="24" item="vvv" limit="5" key="key" attr='new'>
 			<div class="pic"><a href="#" target="_blank">
       		<img src="{{:homeimg($vvv['id'],470,592,'product')}}" alt="{{$vvv['title']}}"></a>
 			           <div class="pic-cn"><a href="#" target="_blank">{{:getsubstr($vvv['title'],0,25)}}</a></div>
@@ -8,7 +15,32 @@
       </product>
 
 
+  调取指定栏目下的文章 classid='栏目id 可以多个用逗号隔开(1或多个1,2,3)' item="用于取值的变量" limit="调取多少条(5或1,5)" key='自增key' attr="recommended(推荐)recommendeds(特荐)headlines(头条)"
+    <article classid="24" item="vvv" limit="5" key="key" attr='new'>
+      <div class="pic"><a href="#" target="_blank">
+          <img src="{{:homeimg($vvv['id'],470,592,'article')}}" alt="{{$vvv['title']}}"></a>
+                 <div class="pic-cn"><a href="#" target="_blank">{{:getsubstr($vvv['title'],0,25)}}</a></div>
+      </div>
+      </article>
+
+
       获取指定栏目数据
   <column item="v" id='26'>
-  {{$v['name']}}<a href="{{$v['url_name']}}" target="_blank">更多 ></a>
+  {{$v['name']}}<a href="{{$v['url']}}" target="_blank">更多 ></a>
   </column>
+
+335*214
+  轮播图
+  <foreach name="pic" item="vv">
+              <li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300">
+                <img src="{{:homeimg($vv['id'],1920,452,'pic')}}" alt="{{$vv['name']}}" onclick="window.location.href='{{$vv['url']}}'" style="cursor:pointer;" />                  
+              </li>
+            </foreach>
+
+
+
+广告调用 id="广告位id" type='1图片 2文本'  <?php if($vv['blank']){echo 'target="_blank"';}?>是否新窗口打开
+ <adv name="主页第一个广告" type="1" id="1" width="1000" height="350" item="vv" key="k">
+          <li class="clone" aria-hidden="true" style="width: 1000px; float: left; display: block;">
+          <a href="{{$vv['url']}}" <?php if($vv['blank']){echo 'target="_blank"';}?> title="{{$vv['title']}}"><img src="{{:homeimg($vv['id'],1000,350,'adv')}}" width="1000" draggable="false" /></a></li> 
+</adv>

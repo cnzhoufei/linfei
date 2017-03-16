@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>后台管理</title>
+		<link rel="shortcut icon" href="/App/Admin/View/style/images/linfei.ico" type="image/x-icon" />
+
+		<title>林飞CMS管理系统</title>
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -78,7 +80,7 @@
 
 							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
 								<li>
-									<a href="{:U('admin/settingperson')}">
+									<a href="Admin/User/editor.php?uid=<?php echo session('adminuser.id');?>">
 										<i class="icon-cog"></i>
 										个人设置
 									</a>
@@ -127,7 +129,7 @@
         <a class="menu-toggler" id="menu-toggler" href="#">
             <span class="menu-text"></span>
         </a>
-        <div class="<?php echo ($navstyle['style1'][ $navnum ]); ?>" id="sidebar">
+        <div class="<?php echo ((isset($navstyle['style1'][ $navnum ]) && ($navstyle['style1'][ $navnum ] !== ""))?($navstyle['style1'][ $navnum ]):'sidebar menu-min'); ?>" id="sidebar">
 	<script type="text/javascript">
 		try {
 		            ace.settings.check('sidebar', 'fixed')
@@ -167,7 +169,7 @@
 		        var m2 = o1.find('a').html();
 	</script>
 	<div class="sidebar-collapse" id="sidebar-collapse">
-		<i class="<?php echo ($navstyle['style2'][ $navnum ]); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
+		<i class="<?php echo ((isset($navstyle['style2'][ $navnum ]) && ($navstyle['style2'][ $navnum ] !== ""))?($navstyle['style2'][ $navnum ]):'icon-double-angle-right'); ?>" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right" onclick="nav('<?php echo U('Config/navstyle');?>','<?php echo ($navnum); ?>')"></i>
 	</div>
 </div>
         <div class="main-content">            

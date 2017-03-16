@@ -1,0 +1,285 @@
+ <div class="areaT3"> 
+     <div class="wrap footer"> 
+      <div class="footerItem" id="product"> 
+       <h3>Product</h3> 
+       <ul> 
+        <foreach name="productclass" item="product_v">
+        <li><a href="{{$product_v['url']}}">{{$product_v['name']}}</a></li>
+        <foreach name="product_v['son']" item="product_v2">
+        <li><a href="{{$product_v2['url']}}">{{$product_v2['name']}}</a></li>
+        <foreach name="product_v2['grandson']" item="product_v3">
+        <li><a href="{{$product_v3['url']}}">{{$product_v3['name']}}</a></li>
+         </foreach>
+         </foreach>
+       </foreach>
+       </ul> 
+      </div> 
+      <div class="footerItem" id="information"> 
+       <h3>Information</h3> 
+       <ul> 
+       <foreach name="articleclass" item="article_v">
+        <li><a href="{{$article_v['url']}}">{{$article_v['name']}}</a></li>
+        <foreach name="article_v['son']" item="article_v2">
+        <li><a href="{{$article_v2['url']}}">{{$article_v2['name']}}</a></li>
+        <foreach name="article_v2['grandson']" item="article_v3">
+        <li><a href="{{$article_v3['url']}}">{{$article_v3['name']}}</a></li>
+         </foreach>
+         </foreach>
+       </foreach>
+        
+       </ul> 
+      </div> 
+      <div class="footerItem" id="contact"> 
+       <h3>Contact us</h3> 
+       <p> </p>
+       <p><span style="font-size:16px;">{{$config['name']}}</span><br /> 
+       <span style="color:#66ffff;">
+       <span style="font-size:16px;">电话：{{$custom['bottomtel']}}</span></span></p> 
+       <p><span style="font-size:16px;">地址：
+       <span style="font-size:12px;">{{$config['address']}}</span></span></p> 
+       <p></p> 
+      </div> 
+
+      <adv name="关注微信" id="9" item="vv_9" type="1">
+      <div class="footerItem" id="follow"> 
+       <h3>{{$vv_9['title']}}</h3> 
+       <div class="followArea"> 
+        <div class="followItem" id="wx"> 
+         <div class="wxewmBox" style="display: none;"> 
+          <img src="{{$vv_9['img']}}" alt="{{$vv_9['other']}}" /> 
+         </div> 
+         <a id="forwx"></a> 
+         <p>{{$vv_9['other']}}</p> 
+        </div> 
+       
+       </div> 
+      </div> 
+      </adv>
+
+     </div> 
+    </div> 
+    <div class="areaT31"> 
+     <p>{{$config['copyright']}}<span>{{$config['record']}}</span></p>
+    </div> 
+    <script src="{{$style}}/js/jquery-1.8.0.min.js"></script> 
+    <script src="{{$style}}/js/mmj_global-min.js"></script> 
+    <script src="{{$style}}/js/move-min.js"></script> 
+    <script src="{{$style}}/js/slick-min.js"></script> 
+    <script src="{{$style}}/js/slideMove-min.js"></script> 
+    <script src="{{$style}}/js/jquery.gridAccordition.min.js"></script> 
+    <script src="{{$style}}/js/index-20141102.min.js"></script> 
+    <script src="{{$style}}/js/jquery.flexslider-min.js"></script> 
+    <script>
+$(function(){
+  $('.flexslider').flexslider({
+    animation: "slide", 
+    slideshow: true, 
+    slideshowSpeed: 7000,             
+    directionNav: true, //左右控制按钮
+    controlNav: true,   //B控制菜单
+  });
+});
+</script> 
+    <input type="hidden" id="Count" value="0" /> 
+    <input type="hidden" id="CurrentNum" value="0" /> 
+    <input type="hidden" id="getUrl" val="" value="service/product/plist?areaid=0" /> 
+    <script src="{{$style}}/js/chooseArea-min.js"></script> 
+    <script type="text/javascript">
+
+  
+
+     $('.csbtn').live('click',
+
+             function() {
+
+      
+
+                var idData =$("#proId").val();
+
+                var store = new Persist.Store('My Data Store');
+
+                store.set('saved_data', idData);
+
+                location.href = "/signup.shtml";
+
+                return false;
+
+            });
+
+
+
+</script> 
+    <script>
+
+$(function(){
+
+  $(".sidebar ul.sub>li").click(function(){
+
+    $(this).children("ul.sub2").stop(false,true).slideToggle(300);
+
+  })
+
+  $(".pro-detail .pro-list li").each(function(index) {
+
+        index+=1;
+
+    if(index%2 == 0){
+
+      $(this).css("margin-right",0);  
+
+    }
+
+    });
+
+})
+
+</script> 
+    <script>
+
+  $("ul.about-tj-list li").each(function(index) {
+
+    index+=1;
+
+    if(index%3 == 0){
+
+      $(this).css("margin-right",0);  
+
+    }
+
+  });
+
+  $(".about-tj a").each(function(index){
+
+    $(this).hover(function(){
+
+      $(this).addClass("active").siblings().removeClass("active");
+
+      $("ul.about-tj-list").addClass("hide").eq(index).removeClass("hide");
+
+    });
+
+  });
+
+</script> 
+    <script>
+
+
+
+    $.chooseArea();
+
+$(function(){
+
+        var listBox=$("#listing");
+
+        listBox.html('');
+
+        var href=window.location.href;
+
+        href=setNewUrl(href);
+
+        var param= getArgs(href),type=param.areaid,isType;
+
+        var ao=$("#qynav a");
+
+        var po=$("#qypic a");
+
+        if(param.areaid != 0){
+
+            for(var i=0;i<ao.length;i++){
+
+                var aoObj = $(ao[i]);
+
+                var links=aoObj.attr("href");
+
+                isType=links.search(type);
+
+                if(isType!=-1){
+
+                    aoObj.addClass('cur');
+
+                    aoObj.find('i').css('display','block');
+
+                }
+
+            }
+
+            for(var i=0;i<po.length;i++){
+
+                var poObj = $(po[i]);
+
+                var links=poObj.attr("href");
+
+                isType=links.search(type);
+
+                if(isType!=-1){
+
+                    poObj.addClass('cur');
+
+                    poObj.find('i').css('display','block');
+
+                }
+
+            }
+
+            productAnimate();
+
+        }else{
+
+            var aoObj = $(ao[0]);
+
+            aoObj.addClass('cur');
+
+        }
+
+        ajaxOperate(href,lazyLoad);
+
+    })
+
+  
+
+
+
+</script> 
+    <script type="text/javascript">
+
+  
+
+     $('.csbtn').live('click',
+
+             function() {
+
+                var idData =$("#proId").val();
+
+                var store = new Persist.Store('My Data Store');
+
+                store.set('saved_data', idData);
+
+                location.href = "/signup.shtml";
+
+                return false;
+
+            });
+
+$("#tab-show a").each(function(index) {
+
+    $(this).hover(function(){
+
+    $(this).addClass("cur").siblings().removeClass("cur");
+
+    $(".tab_body .sub").hide().eq(index).show();
+
+  });
+
+});
+
+</script> 
+    <!-- <script src="{{$style}}/js/all_20100501.js"></script> -->
+    <!-- <script language="javascript" src="{{$style}}/js/tqurl_config.js"></script> -->
+    <!-- <script language="javascript" src="{{$style}}/js/_all_20100501.js"></script> -->
+    <!-- <script src="{{$style}}/js/as.js"></script> -->
+
+    <!-- <script src="{{$style}}/js/jquery.magnifier.js"></script>  -->
+   </div>
+  </div>
+ </body>
+</html>

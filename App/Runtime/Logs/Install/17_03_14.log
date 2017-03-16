@@ -1,0 +1,549 @@
+[ 2017-03-14T21:42:49+08:00 ] 127.0.0.1 /install
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2017-03-14T21:42:54+08:00 ] 127.0.0.1 /index.php/Install/Index/init.php?anzhuang=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2017-03-14T21:43:23+08:00 ] 127.0.0.1 /Install/Index/connect.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001710s ]
+
+[ 2017-03-14T21:43:31+08:00 ] 127.0.0.1 /index.php/Install/Index/init.php?anzhuang=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+NOTIC: [8] Undefined index: data D:\wamp64\www\linfei\App\Install\Controller\IndexController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2017-03-14T21:43:31+08:00 ] 127.0.0.1 /Install/Index/database.php?ip=localhost&name=linfei3&root=root&password=123&prefix=linfei_&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: create database if not exists `linfei3`; [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2017-03-14T21:43:32+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=0&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: create table if not exists `linfei_admin`(
+	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+	`name` varchar(255) NOT NULL COMMENT '用户名',
+	`pwd` varchar(255) not null COMMENT '密码',
+	`logintime` char(50) not null COMMENT '上次登录时间',
+	`time` char(50) not null COMMENT '当前登录时间',
+	`loginip` char(20) default null,
+	`tel` char(20) default null,
+	`email` varchar(255) default null,
+	`pwdstr` char(50) NOT NULL COMMENT '加密串',
+  	`icon` varchar(255) DEFAULT NULL COMMENT '头像',
+  	`status` tinyint(1) not null default 0 COMMENT '状态',
+  	`group` tinyint(2) not null default 1,
+  	`addtime` char(50) not null COMMENT '添加时间'
+)engine=innodb default charset=utf8;
+INSERT INTO `linfei_admin` VALUES ('1', 'admin', '8e4ee84aaa3815d91f785be23e93791c', '1478240169', '1478240169', '127.0.0.1', '13539993040', 'vzhoufei@qq.com', '827ccb0eea8a706c4c34a16891f84e7b', '/Uploads/2016-12-15/5852374e150af.jpg', '1', '1', '0'); [ RunTime:0.5248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003129s ]
+
+[ 2017-03-14T21:43:32+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=1&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+SQL: create table if not exists `linfei_adv`(
+`id` int unsigned not null auto_increment primary key,
+`pid` int not null default 0 COMMENT '广告位id',
+`title` varchar(255) not null default '' COMMENT '广告标题',
+`img` varchar(255) not null default '' COMMENT '轮播图片',
+`url` varchar(255) not null default '' COMMENT '广告链接',
+`text` text not null default '' COMMENT '广告文本',
+`sorting` char(20) not null default '0' COMMENT '排序',
+`clicks` int not null default 0 COMMENT '浏览量',
+`blank` tinyint(1) not null default 1 COMMENT '是否新窗口打开(1是 0否)',
+`status` tinyint(1) not null default 1 COMMENT '是否开启广告(1是 0否)',
+`other` varchar(255) COMMENT '其他',
+`starttime` int not null default 0 COMMENT '起始时间',
+`endtime` int not null default 0 COMMENT '结束时间',
+`addtime` int COMMENT '添加时间'
+)engine=innodb default charset=utf8; [ RunTime:0.2444s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001459s ]
+
+[ 2017-03-14T21:43:32+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=2&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+SQL: create table if not exists `linfei_advlocation`(
+`id` int unsigned not null auto_increment primary key,
+`name` varchar(255) not null default '' COMMENT '广告位名称',
+`width` char(10) not null default '0px' COMMENT '广告宽',
+`height` char(10) not null default '0px' COMMENT '广告高',
+`type` tinyint(1) not null default 1 COMMENT '广告类型 1图片 2文本',
+`addtime` int not null default 0 COMMENT '添加时间'
+)engine=innodb default charset=utf8; [ RunTime:0.1836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000558s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027328s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002156s ]
+
+[ 2017-03-14T21:43:33+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=3&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: create table if not exists `linfei_article`(
+   `id` int unsigned not null auto_increment primary key COMMENT '文章id',
+   `name` varchar(255) not null default '' COMMENT '文章名称',
+   `title` varchar(255) not null default ''  COMMENT '文章标题',
+   `keywords` varchar(255) not null default '' COMMENT '关键字',
+   `description` text not null default '' COMMENT '文章描述',
+   `cid` int unsigned not null COMMENT '所属栏目',
+   `img` text not null default '' COMMENT '文章缩略图',
+   `clicks` int unsigned not null default 0 COMMENT '点击数',
+   `status` tinyint(1) not null default 0 COMMENT '文章状态 0在前端显示 1不显示',
+   `text` text not null default '' COMMENT '文章内容',
+   `newtime` int not null default 0 COMMENT '更新时间',
+   `recommended` tinyint(1) default 0 COMMENT '推荐  0未推荐 1推荐',
+   `recommendeds` tinyint(1) default 0 COMMENT '特荐  0未推荐 1推荐',
+   `headlines` tinyint(1) default 0 COMMENT '头条  0未推荐 1推荐',
+   `url` varchar(255) not null default '' COMMENT '文章链接',
+   `custom` varchar(255) not null default '' COMMENT '自定义名称',
+   `sorting` char(20) not null default '0' COMMENT '排序',
+   `time` int not null COMMENT '添加时间'
+   )engine=innodb default charset=utf8; [ RunTime:0.1783s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000569s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003214s ]
+
+[ 2017-03-14T21:43:33+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=4&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: create table if not exists `linfei_classify`(
+	`id` int unsigned not null auto_increment primary key COMMENT '栏目id',
+	`name` varchar(255) not null COMMENT'栏目名称',
+	`m_name` varchar(255) not null COMMENT'手机栏目名称',
+	`title` varchar(255) not null default '栏目title',
+	`keywords` varchar(255) not null default '关键字',
+	`description` text not null COMMENT '栏目描述',
+	`pid` char(20) not null COMMENT '栏目父id',
+	`type` char(20) not null default 'product' COMMENT '栏目类型 默认为产品类型 共两种类型 产品和资讯news 封面cover',
+	`external` varchar(100) not null default '' COMMENT	'外部链接',
+	`url` varchar(100) not null default '' COMMENT	'栏目链接',
+	`url_name` char(30) not null default '' COMMENT	'栏目url命名 拼音',
+	`path` varchar(255) not null COMMENT '栏目路径',
+	`status` tinyint(1) not null default 1 COMMENT '栏目状态 1在前端显示 0不显示',
+	`m_is_show` tinyint(1) not null default 1 COMMENT '手机端导航是否显示 1在前端显示 0不显示',
+	`top` tinyint(1) not null default 1 COMMENT '顶部导航 1在前端显示 0不显示',
+	`bottom` tinyint(1) not null default 1 COMMENT '底部导航 1在前端显示 0不显示',
+	`text` text COMMENT '栏目内容',
+	`sorting` char(20) NOT NULL DEFAULT '50' COMMENT '排序',
+	`layer` char(1) NOT NULL DEFAULT '0' COMMENT '标识栏目层级',
+	`tpl` char(30) NOT NULL DEFAULT 'tpl.html' COMMENT '此栏目模板',
+	`tpl2` char(30) NOT NULL DEFAULT 'article.html' COMMENT '文章模板',
+	`time` int not null COMMENT '添加时间'
+)engine=innodb default charset=utf8; [ RunTime:0.2275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000457s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001670s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002460s ]
+
+[ 2017-03-14T21:43:33+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=5&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001903s ]
+SQL: create table if not exists `linfei_config`(
+	`id` int unsigned not null auto_increment primary key COMMENT '配置id',
+	`name` varchar(255) not null default '' COMMENT '公司名称',
+	`company` varchar(255) not null default '' COMMENT '公司英文名称',
+	`title` varchar(255) not null default '' COMMENT '网站主标题',
+	`keywords` varchar(255) not null default '' COMMENT '站点关键字',
+	`description` text COMMENT '站点描述',
+	`home` varchar(255) not null default '主页' COMMENT '主页链接名',
+	`logo` varchar(255) not null default '/Templates/Default/Public/default.png' COMMENT '网站LOGO',
+	`copyright` varchar(255) not null default '' COMMENT '版权信息',
+	`record` varchar(255) not null default '' COMMENT '备案信息',
+	`address` varchar(255) not null default '' COMMENT '联系地址',
+	`statistics` varchar(255) COMMENT '站长统计',
+	`status` tinyint(1) COMMENT '站点状态 1开启  0关闭',
+	`navstyle` tinyint(1) not null default 1 COMMENT '后台菜单样式 0收起 1展开',
+	`url` tinyint(1) not null default 1 COMMENT 'url模式(1动态 2伪静态 3静态)',
+	`time` int unsigned not null COMMENT '添加时间'
+)engine=innodb default charset=utf8;
+
+INSERT INTO `linfei_config` VALUES ('1', '林飞网络', 'linfei', '林飞网络', '林飞网络', '林飞网络林飞网络林飞网络林飞网络', '网站首页', '/Uploads/2017-02-13/58a1357e0af57.jpg', '林飞网络', '林飞网络', '林飞网络', 'ssssssssss66', '1', '1', '0', '1487131955');
+
+ [ RunTime:0.1508s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000991s ]
+
+[ 2017-03-14T21:43:33+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=6&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+SQL: create table if not exists `linfei_custom`(
+`id` int unsigned not null auto_increment primary key,
+`key` char(30) not null default '' COMMENT '标识 下标',
+`name` varchar(255) not null default '' COMMENT '中文说明',
+`val` varchar(1000) not null default '' COMMENT '值',
+`time` int unsigned not null COMMENT '时间'
+)engine=innodb default charset=utf8; [ RunTime:0.1537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000672s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002239s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003190s ]
+
+[ 2017-03-14T21:43:34+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=7&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+SQL: create table if not exists `linfei_friendship`(
+	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+	`name` varchar(255) NOT NULL COMMENT '链接名',
+  	`url` varchar(255) NOT NULL COMMENT '链接地址',
+  	`img` varchar(255) DEFAULT NULL COMMENT '链接图片',
+  	`email` varchar(255) DEFAULT NULL COMMENT '站长邮箱',
+	`sorting` char(20) not null default '0' COMMENT '排序',
+  	`status` tinyint(1) DEFAULT '0' COMMENT '链接状态 0显示 1不显示',
+	`blank` tinyint(1) not null default 1 COMMENT '是否新窗口打开(1是 0否)',
+  	`remarks` varchar(255) DEFAULT NULL COMMENT '备注',
+  	`addtime` int unsigned default null COMMENT '添加时间'
+)engine=innodb default charset=utf8; [ RunTime:0.1778s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000563s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022950s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001894s ]
+
+[ 2017-03-14T21:43:34+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=8&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: create table if not exists `linfei_group`(
+`id` int unsigned not null auto_increment primary key COMMENT 'id',
+`name` varchar(255) NOT NULL COMMENT '组名',
+`permissions` text,
+`addtime` int unsigned default null COMMENT '时间'
+)engine=innodb default charset=utf8;
+INSERT INTO `linfei_group` VALUES (1,'admin','all',''); [ RunTime:0.2006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000553s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001555s ]
+
+[ 2017-03-14T21:43:34+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=9&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+SQL: create table if not exists `linfei_pic`(
+	`id` int unsigned not null auto_increment primary key COMMENT 'id',
+	`name` varchar(255) not null COMMENT '轮播图名',
+  	`url` varchar(255) not null COMMENT '链接地址',
+  	`img` varchar(255) not null COMMENT '图片',
+	`sorting` char(20) not null default '0' COMMENT '排序',
+	`blank` tinyint(1) not null default 1 COMMENT '是否新窗口打开(1是 0否)',
+  	`status` tinyint(1) default '0' COMMENT '状态(1显示 0不显示)',
+ 	`remarks` varchar(255) default null COMMENT '备注',
+  	`addtime` int unsigned default null COMMENT '添加时间'
+)engine=innodb default charset=utf8; [ RunTime:0.1815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000910s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001061s ]
+
+[ 2017-03-14T21:43:35+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=10&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+SQL: create table if not exists `linfei_product`(
+   `id` int unsigned not null auto_increment primary key COMMENT '产品id',
+   `name` varchar(255) not null default '' COMMENT '产品名称',
+   `title` varchar(255) not null default ''  COMMENT '产品标题',
+   `keywords` varchar(255) not null default '' COMMENT '关键字',
+   `description` text not null default '' COMMENT '产品描述',
+   `cid` int unsigned not null COMMENT '所属栏目',
+   `img` text not null default '' COMMENT '产品缩略图',
+   `clicks` int unsigned not null default 0 COMMENT '点击数',
+   `status` tinyint(1) not null default 0 COMMENT '产品状态 0在前端显示 1不显示',
+   `text` text not null default '' COMMENT '产品内容',
+   `newtime` int not null default 0 COMMENT '更新时间',
+   `recommended` tinyint(1) default 0 COMMENT '推荐  0未推荐 1推荐',
+   `new` tinyint(1) default 0 COMMENT '新品  0未推荐 1推荐',
+   `selling` tinyint(1) default 0 COMMENT '热卖  0未推荐 1推荐',
+   `sorting` char(20) not null default '0' COMMENT '排序',
+   `url` varchar(255) not null default '' COMMENT '产品链接',
+   `custom` varchar(255) not null default '' COMMENT '自定义名称',
+   `time` int not null COMMENT '添加时间'
+   )engine=innodb default charset=utf8; [ RunTime:0.1852s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000554s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002280s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003272s ]
+
+[ 2017-03-14T21:43:35+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=11&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: create table if not exists `linfei_productimg`(
+`id` int unsigned not null auto_increment primary key,
+`productid` int not null COMMENT '产品id',
+`img` varchar(255) not null default '' COMMENT '产品图片'
+)engine=innodb default charset=utf8; [ RunTime:0.2233s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000558s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001981s ]
+
+[ 2017-03-14T21:43:35+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=12&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: create table if not exists `linfei_watermark`(
+   `id` int unsigned not null auto_increment primary key COMMENT 'id',
+   `status1` tinyint(1) not null default 0 COMMENT '是否开启产品水印',
+   `status2` tinyint(1) not null default 0 COMMENT '是否开启文章水印',
+   `type` tinyint(1) not null default 0 COMMENT '水印类型 0文字  1图片',
+   `transparent` char(3) not null default '100' COMMENT '透明度',
+   `wenzi` varchar(255) not null default '' COMMENT '文字',
+   `tupin` varchar(255) not null default '' COMMENT '图片',
+   `location` tinyint(1) not null default 1 COMMENT '水印位置'
+   )engine=innodb default charset=utf8; [ RunTime:0.2191s ]
+NOTIC: [8] Undefined offset: 13 D:\wamp64\www\linfei\App\Install\Controller\IndexController.class.php 第 110 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003342s ]
+
+[ 2017-03-14T21:43:35+08:00 ] 127.0.0.1 /Install/Index/table.php?prefix=linfei_&i=13&data=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008662s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+

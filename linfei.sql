@@ -1,5 +1,4 @@
-
-create database if not exists `linfei`;
+CREATE DATABASE IF NOT EXISTS `linfei` DEFAULT CHARSET utf8 COLLATE utf8_general_ci; 
 
 --栏目表
 create table if not exists `linfei_classify`(
@@ -24,6 +23,7 @@ create table if not exists `linfei_classify`(
 	`layer` char(1) NOT NULL DEFAULT '0' COMMENT '标识栏目层级',
 	`tpl` char(30) NOT NULL DEFAULT 'tpl.html' COMMENT '此栏目模板',
 	`tpl2` char(30) NOT NULL DEFAULT 'article.html' COMMENT '文章模板',
+	`m` char(50)  COMMENT '模型表',
 	`time` int not null COMMENT '添加时间'
 )engine=innodb default charset=utf8;
 
@@ -158,9 +158,9 @@ create table if not exists `linfei_adv`(
 create table if not exists `linfei_advlocation`(
 `id` int unsigned not null auto_increment primary key,
 `name` varchar(255) not null default '' COMMENT '广告位名称',
-`width` char(10) not null default '0px' COMMENT '广告宽',
-`height` char(10) not null default '0px' COMMENT '广告高',
-`type` tinyint(1) not null default 1 COMMENT '广告类型 1图片 2文本',
+`width` char(10) default '0px' COMMENT '广告宽',
+`height` char(10) default '0px' COMMENT '广告高',
+`type` tinyint(1) default 1 COMMENT '广告类型 1图片 2文本',
 `addtime` int not null default 0 COMMENT '添加时间'
 )engine=innodb default charset=utf8;
 
@@ -320,7 +320,7 @@ create table if not exists `linfei_admin`(
   	`group` tinyint(2) not null default 1,
   	`addtime` char(50) not null COMMENT '添加时间'
 )engine=innodb default charset=utf8;
-INSERT INTO `linfei_admin` VALUES ('1', 'admin', '8e4ee84aaa3815d91f785be23e93791c', '1478240169', '1478240169', '127.0.0.1', '13539993040', 'vzhoufei@qq.com', '827ccb0eea8a706c4c34a16891f84e7b', '/Uploads/2016-12-15/5852374e150af.jpg');
+INSERT INTO `linfei_admin` VALUES ('1', 'admin', '8e4ee84aaa3815d91f785be23e93791c', '1478240169', '1478240169', '127.0.0.1', '13539993040', 'vzhoufei@qq.com', '827ccb0eea8a706c4c34a16891f84e7b', '/Uploads/2016-12-15/5852374e150af.jpg', '1', '1', '0');
 
 --管理组
 create table if not exists `linfei_group`(

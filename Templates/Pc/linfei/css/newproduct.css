@@ -1,0 +1,36 @@
+.zhbox{ position:relative; width:518px; padding:0px 35px; overflow:hidden;}
+.zpic{ width:518px; height:341px;}
+.xjgroup{ width:518px; overflow:hidden; zoom:1; position:relative; bottom:55px;}
+.xjgroup ul{ width:9999px; position:relative; left:0px;}
+.xjgroup ul li{ width:115px; height:87px; float:left; margin-right:20px;}
+.zhbox .prev,.zhbox .next{ display:block; width:15px; height:28px; background:url(../img/v1.0/nproductArrow.png) 0px 0px no-repeat; position:absolute; top:400px; display:none;}
+.zhbox .prev{ background-position:-1px 0px; left:0px;}
+.zhbox .prev .noMore{ background-position:-2px -31px;}
+.zhbox .next{ background-position:-32px 0px; right:0px;}
+.zhbox .next .noMore{ background-position:-32px -32px;}
+.tab_nav{ position:relative; height:38px; margin-top:43px;}
+.tab_nav .x{ height:1px; line-height:0px; background-color:#b8d4cb; position:absolute; bottom:0px; width:100%;}
+.tab_nav a{ position:relative; display:block; height:36px; line-height:36px; color:#333; font-size:14px; text-align:center; width:82px; float:left; display:inline; border:1px solid #fff; border-bottom:1px solid #b8d4cb;}
+.tab_body{ padding-bottom:50px; padding-top:30px;}
+.tab_body .sub{ display:none}
+.tab_nav a:hover{ text-decoration:none;}
+.tab_nav a.cur{ border:1px solid #b8d4cb; border-bottom:1px solid #fff; color:#31bca4; font-weight:bold; z-index:9; float:left;}
+.zhlist{ width:1030px; overflow:hidden; zoom:1}
+.zhlist li{ width:235px; float:left; margin-right:20px;}
+.money{ color:#31bca4; position:absolute; right:0px;}
+.rdes{ width:360px; position:absolute; top:50px; right:0px;}
+.rdes .t{ color:#333; font-size:30px}
+.rdes .d{ margin-top:30px;}
+.rdes .d li{ position:relative; color:#9a9a9a; line-height:35px; padding-left:15px; padding-top:10px;}
+.rdes .d li.desH{ height:200px; overflow:hidden; text-overflow:ellipsis;}
+.rdes .d li i{ display:block; position:absolute; left:0px; width:10px; height:10px; background:url(/css/image/mbg1.png) -347px -215px no-repeat; top:25px;}
+.csbtn{ display:block; width:137px; height:45px; line-height:45px; background-color:#f54f73; font-size:18px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; text-align:center; color:#fff; margin:30px auto 0px;}
+.csbtn:hover{ background-color:#e74669; text-decoration:none;}
+a.tooltip{ cursor:default;}
+#tooltip{ position:absolute; border:10px solid #fff; display:none; width:530px; height:400px; z-index:999; background:#fff;}
+#tooltip img{ width:100%;}
+.xkimg{ text-align:center;}
+.xkimg img{ width:465px; height:410px; margin:0px auto;}
+.xkdes{ margin-top:30px; padding-left:30px;}
+.xkdes p{ color:#818181; font-size:14px; position:relative; padding-left:70px; line-height:25px; padding-top:10px; font-family:"宋体";}
+.xkdes p b{ position:absolute; left:0px}

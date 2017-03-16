@@ -5,10 +5,16 @@ class HomeController extends LinFeiController
 {
     public function index()
     {
-        $str = $this->home();
-        $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        if(!file_exists($dir)){mkdir($dir,0777,true);}
-        file_put_contents('.'.__SELF__,$str);	
+        $fieltime = filemtime('./Html/home/index.html');//读取文件更新时间
+        if((time() - $fieltime) > C('HTMLTIME') || !file_exists('./Html/home/index.html')){
+            $str = $this->home();
+            $dir = './Html/'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
+            if(!file_exists($dir)){mkdir($dir,0777,true);}
+            file_put_contents('./Html/home/index.html',$str);
+        }else{
+            $str = file_get_contents('./Html/home/index.html');
+        }
+
         $this->show($str);
     }
 
@@ -31,258 +37,108 @@ class HomeController extends LinFeiController
 
     }
 
-    public function gujianwenhua()
-    {
-         $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-    }
-
-    public function lianxiwomen()
-    {
-          $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-    }
-
-
-    public function _empty()
-    {
-        $this->display('/404');
-    }
    
 
 
-
-
-    public function wjsc()
+    public function chanpinzhongxin()
     {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
+        $fieltime = filemtime('./Html/'.__SELF__);//读取文件更新时间
+        if((time() - $fieltime) > C('HTMLTIME')){
+            $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
+            $arr = explode('/', __SELF__);//将当前url分割成数组
+            //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
+            if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
+                $function = $data['type'];
+            }else{
+                $function = $data['type'].'list';
+            }
+            $str = $this->$function($data);
+            $dir = './Html/'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
+            if(!file_exists($dir)){mkdir($dir,0777,true);}
+            file_put_contents('./Html/'.__SELF__,$str);
+         }else{
+            
+            $str = file_get_contents('./Html/'.__SELF__);
         }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
 
-    }
-public function test9()
-{
-    
-}
-
-    public function tests()
-    {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-
+            $this->show($str);
     }
 
 
-    public function test2()
+    public function xingzhengqujian()
     {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
+        $fieltime = filemtime('./Html/'.__SELF__);//读取文件更新时间
+        if((time() - $fieltime) > C('HTMLTIME')){
+            $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
+            $arr = explode('/', __SELF__);//将当前url分割成数组
+            //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
+            if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
+                $function = $data['type'];
+            }else{
+                $function = $data['type'].'list';
+            }
+            $str = $this->$function($data);
+            $dir = './Html/'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
+            if(!file_exists($dir)){mkdir($dir,0777,true);}
+            file_put_contents('./Html/'.__SELF__,$str);
+         }else{
+            
+            $str = file_get_contents('./Html/'.__SELF__);
         }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
+
+            $this->show($str);
 
     }
 
 
-    public function gujiananlierji()
+    public function gexingguanliqu()
     {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
+       $fieltime = filemtime('./Html/'.__SELF__);//读取文件更新时间
+        if((time() - $fieltime) > C('HTMLTIME')){
+            $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
+            $arr = explode('/', __SELF__);//将当前url分割成数组
+            //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
+            if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
+                $function = $data['type'];
+            }else{
+                $function = $data['type'].'list';
+            }
+            $str = $this->$function($data);
+            $dir = './Html/'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
+            if(!file_exists($dir)){mkdir($dir,0777,true);}
+            file_put_contents('./Html/'.__SELF__,$str);
+         }else{
+            
+            $str = file_get_contents('./Html/'.__SELF__);
         }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);//ssssssssssssss
+
+            $this->show($str);
 
     }
 
 
-    public function shoufeibiaozhun66()
+    public function chenggonganli()
     {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
+       $fieltime = filemtime('./Html/'.__SELF__);//读取文件更新时间
+        if((time() - $fieltime) > C('HTMLTIME')){
+            $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
+            $arr = explode('/', __SELF__);//将当前url分割成数组
+            //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
+            if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
+                $function = $data['type'];
+            }else{
+                $function = $data['type'].'list';
+            }
+            $str = $this->$function($data);
+            $dir = './Html/'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
+            if(!file_exists($dir)){mkdir($dir,0777,true);}
+            file_put_contents('./Html/'.__SELF__,$str);
+         }else{
+            
+            $str = file_get_contents('./Html/'.__SELF__);
         }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
 
-    }
-
-
-    public function gujianwenhuasanji()
-    {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-
-    }
-
-
-    public function gujiananlisanji()
-    {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-
-    }
-
-
-    public function gongyingpingtai()
-    {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-
-    }
-
-
-    public function gujiangongcheng()
-    {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        // $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        // if(!file_exists($dir)){mkdir($dir,0777,true);}
-        // file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-
-    }
-
-
-    public function ss()
-    {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        if(!file_exists($dir)){mkdir($dir,0777,true);}
-        file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
-
-    }
-
-
-    public function eee()
-    {
-        $data = M('classify')->where(array('url_name'=>ACTION_NAME))->find();
-        $arr = explode('/', __SELF__);//将当前url分割成数组
-        //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
-        if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
-            $function = $data['type'];
-        }else{
-            $function = $data['type'].'list';
-        }
-        $str = $this->$function($data);
-        $dir = './'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
-        if(!file_exists($dir)){mkdir($dir,0777,true);}
-        file_put_contents('.'.__SELF__,$str);
-        $this->show($str);
+            $this->show($str);
 
     }
 }

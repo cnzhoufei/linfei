@@ -40,8 +40,8 @@ class Cx extends TagLib {
         'define'    =>  array('attr'=>'name,value','close'=>0),
         'for'       =>  array('attr'=>'start,end,name,comparison,step', 'level'=>3),
         'adv'       =>  array('attr'=>'name,type,key,item,id', 'level'=>3),//广告标签
-        'product'   =>  array('attr'=>'key,item,id,limit', 'level'=>3),//获取指定栏目下的产品
-        'article'   =>  array('attr'=>'key,item,id,limit', 'level'=>3),//获取指定栏目下的文章
+        'product'   =>  array('attr'=>'key,item,classid,limit,attr', 'level'=>3),//获取指定栏目下的产品
+        'article'   =>  array('attr'=>'key,item,classid,limit,attr', 'level'=>3),//获取指定栏目下的文章
         'column'    =>  array('attr'=>'item,id','level'=>1),//获取指定栏目数据
         );
 
@@ -54,9 +54,10 @@ class Cx extends TagLib {
         $db_prefix = C('DB_PREFIX');
         $key  =  !empty($tag['key']) ? $tag['key'] : 'key';// 返回的变量key
         $item  =  !empty($tag['item']) ? $tag['item'] : 'item';// 返回的变量item 
+        $attr = !empty($tag['attr'])?'AND '.$tag['attr'].'=1':'';
         $str = <<<zhoufei
                     <?php \$Model = new \Think\Model(); 
-                    \$sql = "select * from {$db_prefix}product where cid in({$tag['id']}) AND status = 1 limit {$tag['limit']}";
+                    \$sql = "select * from {$db_prefix}product where cid in({$tag['classid']}) AND status = 1 {$attr} limit {$tag['limit']}";
                     \$product = \$Model->query(\$sql);
                     foreach(\$product as \${$key}=>\${$item}):?>
 zhoufei;
@@ -76,9 +77,10 @@ zhoufei;
         $db_prefix = C('DB_PREFIX');
         $key  =  !empty($tag['key']) ? $tag['key'] : 'key';// 返回的变量key
         $item  =  !empty($tag['item']) ? $tag['item'] : 'item';// 返回的变量item 
+        $attr = !empty($tag['attr'])?'AND '.$tag['attr'].'=1':'';
         $str = <<<zhoufei
                     <?php \$Model = new \Think\Model(); 
-                    \$sql = "select * from {$db_prefix}article where cid in({$tag['id']}) AND status = 1 limit {$tag['limit']}";
+                    \$sql = "select * from {$db_prefix}article where cid in({$tag['classid']}) AND status = 1 {$attr} limit {$tag['limit']}";
                     \$article = \$Model->query(\$sql);
                     foreach(\$article as \${$key}=>\${$item}):?>
 zhoufei;

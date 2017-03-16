@@ -2,8 +2,7 @@
 return array(
 
 
- 'LOAD_EXT_CONFIG' => 'tplconfig',  // 引入模板配置
- 'LOAD_EXT_CONFIG' => 'dbconfig',  // 引入模板配置
+ 'LOAD_EXT_CONFIG' => 'dbconfig,tplconfig,htmltime',  // 引入模板配置
    'DEFAULT_MODULE'         =>      'Home', 
    'DEFAULT_CONTROLLER'     =>      'Home',
    'DEFAULT_ACTION'         =>      'index',                      // 默认操作名称

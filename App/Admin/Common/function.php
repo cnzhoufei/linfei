@@ -8,7 +8,7 @@ function adminmenu()
 				array(
 					array('name'=>'网站信息','c'=>'Config','f'=>'index'),
 					array('name'=>'自定义信息','c'=>'Config','f'=>'custom'),
-					array('name'=>'URL模式','c'=>'Config','f'=>'settingurl'),
+					// array('name'=>'URL模式','c'=>'Config','f'=>'settingurl'),
 					// array('name'=>'积分设置','c'=>'','f'=>''),
 					array('name'=>'邮件设置','c'=>'Config','f'=>'email'),
 					array('name'=>'水印设置','c'=>'Config','f'=>'watermark'),
@@ -28,13 +28,13 @@ function adminmenu()
 				array(
 					array('name'=>'产品列表','c'=>'Product','f'=>'index'),
 					array('name'=>'添加产品','c'=>'Product','f'=>'addproduct'),
-					array('name'=>'产品评论','c'=>'Product','f'=>''),
+					// array('name'=>'产品评论','c'=>'Product','f'=>''),
 				),
 			),
-			array('name'=>'模型管理','icon'=>'icon-lock','child'=>
+			array('name'=>'类容模型','icon'=>'icon-lock','child'=>
 				array(
-					array('name'=>'模型列表','c'=>'Model','f'=>'index'),
-					array('name'=>'添加模型','c'=>'Model','f'=>'addmodel'),
+					array('name'=>'模型表列表','c'=>'Additional','f'=>'index'),
+					array('name'=>'添加模型表','c'=>'Additional','f'=>'add'),
 				),
 			),
 			array('name'=>'内容管理','icon'=>'icon-book','child'=>
@@ -48,6 +48,93 @@ function adminmenu()
 					array('name'=>'用户列表','c'=>'User','f'=>'index'),
 					array('name'=>'添加管理员','c'=>'User','f'=>'addadmin'),
 					// array('name'=>'添加普通用户','c'=>'User','f'=>'adduser'),
+					array('name'=>'管理组','c'=>'User','f'=>'grouplist'),
+				),
+			),
+			array('name'=>'广告管理','icon'=>'icon-bullhorn','child'=>
+				array(
+					array('name'=>'广告位列表','c'=>'Advertising','f'=>'index'),
+					array('name'=>'广告列表','c'=>'Advertising','f'=>'adv'),
+					array('name'=>'添加广告','c'=>'Advertising','f'=>'addadvertising'),
+				),
+			),
+			array('name'=>'轮播图管理','icon'=>'icon-picture','child'=>
+				array(
+					array('name'=>'轮播图列表','c'=>'Pic','f'=>'index'),
+					array('name'=>'添加轮播图','c'=>'Pic','f'=>'addpic'),
+				),
+			),
+			array('name'=>'友链管理','icon'=>'icon-link','child'=>
+				array(
+					array('name'=>'友链列表','c'=>'Friendship','f'=>'index'),
+					array('name'=>'添加友链','c'=>'Friendship','f'=>'addfriendship'),
+				),
+			),
+			array('name'=>'活动专场','icon'=>'icon-tasks','child'=>
+				array(
+					array('name'=>'专场列表','c'=>'','f'=>''),
+					array('name'=>'添加专场','c'=>'','f'=>''),
+				),
+			),
+			array('name'=>'模板管理','icon'=>'icon-adjust','child'=>
+				array(
+					array('name'=>'PC模板','c'=>'Templates','f'=>'pc'),
+					array('name'=>'手机模板','c'=>'Templates','f'=>'mobile'),
+				),
+			),
+			array('name'=>'备份管理','icon'=>'icon-wrench','child'=>
+				array(
+					array('name'=>'数据列表','c'=>'Backup','f'=>'index'),
+					array('name'=>'备份数据','c'=>'Backup','f'=>'bac'),
+				),
+			),
+		);
+}
+
+
+/**
+ * 权限
+ */
+function permissions()
+{
+	return array(
+		array('name'=>'系统设置','icon'=>'icon-cogs','child'=>
+				array(
+					array('name'=>'网站信息','c'=>'Config','f'=>'index'),
+					array('name'=>'自定义信息','c'=>'Config','f'=>'custom'),
+					// array('name'=>'URL模式','c'=>'Config','f'=>'settingurl'),
+					array('name'=>'邮件设置','c'=>'Config','f'=>'email'),
+					array('name'=>'水印设置','c'=>'Config','f'=>'watermark'),
+				),
+			),
+			array('name'=>'分类管理','icon'=>'icon-tags','child'=>
+				array(
+					array('name'=>'分类列表','c'=>'Classify','f'=>'index','p'=>''),
+					array('name'=>'添加分类','c'=>'Classify','f'=>'addclassify'),
+				),
+			),
+			array('name'=>'产品管理','icon'=>'icon-desktop','child'=>
+				array(
+					array('name'=>'产品列表','c'=>'Product','f'=>'index'),
+					array('name'=>'添加产品','c'=>'Product','f'=>'addproduct'),
+				),
+			),
+			array('name'=>'类容模型','icon'=>'icon-lock','child'=>
+				array(
+					array('name'=>'模型表列表','c'=>'Additional','f'=>'index'),
+					array('name'=>'添加模型表','c'=>'Additional','f'=>'add'),
+				),
+			),
+			array('name'=>'内容管理','icon'=>'icon-book','child'=>
+				array(
+					array('name'=>'文章列表','c'=>'Article','f'=>'index'),
+					array('name'=>'添加文章','c'=>'Article','f'=>'addarticle'),
+				),
+			),
+			array('name'=>'用户管理','icon'=>'icon-group','child'=>
+				array(
+					array('name'=>'用户列表','c'=>'User','f'=>'index'),
+					array('name'=>'添加管理员','c'=>'User','f'=>'addadmin'),
 					array('name'=>'管理组','c'=>'User','f'=>'grouplist'),
 				),
 			),
