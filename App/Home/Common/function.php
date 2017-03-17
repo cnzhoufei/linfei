@@ -23,7 +23,7 @@ function homeimg($id,$width,$height,$table)
 	$type = $image->type(); 
 	$image->thumb($width, $height,2)->save('.'.$path.$thumb_name.'.'.$type);
 	//如果是产品或文章添加水印
-    if($table == 'article' || $table == 'product'){
+    if($table == 'article' || $table == 'product' || $table == 'productimg'){
         
         $watermark = M('watermark')->find();
         if($watermark['status1']){
@@ -36,4 +36,7 @@ function homeimg($id,$width,$height,$table)
     }
 	return $path.$thumb_name.'.'.$type;
 }
+
+
+
 

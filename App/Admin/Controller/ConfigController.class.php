@@ -225,6 +225,31 @@ return array(
 		}
 	}
 
+	/**
+	 * 缓存时间设置
+	 */
+	public function cache()
+	{
+		if(IS_POST){
+			$str = "<?php
+            return array(
+            	'HTMLTIME' =>{$_POST['cache']},
+            );";
+			if(file_put_contents('./App/Home/Conf/htmltime.php', $str)){
+				$this->success('设置成功');
+			}else{
+				$this->error('设置失败！');
+			}
+
+
+		}else{
+
+			$str = include "./App/Home/Conf/htmltime.php";
+			$this->assign('cache',$str['HTMLTIME']);
+			$this->display();
+		}
+	}
+
 
 
 

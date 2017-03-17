@@ -3,7 +3,7 @@
 .hide{ display:none;}
 
 .about-us{ width:1000px; margin:15px auto; padding:20px 0px;}
-.about-us .title{ background:url(../img/about-us-img.png) no-repeat; width:144px; height:52px; margin:0px auto; margin-bottom:15px;}
+.about-us .title{ background:url(../images/about-us-img.png) no-repeat; width:144px; height:52px; margin:0px auto; margin-bottom:15px;}
 .about-us p{ text-indent:2em; font-size:14px; color:#7d7d7d; line-height:22px; padding:3px 0px;}
 .show-img{ width:524px; height:404px; overflow:hidden; float:left; margin-top:25px;}
 .show-img img{ border:1px solid #e5e5e5; padding:3px; width:516px; height:396px;}
@@ -14,20 +14,20 @@ ul.pro-more li img{ width:315px; border:1px solid #e5e5e5; padding:3px;}
 .yuyue-box h3{ font-size:24px; text-align:center; padding:25px; color:#fff; letter-spacing:20px;}
 .yuyue-box p{ font-size:14px; text-align:center; color:#fff;}
 .yuyue-box .input-box{ width:530px; height:60px; margin:0 auto; position:relative;border:1px solid #fff; margin-bottom:30px;}
-.yuyue-box .input-box .icon-01{ width:32px; height:32px; background:url(../img/form-icon.png) no-repeat 0 0; position:absolute; top:14px; left:25px;}
-.yuyue-box .input-box .icon-02{ width:32px; height:32px; background:url(../img/form-icon.png) no-repeat -32px 0; position:absolute; top:14px; left:25px;}
+.yuyue-box .input-box .icon-01{ width:32px; height:32px; background:url(../images/form-icon.png) no-repeat 0 0; position:absolute; top:14px; left:25px;}
+.yuyue-box .input-box .icon-02{ width:32px; height:32px; background:url(../images/form-icon.png) no-repeat -32px 0; position:absolute; top:14px; left:25px;}
 .yuyue-box .input-box .input-text{ width:446px; height:60px; border:none; background-color:rgba(237,237,237,0); line-height:60px; position:absolute; top:0px; left:82px; z-index:3; font-size:18px; color:#fff;}
 .yuyue-box .input-box .input-tip-text{ width:446px; height:60px; line-height:60px; color:#d2d2d2; position:absolute; top:0; left:82px; z-index:2; font-size:18px;}
 .yuyue-box .input-box .input-sub{ width:530px; height:60px; background:#31bc90; color:#fff; border:none; font-size:18px; cursor:pointer; letter-spacing:15px;}
 .border-radius-5{ border-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px;}
 .title-bg{ width:100%; height:99px; padding-top:36px; background:#f8f8f8;}
-.title-bg .title-jiaju{ background:url(../img/jiaju-img.png) no-repeat; width:144px; height:53px; margin:0px auto;}
+.title-bg .title-jiaju{ background:url(../images/jiaju-img.png) no-repeat; width:144px; height:53px; margin:0px auto;}
 .content{ width:1100px; margin:40px auto;}
 .content .sidebar{ width:290px; float:left;}
 .content .sidebar .title{ width:290px; height:121px;}
 .content .sidebar ul.sub{ background:#e5e5e5; padding:15px 0px 45px 0px;}
-.content .sidebar ul.sub li a{ width:240px; padding-left:50px; background:url(../img/jiaju-list-g.png) no-repeat 30px center; height:40px; line-height:40px; color:#313131; display:block; text-decoration:none;}
-.content .sidebar ul.sub li a:hover,.content .sidebar ul.sub li:hover a{ background:#31bc90 url(../img/jiaju-list-w.png) no-repeat 30px center; color:#fff;}
+.content .sidebar ul.sub li a{ width:240px; padding-left:50px; background:url(../images/jiaju-list-g.png) no-repeat 30px center; height:40px; line-height:40px; color:#313131; display:block; text-decoration:none;}
+.content .sidebar ul.sub li a:hover,.content .sidebar ul.sub li:hover a{ background:#31bc90 url(../images/jiaju-list-w.png) no-repeat 30px center; color:#fff;}
 .content .sidebar ul.sub li ul.sub2{ background:#f5f5f5; display:none;}
 .content .sidebar ul.sub li ul.sub2 li a{ height:33px; line-height:33px; background:none; border-bottom:1px solid #eeeeee; color:#7d7d7d;}
 .content .sidebar ul.sub li ul.sub2 li a:hover{ color:#31bc90;}
@@ -48,18 +48,18 @@ ul.about-tj-list li a .text{ width:100%; height:30px; line-height:30px; text-ali
 #tab-show a.cur{ border:1px solid #b8d4cb; border-bottom:1px solid #fff; color:#31bca4; font-weight:bold; z-index:9;}
 
 /* loading */
-.flexslider{ position:relative; height:385px; overflow:hidden; background:url(../img/loading.gif) 50% no-repeat; overflow:hidden;}
+.flexslider{ position:relative; height:385px; overflow:hidden; background:url(../images/loading.gif) 50% no-repeat; overflow:hidden;}
 .slides{ position:relative; z-index:1; height:385px; overflow:hidden;}
 .slides li{ height:385px;}
 
 /* control */
 .flex-control-nav{ position:absolute; bottom:36px; z-index:2; width:100%; text-align:center;}
 .flex-control-nav li{ display:inline-block; width:14px; height:14px; margin:0px 5px; *display:inline; zoom:1;}
-.flex-control-nav a{ display:inline-block; width:14px; height:14px; line-height:40px; overflow:hidden; background:url(../img/dot.png) right 0px no-repeat; cursor:pointer;}
+.flex-control-nav a{ display:inline-block; width:14px; height:14px; line-height:40px; overflow:hidden; background:url(../images/dot.png) right 0px no-repeat; cursor:pointer;}
 .flex-control-nav .flex-active{ background-position:0px 0px;}
 .flex-direction-nav{ position:absolute; z-index:3; width:100%; top:45%;}
 /* prev、next btn */
 .flex-prev,.flex-next{ width:50px; height:50px; display:block; position:absolute;}
-/*.flex-prev{background: url(../img/prev.png) no-repeat; left:0;}
-.flex-next{background: url(../img/next.png) no-repeat; right:0;}
+/*.flex-prev{background: url(../images/prev.png) no-repeat; left:0;}
+.flex-next{background: url(../images/next.png) no-repeat; right:0;}
 */

@@ -1,5 +1,4 @@
 <?php
             return array(
-            	'HTMLTIME' =>1,
+            	'HTMLTIME' =>10,
             );
-            

@@ -5,10 +5,10 @@
                 
    <div class="header_r">
       <div class="ssuo">
-    <form action="/search.asp" method="get">
+    <!-- <form action="/search.asp" method="get">
       <input value="请输入关键字..." name="keys" class="ssuoa" onclick="if(this.value=='请输入关键字...'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字...';}" type="text">
       <input value="" class="ssuob" type="submit">
-    </form>
+    </form> -->
         <div style="float:right;">
                        <span><img src="{{$style}}/nav/index_08.png" alt="珠海办公家具,广东办公家具,个性办公家具,高端办公家具厂家,广州办公家具厂,广州办公家具公司&quot;">服务热线:{{$custom['tel']}}</span>
                        </div>
@@ -45,7 +45,7 @@ function mOut(){
     
              <li onmouseover="settab(1)" class=""><a href="http://{{$_SERVER['HTTP_HOST']}}">{{$config['home']}}</a></li>
             <foreach name="classtop" item="v" key="k">
-             <li onmouseover="settab({{$k+2}})" class=""><a href="{{$v['url']}}">{{$v['name']}}</a></li>
+             <li onmouseover="settab({{$k+2}})" class=""><a href="{{$v['external']|default=$v['url']}}">{{$v['name']}}</a></li>
             </foreach>
              <li onmouseover="settab(100)"><a href="" class="topYyBtn">免费量尺</a></li>
 
@@ -69,10 +69,10 @@ function mOut(){
        
         <foreach name="vv['son']" item="vvv" key="kkk">
                 <dl>
-                    <a title="{{$vvv['title']}}" href="{{$vvv['url']}}"><dt>{{$vvv['name']}}</dt></a>
+                    <a title="{{$vvv['title']}}" href="{{$vvv['external']|default=$vvv['url']}}"><dt>{{$vvv['name']}}</dt></a>
           
                         <foreach name="vvv['grandson']" item="vvvv">
-                        <dd><a title="{{$vvvv['title']}}" href="{{$vvvv['url']}}">&gt; {{$vvvv['name']}}</a></dd>
+                        <dd><a title="{{$vvvv['title']}}" href="{{$vvvv['external']|default=$vvvv['url']}}">&gt; {{$vvvv['name']}}</a></dd>
                         </foreach>
           
                 </dl>

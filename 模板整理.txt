@@ -44,3 +44,27 @@
           <li class="clone" aria-hidden="true" style="width: 1000px; float: left; display: block;">
           <a href="{{$vv['url']}}" <?php if($vv['blank']){echo 'target="_blank"';}?> title="{{$vv['title']}}"><img src="{{:homeimg($vv['id'],1000,350,'adv')}}" width="1000" draggable="false" /></a></li> 
 </adv>
+
+
+相关推荐
+ <foreach name="related" item="re_v">
+                        <li><a href="{{$re_v['url']}}"><img src="{{:homeimg($re_v['id'],323,227,'product')}}" /></a></li>
+                        </foreach>
+
+
+
+导航调用 classtop 底部导航   classbottom底部导航  articleclass文章导航  productclass产品导航
+ <foreach name="classtop" item="vv" key="kk">
+          
+      <a href="{{$v['external']|default=$v['url']}}">{{$v['name']}}</a> 一级
+       
+        <foreach name="vv['son']" item="vvv" key="kkk">
+                    <a title="{{$vvv['title']}}" href="{{$vvv['external']|default=$vvv['url']}}"><dt>{{$vvv['name']}}</dt></a> 二级
+          
+                        <foreach name="vvv['grandson']" item="vvvv">
+                        三级
+                        <dd><a title="{{$vvvv['title']}}" href="{{$vvvv['external']|default=$vvvv['url']}}">&gt; {{$vvvv['name']}}</a></dd>
+                        </foreach>
+          
+          </foreach>
+          </foreach>

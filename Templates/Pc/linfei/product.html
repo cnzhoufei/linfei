@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+  <title>{{$product['title']}}</title> 
+  <meta name="keywords" content="{{$product['keywords']}}" /> 
+  <meta name="description" content="{{$product['description']}}" /> 
+<include file="./header" />
+<div style="width:100%;clear:both;height:110px;"></div>
+<div class="splitX"></div>
+</div>
+<!--顶area end-->
+<div class="topbg">
+<adv name="产品页广告" id="301" type="1" item="v">
+<img src="{{$v['img']}}" class="setpbg" />
+</adv>
+</div>
+<div class="areaT1 mt25" style="height:auto;min-height:570px;">
+    <div class="wrap pr">
+       <div class="show-img"><img src="{{:homeimg($product['id'],624,404,'product')}}" width="624" height="404" /></div>
+		<div class="show-text">
+            <div class="rdes" style=" position: inherit; float:left; top:0; margin-left:36px;">
+           		<h2 class="t">{{:getsubstr($product['title'],0,10)}}</h2>
+              <ul class="d" style="margin-top:10px; height:364px; overflow:hidden;">
+                <li class="desH" style="height:auto; padding-bottom:10px;"><i></i>
+<foreach name="models" item="vv">
+{{$vv['instructions']}}：{{$model[ $vv['field'] ]}}<br />
+</foreach>
+<strong>
+<span style="color: rgb(255, 0, 0); font-size: 16px;">咨询热线：</span>
+<br style="color: rgb(255, 0, 0); font-size: 16px;" />
+<span style="color: rgb(255, 0, 0); font-size: 16px;">{{$custom['cptel']}}</span></strong>
+</li></ul><a href="http://wpa.qq.com/msgrd?v=3&amp;uin={{$custom['cpqq']}}&amp;site=qq&amp;menu=yes" class="yyatonce" >立即预约</a></div><div style="clear: both;"></div>
+<div class="xjgroup">
+<ul id="details">
+<foreach name="product['photo']" item="vvv">
+ <li><a href="{{$vvv['img']}}" class="tooltip"><img width="115" height="88" src="{{:homeimg($vvv['id'],115,88,'productimg')}}" alt=""></a></li>
+</foreach>
+ </ul> </div></div></div></div>
+<div class="areaT1" >
+    <div class="wrap tj" id="tjparam">
+        <div class="tab_nav" id="tab-show">
+         <a href="javascript:;" class="cur" >产品详情</a>
+          <a href="javascript:;" >相关推荐</a>
+          <div class="x"></div>
+        </div>
+        <div class="tab_body" style="z-index:-999999999px;" >
+                <div class="sub" style="display:block;">
+					{{:htmlspecialchars_decode($product['text'])}}
+                </div>
+                <div class="sub" >
+                     <ul class="pro-more clearfix">
+                     <foreach name="related" item="re_v">
+                        <li><a href="{{$re_v['url']}}"><img src="{{:homeimg($re_v['id'],323,227,'product')}}" /></a></li>
+                        </foreach>
+                    </ul>
+                </div>
+         </div>
+<div style="width:100%;height:30px;">
+<a href="{{$pre['url']}}" style="display:inline-block;width:50%;float:left;text-align: center;line-height:30px;">上一产品:{{:getsubstr($pre['title'],0,30)}}</a>
+<a href="{{$next['url']}}" style="display:inline-block;width:50%;float:left;text-align: center;line-height:30px;">下一产品:{{:getsubstr($next['title'],0,30)}}</a>
+</div>
+</div>
+</div>
+</div>
+<include file="./footer" />		
+<script src="{{$style}}/js/product-min.js"></script> 
+<script src="{{$style}}/js/move2-min.js"></script> 

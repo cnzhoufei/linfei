@@ -45,7 +45,7 @@ class CommonController extends Controller
         $groupid = M('admin')->where(array('id'=>session('adminuser.id')))->getField('group');
         $group = M('group')->where(array('id'=>$groupid))->getField('permissions');
         //要排除的方法
-        $arr = array('Index@index');
+        $arr = array('Index@index','Backup@index','bac','Backup@structure','Backup@bakinsertinto','Backup@showmsg','Backup@sqllist','Backup@mystructure','Backup@myinsertinto');
         if($group == 'all'){
             return true;
         }else{

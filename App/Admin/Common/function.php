@@ -15,7 +15,7 @@ function adminmenu()
 					// array('name'=>'QQ登录设置','c'=>'','f'=>''),
 					// array('name'=>'UCENTER设置','c'=>'','f'=>''),
 					// array('name'=>'注册字段设置','c'=>'','f'=>''),
-					// array('name'=>'清除缓存','c'=>'','f'=>''),
+					array('name'=>'页面缓存时间','c'=>'Config','f'=>'cache'),
 				),
 			),
 			array('name'=>'分类管理','icon'=>'icon-tags','child'=>

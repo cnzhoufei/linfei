@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>{{$productlist['title']}}</title>
+    <meta name="keywords" content="{{$productlist['keywords']}}">
+   <meta name="description" content="{{$productlist['description']}}" /> 
+    <include file="./header" />
+  <div style="width:100%;clear:both;height:110px;"></div>
+
+<div class="splitX"></div>
+</div>
+<div class="topbg">
+<adv name="产品列表页广告" type="1" id="111" item="v">
+<img src="{{$v['img']}}">
+</adv>
+</div>
+<div class="title-bg">
+	<div class="title-jiaju"></div>
+</div>
+<div class="content clearfix">
+
+	<div class="sidebar">
+    	<div class="title">
+    		<img src="{{$style}}/images/jiaju-title-bg.jpg">
+        </div>
+<ul class="sub">
+        <foreach name="productclass" item="p_v">
+        <foreach name="p_v['son']" item="p_vv">
+            <li>
+            <a href="javascript:;">{{$p_vv['name']}}</a>
+            <ul class="sub2">
+            <foreach name="p_vv['grandson']" item="p_vvv">
+            <li><a href="{{$p_vvv['external']|default=$p_vvv['url']}}">{{$p_vvv['name']}}</a></li>
+            </foreach>
+            </ul>
+            </li>
+        </foreach>
+        </foreach>
+        </ul>
+    </div>
+    <div class="pro-detail">
+    	<ul class="pro-list clearfix">
+        <foreach name="product" item="vvv">
+        	<li>
+            	<a href="{{$vvv['url']}}" target="_blank" title="{{$vvv['title']}}">
+                	<img src="{{:homeimg($vvv['id'],373,248,'product')}}" width="373" height="248">
+                    <div class="text">
+                    	{{$vvv['title']}}
+                    </div>
+                </a>
+            </li>	
+        </foreach>	
+
+	   <div style="float:right; font-size:18px;" class="paging">
+
+       <a class="a1">{{$count}}条</a> 
+       {{$page}}
+
+       </div>
+
+        </ul>
+
+    </div>
+
+    
+
+</div>
+<include file="./footer" />

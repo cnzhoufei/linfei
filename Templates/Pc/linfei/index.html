@@ -2,7 +2,6 @@
 <html lang="zh">
  <head> 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
-  <meta charset="utf-8" /> 
   <title>{{$config['title']}}</title> 
   <meta name="keywords" content="{{$config['keywords']}}" /> 
   <meta name="description" content="{{$config['description']}}" /> 
@@ -64,7 +63,7 @@
     <!-- 推荐产品 -->
     <foreach name="recommended" item="re_v">
      <a class="item" title="{{$re_v['title']}}" href="{{$re_v['url']}}"> <img src="{{:homeimg($re_v['id'],323,224,'product')}}" alt="{{$re_v['title']}}" /> 
-     <span class="tjTitle" style="line-height: 50px;"> </span> 
+     <span class="tjTitle" style="line-height: 50px;">{{:getsubstr($re_v['title'],0,15)}}</span> 
      </foreach>
     </div> 
     <adv name="主页更多产品链接" type="2" id="2"  item="gd" >
@@ -79,8 +78,6 @@
    <div class="wrap falist" style=" width:1100px;"> 
     <h2 class="itl01 tjfa"></h2> 
     <div class="inner"> 
-    
-     
      <div class="clearfix grp2"> 
       <div id="plan" style="width: 1000px; height: 385px;margin:0 auto"> 
        <div class="flexslider"> 
@@ -88,26 +85,21 @@
          <ul class="slides" style="width: 1200%; transition-duration: 0.6s; transform: translate3d(-3000px, 0px, 0px);">
 
     <adv name="推荐方案" type="1" id="1" width="1000" height="350" item="vv" key="k">
-          <li class="clone" aria-hidden="true" style="width: 1000px; float: left; display: block;">
+          <li class="<?php if(!$k){echo 'clone';}?>" aria-hidden="<?php if(!$k){echo 'true';}?>" style="width: 1000px; float: left; display: block;">
           <a href="{{$vv['url']}}" <?php if($vv['blank']){echo 'target="_blank"';}?> title="{{$vv['title']}}"><img src="{{:homeimg($vv['id'],1000,350,'adv')}}" width="1000" draggable="false" /></a></li> 
     </adv>
-
-
          </ul>
         </div>
-        <ol class="flex-control-nav flex-control-paging">
-    <adv name="推荐方案" type="1" id="1" width="1000" height="350" item="vv" key="k">
-         <!-- <li><a class="">3</a></li> -->
-         <li><a class="flex-active">{{$k+1}}</a></li>
-    </adv>
-        </ol>
-        <ul class="flex-direction-nav">
-         <li><a class="flex-prev" href="http://www.gzlingmu.com/index.php#"></a></li>
-         <li><a class="flex-next" href="http://www.gzlingmu.com/index.php#"></a></li>
+        <ol class="flex-control-nav flex-control-paging"></ol>
+    <ul class="flex-direction-nav"><li>
+    <a class="flex-prev" href="#"></a></li><li><a class="flex-next" href="#"></a></li>
         </ul>
        </div> 
       </div> 
      </div> 
+
+
+
      <div class="clearfix advatage" style="padding-top: 35px; padding-left: 50px;"> 
      
     <adv name="环保品质,结实耐用,高性价比" type="2" id="3" item="vv_3" key="kk_3">
@@ -132,16 +124,17 @@
     <div class="wrap anli"> 
      <h2 class="itl01 dxal" id="dianxinTitle"></h2> 
     </div> 
+
+
+
     <ul id="sucase" class="grid-accordion" style="height: 393.125px; width: 1903px;">
-
-
  <article classid="4" item="cv" limit="5" key="key" attr='recommended'>
 <li class="caseItem">
     <a href="{{$cv['url']}}" <?php if($cv['blank']){echo 'target="_blank"';}?> >
         <img src="{{:homeimg($cv['id'],720,450,'article')}}" style="width: 720px;height: 450px" alt="{{:getsubstr($cv['title'],0,30)}}">
     </a>
     <div class="caption">
-        <h3>{{:getsubstr($cv['title'],0,30)}}</h3>
+        <h3>{{:getsubstr($cv['title'],0,15)}}</h3>
     
     </div>
 </li>

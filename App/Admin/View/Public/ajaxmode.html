@@ -8,7 +8,7 @@
                                     <select  class="col-sm-12" name="model[{{$vv['field']}}]">
                                     <php>$array = explode(',', $vv['value']);</php>
                                         <foreach name="array" item="vvv" key="kkk">
-                                            <option value="{{$kkk}}" <?php if($mval[ $vv['field'] ] == $kkk){echo 'selected';}?>>{{$vvv}}</option>
+                                            <option value="{{$vvv}}" <?php if($mval[ $vv['field'] ] == $vvv){echo 'selected';}?>>{{$vvv}}</option>
                                         </foreach>
                                     </select>
                                     </div>
@@ -20,7 +20,7 @@
                                 <php>$array = explode(',', $vv['value']);</php>
                                 <foreach name="array" item="vvv" key="kkk">
                                 <label class="radio inline">
-                                  <input type="radio" style="width:15px;height:15px;" name="model[{{$vv['field']}}]" id="optionsRadios1" value="{{$kkk}}" <?php if($mval[ $vv['field'] ] == $kkk){echo 'checked';}?>>
+                                  <input type="radio" style="width:15px;height:15px;" name="model[{{$vv['field']}}]" id="optionsRadios1" value="{{$vvv}}" <?php if($mval[ $vv['field'] ] == $vvv){echo 'checked';}?>>
                                   {{$vvv}}
                                 </label>
                                   &nbsp;&nbsp;&nbsp;
@@ -34,7 +34,7 @@
                                 <php>$array = explode(',', $vv['value']);</php>
                                 <foreach name="array" item="vvv" key="kkk">
                                 <label class="checkbox inline">
-                                  <input type="checkbox" id="inlineCheckbox1" name="model[{{$vv['field']}}][]" <?php if(preg_match("/{$kkk}/", $mval[ $vv['field'] ])){echo 'checked';}?> value="{{$kkk}}"> {{$vvv}}
+                                  <input type="checkbox" id="inlineCheckbox1" name="model[{{$vv['field']}}][]" <?php if(preg_match("/{$vvv}/", $mval[ $vv['field'] ])){echo 'checked';}?> value="{{$vvv}}"> {{$vvv}}
                                 </label>
                                 &nbsp;&nbsp;&nbsp;
                                 </foreach>

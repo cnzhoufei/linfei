@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>{{$article['title']}}</title> 
+  <meta name="keywords" content="{{$article['keywords']}}" /> 
+  <meta name="description" content="{{$article['description']}}" /> 
+<include file="./header" />
+<div style="width:100%;clear:both;height:110px;"></div>
+<div class="splitX"></div>
+</div>
+  <div class="topbg">
+  <adv name="文章页广告" id="302" type="1" item="v">
+ <img src="{{$v['img']}}" class="setpbg" alt="{{$v['title']}}">
+ </adv>
+</div>
+<div class="areaT1 mt25">
+	<div class="wrap pr">
+		<div class="navigate">
+		{{$position}} &gt; <span>正文</span>
+		</div>
+		<div class="article mt25">
+			<div class="arl" style="padding-bottom:25px;">
+				<h2 class="t mt20">{{:getsubstr($article['title'],0,30)}}</h2>
+				<p class="info mt10" style="border-bottom:1px solid #eeeeee; padding-bottom:15px;">
+					<span>{{:date('Y-m-d H:i:s',$article['time'])}}</span>
+				</p>
+				<div class="mbox mt25" style="min-height:500px;" style="color:#313131;">
+				{{:htmlspecialchars_decode($article['text'])}}
+				</div>
+			</div>
+			<div class="rightbar">
+			<h3 style="color:#31bc90; font-size:16px;">更多相关内容</h3>
+			<ul>
+				<foreach name="related" item="vv" key="kk">
+				<php>if(!$kk){</php>
+					<li><a class="t" href="{{$vv['url']}}" target="_blank">{{$vv['title']}}</a>
+					<p>{{:getsubstr($vv['description'],0,100)}}<a class="seall" href="{{$vv['url']}}" >更多>></a></p>
+					</li>
+				<php>}else{</php>
+
+					<li><a class="t" href="{{$vv['url']}}" title="{{$vv['title']}}" >{{$vv['title']}}</a></li>
+					<php>}</php>
+				</foreach>
+				</ul>
+			</div>
+<div style="width:100%;height:30px;">
+<a href="{{$pre['url']}}" style="display:inline-block;width:50%;float:left;text-align: center;line-height:30px;">上一篇:{{:getsubstr($pre['title'],0,30)}}</a>
+<a href="{{$next['url']}}" style="display:inline-block;width:50%;float:left;text-align: center;line-height:30px;">下一篇:{{:getsubstr($next['title'],0,30)}}</a>
+</div>
+		</div>
+	</div>
+	<include file="./footer" />

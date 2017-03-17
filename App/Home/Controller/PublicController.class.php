@@ -5,8 +5,19 @@ class PublicController extends Controller
 {
    protected function _initialize()
    {
+      // dump(__SELF__);exit;
+        $this->clicks();//点击量
+
+          //如果文件时间小于缓存时间就直接输出静态页面
+         if(__SELF__ == '/'){$path = "./Html/Home/index.html";}else{$path = './Html/'.__SELF__;}
+         $fieltime = filemtime($path);//读取文件更新时间
+          if((time() - $fieltime) < C('HTMLTIME')){
+            $str = file_get_contents($path);
+            $this->show($str);exit;
+          }
+
         //样式路径
-        $this->assign('style','/Templates/pc/'.C('DEFAULT_THEME'));
+        $this->assign('style','/Templates/Pc/'.C('DEFAULT_THEME'));
         $this->classtop();//顶部分类
         $this->classbottom();//底部分类
         $this->productclass();//产品分类
@@ -19,7 +30,29 @@ class PublicController extends Controller
         $this->recommendeda();
         $this->recommendeds();
         $this->headlines();
+        $this->position();
 
+   }
+
+
+   //点击量
+   private function clicks()
+   {
+        
+          $arr = explode('/', __SELF__);//将当前url分割成数组
+          //如果这个数组大于等于4 并且匹配不到list_ 证明是访问文章页
+          if(count($arr) >= 4 && !preg_match('/list_/',__SELF__)){
+            //查看访问的是产品还是文章
+            $class = M('classify')->where(array('url_name'=>ACTION_NAME))->getField('type');
+            if($class == 'product'){
+              $id = str_replace('product_', '', pathinfo(__SELF__)['filename']);
+              M('product')->where("id = {$id} or custom = {$id}")->setInc('clicks',1);
+            }elseif($class == 'article'){
+              $id = str_replace('article_', '', pathinfo(__SELF__)['filename']);
+              M('article')->where("id = {$id} or custom = {$id}")->setInc('clicks',1);
+            }
+
+        }
    }
 
 
@@ -186,6 +219,16 @@ class PublicController extends Controller
         $article = M('article')->where(array('headlines'=>1,'status'=>1))->select();
         $this->assign('headlines',$article);
         
+    }
+
+
+
+    private function position()
+    {
+      $str = "<a href='{$_SERVER['HTTP_HOST']}'>首页</a> &gt; ";
+      $class = M('classify')->field('name,url')->where(array('url_name'=>ACTION_NAME))->find();
+      $str .= "<a href='{{$class['url']}}'>{$class['name']}</a> ";
+      $this->assign('position',$str);
     }
 
 }

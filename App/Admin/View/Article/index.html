@@ -116,7 +116,7 @@
                                             <td>{{:date('Y-m-d H:i:s',$data['time'])}}</td >
                                             <td>{{:date('Y-m-d H:i:s',$data['newtime'])}}</td>
                                             <td> 
-                                                <a target="_blank" href="http://{{$_SERVER['HTTP_HOST']}}{{:U('/Article/info')}}">查看</a>
+                                                <a target="_blank" href="{{$data['url']}}">查看</a>
                                                 |
                                                 <a id="" href="{{:U('article/addarticle')}}?id={{$data['id']}}&p={{$Think.get.p}}" title="">编辑</a>
                                                 |

@@ -1,0 +1,5 @@
+
+-- ----------------------------
+-- Records of linfei_admin
+-- ----------------------------
+INSERT INTO `linfei_admin` VALUES ('1', 'admin', 'fe3ac940ea7328849303d41ff4462e86', '1478240169', '1478240169', '127.0.0.1', '13539993040', 'vzhoufei@qq.com', 'de067d15bde584efdc549adcc712101e', '/Uploads/2017-03-15/58c94badd5f81.jpg', '1', '1', '0');
