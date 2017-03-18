@@ -31,7 +31,7 @@ class IndexController extends Controller
               $this->data($_POST);
              mysqli_connect($_POST['ip'],$_POST['root'],$_POST['password'],'mysql') or die('数据库链接失败！');
             
-              $installpath = './App/Install/conf/dbconfig.php';
+              $installpath = './App/Install/Conf/dbconfig.php';
 
             $db = "<?php
             return array(
@@ -75,9 +75,9 @@ class IndexController extends Controller
                'DB_PREFIX'              =>      '".$data['prefix']."',                    // 数据库表前缀
             );
             ";
-            $homepath  = './App/Home/conf/dbconfig.php';
-            $adminpath = './App/Admin/conf/dbconfig.php';
-            $installpath = './App/Install/conf/dbconfig.php';
+            $homepath  = './App/Home/Conf/dbconfig.php';
+            $adminpath = './App/Admin/Conf/dbconfig.php';
+            $installpath = './App/Install/Conf/dbconfig.php';
             M()->execute("create database if not exists `{$data['name']}`;");
             if(file_put_contents($homepath, $db) && file_put_contents($adminpath, $db) && file_put_contents($installpath, $db)){
 
@@ -112,7 +112,7 @@ class IndexController extends Controller
                 if($data){
                   $this->showmsg('创建数据',"/Install/Index/datas.php?prefix=".$prefix."&i=0&data=".$data);
                 }else{
-                  file_put_contents('./App/Install/conf/dbconfig.php','<?php ?>');
+                  file_put_contents('./App/Install/Conf/dbconfig.php','<?php ?>');
                   file_put_contents(__DIR__.'/install.txt', '安装完成');
                   $this->showmsg('安装完成<a href="/Admin/Login/index.php">登录后台</a>');
                   
@@ -138,7 +138,7 @@ class IndexController extends Controller
                     $this->showmsg(substr($linfeisql[ $i-1 ],0,-4).'数据创建完成,正则为'.substr($linfeisql[ $i ],0,-4).'创建数据',"/Install/Index/datas.php?prefix=".$prefix."&i=".$i);
              }else{
                 
-                  file_put_contents('./App/Install/conf/dbconfig.php','<?php ?>');
+                  file_put_contents('./App/Install/Conf/dbconfig.php','<?php ?>');
                   file_put_contents(__DIR__.'/install.txt', '安装完成');
                   $this->showmsg('安装完成<a href="/Admin/Login/index.php">登录后台</a>');
                   
