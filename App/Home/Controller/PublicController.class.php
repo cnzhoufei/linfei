@@ -5,9 +5,9 @@ class PublicController extends Controller
 {
    protected function _initialize()
    {
-      // dump(__SELF__);exit;
-        $this->clicks();//点击量
-
+          //网站状态
+        if(!M('config')->getField('status'))
+          $this->clicks();//点击量
           //如果文件时间小于缓存时间就直接输出静态页面
          if(__SELF__ == '/'){$path = "./Html/Home/index.html";}else{$path = './Html/'.__SELF__;}
          $fieltime = filemtime($path);//读取文件更新时间

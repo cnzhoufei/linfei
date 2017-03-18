@@ -61,6 +61,7 @@ class ConfigController extends CommonController
 	 */
 	public function reditorcustom()
 	{
+		$this->assign('url','/Admin/Config/custom.php');
 		$customid = I('customid',0);
 		if(!is_numeric($customid)){$this->error('非法操作！');}//判断id是否为数字
 		$custom_m = M('custom');

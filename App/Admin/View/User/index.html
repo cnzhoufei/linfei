@@ -86,10 +86,10 @@
                                                     <td>{{$data['tel']}}</td>
                                                     <td>{{:date('Y-m-d',$data['addtime'])}}</td>
                                                     <td>
-                            <php>if($data['id'] != 1 || session('adminuser.id') == 1){</php>
+                            <php>if(session('adminuser.id') == 1){</php>
                             <a href="{{:U('User/editor')}}?uid={{$data['id']}}">编辑</a>
                                                         |
-                            <a onclick="mydelete('{{$data['id']}}','admin','icon','{{$data['id']}}')" href="javascript:;">删除</a>
+                            <a onclick="deleteuser('{{$data['id']}}','admin','icon','{{$data['id']}}')" href="javascript:;">删除</a>
                                                 </td>
                             <php>}</php>
                                                 </tr>
@@ -129,3 +129,30 @@
     </a>
 </div>
 <include file="Public:footer" />
+
+<script type="text/javascript">
+function deleteuser(id,table,field,deletes){
+    if(confirm('你确定删除吗？')){
+        $.post('/Admin/User/del.php', {'id':id ,'table':table, 'field':field}, function(res){
+            if(res==1){
+                $('#'+deletes).remove();
+            }else{
+                if(!res){
+                    showmsg('删除失败！');
+                    
+                }else{
+                    showmsg(res);
+                }
+            }
+            
+        })
+        
+    }else{
+        // showmsg('放弃也是一种收获');
+    }
+
+}
+
+
+
+</script>

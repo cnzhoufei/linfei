@@ -19,11 +19,13 @@ class AdminController extends CommonController
         $article_thumb = './Uploads/thumb/admin/article';
         $AppRuntimeCache = './App/Runtime/Cache';
         $home = './Uploads/thumb/home';
+        $html = './Html';
         if(is_writeable($product_thumb) && 
             is_writeable($article_thumb) && 
             is_writeable($AppRuntimeCache) &&
             is_writeable($adv_thumb)  &&
-            is_writeable($home)
+            is_writeable($home)  &&
+            is_writeable($html)
 
             ){
             delFile($product_thumb);
@@ -31,11 +33,12 @@ class AdminController extends CommonController
             delFile($AppRuntimeCache);
             delFile($adv_thumb);
             delFile($home);
+            delFile($html);
+            $this->success('成功清除缓存');
         }else{
-            $this->success('没有目录权限，无法清除缓存');
+            $this->error('没有目录权限，无法清除缓存!');
         }
 
-        $this->success('成功清除缓存');
     }
 
 

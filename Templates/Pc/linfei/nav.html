@@ -10,7 +10,7 @@
       <input value="" class="ssuob" type="submit">
     </form> -->
         <div style="float:right;">
-                       <span><img src="{{$style}}/nav/index_08.png" alt="珠海办公家具,广东办公家具,个性办公家具,高端办公家具厂家,广州办公家具厂,广州办公家具公司&quot;">服务热线:{{$custom['tel']}}</span>
+                       <span><img src="{{$style}}/nav/index_08.png" alt="">服务热线:{{$custom['tel']}}</span>
                        </div>
       </div>
       <div class="clear"></div>
@@ -47,13 +47,15 @@ function mOut(){
             <foreach name="classtop" item="v" key="k">
              <li onmouseover="settab({{$k+2}})" class=""><a href="{{$v['external']|default=$v['url']}}">{{$v['name']}}</a></li>
             </foreach>
-             <li onmouseover="settab(100)"><a href="" class="topYyBtn">免费量尺</a></li>
+             <li onmouseover="settab(100)"><a  target='_blank' href="http://wpa.qq.com/msgrd?v=3&amp;uin={{$custom['topqq']}}&amp;site=qq&amp;menu=yes" class="topYyBtn">在线咨询</a></li>
 
 
              <div class="clear"></div>
           </ul>
           <div class="cons " id="con_1" style="display: none;"></div>
         <foreach name="classtop" item="vv" key="kk">
+        <notempty name="vv['son']">
+
           <div class="cons " id="con_{{$kk+2}}" style="display: none;" onmouseover="settab({{$kk+2}})" onmouseout="mOut(this)">
           
           <div class="child_nav ">
@@ -82,6 +84,7 @@ function mOut(){
              <div class="clear"></div>
           </div>
           </div>
+          </notempty>
           </foreach>
 
 

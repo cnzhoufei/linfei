@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <title>{{$coverlist['title']}}</title> 
+  <meta name="keywords" content="{{$coverlist['keywords']}}" /> 
+  <meta name="description" content="{{$coverlist['description']}}" /> 
+<include file="./header" />
+  <div style="width:100%;clear:both;height:110px;"></div>
+<style type="text/css">
+.div img{width:100%;}
+</style>
+<div class="div" style="width:100%">
+{{:htmlspecialchars_decode($coverlist['text'])}}
+</div>
+<include file="./footer" />

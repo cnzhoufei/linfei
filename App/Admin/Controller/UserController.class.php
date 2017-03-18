@@ -22,6 +22,7 @@ class UserController extends CommonController
         $uid = I('get.uid',0);
         if(!is_numeric($uid)){$this->error('非法操作！！！');}
         if(session('adminuser.id')  != 1 && $uid == 1){$this->error('非法操作！！！');}
+        if(session('adminuser.id')  != $uid && session('adminuser.id') != 1){$this->error('非法操作！！！');}
         $user_m = M('admin');
         if(IS_POST){
             if(empty($_POST['name'])){$this->error('用户名不能为空！');}
@@ -142,6 +143,38 @@ class UserController extends CommonController
             $this->assign('adminmenu',permissions());
             $this->display();
         }
+    }
+
+
+
+
+    // 删除单条
+    public function del()
+    {
+        if(IS_AJAX){
+            $id = (int)I('id',0);
+            if($id == 1){$this->ajaxReturn('系统管理员不得删除！');}
+            if(session('adminuser.id') != 1){$this->ajaxReturn('非法操作！！！');}
+            $table = I('table');
+            $field = I('field');
+            $article_m = M($table);
+            $article1 = $article_m->where(array('id'=>$id))->field($field)->find();
+            $article = $article_m->where(array('id'=>$id))->delete();
+            if($article){
+                if($article1['img']){
+                    @unlink('.'.$article1['img']);
+                }
+                if($article1['text']){
+                    foreach(sp_getcontent_imgs(htmlspecialchars_decode($article1['text'])) as $v){
+                        @unlink('.'.$v['src']);
+                    }
+                }
+            }
+            $this->ajaxReturn($article);
+        }else{
+            $this->error('非法操作！！！！！');
+        }
+
     }
 
 
