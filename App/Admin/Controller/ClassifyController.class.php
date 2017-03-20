@@ -33,12 +33,13 @@ class ClassifyController extends CommonController
 
             $classify = $classify_m->order('sorting')->select();
         }else{
+            
             $classify = $classify_m->where(array('type'=>$type,'pid'=>$pid,'layer'=>$layer))->order('sorting')->select();
             
             // dump($classify);exit;
         }
         foreach($classify as &$v){
-            $v['pclass'] = $classify_m->where(array('pid'=>$v['id']))->count();//查询是否有字类
+            $v['pclass'] = $classify_m->where(array('pid'=>$v['id']))->count();//查询是否有子类
             if($v['type'] == 'product'){$model = M('product');}elseif($v['type'] == 'article'){$model = M('article');}
             if($v['type'] != 'cover'){
             $v['product'] = $model->where(array('cid'=>$v['id']))->count();//查询分类下的文章
@@ -101,10 +102,10 @@ class ClassifyController extends CommonController
             if($id && !is_numeric($id)){$this->error('非法操作！！！！！');}
             if($id){
                 $classify = $classify_m->where('id ='.$id)->find();
-                $classifys = $classify_m->where("layer != 3 and type = '".$classify['type']."'")->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
+                $classifys = $classify_m->where("layer != 3 and type = '".$classify['type']."'  or type = 'cover'")->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
             }else{
 
-                $classifys = $classify_m->where("layer != 3 and type = 'product'")->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
+                $classifys = $classify_m->where("layer != 3 and type = 'product' or type = 'cover'")->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
             }
             $m = substr(file_get_contents('./Public/model.md'),0,-1);
             $this->assign('m',explode(',', $m));
@@ -199,7 +200,14 @@ zhoufei;
         if(IS_AJAX){
             $type = I('type','product');
             $classify_m = M('classify');
-            $classifys = $classify_m->where(array('layer != 3','type'=>$type))->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
+            if($type == 'cover'){
+            $classifys = $classify_m->where(array('layer != 3'))->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
+
+            }else{
+
+             $sql = "type = '{$type}' or type = 'cover' and layer != 3";  
+             $classifys = $classify_m->where($sql)->field(array('id','name','pid','layer','concat(path,id)'=>'bpath'))->order('bpath')->select();
+            }
             $this->ajaxReturn($classifys);
 
         }else{

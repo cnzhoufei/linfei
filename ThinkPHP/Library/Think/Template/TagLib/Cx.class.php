@@ -43,7 +43,62 @@ class Cx extends TagLib {
         'product'   =>  array('attr'=>'key,item,classid,limit,attr', 'level'=>3),//获取指定栏目下的产品
         'article'   =>  array('attr'=>'key,item,classid,limit,attr', 'level'=>3),//获取指定栏目下的文章
         'column'    =>  array('attr'=>'item,id','level'=>1),//获取指定栏目数据
+        'sql'    =>  array('attr'=>'sql,key,item,result_name','close'=>1,'level'=>3),
         );
+
+
+    /**
+     * sql万能表情
+     * 格式：
+     * <sql sql="select * from users where id=1" item="v" key="k">
+     * {{$v['id']}}
+     * {{$v['name']}}
+     * </sql>
+     * @access public
+     * @param array $tag 标签属性
+     * @param string $content  标签内容
+     * @return 
+     */
+    public function _sql($tag,$content)
+    {
+            $sql = $tag['sql']; // sql 语句     
+            $sql = str_replace(' eq ', ' = ', $sql); // 等于
+            $sql = str_replace(' neq  ', ' != ', $sql); // 不等于            
+            $sql = str_replace(' gt ', ' > ', $sql);// 大于
+            $sql = str_replace(' egt ', ' >= ', $sql);// 大于等于
+            $sql = str_replace(' lt ', ' < ', $sql);// 小于
+            $sql = str_replace(' elt ', ' <= ', $sql);// 小于等于
+            
+            $key  =  !empty($tag['key']) ? $tag['key'] : 'key';// 返回的变量key
+            $item  =  !empty($tag['item']) ? $tag['item'] : 'item';// 返回的变量item 
+            $result_name  =  !empty($tag['result_name']) ? $tag['result_name'] : 'result_name';// 返回的变量key          
+                        
+            $name = 'sql_result_'.$item;//.rand(10000000,99999999); // 数据库结果集返回命名
+            $parseStr   =   '<?php
+                                   
+                                $md5_key = md5("'.$sql.'");
+                                $'.$name.' = S("sql_".$md5_key);
+                                if(empty($'.$name.'))
+                                {
+                                    $Model = new \Think\Model();    
+                                    $'.$result_name.' = $'.$name.' = $Model->query("'.$sql.'"); 
+                                    S("sql_".$md5_key,$'.$name.',TPSHOP_CACHE_TIME);
+                                }    
+                             ';  
+            $parseStr  .=   ' foreach($'.$name.' as $'.$key.'=>$'.$item.'): ?>';
+            $parseStr  .=   $this->tpl->parse($content).$tag['level'];
+            $parseStr  .=   '<?php endforeach; ?>';                                    
+           
+            if(!empty($parseStr)) {
+                return $parseStr;
+            }
+            return ;
+    }
+
+
+
+
+
 
 
     /**

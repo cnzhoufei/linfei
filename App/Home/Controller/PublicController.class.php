@@ -136,6 +136,8 @@ class PublicController extends Controller
                 $v['son'][$k]['grandson'] = $class_m->where(array('status'=>1,array('top'=>1),'layer'=>3,'pid'=>$vv['id']))->select();
            }
         }
+        // echo '<pre>';
+        // print_r($class);exit;
        $this->assign('classtop',$class);
    }
 
@@ -225,9 +227,15 @@ class PublicController extends Controller
 
     private function position()
     {
-      $str = "<a href='{$_SERVER['HTTP_HOST']}'>首页</a> &gt; ";
-      $class = M('classify')->field('name,url')->where(array('url_name'=>ACTION_NAME))->find();
-      $str .= "<a href='{{$class['url']}}'>{$class['name']}</a> ";
+      $str = "<a href='http://{$_SERVER['HTTP_HOST']}'>首页</a> &gt; ";
+
+      $class = M('classify')->field('pid,name,url')->where(array('url_name'=>ACTION_NAME))->find();
+      $class1 = M('classify')->field('pid,name,url')->where(array('id'=>$class['pid']))->find();
+      if($class1){
+        $str .= "<a href='{$class1['url']}'>{$class1['name']}</a> &gt; ";
+      }
+
+      $str .= "<a href='{$class['url']}'>{$class['name']}</a> ";
       $this->assign('position',$str);
     }
 

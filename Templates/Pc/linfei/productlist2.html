@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
+    <title>{{$productlist['title']}}</title>
+    <meta name="keywords" content="{{$productlist['keywords']}}">
+   <meta name="description" content="{{$productlist['description']}}" /> 
+  <link rel="stylesheet" type="text/css" href="{{$style}}/css/prductlist2.css">
+    <include file="./header" />
+  <div style="width:100%;clear:both;height:110px;"></div>
+
+<div class="splitX"></div>
+</div>
+<div class="topbg">
+<adv name="产品列表页广告" type="1" id="111" item="v">
+<img src="{{$v['img']}}">
+</adv>
+</div>
+<br style="clear:both;" />
+<div class="zfprodcut">
+<ul>
+     <foreach name="product" item="vvv">
+            <li>
+                <a href="{{$vvv['url']}}" target="_blank" title="{{$vvv['title']}}">
+                    <img src="{{:homeimg($vvv['id'],373,496,'product')}}" width="373" height="496">
+                    <h5>
+                        {{:getsubstr($vvv['title'],0,20)}}
+                    </h5>
+                </a>
+            </li>   
+        </foreach>  
+</ul>
+</div>
+  <div style="width:100%;clear:both;height:10px;"></div>
+<style type="text/css">.paging a{float:none;display:inline-block;}
+.paging span{float:none;display:inline-block;}
+</style>
+ <div style="font-size:18px;width:1100px;margin:0 auto;text-align:center;" class="paging">
+
+       {{$page}}
+       <a>{{$count}}条</a> 
+
+ </div>
+
+  <div style="width:100%;clear:both;height:10px;"></div>
+<include file="./footer" />

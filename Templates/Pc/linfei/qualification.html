@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <title>{{$coverlist['title']}}</title> 
+  <meta name="keywords" content="{{$coverlist['keywords']}}" /> 
+  <meta name="description" content="{{$coverlist['description']}}" /> 
+  <link rel="stylesheet" type="text/css" href="{{$style}}/css/qualificateion.css">
+<include file="./header" />
+  <!--顶area end--> 
+  <div style="width:100%;clear:both;height:110px;"></div>
+<div class="topbg" style="height: auto;">
+<adv name="关于我们页面广告" id="304" type="1" item="v">
+<img src="{{$v['img']}}" class="setpbg" />
+</adv>
+</div>
+</div>
+
+  <!--焦点图--> 
+
+ <div class="mynav">{{$position}}</div>
+ <hr style="clear:both;margin-bottom:5px;margin-top: 5px;">
+ <div class="zfbody">
+   <div class="zfleft">
+      <div class="zfleft1">
+       <column item="v" id='6'>
+        <h3 style="padding-top:20px;">{{$v['name']}}</h3>
+      </column>
+        <h3>ABOUT US</h3>
+      </div>
+      <div class="zfleft2">
+        <ul>
+        <sql sql="select * from __CLASSIFY__ where pid = 6" item="v">
+        <li <?php if(ACTION_NAME == $v['url_name'])echo 'style="background:#009944;"';?>><a href="{{$v['url']}}">{{$v['name']}}</a></li>
+        </sql>
+        </ul>
+
+      </div>
+
+      <div class="zfleft3">
+        <h3 style="font-size:20px;width:100%;text-align:center;line-height:50px;">联系我们 CONTACT</h3>
+        <hr style="width:80%;margin:0 auto;margin-bottom:5px;">
+        <div style="width:80%;height:98px;background:url({{$style}}/images/df11fa882f244ee99d5a4df6b8733cd9.jpg)no-repeat;margin:0 auto;">
+
+        </div>
+        <div style="width:80%;height:70px;background:url({{$style}}/images/tel.png)no-repeat;margin:0 auto;">
+
+        </div>
+      </div>
+
+   </div>
+
+
+
+   <div class="zfright">
+        {{$coverlist['text']}}
+   </div>
+
+ </div>
+  <div style="width:100%;clear:both;height:10px;"></div>
+
+  <include file="./footer" />

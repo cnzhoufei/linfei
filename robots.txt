@@ -1,0 +1,11 @@
+User-agent: * 
+Disallow: /Data/
+Disallow: /Public/
+Disallow: /Templates/
+Disallow: /ThinkPHP/
+Disallow: /Uploads/
+Disallow: /linfei.sql
+Disallow: /Admin/
+Disallow: /App/
+Disallow: /Html/
+
