@@ -12,7 +12,7 @@ class ArticleController extends CommonController
 		$count = $article_m->count();
 		$Page       = new \Think\Page($count,6);
 		$show       = $Page->show();
-		$article = $article_m->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+		$article = $article_m->order('sorting')->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 		$this->assign('count',$count);
 		$this->assign('page',$show);
 		$this->assign('article', $article);

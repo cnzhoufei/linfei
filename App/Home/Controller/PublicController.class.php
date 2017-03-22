@@ -88,11 +88,11 @@ class PublicController extends Controller
    private function productclass()
    {
         $class_m = M('classify');
-        $class = $class_m->where(array('status'=>1,'layer'=>1,'type'=>'product'))->select();
+        $class = $class_m->where(array('status'=>1,'layer'=>1,'type'=>'product','bottom'=>1))->select();
         foreach($class as &$v){
-           $v['son'] = $class2 = $class_m->where(array('status'=>1,'layer'=>2,'pid'=>$v['id'],'type'=>'product'))->select();
+           $v['son'] = $class2 = $class_m->where(array('status'=>1,'layer'=>2,'pid'=>$v['id'],'type'=>'product','bottom'=>1))->select();
            foreach($class2 as $k=>&$vv){
-                $v['son'][$k]['grandson'] = $class_m->where(array('status'=>1,'layer'=>3,'pid'=>$vv['id'],'type'=>'product'))->select();
+                $v['son'][$k]['grandson'] = $class_m->where(array('status'=>1,'layer'=>3,'pid'=>$vv['id'],'type'=>'product','bottom'=>1))->select();
            }
         }
 

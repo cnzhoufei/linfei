@@ -20,7 +20,6 @@ class ConfigController extends CommonController
 				$erroer = $config_m->getError();
 				$this->error($erroer);
 			}
-
 			if($_POST['id']){
 				$res = $config_m->save($data);
 
@@ -232,6 +231,7 @@ return array(
 	public function cache()
 	{
 		if(IS_POST){
+			$time = $_POST['cache']?$_POST['cache']:0;
 			$str = "<?php
             return array(
             	'HTMLTIME' =>{$_POST['cache']},

@@ -7,6 +7,8 @@
   <meta name="description" content="{{$coverlist['description']}}" /> 
   <link rel="stylesheet" type="text/css" href="{{$style}}/css/qualificateion.css">
 <include file="./header" />
+<script type="text/javascript" src="{{$style}}/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="{{$style}}/layer/layer.js"></script>
   <!--顶area end--> 
   <div style="width:100%;clear:both;height:110px;"></div>
 <div class="topbg" style="height: auto;">
@@ -49,22 +51,39 @@
       </div>
 
    </div>
+<!-- http://map.baidu.com/mobile/webapp/index/index/?location=39.916979519873,116.41004950566&title=我的位置&content=金沙洲环洲二路金沙大酒店8028室&output=html
 
-
-
+http://api.map.baidu.com/geocoder?address=金沙洲环洲二路金沙大酒店8028室&output=html&src=ytI5njhqOpyZ5eL86HkIlNc59XTLDyTk -->
    <div class="zfright">
         <ul>
-        <foreach name="article" item="vv">
-            <li>
+         <sql sql="select * from __ARTICLE__ where cid = 8 and status = 1" item="vv" key="kk">
+            <li onclick="fangda('{{$vv[img]}}','{{$vv[title]}}');" style="cursor:pointer;">
             <img src="{{:homeimg($vv['id'],402,306,'article')}}">
-              <h4 style="width:100%;text-align:center;">{{:getsubstr($vv['name'],0,20)}}</h4>
+              <h4 style="width:100%;text-align:center;">{{:getsubstr($vv['title'],0,20)}}</h4>
             </li>
-        </foreach>
-
+        </sql>
         </ul>
    </div>
 
  </div>
   <div style="width:100%;clear:both;height:10px;"></div>
 
+
   <include file="./footer" />
+  <script type="text/javascript">
+function fangda(img,title){
+
+  layer.open({
+  type: 1,
+  title: false,
+  area: '600px',
+  closeBtn: 0,
+  shadeClose: true,
+  skin: 'yourclass',
+  content: '<img style="width:600px;" src="'+img+'"><div style="text-align:center">'+title+'</div>'
+});
+
+
+}
+
+  </script>

@@ -68,3 +68,7 @@
           
           </foreach>
           </foreach>
+
+
+
+  <sql sql="select * from __ARTICLE__ where cid = 8 and status = 1">

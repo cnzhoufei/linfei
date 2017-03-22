@@ -7,7 +7,7 @@ class LinFeiController extends PublicController
     {
         $this->pic();
         $this->friendship();
-    	return $this->fetch('/index');
+        return $this->fetch('/index');
     }
 
     protected function friendship()
@@ -35,17 +35,24 @@ class LinFeiController extends PublicController
         if(!$tag['id']){$this->_empty();}
         $product_m = M('product');
         $class = M('classify');
-            $cid2 = $class->field("concat(id,',') as s")->where(array('pid'=>$tag['id'],'status'=>1))->select();//查询第二级
-            if($cid2){
-                     $cid3 = $class->field("concat(id,',') as s")->where("pid in(".substr($cid2[0]['s'],0,-1).") and status = 1")->select();//查询第二级
+
+            $cid2 = $class->field("group_concat(id) as s")->where(array('pid'=>$tag['id'],'status'=>1))->select();//查询第二级
+            // dump($cid2);exit;
+            if($cid2[0]['s']){
+                     $cid3 = $class->field("group_concat(id) as s")->where("pid in(".$cid2[0]['s'].") and status = 1")->select();//查询第二级
+                     if($cid3[0]['s']){
+                        $cid2[0]['s'] .= ',';
+                     }
+                     $tagid['id'] = $tag['id'].',';
+            }else{
+                $tagid['id'] = $tag['id'];
             }
-            
-        $cid = $tag['id'].','.$cid2[0]['s'].$cid3[0]['s'];
-        $count = $product_m->where("cid in(".substr($cid,0,-1).") and status = 1")->count();
+        $cid = $tagid['id'].$cid2[0]['s'].$cid3[0]['s'];
+        $count = $product_m->where("cid in(".$cid.") and status = 1")->count();
         $num = 12;
         $Page       = new \Think\Pages($count,$num);
         $show       = $Page->show();
-        $product = $product_m->where("cid in(".substr($cid,0,-1).") and status = 1")->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $product = $product_m->where("cid in(".$cid.") and status = 1")->order('sorting')->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('count',$count);
                 $this->related($tag['id'],'product');//相关推荐
         $show = str_replace('list/', 'list_', $show);
@@ -111,17 +118,22 @@ class LinFeiController extends PublicController
         if(!$tag['id']){$this->_empty();}
         $article_m = M('article');
         $class = M('classify');
-            $cid2 = $class->field("concat(id,',') as s")->where(array('pid'=>$tag['id'],'status'=>1))->select();//查询第二级
-            if($cid2){
-                     $cid3 = $class->field("concat(id,',') as s")->where("pid in(".substr($cid2[0]['s'],0,-1).") and status = 1")->select();//查询第二级
+            $cid2 = $class->field("group_concat(id) as s")->where(array('pid'=>$tag['id'],'status'=>1))->select();//查询第二级
+            if($cid2[0]['s']){
+                     $cid3 = $class->field("group_concat(id) as s")->where("pid in(".$cid2[0]['s'].") and status = 1")->select();//查询第二级
+                     if($cid3[0]['s']){
+                        $cid2[0]['s'] .= ',';
+                     }
+                     $tagid['id'] = $tag['id'].',';
+            }else{
+                $tagid['id'] = $tag['id'];
             }
-            
-        $cid = $tag['id'].','.$cid2[0]['s'].$cid3[0]['s'];
-        $count = $article_m->where("cid in(".substr($cid,0,-1).") and status = 1")->count();
+        $cid = $tagid['id'].$cid2[0]['s'].$cid3[0]['s'];
+        $count = $article_m->where("cid in(".$cid.") and status = 1")->count();
         $num = 12;
         $Page       = new \Think\Pages($count,$num);
         $show       = $Page->show();
-        $article = $article_m->where("cid in(".substr($cid,0,-1).") and status = 1")->order('sorting')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $article = $article_m->where("cid in(".$cid.") and status = 1")->order('sorting')->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
                 $this->related($tag['id'],'article');//相关推荐
         $this->assign('count',$count);
         $show = str_replace('list/', 'list_', $show);
@@ -200,7 +212,7 @@ class LinFeiController extends PublicController
         $cid = $cid.','.$cid2[0]['s'].$cid3[0]['s'];
         $count = M($field)->where("cid in(".substr($cid,0,-1).") and status = 1")->count();
         $n = mt_rand(0,$count - 6);
-        $related = M($field)->where("cid in(".substr($cid,0,-1).") and status = 1")->limit($n,6)->select();
+        $related = M($field)->where("cid in(".substr($cid,0,-1).") and status = 1")->order('sorting')->order('id desc')->limit($n,6)->select();
         $this->assign('related',$related);
         
     }

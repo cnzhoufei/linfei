@@ -7,6 +7,7 @@
  */
 function homeimg($id,$width,$height,$table)
 {
+    // /Uploads/2017-03-20/58ceac44369a7.png
 	if(!$id || !is_numeric($id)){return '';}
 	$path = "/Uploads/thumb/home/{$table}/".$id;
 	$thumb_name ="/{$id}_{$width}_{$height}";
@@ -17,6 +18,7 @@ function homeimg($id,$width,$height,$table)
     if(file_exists('.'.$path.$thumb_name.'.png'))  return $path.$thumb_name.'.png'; 
 	if(!is_dir('.'.$path)){mkdir('.'.$path,0777,true);}
 	$productimg = M("$table")->where(array('id'=>$id))->field('img')->find();
+    if(!$productimg['img']){$productimg['img'] = '/Public/images/linfei.png';}
     if(!file_exists('.'.$productimg['img'])){$productimg['img'] = '/Public/images/linfei.png';}
 	$image = new \Think\Image(); 
 	$image->open('.'.$productimg['img']);

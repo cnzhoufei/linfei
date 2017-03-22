@@ -143,7 +143,7 @@ create table if not exists `linfei_adv`(
 `title` varchar(255) not null default '' COMMENT '广告标题',
 `img` varchar(255) not null default '' COMMENT '轮播图片',
 `url` varchar(255) not null default '' COMMENT '广告链接',
-`text` text not null default '' COMMENT '广告文本',
+`text` text  COMMENT '广告文本',
 `sorting` char(20) not null default '0' COMMENT '排序',
 `clicks` int not null default 0 COMMENT '浏览量',
 `blank` tinyint(1) not null default 1 COMMENT '是否新窗口打开(1是 0否)',
