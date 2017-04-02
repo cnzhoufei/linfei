@@ -52,7 +52,7 @@ class LinFeiController extends PublicController
         $num = 12;
         $Page       = new \Think\Pages($count,$num);
         $show       = $Page->show();
-        $product = $product_m->where("cid in(".$cid.") and status = 1")->order('sorting')->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $product = $product_m->where("cid in(".$cid.") and status = 1")->order('sorting,id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         $this->assign('count',$count);
                 $this->related($tag['id'],'product');//相关推荐
         $show = str_replace('list/', 'list_', $show);
@@ -133,7 +133,7 @@ class LinFeiController extends PublicController
         $num = 12;
         $Page       = new \Think\Pages($count,$num);
         $show       = $Page->show();
-        $article = $article_m->where("cid in(".$cid.") and status = 1")->order('sorting')->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $article = $article_m->where("cid in(".$cid.") and status = 1")->order('sorting,id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
                 $this->related($tag['id'],'article');//相关推荐
         $this->assign('count',$count);
         $show = str_replace('list/', 'list_', $show);

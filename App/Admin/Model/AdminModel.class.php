@@ -14,6 +14,8 @@ class AdminModel extends Model
 
 	public function datas($post)
 	{
+		$post['name'] = htmlspecialchars($post['name']);
+		$post['email'] = htmlspecialchars($post['email']);
 		$post['pwdstr'] = md5(createluan('15'));
 		$post['pwd'] = md5(md5($post['pwd']).$post['pwdstr']);
         return $post;

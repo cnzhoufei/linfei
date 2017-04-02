@@ -69,7 +69,8 @@
 
     <!-- 推荐产品 -->
     <foreach name="recommended" item="re_v">
-     <a class="item" title="{{$re_v['title']}}" href="{{$re_v['url']}}"> <img src="{{:homeimg($re_v['id'],323,448,'product')}}" alt="{{$re_v['title']}}" /> 
+     <a class="item" title="{{$re_v['title']}}" href="{{$re_v['url']}}">
+     <img src="{{:homeimg($re_v['id'],323,448,'product')}}" alt="{{$re_v['title']}}" /> 
      <span class="tjTitle" style="line-height: 50px;">{{:getsubstr($re_v['title'],0,15)}}</span> 
      </foreach>
     </div> 

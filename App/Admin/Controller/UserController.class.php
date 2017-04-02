@@ -26,7 +26,6 @@ class UserController extends CommonController
         $user_m = M('admin');
         if(IS_POST){
             if(empty($_POST['name'])){$this->error('用户名不能为空！');}
-            if(session('adminuser.name') == 'admin'){ unset($_POST['name']);}
             if(S('icon')){
                     $_POST['icon'] = S('icon');
                     @unlink('.'.session('adminuser.icon'));

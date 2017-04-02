@@ -18,6 +18,10 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 define('APP_DEBUG', True);
+
+// //登录地址配置
+// define('__LOGIN__','linfei');
+
 //隐藏Home
 $arr = explode('/', $_SERVER['PHP_SELF']);
 if ((count($arr) > 2 && $arr[2] !== 'Admin' && $arr[2] !== 'admin' && $arr[2] !== 'mobile' && $arr[2] !== 'Mobile' && $arr[2] !== 'Install' && $arr[2] !== 'install') || @!$arr[2]) {

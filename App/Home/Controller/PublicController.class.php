@@ -165,7 +165,7 @@ class PublicController extends Controller
      */
     private function recommended()
     {
-        $product = M('product')->where(array('recommended'=>1,'status'=>1))->select();
+        $product = M('product')->where(array('recommended'=>1,'status'=>1))->order('sorting,id desc')->select();
         $this->assign('recommended',$product);
     }
 
@@ -175,7 +175,7 @@ class PublicController extends Controller
      */
     private function news()
     {
-        $product = M('product')->where(array('new'=>1,'status'=>1))->select();
+        $product = M('product')->where(array('new'=>1,'status'=>1))->order('sorting,id desc')->select();
         $this->assign('new',$product);
     }
 
@@ -186,7 +186,7 @@ class PublicController extends Controller
      */
     private function selling()
     {
-        $product = M('product')->where(array('selling'=>1,'status'=>1))->select();
+        $product = M('product')->where(array('selling'=>1,'status'=>1))->order('sorting,id desc')->select();
         $this->assign('selling',$product);
     }
 
@@ -196,7 +196,7 @@ class PublicController extends Controller
      */
     private function recommendeda()
     {
-        $article = M('article')->where(array('recommended'=>1,'status'=>1))->select();
+        $article = M('article')->where(array('recommended'=>1,'status'=>1))->order('sorting,id desc')->select();
         $this->assign('recommendeda',$article);
 
     }
@@ -207,7 +207,7 @@ class PublicController extends Controller
      */
     private function recommendeds()
     {
-        $article = M('article')->where(array('recommendeds'=>1,'status'=>1))->select();
+        $article = M('article')->where(array('recommendeds'=>1,'status'=>1))->order('sorting,id desc')->select();
         $this->assign('recommendeds',$article);
         
     }
@@ -218,7 +218,7 @@ class PublicController extends Controller
      */
     private function headlines()
     {
-        $article = M('article')->where(array('headlines'=>1,'status'=>1))->select();
+        $article = M('article')->where(array('headlines'=>1,'status'=>1))->order('sorting,id desc')->select();
         $this->assign('headlines',$article);
         
     }

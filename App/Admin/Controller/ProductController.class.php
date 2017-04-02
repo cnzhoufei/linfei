@@ -87,11 +87,10 @@ class ProductController extends CommonController
 								$data5[$k] = $v;
 						}
 					}
+						$data5['aid'] = $aid;
 					if($model->where(array('aid'=>$aid))->find()){
-						$data5['aid'] = $id;
 						$model->where(array('aid'=>$aid))->save($data5);
 					}else{
-						$data5['aid'] = $res;
 						$model->add($data5);
 
 					}
