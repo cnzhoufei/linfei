@@ -425,3 +425,17 @@ CREATE TABLE `linfei_watermark` (
 -- Records of linfei_watermark
 -- ----------------------------
 INSERT INTO `linfei_watermark` VALUES ('1', '0', '1', '0', '林飞建站系统', '/Uploads/2016-12-27/58622c5cb6c82.gif', '9', '50');
+
+
+
+
+create table if not exists `yd_msg`(
+  `id` int unsigned not null auto_increment primary key COMMENT 'id',
+  `send` char(50) not null default ''  COMMENT '发送通道',
+  `receive` char(50) not null default '' COMMENT '接收通道',
+  `msg` text not null COMMENT '消息',
+  `nickname1` varchar(255) not null default '' COMMENT '发送通道昵称',
+  `nickname2` varchar(255) not null default '' COMMENT '接收通道昵称',
+  `addtime` int not null default 0
+)engine=InnoDB default charset=utf8;
+

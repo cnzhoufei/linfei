@@ -5,6 +5,7 @@ class HomeController extends LinFeiController
 {
     public function index()
     {
+
        
             $str = $this->home();
             $dir = './Html/'.CONTROLLER_NAME.'/'.ACTION_NAME;//文件夹路径
